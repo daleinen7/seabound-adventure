@@ -1,0 +1,49 @@
+{
+	"name": "Water2",
+	"plugin-id": "Sprite",
+	"sid": 422680887965244,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 311,
+						"height": 412,
+						"originX": 0.5,
+						"originY": 0.07160194174757281,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7504103,
+						"collisionPoly": {
+							"points": [
+								0.003215434083601286,
+								0,
+								0.9967845659163987,
+								0,
+								0.9967845659163987,
+								0.9975728155339806,
+								0.003215434083601286,
+								0.9975728155339806
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 187410587415833,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

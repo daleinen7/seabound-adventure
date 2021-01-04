@@ -1,0 +1,84 @@
+{
+	"name": "HelmWheel",
+	"plugin-id": "Sprite",
+	"sid": 510680343190732,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 21,
+						"height": 41,
+						"originX": 0.5238095238095238,
+						"originY": 0.5121951219512195,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\HelmWheel1.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2757316,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 507492205169896,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": true,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			},
+			{
+				"frames": [
+					{
+						"width": 21,
+						"height": 41,
+						"originX": 0.5238095238095238,
+						"originY": 0.5121951219512195,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\HelmWheel1.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4645597,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 22,
+						"height": 41,
+						"originX": 0.5454545454545454,
+						"originY": 0.5121951219512195,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\HelmWheel2.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1175136,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 22,
+						"height": 41,
+						"originX": 0.5,
+						"originY": 0.5121951219512195,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\HelmWheel3.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3092086,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 202691412209190,
+				"name": "WheelAnimation",
+				"isLooping": false,
+				"isPingPong": true,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

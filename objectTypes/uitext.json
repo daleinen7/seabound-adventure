@@ -1,0 +1,16 @@
+{
+	"name": "UIText",
+	"plugin-id": "Text",
+	"sid": 375056363336200,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "ChoiceID",
+			"type": "number",
+			"desc": "",
+			"sid": 378385869306841
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

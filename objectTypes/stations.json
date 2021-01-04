@@ -1,0 +1,242 @@
+{
+	"name": "Stations",
+	"plugin-id": "Sprite",
+	"sid": 644012848937610,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "StationNumber",
+			"type": "number",
+			"desc": "",
+			"sid": 521684124296828
+		},
+		{
+			"name": "StationProgress",
+			"type": "number",
+			"desc": "",
+			"sid": 337458068022994
+		},
+		{
+			"name": "StationType",
+			"type": "string",
+			"desc": "",
+			"sid": 181247479393483
+		},
+		{
+			"name": "CrewAssigned",
+			"type": "number",
+			"desc": "",
+			"sid": 345093410905159
+		},
+		{
+			"name": "Project",
+			"type": "number",
+			"desc": "",
+			"sid": 358006663525747
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 45,
+						"height": 62,
+						"originX": 0,
+						"originY": 0.6774193548387096,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7418974,
+						"collisionPoly": {
+							"points": [
+								0.41234567901234565,
+								0,
+								0.6543209876543222,
+								0,
+								0.6370370370370383,
+								1,
+								0.4024691358024693,
+								0.9982078853046595
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.08888888888888889,
+								"y": 0.06451612903225806
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 45,
+						"height": 62,
+						"originX": 0,
+						"originY": 0.6774193548387096,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\CraftingStation.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8137060,
+						"collisionPoly": {
+							"points": [
+								0.41234567901234565,
+								0,
+								0.6543209876543222,
+								0,
+								0.6370370370370383,
+								1,
+								0.4024691358024693,
+								0.9982078853046595
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.15555555555555556,
+								"y": 0.12903225806451613
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 51,
+						"height": 48,
+						"originX": 0,
+						"originY": 0.7916666666666666,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\MessHallStation.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4745558,
+						"collisionPoly": {
+							"points": [
+								0.32084241103848954,
+								0,
+								0.5323166303558472,
+								0,
+								0.5389978213507636,
+								1,
+								0.3175018155410316,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.08888888888888889,
+								"y": 0.06451612903225806
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 45,
+						"height": 62,
+						"originX": 0,
+						"originY": 0.6774193548387096,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\RepairStation.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9328515,
+						"collisionPoly": {
+							"points": [
+								0.41234567901234565,
+								0,
+								0.6543209876543222,
+								0,
+								0.6370370370370383,
+								1,
+								0.4024691358024693,
+								0.9982078853046595
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.08888888888888889,
+								"y": 0.06451612903225806
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 45,
+						"height": 62,
+						"originX": 0,
+						"originY": 0.6774193548387096,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\MedStation.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5370378,
+						"collisionPoly": {
+							"points": [
+								0.41234567901234565,
+								0,
+								0.6543209876543222,
+								0,
+								0.6370370370370383,
+								1,
+								0.4024691358024693,
+								0.9982078853046595
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.08888888888888889,
+								"y": 0.06451612903225806
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 25,
+						"height": 62,
+						"originX": 0,
+						"originY": 0.6774193548387096,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\CraftingStation.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7692604,
+						"collisionPoly": {
+							"points": [
+								0.2622222222222221,
+								0,
+								0.724444444444446,
+								0,
+								0.7511111111111134,
+								1,
+								0.2800000000000002,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.28,
+								"y": 0.12903225806451613
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 899821648473519,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

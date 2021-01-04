@@ -1,0 +1,103 @@
+{
+	"name": "BoatWater",
+	"plugin-id": "Sprite",
+	"sid": 923737590563906,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 196789697822576
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 606,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 193880,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 606,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9828333,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 606,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5098599,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 606,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9263426,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 606,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8197757,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 606,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 837166,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 585426656404902,
+				"name": "Animation 1",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

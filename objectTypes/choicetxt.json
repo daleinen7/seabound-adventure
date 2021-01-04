@@ -1,0 +1,16 @@
+{
+	"name": "ChoiceTxt",
+	"plugin-id": "Text",
+	"sid": 534226867554768,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "ChoiceID",
+			"type": "number",
+			"desc": "",
+			"sid": 379212362394780
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

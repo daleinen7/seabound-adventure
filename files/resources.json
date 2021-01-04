@@ -1,0 +1,15 @@
+{
+    "c2dictionary": true,
+    "data": {
+        "Money": 200,
+        "Day": 1,
+        "Fish": 0,
+        "Scrap": 0,
+        "Meds": 1,
+        "Food": 5,
+        "Fuel": 8,
+        "HullIntegrity": 4,
+        "o2": 100,
+        "Ammo": 30
+    }
+}

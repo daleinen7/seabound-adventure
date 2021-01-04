@@ -1,0 +1,73 @@
+{
+	"name": "FrontBoatWake",
+	"plugin-id": "Sprite",
+	"sid": 934062302836104,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 158,
+						"height": 53,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4051819,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 158,
+						"height": 53,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1712649,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 158,
+						"height": 53,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9212567,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 158,
+						"height": 53,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2797051,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 401357279490650,
+				"name": "Animation 1",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 7
+			}
+		],
+		"subfolders": []
+	}
+}

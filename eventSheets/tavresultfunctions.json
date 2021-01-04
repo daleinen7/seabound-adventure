@@ -1,0 +1,313 @@
+{
+	"name": "TAVresultFunctions",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 698261324500305
+				}
+			],
+			"actions": [
+				{
+					"id": "map-function",
+					"objectClass": "Functions",
+					"sid": 578055088281870,
+					"parameters": {
+						"name": "\"TAV\"",
+						"string": "\"IntroViktoria\"",
+						"function": "IntroViktoria"
+					}
+				},
+				{
+					"id": "map-function",
+					"objectClass": "Functions",
+					"sid": 764363062277255,
+					"parameters": {
+						"name": "\"TAV\"",
+						"string": "\"IntroCristo\"",
+						"function": "IntroCristo"
+					}
+				},
+				{
+					"id": "map-function",
+					"objectClass": "Functions",
+					"sid": 824316416132750,
+					"parameters": {
+						"name": "\"TAV\"",
+						"string": "\"Fishin\"",
+						"function": "Fishin"
+					}
+				},
+				{
+					"id": "map-function",
+					"objectClass": "Functions",
+					"sid": 548674047981249,
+					"parameters": {
+						"name": "\"TAV\"",
+						"string": "\"FloatMeds\"",
+						"function": "FloatMeds"
+					}
+				}
+			],
+			"sid": 336784800666028
+		},
+		{
+			"functionName": "IntroCristo",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-key",
+					"objectClass": "FirstMate",
+					"sid": 360322319983263,
+					"parameters": {
+						"key": "\"name\"",
+						"value": "\"Cristo\""
+					}
+				},
+				{
+					"id": "set-key",
+					"objectClass": "FirstMate",
+					"sid": 660332653104796,
+					"parameters": {
+						"key": "\"health\"",
+						"value": "3"
+					}
+				},
+				{
+					"id": "set-key",
+					"objectClass": "FirstMate",
+					"sid": 597983103227381,
+					"parameters": {
+						"key": "\"morale\"",
+						"value": "4"
+					}
+				},
+				{
+					"id": "set-key",
+					"objectClass": "FirstMate",
+					"sid": 361046999668659,
+					"parameters": {
+						"key": "\"id\"",
+						"value": "1"
+					}
+				},
+				{
+					"callFunction": "CallTAV",
+					"sid": 618487579935276,
+					"parameters": [
+						"1"
+					]
+				}
+			],
+			"sid": 855303186298864,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "CrewIcons",
+							"sid": 512905943968777,
+							"parameters": {
+								"instance-variable": "ListNumber",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "CrewIcons",
+							"sid": 285804413253285,
+							"parameters": {
+								"frame-number": "2"
+							}
+						}
+					],
+					"sid": 850486262976842
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each-element",
+							"objectClass": "miniEvents",
+							"sid": 121911505736902,
+							"parameters": {
+								"axes": "xyz"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-at-xyz",
+							"objectClass": "miniEvents",
+							"sid": 559350619993294,
+							"parameters": {
+								"x": "miniEvents.CurX",
+								"y": "miniEvents.CurY",
+								"z": "miniEvents.CurZ",
+								"value": "replace(miniEvents.CurValue, \"[FM]\", \"Cristo\")"
+							}
+						}
+					],
+					"sid": 445781566296491
+				}
+			]
+		},
+		{
+			"functionName": "IntroViktoria",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-key",
+					"objectClass": "FirstMate",
+					"sid": 965977210168314,
+					"parameters": {
+						"key": "\"name\"",
+						"value": "\"Viktoria\""
+					}
+				},
+				{
+					"id": "set-key",
+					"objectClass": "FirstMate",
+					"sid": 787002473830619,
+					"parameters": {
+						"key": "\"health\"",
+						"value": "5"
+					}
+				},
+				{
+					"id": "set-key",
+					"objectClass": "FirstMate",
+					"sid": 940598667820636,
+					"parameters": {
+						"key": "\"morale\"",
+						"value": "4"
+					}
+				},
+				{
+					"id": "set-key",
+					"objectClass": "FirstMate",
+					"sid": 358701789959504,
+					"parameters": {
+						"key": "\"id\"",
+						"value": "2"
+					}
+				},
+				{
+					"callFunction": "CallTAV",
+					"sid": 765704409165329,
+					"parameters": [
+						"1"
+					]
+				}
+			],
+			"sid": 773126835727685,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "CrewIcons",
+							"sid": 232181461722443,
+							"parameters": {
+								"instance-variable": "ListNumber",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "CrewIcons",
+							"sid": 721290411357499,
+							"parameters": {
+								"frame-number": "3"
+							}
+						}
+					],
+					"sid": 598416030917965
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each-element",
+							"objectClass": "miniEvents",
+							"sid": 697304866830378,
+							"parameters": {
+								"axes": "xyz"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-at-xyz",
+							"objectClass": "miniEvents",
+							"sid": 886679926387942,
+							"parameters": {
+								"x": "miniEvents.CurX",
+								"y": "miniEvents.CurY",
+								"z": "miniEvents.CurZ",
+								"value": "replace(miniEvents.CurValue, \"[FM]\", \"Viktoria\")"
+							}
+						}
+					],
+					"sid": 745002495921236
+				}
+			]
+		},
+		{
+			"functionName": "Fishin",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 735475838215303,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [],
+					"sid": 175555770359495
+				}
+			]
+		},
+		{
+			"functionName": "FloatMeds",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 951209083613833
+		}
+	],
+	"sid": 820593971509493
+}

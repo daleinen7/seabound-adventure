@@ -1,0 +1,164 @@
+{
+	"name": "CabinDoor",
+	"plugin-id": "Sprite",
+	"sid": 636731230890302,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 27,
+						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\cabindoor.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5780817,
+						"collisionPoly": {
+							"points": [
+								0.14814814814814814,
+								0.08333333333333333,
+								0.5,
+								0.041666666666666664,
+								0.8148148148148148,
+								0.08333333333333333,
+								0.8888888888888888,
+								0.5,
+								0.7777777777777778,
+								0.875,
+								0.5,
+								0.9375,
+								0.18518518518518517,
+								0.875,
+								0.07407407407407407,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 292254128005204,
+				"name": "Closed",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 3
+			},
+			{
+				"frames": [
+					{
+						"width": 27,
+						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\cabindoor.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5224342,
+						"collisionPoly": {
+							"points": [
+								0.14814814814814814,
+								0.08333333333333333,
+								0.5,
+								0.041666666666666664,
+								0.8148148148148148,
+								0.08333333333333333,
+								0.8888888888888888,
+								0.5,
+								0.7777777777777778,
+								0.875,
+								0.5,
+								0.9375,
+								0.18518518518518517,
+								0.875,
+								0.07407407407407407,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 27,
+						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\cabindooropen.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7114274,
+						"collisionPoly": {
+							"points": [
+								0.37037037037037035,
+								0.20833333333333334,
+								0.5,
+								0.041666666666666664,
+								0.8518518518518519,
+								0.0625,
+								0.9259259259259259,
+								0.5,
+								0.8148148148148148,
+								0.8958333333333334,
+								0.5,
+								0.8958333333333334,
+								0.37037037037037035,
+								0.7708333333333334,
+								0.37037037037037035,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 27,
+						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\cabindoor.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5045048,
+						"collisionPoly": {
+							"points": [
+								0.14814814814814814,
+								0.08333333333333333,
+								0.5,
+								0.041666666666666664,
+								0.8148148148148148,
+								0.08333333333333333,
+								0.8888888888888888,
+								0.5,
+								0.7777777777777778,
+								0.875,
+								0.5,
+								0.9375,
+								0.18518518518518517,
+								0.875,
+								0.07407407407407407,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 952511574142126,
+				"name": "Open",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 3
+			}
+		],
+		"subfolders": []
+	}
+}

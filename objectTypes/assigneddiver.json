@@ -1,0 +1,22 @@
+{
+	"name": "AssignedDiver",
+	"plugin-id": "Text",
+	"sid": 518891697810101,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "TextID",
+			"type": "string",
+			"desc": "",
+			"sid": 880747391460709
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 314846208937005
+		}
+	],
+	"effectTypes": []
+}

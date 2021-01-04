@@ -1,0 +1,26 @@
+{
+	"name": "DialogBubble",
+	"plugin-id": "NinePatch",
+	"sid": 549480433736834,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 835529202189977
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 10,
+		"height": 10,
+		"originX": 12.5,
+		"originY": 12.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 2711683,
+		"useCollisionPoly": true
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"name": "ParallaxMovement",
+	"plugin-id": "Sprite",
+	"sid": 163177175272588,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 420306193866471
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"PortWater5",
+		"PortWater6",
+		"PortWater7",
+		"PortWater8",
+		"PortWater4",
+		"PortWave3",
+		"PortWave2",
+		"PortWave1",
+		"Island1"
+	]
+}

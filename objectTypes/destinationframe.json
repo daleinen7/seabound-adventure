@@ -1,0 +1,20 @@
+{
+	"name": "DestinationFrame",
+	"plugin-id": "NinePatch",
+	"sid": 111001139072361,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 12,
+		"height": 12,
+		"originX": 10.416666666666666,
+		"originY": 10.416666666666666,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 6829540,
+		"useCollisionPoly": true
+	}
+}

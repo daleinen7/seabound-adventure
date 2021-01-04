@@ -1,0 +1,22 @@
+{
+	"name": "LunchDS",
+	"plugin-id": "Text",
+	"sid": 443970113022107,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "ID",
+			"type": "string",
+			"desc": "",
+			"sid": 665984043649068
+		},
+		{
+			"name": "numID",
+			"type": "number",
+			"desc": "",
+			"sid": 532050331018532
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

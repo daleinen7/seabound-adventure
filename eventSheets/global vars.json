@@ -1,0 +1,60 @@
+{
+	"name": "Global Vars",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Init"
+		},
+		{
+			"eventType": "variable",
+			"name": "ShawMorale",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 533383756253491
+		},
+		{
+			"eventType": "variable",
+			"name": "ShawHealth",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 986501097462918
+		},
+		{
+			"eventType": "variable",
+			"name": "init",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 191769461818817
+		},
+		{
+			"eventType": "variable",
+			"name": "CurrentLoc",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 412626755395197
+		},
+		{
+			"eventType": "variable",
+			"name": "DestinationLoc",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 488032040016337
+		}
+	],
+	"sid": 309027285059479
+}

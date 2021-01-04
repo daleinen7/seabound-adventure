@@ -1,0 +1,2131 @@
+{
+	"name": "TravelEvents",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Global Vars"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "TAVresultFunctions"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 406327586701601
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 362180677074046,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"callFunction": "CallTAV",
+					"sid": 135024158833865,
+					"parameters": [
+						"0"
+					]
+				},
+				{
+					"id": "map-function",
+					"objectClass": "Functions",
+					"sid": 187360225074301,
+					"parameters": {
+						"name": "\"TAV\"",
+						"string": "\"Depart\"",
+						"function": "Depart"
+					}
+				},
+				{
+					"id": "map-function",
+					"objectClass": "Functions",
+					"sid": 575997819398722,
+					"parameters": {
+						"name": "\"TAV\"",
+						"string": "\"StartTravel\"",
+						"function": "StartTravel"
+					}
+				},
+				{
+					"id": "map-function",
+					"objectClass": "Functions",
+					"sid": 905339644260660,
+					"parameters": {
+						"name": "\"TAV\"",
+						"string": "\"Travel\"",
+						"function": "Travel"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "ParallaxMovement",
+					"sid": 586221332941201,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 796429623345126
+		},
+		{
+			"functionName": "Depart",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "direction",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"sid": 738931011047084
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-group-active",
+					"objectClass": "System",
+					"sid": 169334731710176,
+					"parameters": {
+						"group-name": "\"TAV\"",
+						"state": "deactivated"
+					}
+				}
+			],
+			"sid": 674295142134174,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 244160913611823,
+							"parameters": {
+								"variable": "direction",
+								"comparison": 0,
+								"value": "\"s\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "StartTravel",
+							"sid": 874430341505463
+						}
+					],
+					"sid": 465402842304738
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 291349628740651
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "StartTravel",
+							"sid": 953799827156172
+						},
+						{
+							"type": "comment",
+							"text": ""
+						}
+					],
+					"sid": 366604989383511
+				}
+			]
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "TAV",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "variable",
+					"name": "CurrentTAV",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"isStatic": true,
+					"isConstant": false,
+					"sid": 602913169740860
+				},
+				{
+					"eventType": "variable",
+					"name": "CurrentChoice",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"isStatic": true,
+					"isConstant": false,
+					"sid": 471379111001609
+				},
+				{
+					"eventType": "variable",
+					"name": "CurrentLine",
+					"type": "number",
+					"initialValue": "1",
+					"comment": "",
+					"isStatic": true,
+					"isConstant": false,
+					"sid": 271401916605055
+				},
+				{
+					"functionName": "CallTAV",
+					"functionDescription": "Call to start the next TAV",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "tavID",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "ID of TAV being called",
+							"sid": 428362555105432
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 926093186838498,
+							"parameters": {
+								"variable": "CurrentTAV",
+								"value": "tavID"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 666932345441695,
+							"parameters": {
+								"variable": "CurrentLine",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 180174456906718,
+							"parameters": {
+								"variable": "CurrentChoice",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "ChoicesArray",
+							"sid": 823576571815543,
+							"parameters": {
+								"width": "0",
+								"height": "1",
+								"depth": "1"
+							}
+						},
+						{
+							"id": "typewriter-text",
+							"objectClass": "TavText",
+							"sid": 529606837889179,
+							"parameters": {
+								"text": "TAVs.At(1, 0, CurrentTAV)",
+								"duration": "2"
+							}
+						}
+					],
+					"sid": 258066600967370
+				},
+				{
+					"functionName": "NextTavLine",
+					"functionDescription": "next line of tav situation",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "lineNum",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 863830050502427
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 101690110671270,
+							"parameters": {
+								"variable": "CurrentLine",
+								"value": "lineNum"
+							}
+						},
+						{
+							"id": "wait-for-previous-actions",
+							"objectClass": "System",
+							"sid": 922342104983019
+						},
+						{
+							"id": "typewriter-text",
+							"objectClass": "TavText",
+							"sid": 400732293824997,
+							"parameters": {
+								"text": "TAVs.At(CurrentLine, 0, CurrentTAV)",
+								"duration": "2"
+							}
+						}
+					],
+					"sid": 170517327519960
+				},
+				{
+					"functionName": "DisplayChoice",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "choice",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 483667460704881
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 976424019487682,
+							"parameters": {
+								"variable": "CurrentChoice",
+								"value": "choice"
+							}
+						}
+					],
+					"sid": 414377824555824,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-font-color",
+									"objectClass": "ChoiceTxt",
+									"sid": 988747563919050,
+									"parameters": {
+										"color": "rgbEx(29, 27, 39)"
+									}
+								}
+							],
+							"sid": 609628022438268
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "ChoiceTxt",
+									"sid": 227246115773198,
+									"parameters": {
+										"instance-variable": "ChoiceID",
+										"comparison": 0,
+										"value": "choice"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-font-color",
+									"objectClass": "ChoiceTxt",
+									"sid": 141606725299414,
+									"parameters": {
+										"color": "rgbEx(0, 110, 112)"
+									}
+								}
+							],
+							"sid": 307384924095228
+						}
+					]
+				},
+				{
+					"functionName": "tavResult",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 448357411838122
+				},
+				{
+					"functionName": "SelectChoice",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "ChoiceTxt",
+							"sid": 503551101241062
+						},
+						{
+							"callFunction": "CallTavResult",
+							"sid": 364043848185353,
+							"parameters": [
+								"TAVs.At(5, ChoicesArray.At(CurrentChoice), CurrentTAV)"
+							]
+						}
+					],
+					"sid": 343754990602215
+				},
+				{
+					"functionName": "CallTavResult",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "MiscParam",
+							"type": "string",
+							"initialValue": "",
+							"comment": "",
+							"sid": 585956373126132
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "call-mapped-function",
+							"objectClass": "Functions",
+							"sid": 378325013713173,
+							"parameters": {
+								"name": "\"TAV\"",
+								"string": "TAVs.At(4, ChoicesArray.At(CurrentChoice), CurrentTAV)",
+								"forward-params": "1"
+							}
+						}
+					],
+					"sid": 335703750245385
+				},
+				{
+					"functionName": "BuildChoicesArray",
+					"functionDescription": "display TAV choices",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 338468748444541,
+							"parameters": {
+								"variable": "CurrentLine",
+								"value": "99"
+							}
+						}
+					],
+					"sid": 228121687429892,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "If tav array choice isn't blank add it to a choice array"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for",
+									"objectClass": "System",
+									"sid": 255441130763699,
+									"parameters": {
+										"name": "\"\"",
+										"start-index": "1",
+										"end-index": "7"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 794220743086116,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-at-xyz",
+											"objectClass": "TAVs",
+											"sid": 823515752952354,
+											"parameters": {
+												"x": "3",
+												"y": "loopindex",
+												"z": "CurrentTAV",
+												"comparison": 1,
+												"value": "\"\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "push",
+											"objectClass": "ChoicesArray",
+											"sid": 492887001495569,
+											"parameters": {
+												"where": "back",
+												"value": "loopindex\n",
+												"axis": "x"
+											}
+										}
+									],
+									"sid": 990978223764173
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for",
+									"objectClass": "System",
+									"sid": 109722233944642,
+									"parameters": {
+										"name": "\"\"",
+										"start-index": "0",
+										"end-index": "ChoicesArray.Width - 1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 592084492255532,
+									"parameters": {
+										"object-to-create": "ChoiceTxt",
+										"layer": "\"TAV Layer\"",
+										"x": "270",
+										"y": "151 - ChoicesArray.Width * 20 + (loopindex * 20)",
+										"create-hierarchy": false
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "ChoiceTxt",
+									"sid": 343407505537769,
+									"parameters": {
+										"text": "TAVs.At(3, ChoicesArray.At(loopindex), CurrentTAV)"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "ChoiceTxt",
+									"sid": 821982554126325,
+									"parameters": {
+										"instance-variable": "ChoiceID",
+										"value": "loopindex"
+									}
+								}
+							],
+							"sid": 605255250454984
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "wait-for-previous-actions",
+									"objectClass": "System",
+									"sid": 354361582316014
+								},
+								{
+									"callFunction": "DisplayChoice",
+									"sid": 414715733423123,
+									"parameters": [
+										"0"
+									]
+								}
+							],
+							"sid": 987803890593942
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "Space Press"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 344046883100118,
+							"parameters": {
+								"key": 32
+							}
+						}
+					],
+					"actions": [],
+					"sid": 895607878872339,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "If text is still displaying complete it"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-running-typewriter-text",
+									"objectClass": "TavText",
+									"sid": 389106492401275
+								}
+							],
+							"actions": [
+								{
+									"id": "typewriter-finish",
+									"objectClass": "TavText",
+									"sid": 836671843566853
+								}
+							],
+							"sid": 958224602877635
+						},
+						{
+							"eventType": "comment",
+							"text": "Otherwise if text is finished"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 788056273899122
+								}
+							],
+							"actions": [],
+							"sid": 985811992117495,
+							"children": [
+								{
+									"eventType": "comment",
+									"text": "If next line is blank display choices"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-at-xyz",
+											"objectClass": "TAVs",
+											"sid": 883607550442000,
+											"parameters": {
+												"x": "CurrentLine + 1",
+												"y": "0",
+												"z": "CurrentTAV",
+												"comparison": 0,
+												"value": "\"\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "BuildChoicesArray",
+											"sid": 333106308399477
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 401824532596500,
+											"parameters": {
+												"variable": "CurrentLine",
+												"value": "99"
+											}
+										}
+									],
+									"sid": 825592118798112
+								},
+								{
+									"eventType": "comment",
+									"text": "Otherwise display next line"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 365026891568994
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 371448965328267,
+											"parameters": {
+												"variable": "CurrentLine",
+												"comparison": 1,
+												"value": "99"
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "NextTavLine",
+											"sid": 163382341583839,
+											"parameters": [
+												"CurrentLine + 1"
+											]
+										}
+									],
+									"sid": 605124043999097
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 863848494616059
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 439329839843494,
+											"parameters": {
+												"variable": "CurrentLine",
+												"comparison": 0,
+												"value": "99"
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "SelectChoice",
+											"sid": 404751930185698
+										}
+									],
+									"sid": 943999898328040
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 757615124691612,
+							"parameters": {
+								"key": 38
+							}
+						}
+					],
+					"actions": [],
+					"sid": 968372424593085,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 956905306981146,
+									"parameters": {
+										"variable": "CurrentLine",
+										"comparison": 0,
+										"value": "99"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 649191599458888,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 753009928168746,
+											"parameters": {
+												"variable": "CurrentChoice",
+												"comparison": 0,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "DisplayChoice",
+											"sid": 821746057515519,
+											"parameters": [
+												"ChoicesArray.Width - 1"
+											]
+										}
+									],
+									"sid": 778308640292650
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 938071223118612
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "DisplayChoice",
+											"sid": 694564723292536,
+											"parameters": [
+												"CurrentChoice - 1"
+											]
+										}
+									],
+									"sid": 311917631616002
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 645112947192382,
+							"parameters": {
+								"key": 40
+							}
+						}
+					],
+					"actions": [],
+					"sid": 631433398758035,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 368264122249874,
+									"parameters": {
+										"variable": "CurrentLine",
+										"comparison": 0,
+										"value": "99"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 707585415956811,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 109963496371908,
+											"parameters": {
+												"variable": "CurrentChoice",
+												"comparison": 0,
+												"value": "ChoicesArray.Width -1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "DisplayChoice",
+											"sid": 359713581041172,
+											"parameters": [
+												"0"
+											]
+										}
+									],
+									"sid": 362882847310391
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 317749410009240
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "DisplayChoice",
+											"sid": 406216634535127,
+											"parameters": [
+												"CurrentChoice + 1"
+											]
+										}
+									],
+									"sid": 640714402055208
+								}
+							]
+						}
+					]
+				}
+			],
+			"sid": 372928527966865
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "MiniTav",
+			"description": "",
+			"isActiveOnStart": false,
+			"children": [
+				{
+					"eventType": "variable",
+					"name": "CurrentTAV",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"isStatic": true,
+					"isConstant": false,
+					"sid": 801166431067129
+				},
+				{
+					"eventType": "variable",
+					"name": "CurrentChoice",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"isStatic": true,
+					"isConstant": false,
+					"sid": 806752661835542
+				},
+				{
+					"eventType": "variable",
+					"name": "CurrentLine",
+					"type": "number",
+					"initialValue": "1",
+					"comment": "",
+					"isStatic": true,
+					"isConstant": false,
+					"sid": 313740855965598
+				},
+				{
+					"functionName": "CallTAV2",
+					"functionDescription": "Call to start the next TAV",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "tavID",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "ID of TAV being called",
+							"sid": 430777063143401
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 141072314078221,
+							"parameters": {
+								"variable": "CurrentTAV",
+								"value": "tavID"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 282672636235182,
+							"parameters": {
+								"variable": "CurrentLine",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 575878541289098,
+							"parameters": {
+								"variable": "CurrentChoice",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "ChoicesArray",
+							"sid": 572384356818293,
+							"parameters": {
+								"width": "0",
+								"height": "1",
+								"depth": "1"
+							}
+						},
+						{
+							"id": "typewriter-text",
+							"objectClass": "TavText",
+							"sid": 404843875394852,
+							"parameters": {
+								"text": "miniEvents.At(1, 0, CurrentTAV)",
+								"duration": "2"
+							}
+						}
+					],
+					"sid": 828456633491763
+				},
+				{
+					"functionName": "NextTavLine2",
+					"functionDescription": "next line of tav situation",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "lineNum",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 895624574273402
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 467811084541003,
+							"parameters": {
+								"variable": "CurrentLine",
+								"value": "lineNum"
+							}
+						},
+						{
+							"id": "wait-for-previous-actions",
+							"objectClass": "System",
+							"sid": 391850887320561
+						},
+						{
+							"id": "typewriter-text",
+							"objectClass": "TavText",
+							"sid": 733907497100130,
+							"parameters": {
+								"text": "miniEvents.At(CurrentLine, 0, CurrentTAV)",
+								"duration": "2"
+							}
+						}
+					],
+					"sid": 151652528676681
+				},
+				{
+					"functionName": "DisplayChoice2",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "choice",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 519714041807097
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 551965819259285,
+							"parameters": {
+								"variable": "CurrentChoice",
+								"value": "choice"
+							}
+						}
+					],
+					"sid": 501329678343119,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-font-color",
+									"objectClass": "ChoiceTxt",
+									"sid": 330252203506245,
+									"parameters": {
+										"color": "rgbEx(29, 27, 39)"
+									}
+								}
+							],
+							"sid": 491494254111211
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "ChoiceTxt",
+									"sid": 959784096384897,
+									"parameters": {
+										"instance-variable": "ChoiceID",
+										"comparison": 0,
+										"value": "choice"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-font-color",
+									"objectClass": "ChoiceTxt",
+									"sid": 334864304548681,
+									"parameters": {
+										"color": "rgbEx(0, 110, 112)"
+									}
+								}
+							],
+							"sid": 200181048121161
+						}
+					]
+				},
+				{
+					"functionName": "tavResult2",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 232435183202298
+				},
+				{
+					"functionName": "SelectChoice2",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "ChoiceTxt",
+							"sid": 759564553058971
+						},
+						{
+							"callFunction": "CallTavResult2",
+							"sid": 943129614059340,
+							"parameters": [
+								"miniEvents.At(5, ChoicesArray.At(CurrentChoice), CurrentTAV)"
+							]
+						}
+					],
+					"sid": 823377503059651
+				},
+				{
+					"functionName": "CallTavResult2",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "MiscParam",
+							"type": "string",
+							"initialValue": "",
+							"comment": "",
+							"sid": 703250377980409
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "call-mapped-function",
+							"objectClass": "Functions",
+							"sid": 422081761504064,
+							"parameters": {
+								"name": "\"TAV\"",
+								"string": "miniEvents.At(4, ChoicesArray.At(CurrentChoice), CurrentTAV)",
+								"forward-params": "1"
+							}
+						}
+					],
+					"sid": 365527703204563
+				},
+				{
+					"functionName": "BuildChoicesArray2",
+					"functionDescription": "display TAV choices",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 914718194815720,
+							"parameters": {
+								"variable": "CurrentLine",
+								"value": "99"
+							}
+						}
+					],
+					"sid": 875224489585640,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "If tav array choice isn't blank add it to a choice array"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for",
+									"objectClass": "System",
+									"sid": 927949430188565,
+									"parameters": {
+										"name": "\"\"",
+										"start-index": "1",
+										"end-index": "7"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 714985092409070,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-at-xyz",
+											"objectClass": "miniEvents",
+											"sid": 201695275273952,
+											"parameters": {
+												"x": "3",
+												"y": "loopindex",
+												"z": "CurrentTAV",
+												"comparison": 1,
+												"value": "\"\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "push",
+											"objectClass": "ChoicesArray",
+											"sid": 959051733867144,
+											"parameters": {
+												"where": "back",
+												"value": "loopindex\n",
+												"axis": "x"
+											}
+										}
+									],
+									"sid": 566296956116044
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for",
+									"objectClass": "System",
+									"sid": 266493040806946,
+									"parameters": {
+										"name": "\"\"",
+										"start-index": "0",
+										"end-index": "ChoicesArray.Width - 1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 188968143157273,
+									"parameters": {
+										"object-to-create": "ChoiceTxt",
+										"layer": "\"TAV Layer\"",
+										"x": "270",
+										"y": "151 - ChoicesArray.Width * 20 + (loopindex * 20)",
+										"create-hierarchy": false
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "ChoiceTxt",
+									"sid": 222514015222722,
+									"parameters": {
+										"text": "miniEvents.At(3, ChoicesArray.At(loopindex), CurrentTAV)"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "ChoiceTxt",
+									"sid": 500266185952379,
+									"parameters": {
+										"instance-variable": "ChoiceID",
+										"value": "loopindex"
+									}
+								}
+							],
+							"sid": 627962079908662
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "wait-for-previous-actions",
+									"objectClass": "System",
+									"sid": 232754913597413
+								},
+								{
+									"callFunction": "DisplayChoice2",
+									"sid": 584165396011910,
+									"parameters": [
+										"0"
+									]
+								}
+							],
+							"sid": 771724059071861
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "Space Press"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 769887531267253,
+							"parameters": {
+								"key": 32
+							}
+						}
+					],
+					"actions": [],
+					"sid": 909482419208890,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "If text is still displaying complete it"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-running-typewriter-text",
+									"objectClass": "TavText",
+									"sid": 757279668976897
+								}
+							],
+							"actions": [
+								{
+									"id": "typewriter-finish",
+									"objectClass": "TavText",
+									"sid": 169199802898191
+								}
+							],
+							"sid": 455362876648920
+						},
+						{
+							"eventType": "comment",
+							"text": "Otherwise if text is finished"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 747859186074935
+								}
+							],
+							"actions": [],
+							"sid": 595499218005951,
+							"children": [
+								{
+									"eventType": "comment",
+									"text": "If next line is blank display choices"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-at-xyz",
+											"objectClass": "miniEvents",
+											"sid": 130824759959883,
+											"parameters": {
+												"x": "CurrentLine + 1",
+												"y": "0",
+												"z": "CurrentTAV",
+												"comparison": 0,
+												"value": "\"\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "BuildChoicesArray2",
+											"sid": 269545087682988
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 225403650849551,
+											"parameters": {
+												"variable": "CurrentLine",
+												"value": "99"
+											}
+										}
+									],
+									"sid": 709825025938393
+								},
+								{
+									"eventType": "comment",
+									"text": "Otherwise display next line"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 688073946646039
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 285840719412807,
+											"parameters": {
+												"variable": "CurrentLine",
+												"comparison": 1,
+												"value": "99"
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "NextTavLine2",
+											"sid": 964534795606141,
+											"parameters": [
+												"CurrentLine + 1"
+											]
+										}
+									],
+									"sid": 488781209425337
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 271802443673582
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 175465076624045,
+											"parameters": {
+												"variable": "CurrentLine",
+												"comparison": 0,
+												"value": "99"
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "SelectChoice2",
+											"sid": 325406530252103
+										}
+									],
+									"sid": 768484801286473
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 803445099364918,
+							"parameters": {
+								"key": 38
+							}
+						}
+					],
+					"actions": [],
+					"sid": 280852513139271,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 886786257006502,
+									"parameters": {
+										"variable": "CurrentLine",
+										"comparison": 0,
+										"value": "99"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 714698093003645,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 571708826302187,
+											"parameters": {
+												"variable": "CurrentChoice",
+												"comparison": 0,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "DisplayChoice2",
+											"sid": 996698809577674,
+											"parameters": [
+												"ChoicesArray.Width - 1"
+											]
+										}
+									],
+									"sid": 783304940393125
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 339320033412984
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "DisplayChoice2",
+											"sid": 437269765041387,
+											"parameters": [
+												"CurrentChoice - 1"
+											]
+										}
+									],
+									"sid": 976512525631940
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 860534310351819,
+							"parameters": {
+								"key": 40
+							}
+						}
+					],
+					"actions": [],
+					"sid": 749648550779280,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 284277180682300,
+									"parameters": {
+										"variable": "CurrentLine",
+										"comparison": 0,
+										"value": "99"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 215971070068926,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 469823760891118,
+											"parameters": {
+												"variable": "CurrentChoice",
+												"comparison": 0,
+												"value": "ChoicesArray.Width -1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "DisplayChoice2",
+											"sid": 346922124147697,
+											"parameters": [
+												"0"
+											]
+										}
+									],
+									"sid": 213816588191852
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 972819720050163
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "DisplayChoice2",
+											"sid": 698662404586091,
+											"parameters": [
+												"CurrentChoice + 1"
+											]
+										}
+									],
+									"sid": 657514538149339
+								}
+							]
+						}
+					]
+				}
+			],
+			"sid": 332848524967734
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Travel",
+			"description": "",
+			"isActiveOnStart": false,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 700546878393707,
+							"parameters": {
+								"interval-seconds": "random(1, 5) "
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Shaw",
+							"sid": 121338123241849,
+							"parameters": {
+								"animation": "\"Helming\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "HelmWheel",
+							"sid": 854060740615949,
+							"parameters": {
+								"animation": "\"WheelAnimation\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 837765491205247
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-x",
+							"objectClass": "ParallaxMovement",
+							"sid": 550211785300483,
+							"parameters": {
+								"comparison": 2,
+								"x-co-ordinate": "-30"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-x",
+							"objectClass": "ParallaxMovement",
+							"sid": 830427551447333,
+							"parameters": {
+								"x": "LayoutWidth + random(20, 30)"
+							}
+						}
+					],
+					"sid": 319562248108700
+				},
+				{
+					"eventType": "comment",
+					"text": "Go through a mini square"
+				},
+				{
+					"functionName": "Next Square",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 232556911779473,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-empty",
+									"objectClass": "route",
+									"sid": 361954072442222
+								}
+							],
+							"actions": [],
+							"sid": 366982553796070
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 818085595696317
+								},
+								{
+									"id": "compare-at-x",
+									"objectClass": "route",
+									"sid": 286185543085430,
+									"parameters": {
+										"x": "0",
+										"comparison": 0,
+										"value": "\"\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "pop",
+									"objectClass": "route",
+									"sid": 822840591544779,
+									"parameters": {
+										"where": "front",
+										"axis": "x"
+									}
+								},
+								{
+									"id": "append-text",
+									"objectClass": "Debug",
+									"sid": 490303129946973,
+									"parameters": {
+										"text": "\"nothing\""
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 900755647224542,
+									"parameters": {
+										"seconds": "4"
+									}
+								},
+								{
+									"callFunction": "Next Square",
+									"sid": 468613315828687
+								}
+							],
+							"sid": 226338454927477
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 633032637037718
+								},
+								{
+									"id": "compare-at-x",
+									"objectClass": "route",
+									"sid": 799970090684282,
+									"parameters": {
+										"x": "0",
+										"comparison": 0,
+										"value": "\"RE\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "pop",
+									"objectClass": "route",
+									"sid": 193337151496853,
+									"parameters": {
+										"where": "front",
+										"axis": "x"
+									}
+								},
+								{
+									"id": "append-text",
+									"objectClass": "Debug",
+									"sid": 820014287327641,
+									"parameters": {
+										"text": "\"Dive mission\""
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 285028546998324,
+									"parameters": {
+										"seconds": "4"
+									}
+								},
+								{
+									"callFunction": "Next Square",
+									"sid": 406703721215367
+								}
+							],
+							"sid": 835780755913480
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 781157859518514
+								},
+								{
+									"id": "compare-at-x",
+									"objectClass": "route",
+									"sid": 363402757262043,
+									"parameters": {
+										"x": "0",
+										"comparison": 1,
+										"value": "\"\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "StopTravel",
+									"sid": 656763895579805
+								},
+								{
+									"callFunction": "CallTAV2",
+									"sid": 675949054874695,
+									"parameters": [
+										"route.At(0)"
+									]
+								},
+								{
+									"id": "pop",
+									"objectClass": "route",
+									"sid": 511083133306131,
+									"parameters": {
+										"where": "front",
+										"axis": "x"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 197828017178825,
+									"parameters": {
+										"group-name": "\"Travel\"",
+										"state": "deactivated"
+									}
+								}
+							],
+							"sid": 693595437024594
+						}
+					]
+				}
+			],
+			"sid": 236984240575766
+		},
+		{
+			"functionName": "StartTravel",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"callFunction": "CreateRoute",
+					"sid": 355060743272009,
+					"parameters": [
+						"floor(random(3, 6))"
+					]
+				},
+				{
+					"callFunction": "Travel",
+					"sid": 184371662520026
+				}
+			],
+			"sid": 205995649199863
+		},
+		{
+			"functionName": "CreateRoute",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "length",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 926656373539554
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "clear",
+					"objectClass": "route",
+					"sid": 501237476080518,
+					"parameters": {
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "route",
+					"sid": 109753820002094,
+					"parameters": {
+						"width": "length",
+						"height": "1",
+						"depth": "1"
+					}
+				}
+			],
+			"sid": 679468873894699,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for",
+							"objectClass": "System",
+							"sid": 567998419833900,
+							"parameters": {
+								"name": "\"\"",
+								"start-index": "0",
+								"end-index": "length - 1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-at-x",
+							"objectClass": "route",
+							"sid": 464297350967897,
+							"parameters": {
+								"x": "loopindex",
+								"value": "AdvancedRandom.Weighted"
+							}
+						}
+					],
+					"sid": 522197963972418
+				}
+			]
+		},
+		{
+			"functionName": "Travel",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-group-active",
+					"objectClass": "System",
+					"sid": 527452338596885,
+					"parameters": {
+						"group-name": "\"Travel\"",
+						"state": "activated"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "FrontBoatWake",
+					"sid": 972067330191545,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "ParallaxMovement",
+					"sid": 772203591798253,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 662498030711527,
+					"parameters": {
+						"layer": "\"TAV Layer\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 776951424950736,
+					"parameters": {
+						"seconds": "4"
+					}
+				},
+				{
+					"callFunction": "Next Square",
+					"sid": 393524540809371
+				}
+			],
+			"sid": 808140434760423
+		},
+		{
+			"functionName": "StopTravel",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "FrontBoatWake",
+					"sid": 686056733802315,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "ParallaxMovement",
+					"sid": 733253947889965,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TavText",
+					"sid": 233778687165941,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "set-group-active",
+					"objectClass": "System",
+					"sid": 192850419509493,
+					"parameters": {
+						"group-name": "\"MiniTav\"",
+						"state": "activated"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 597421511613589,
+					"parameters": {
+						"layer": "\"TAV Layer\"",
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 217485523162966
+		}
+	],
+	"sid": 564277905038624
+}

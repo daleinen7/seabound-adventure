@@ -1,0 +1,32 @@
+{
+	"name": "SmallEnergyBar",
+	"plugin-id": "TiledBg",
+	"sid": 369243405349158,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 7,
+		"height": 8,
+		"originX": 0.5714285714285714,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 5242875,
+		"collisionPoly": {
+			"points": [
+				0,
+				0,
+				1,
+				0,
+				1,
+				0.875,
+				0,
+				0.875
+			]
+		},
+		"useCollisionPoly": true
+	}
+}

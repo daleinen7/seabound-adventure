@@ -1,0 +1,9 @@
+{
+    "c2dictionary": true,
+    "data": {
+        "id": 1,
+        "name": "Cristo",
+        "health": 3,
+        "morale": 4
+    }
+}

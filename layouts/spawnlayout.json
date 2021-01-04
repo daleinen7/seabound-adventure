@@ -1,0 +1,85 @@
+{
+	"name": "SpawnLayout",
+	"layers": [
+		{
+			"name": "Layer 0",
+			"overriden": 0,
+			"instances": [
+				{
+					"type": "ChoiceTxt",
+					"properties": {
+						"text": "I'm in a blood buzz, god I am, I'm in a blood buzz. ",
+						"enable-bbcode": true,
+						"font": "Defeated",
+						"size": 9,
+						"line-height": -6.199999999999993,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.15294117647058825,
+							0.10588235294117647,
+							0.10588235294117647,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center"
+					},
+					"uid": 84,
+					"instanceVariables": {
+						"ChoiceID": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 197.5,
+						"y": 82.5,
+						"width": 146.8768816781853,
+						"height": 28.935111929102717,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 863645624755570,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
+		}
+	],
+	"sid": 578364540584745,
+	"nonworld-instances": [],
+	"effectTypes": [],
+	"width": 768,
+	"height": 432,
+	"unboundedScrolling": false,
+	"eventSheet": null
+}

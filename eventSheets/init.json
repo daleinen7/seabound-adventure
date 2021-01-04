@@ -1,0 +1,183 @@
+{
+	"name": "Init",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 647673056483936
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 627103892290252,
+					"parameters": {
+						"variable": "init"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 741330515566829,
+					"parameters": {
+						"variable": "init",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 612256620861818,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "request-project-file",
+							"objectClass": "AJAX",
+							"sid": 823651205672763,
+							"parameters": {
+								"tag": "\"tav\"",
+								"file": "TAVs.json"
+							}
+						},
+						{
+							"id": "wait-for-previous-actions",
+							"objectClass": "System",
+							"sid": 709167112915834
+						},
+						{
+							"id": "load",
+							"objectClass": "TAVs",
+							"sid": 207941970893808,
+							"parameters": {
+								"json": "AJAX.LastData"
+							}
+						},
+						{
+							"id": "request-project-file",
+							"objectClass": "AJAX",
+							"sid": 816561503282714,
+							"parameters": {
+								"tag": "\"firstMate\"",
+								"file": "FirstMate.json"
+							}
+						},
+						{
+							"id": "wait-for-previous-actions",
+							"objectClass": "System",
+							"sid": 332834802242112
+						},
+						{
+							"id": "load",
+							"objectClass": "FirstMate",
+							"sid": 501879288834020,
+							"parameters": {
+								"json": "AJAX.LastData"
+							}
+						},
+						{
+							"id": "request-project-file",
+							"objectClass": "AJAX",
+							"sid": 700557202277866,
+							"parameters": {
+								"tag": "\"minitav\"",
+								"file": "miniEvents.json"
+							}
+						},
+						{
+							"id": "wait-for-previous-actions",
+							"objectClass": "System",
+							"sid": 587773465878177
+						},
+						{
+							"id": "load",
+							"objectClass": "miniEvents",
+							"sid": 667321945924410,
+							"parameters": {
+								"json": "AJAX.LastData"
+							}
+						},
+						{
+							"id": "createPermutationTable",
+							"objectClass": "AdvancedRandom",
+							"sid": 162301771076018,
+							"parameters": {
+								"length": "14",
+								"offset": "0"
+							}
+						},
+						{
+							"id": "createProbabilityTable",
+							"objectClass": "AdvancedRandom",
+							"sid": 912002847867646,
+							"parameters": {
+								"name": "\"Route\""
+							}
+						},
+						{
+							"id": "addProbabilityEntry",
+							"objectClass": "AdvancedRandom",
+							"sid": 331986949133693,
+							"parameters": {
+								"value": "0",
+								"weight": "1"
+							}
+						},
+						{
+							"id": "addProbabilityEntry",
+							"objectClass": "AdvancedRandom",
+							"sid": 624685486721701,
+							"parameters": {
+								"value": "1",
+								"weight": "1"
+							}
+						},
+						{
+							"id": "addProbabilityEntry",
+							"objectClass": "AdvancedRandom",
+							"sid": 120588940890360,
+							"parameters": {
+								"value": "2",
+								"weight": "1"
+							}
+						},
+						{
+							"id": "addProbabilityEntry",
+							"objectClass": "AdvancedRandom",
+							"sid": 718605503862006,
+							"parameters": {
+								"value": "3",
+								"weight": "2"
+							}
+						},
+						{
+							"id": "addProbabilityEntry",
+							"objectClass": "AdvancedRandom",
+							"sid": 428301984498890,
+							"parameters": {
+								"value": "\"\"",
+								"weight": "9"
+							}
+						},
+						{
+							"id": "addProbabilityEntry",
+							"objectClass": "AdvancedRandom",
+							"sid": 713484163509623,
+							"parameters": {
+								"value": "\"RE\"",
+								"weight": "3"
+							}
+						}
+					],
+					"sid": 207613506359951
+				}
+			]
+		}
+	],
+	"sid": 480593450238132
+}

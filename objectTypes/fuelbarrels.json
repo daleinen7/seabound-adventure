@@ -1,0 +1,20 @@
+{
+	"name": "FuelBarrels",
+	"plugin-id": "TiledBg",
+	"sid": 130309754294047,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 10,
+		"height": 13,
+		"originX": 0.7499999999999999,
+		"originY": 0.5769230769230769,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 9426322,
+		"useCollisionPoly": true
+	}
+}

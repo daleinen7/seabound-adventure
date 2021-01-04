@@ -1,0 +1,27 @@
+{
+	"name": "UI9patch",
+	"plugin-id": "NinePatch",
+	"sid": 947599293753499,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "BGID",
+			"type": "string",
+			"desc": "",
+			"sid": 786795584162998
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 28,
+		"height": 27,
+		"originX": 0.5178571428571429,
+		"originY": 0.5370370370370371,
+		"originalSource": "C:\\Users\\dalei\\Desktop\\UI Sketch-9patch.png",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 983490,
+		"useCollisionPoly": true
+	}
+}

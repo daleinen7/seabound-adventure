@@ -1,0 +1,2260 @@
+{
+	"name": "Shaw",
+	"plugin-id": "Sprite",
+	"sid": 483344676049122,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Platform",
+			"name": "Platform",
+			"sid": 820172360261334
+		},
+		{
+			"behaviorId": "scrollto",
+			"name": "ScrollTo",
+			"sid": 325544035102529
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 19,
+						"height": 51,
+						"originX": 0.5,
+						"originY": 0.9803921568627451,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8380486,
+						"collisionPoly": {
+							"points": [
+								0.13875598086124402,
+								0,
+								0.8325358851674641,
+								0,
+								0.8564593301435405,
+								1,
+								0.1578947368421052,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "TalkPoint",
+								"x": 0.8947368421052632,
+								"y": 0.0196078431372549
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 762091172266520,
+				"name": "Idle",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 28,
+						"height": 51,
+						"originX": 0.5,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\ShawWalking1.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7224147,
+						"collisionPoly": {
+							"points": [
+								0.26822026657552994,
+								0,
+								0.6718215994531784,
+								0,
+								0.7091379015721121,
+								0.9926470588235294,
+								0.23378759398496238,
+								0.9975490196078431
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "TalkPoint",
+								"x": 0.8947368421052632,
+								"y": 0.0196078431372549
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 26,
+						"height": 50,
+						"originX": 0.5,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\ShawWalking2.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7749403,
+						"collisionPoly": {
+							"points": [
+								0.26822026657552994,
+								0,
+								0.6718215994531784,
+								0,
+								0.7091379015721121,
+								0.9926470588235294,
+								0.23378759398496238,
+								0.9975490196078431
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "TalkPoint",
+								"x": 0.8947368421052632,
+								"y": 0.0196078431372549
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 22,
+						"height": 49,
+						"originX": 0.5,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\ShawWalking3.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8210653,
+						"collisionPoly": {
+							"points": [
+								0.26822026657552994,
+								0,
+								0.6718215994531784,
+								0,
+								0.7091379015721121,
+								0.9926470588235294,
+								0.23378759398496238,
+								0.9975490196078431
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "TalkPoint",
+								"x": 0.8947368421052632,
+								"y": 0.0196078431372549
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 17,
+						"height": 50,
+						"originX": 0.5,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\ShawWalking4.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7687194,
+						"collisionPoly": {
+							"points": [
+								0.26822026657552994,
+								0,
+								0.6718215994531784,
+								0,
+								0.7091379015721121,
+								0.9926470588235294,
+								0.23378759398496238,
+								0.9975490196078431
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "TalkPoint",
+								"x": 0.8947368421052632,
+								"y": 0.0196078431372549
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 17,
+						"height": 51,
+						"originX": 0.5,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\ShawWalking5.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8386298,
+						"collisionPoly": {
+							"points": [
+								0.26822026657552994,
+								0,
+								0.6718215994531784,
+								0,
+								0.7091379015721121,
+								0.9926470588235294,
+								0.23378759398496238,
+								0.9975490196078431
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "TalkPoint",
+								"x": 0.8947368421052632,
+								"y": 0.0196078431372549
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 17,
+						"height": 51,
+						"originX": 0.5,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\ShawWalking6.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4542271,
+						"collisionPoly": {
+							"points": [
+								0.26822026657552994,
+								0,
+								0.6718215994531784,
+								0,
+								0.7091379015721121,
+								0.9926470588235294,
+								0.23378759398496238,
+								0.9975490196078431
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "TalkPoint",
+								"x": 0.8947368421052632,
+								"y": 0.0196078431372549
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 23,
+						"height": 51,
+						"originX": 0.5,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\ShawWalking7.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3043171,
+						"collisionPoly": {
+							"points": [
+								0.26822026657552994,
+								0,
+								0.6718215994531784,
+								0,
+								0.7091379015721121,
+								0.9926470588235294,
+								0.23378759398496238,
+								0.9975490196078431
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "TalkPoint",
+								"x": 0.8947368421052632,
+								"y": 0.0196078431372549
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 22,
+						"height": 50,
+						"originX": 0.5,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\ShawWalking8.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6006388,
+						"collisionPoly": {
+							"points": [
+								0.26822026657552994,
+								0,
+								0.6718215994531784,
+								0,
+								0.7091379015721121,
+								0.9926470588235294,
+								0.23378759398496238,
+								0.9975490196078431
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "TalkPoint",
+								"x": 0.8947368421052632,
+								"y": 0.0196078431372549
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 19,
+						"height": 48,
+						"originX": 0.5,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\ShawWalking9.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1220004,
+						"collisionPoly": {
+							"points": [
+								0.26822026657552994,
+								0,
+								0.6718215994531784,
+								0,
+								0.7091379015721121,
+								0.9926470588235294,
+								0.23378759398496238,
+								0.9975490196078431
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "TalkPoint",
+								"x": 0.8947368421052632,
+								"y": 0.0196078431372549
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 19,
+						"height": 49,
+						"originX": 0.5,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\ShawWalking10.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6116865,
+						"collisionPoly": {
+							"points": [
+								0.31427289815447734,
+								0.002551020408163265,
+								0.7178742310321257,
+								0,
+								0.7880852699931647,
+								1,
+								0.3193139097744361,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "TalkPoint",
+								"x": 0.8947368421052632,
+								"y": 0.0196078431372549
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 22,
+						"height": 51,
+						"originX": 0.5,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\ShawWalking11.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3994523,
+						"collisionPoly": {
+							"points": [
+								0.26822026657552994,
+								0,
+								0.6718215994531784,
+								0,
+								0.7091379015721121,
+								0.9926470588235294,
+								0.23378759398496238,
+								0.9975490196078431
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "TalkPoint",
+								"x": 0.8947368421052632,
+								"y": 0.0196078431372549
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 26,
+						"height": 51,
+						"originX": 0.5,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\ShawWalking12.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1678126,
+						"collisionPoly": {
+							"points": [
+								0.26822026657552994,
+								0,
+								0.6718215994531784,
+								0,
+								0.7091379015721121,
+								0.9926470588235294,
+								0.23378759398496238,
+								0.9975490196078431
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "TalkPoint",
+								"x": 0.8947368421052632,
+								"y": 0.0196078431372549
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 444037101868798,
+				"name": "Walking",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 15
+			},
+			{
+				"frames": [
+					{
+						"width": 19,
+						"height": 51,
+						"originX": 0.5263157894736842,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\ShawGoToHelm1.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 146831,
+						"collisionPoly": {
+							"points": [
+								0.13875598086124402,
+								0,
+								0.8325358851674641,
+								0,
+								0.8564593301435405,
+								1,
+								0.1578947368421052,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "TalkPoint",
+								"x": 0.8947368421052632,
+								"y": 0.0196078431372549
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 22,
+						"height": 51,
+						"originX": 0.5,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\ShawGoToHelm2.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8909543,
+						"collisionPoly": {
+							"points": [
+								0.13875598086124402,
+								0,
+								0.8325358851674641,
+								0,
+								0.8564593301435405,
+								1,
+								0.1578947368421052,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "TalkPoint",
+								"x": 0.8947368421052632,
+								"y": 0.0196078431372549
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 23,
+						"height": 51,
+						"originX": 0.4782608695652174,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\ShawGoToHelm3.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3435250,
+						"collisionPoly": {
+							"points": [
+								0.13875598086124402,
+								0,
+								0.8325358851674641,
+								0,
+								0.8564593301435405,
+								1,
+								0.1578947368421052,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "TalkPoint",
+								"x": 0.8947368421052632,
+								"y": 0.0196078431372549
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 23,
+						"height": 51,
+						"originX": 0.43478260869565216,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\ShawGoToHelm4.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3502694,
+						"collisionPoly": {
+							"points": [
+								0.13875598086124402,
+								0,
+								0.8325358851674641,
+								0,
+								0.8564593301435405,
+								1,
+								0.1578947368421052,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "TalkPoint",
+								"x": 0.8947368421052632,
+								"y": 0.0196078431372549
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 910025053319493,
+				"name": "GoToHelm",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 11
+			},
+			{
+				"frames": [
+					{
+						"width": 23,
+						"height": 51,
+						"originX": 0.43478260869565216,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\ShawHelming1.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6100292,
+						"collisionPoly": {
+							"points": [
+								0.13875598086124402,
+								0,
+								0.8325358851674641,
+								0,
+								0.8564593301435405,
+								1,
+								0.1578947368421052,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "TalkPoint",
+								"x": 0.08695652173913043,
+								"y": 0
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 23,
+						"height": 51,
+						"originX": 0.43478260869565216,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\ShawHelming2.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1230917,
+						"collisionPoly": {
+							"points": [
+								0.13875598086124402,
+								0,
+								0.8325358851674641,
+								0,
+								0.8564593301435405,
+								1,
+								0.1578947368421052,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "TalkPoint",
+								"x": 0.08695652173913043,
+								"y": 0
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 24,
+						"height": 51,
+						"originX": 0.4166666666666667,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\ShawHelming3.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8473746,
+						"collisionPoly": {
+							"points": [
+								0.13875598086124402,
+								0,
+								0.8325358851674641,
+								0,
+								0.8564593301435405,
+								1,
+								0.1578947368421052,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "TalkPoint",
+								"x": 0.08333333333333333,
+								"y": 0
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 575836240309538,
+				"name": "Helming",
+				"isLooping": false,
+				"isPingPong": true,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 4
+			},
+			{
+				"frames": [
+					{
+						"width": 28,
+						"height": 51,
+						"originX": 0.5357142857142857,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\Coffe\\shaw_port-coffee-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3823147,
+						"collisionPoly": {
+							"points": [
+								0.39285714285714285,
+								0.21568627450980393,
+								0.5,
+								0.0196078431372549,
+								0.6071428571428571,
+								0.19607843137254902,
+								0.7857142857142857,
+								0.5,
+								0.6428571428571429,
+								0.803921568627451,
+								0.5,
+								0.7843137254901961,
+								0.32142857142857145,
+								0.803921568627451,
+								0.14285714285714285,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.8214285714285714,
+								"y": 0
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 28,
+						"height": 51,
+						"originX": 0.5357142857142857,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\Coffe\\shaw_port-coffee-002.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3344139,
+						"collisionPoly": {
+							"points": [
+								0.39285714285714285,
+								0.21568627450980393,
+								0.5,
+								0.0196078431372549,
+								0.6071428571428571,
+								0.19607843137254902,
+								0.7857142857142857,
+								0.5,
+								0.6428571428571429,
+								0.803921568627451,
+								0.5,
+								0.7843137254901961,
+								0.32142857142857145,
+								0.803921568627451,
+								0.14285714285714285,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.8214285714285714,
+								"y": 0
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 28,
+						"height": 51,
+						"originX": 0.5357142857142857,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\Coffe\\shaw_port-coffee-002.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6947875,
+						"collisionPoly": {
+							"points": [
+								0.39285714285714285,
+								0.21568627450980393,
+								0.5,
+								0.0196078431372549,
+								0.6071428571428571,
+								0.19607843137254902,
+								0.7857142857142857,
+								0.5,
+								0.6428571428571429,
+								0.803921568627451,
+								0.5,
+								0.7843137254901961,
+								0.32142857142857145,
+								0.803921568627451,
+								0.14285714285714285,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.8214285714285714,
+								"y": 0
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 28,
+						"height": 51,
+						"originX": 0.5357142857142857,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\Coffe\\shaw_port-coffee-003.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2562120,
+						"collisionPoly": {
+							"points": [
+								0.39285714285714285,
+								0.21568627450980393,
+								0.5,
+								0.0196078431372549,
+								0.6071428571428571,
+								0.19607843137254902,
+								0.7857142857142857,
+								0.5,
+								0.6428571428571429,
+								0.803921568627451,
+								0.5,
+								0.7843137254901961,
+								0.32142857142857145,
+								0.803921568627451,
+								0.14285714285714285,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.8214285714285714,
+								"y": 0
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 28,
+						"height": 51,
+						"originX": 0.5357142857142857,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\Coffe\\shaw_port-coffee-005.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6875890,
+						"collisionPoly": {
+							"points": [
+								0.39285714285714285,
+								0.21568627450980393,
+								0.5,
+								0.0196078431372549,
+								0.6071428571428571,
+								0.19607843137254902,
+								0.7857142857142857,
+								0.5,
+								0.6428571428571429,
+								0.803921568627451,
+								0.5,
+								0.7843137254901961,
+								0.32142857142857145,
+								0.803921568627451,
+								0.14285714285714285,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.8214285714285714,
+								"y": 0
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 28,
+						"height": 51,
+						"originX": 0.5357142857142857,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\Coffe\\shaw_port-coffee-005.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4527698,
+						"collisionPoly": {
+							"points": [
+								0.39285714285714285,
+								0.21568627450980393,
+								0.5,
+								0.0196078431372549,
+								0.6071428571428571,
+								0.19607843137254902,
+								0.7857142857142857,
+								0.5,
+								0.6428571428571429,
+								0.803921568627451,
+								0.5,
+								0.7843137254901961,
+								0.32142857142857145,
+								0.803921568627451,
+								0.14285714285714285,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.8214285714285714,
+								"y": 0
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 28,
+						"height": 51,
+						"originX": 0.5357142857142857,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\Coffe\\shaw_port-coffee-006.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7872258,
+						"collisionPoly": {
+							"points": [
+								0.39285714285714285,
+								0.21568627450980393,
+								0.5,
+								0.0196078431372549,
+								0.6071428571428571,
+								0.19607843137254902,
+								0.7857142857142857,
+								0.5,
+								0.6428571428571429,
+								0.803921568627451,
+								0.5,
+								0.7843137254901961,
+								0.32142857142857145,
+								0.803921568627451,
+								0.14285714285714285,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.8214285714285714,
+								"y": 0
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 28,
+						"height": 51,
+						"originX": 0.5357142857142857,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\Coffe\\shaw_port-coffee-007.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 216151,
+						"collisionPoly": {
+							"points": [
+								0.39285714285714285,
+								0.21568627450980393,
+								0.5,
+								0.0196078431372549,
+								0.6071428571428571,
+								0.19607843137254902,
+								0.7857142857142857,
+								0.5,
+								0.6428571428571429,
+								0.803921568627451,
+								0.5,
+								0.7843137254901961,
+								0.32142857142857145,
+								0.803921568627451,
+								0.14285714285714285,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.8214285714285714,
+								"y": 0
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 28,
+						"height": 51,
+						"originX": 0.5357142857142857,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\Coffe\\shaw_port-coffee-008.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3715996,
+						"collisionPoly": {
+							"points": [
+								0.39285714285714285,
+								0.21568627450980393,
+								0.5,
+								0.0196078431372549,
+								0.6071428571428571,
+								0.19607843137254902,
+								0.7857142857142857,
+								0.5,
+								0.6428571428571429,
+								0.803921568627451,
+								0.5,
+								0.7843137254901961,
+								0.32142857142857145,
+								0.803921568627451,
+								0.14285714285714285,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.8214285714285714,
+								"y": 0
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 28,
+						"height": 51,
+						"originX": 0.5357142857142857,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\Coffe\\shaw_port-coffee-009.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4044130,
+						"collisionPoly": {
+							"points": [
+								0.39285714285714285,
+								0.21568627450980393,
+								0.5,
+								0.0196078431372549,
+								0.6071428571428571,
+								0.19607843137254902,
+								0.7857142857142857,
+								0.5,
+								0.6428571428571429,
+								0.803921568627451,
+								0.5,
+								0.7843137254901961,
+								0.32142857142857145,
+								0.803921568627451,
+								0.14285714285714285,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.8214285714285714,
+								"y": 0
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 28,
+						"height": 51,
+						"originX": 0.5357142857142857,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\Coffe\\shaw_port-coffee-010.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2174208,
+						"collisionPoly": {
+							"points": [
+								0.39285714285714285,
+								0.21568627450980393,
+								0.5,
+								0.0196078431372549,
+								0.6071428571428571,
+								0.19607843137254902,
+								0.7857142857142857,
+								0.5,
+								0.6428571428571429,
+								0.803921568627451,
+								0.5,
+								0.7843137254901961,
+								0.32142857142857145,
+								0.803921568627451,
+								0.14285714285714285,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.8214285714285714,
+								"y": 0
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 28,
+						"height": 51,
+						"originX": 0.5357142857142857,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\Coffe\\shaw_port-coffee-011.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8541922,
+						"collisionPoly": {
+							"points": [
+								0.39285714285714285,
+								0.21568627450980393,
+								0.5,
+								0.0196078431372549,
+								0.6071428571428571,
+								0.19607843137254902,
+								0.7857142857142857,
+								0.5,
+								0.6428571428571429,
+								0.803921568627451,
+								0.5,
+								0.7843137254901961,
+								0.32142857142857145,
+								0.803921568627451,
+								0.14285714285714285,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.8214285714285714,
+								"y": 0
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 28,
+						"height": 51,
+						"originX": 0.5357142857142857,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\Coffe\\shaw_port-coffee-012.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5312521,
+						"collisionPoly": {
+							"points": [
+								0.39285714285714285,
+								0.21568627450980393,
+								0.5,
+								0.0196078431372549,
+								0.6071428571428571,
+								0.19607843137254902,
+								0.7857142857142857,
+								0.5,
+								0.6428571428571429,
+								0.803921568627451,
+								0.5,
+								0.7843137254901961,
+								0.32142857142857145,
+								0.803921568627451,
+								0.14285714285714285,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.8214285714285714,
+								"y": 0
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 28,
+						"height": 51,
+						"originX": 0.5357142857142857,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\Coffe\\shaw_port-coffee-013.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1274501,
+						"collisionPoly": {
+							"points": [
+								0.39285714285714285,
+								0.21568627450980393,
+								0.5,
+								0.0196078431372549,
+								0.6071428571428571,
+								0.19607843137254902,
+								0.7857142857142857,
+								0.5,
+								0.6428571428571429,
+								0.803921568627451,
+								0.5,
+								0.7843137254901961,
+								0.32142857142857145,
+								0.803921568627451,
+								0.14285714285714285,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.8214285714285714,
+								"y": 0
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 28,
+						"height": 51,
+						"originX": 0.5357142857142857,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\Coffe\\shaw_port-coffee-014.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9125445,
+						"collisionPoly": {
+							"points": [
+								0.39285714285714285,
+								0.21568627450980393,
+								0.5,
+								0.0196078431372549,
+								0.6071428571428571,
+								0.19607843137254902,
+								0.7857142857142857,
+								0.5,
+								0.6428571428571429,
+								0.803921568627451,
+								0.5,
+								0.7843137254901961,
+								0.32142857142857145,
+								0.803921568627451,
+								0.17857142857142858,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.8214285714285714,
+								"y": 0
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 28,
+						"height": 51,
+						"originX": 0.5357142857142857,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\Coffe\\shaw_port-coffee-015.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9780690,
+						"collisionPoly": {
+							"points": [
+								0.39285714285714285,
+								0.21568627450980393,
+								0.5,
+								0.0196078431372549,
+								0.6071428571428571,
+								0.19607843137254902,
+								0.7857142857142857,
+								0.5,
+								0.6428571428571429,
+								0.803921568627451,
+								0.5,
+								0.7843137254901961,
+								0.32142857142857145,
+								0.803921568627451,
+								0.32142857142857145,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.8214285714285714,
+								"y": 0
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 28,
+						"height": 51,
+						"originX": 0.5357142857142857,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\Coffe\\shaw_port-coffee-016.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7803234,
+						"collisionPoly": {
+							"points": [
+								0.39285714285714285,
+								0.21568627450980393,
+								0.5,
+								0.0196078431372549,
+								0.6071428571428571,
+								0.19607843137254902,
+								0.7857142857142857,
+								0.5,
+								0.6428571428571429,
+								0.803921568627451,
+								0.5,
+								0.7843137254901961,
+								0.32142857142857145,
+								0.803921568627451,
+								0.32142857142857145,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.8214285714285714,
+								"y": 0
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 28,
+						"height": 51,
+						"originX": 0.5357142857142857,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\Coffe\\shaw_port-coffee-017.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2372549,
+						"collisionPoly": {
+							"points": [
+								0.39285714285714285,
+								0.21568627450980393,
+								0.5,
+								0.0196078431372549,
+								0.6071428571428571,
+								0.19607843137254902,
+								0.7857142857142857,
+								0.5,
+								0.6428571428571429,
+								0.803921568627451,
+								0.5,
+								0.7843137254901961,
+								0.32142857142857145,
+								0.803921568627451,
+								0.32142857142857145,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.8214285714285714,
+								"y": 0
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 28,
+						"height": 51,
+						"originX": 0.5357142857142857,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\Coffe\\shaw_port-coffee-018.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5772357,
+						"collisionPoly": {
+							"points": [
+								0.39285714285714285,
+								0.21568627450980393,
+								0.5,
+								0.0196078431372549,
+								0.6071428571428571,
+								0.19607843137254902,
+								0.7857142857142857,
+								0.5,
+								0.6428571428571429,
+								0.803921568627451,
+								0.5,
+								0.7843137254901961,
+								0.32142857142857145,
+								0.803921568627451,
+								0.32142857142857145,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.8214285714285714,
+								"y": 0
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 28,
+						"height": 51,
+						"originX": 0.5357142857142857,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\Coffe\\shaw_port-coffee-019.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 862781,
+						"collisionPoly": {
+							"points": [
+								0.39285714285714285,
+								0.21568627450980393,
+								0.5,
+								0.0196078431372549,
+								0.6071428571428571,
+								0.19607843137254902,
+								0.7857142857142857,
+								0.5,
+								0.6428571428571429,
+								0.803921568627451,
+								0.5,
+								0.7843137254901961,
+								0.32142857142857145,
+								0.803921568627451,
+								0.32142857142857145,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.8214285714285714,
+								"y": 0
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 28,
+						"height": 51,
+						"originX": 0.5357142857142857,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\Coffe\\shaw_port-coffee-020.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5757149,
+						"collisionPoly": {
+							"points": [
+								0.39285714285714285,
+								0.21568627450980393,
+								0.5,
+								0.0196078431372549,
+								0.6071428571428571,
+								0.19607843137254902,
+								0.7857142857142857,
+								0.5,
+								0.6428571428571429,
+								0.803921568627451,
+								0.5,
+								0.7843137254901961,
+								0.32142857142857145,
+								0.803921568627451,
+								0.32142857142857145,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.8214285714285714,
+								"y": 0
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 28,
+						"height": 51,
+						"originX": 0.5357142857142857,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\Coffe\\shaw_port-coffee-021.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 311667,
+						"collisionPoly": {
+							"points": [
+								0.39285714285714285,
+								0.21568627450980393,
+								0.5,
+								0.0196078431372549,
+								0.6071428571428571,
+								0.19607843137254902,
+								0.7857142857142857,
+								0.5,
+								0.6428571428571429,
+								0.803921568627451,
+								0.5,
+								0.7843137254901961,
+								0.32142857142857145,
+								0.803921568627451,
+								0.32142857142857145,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.8214285714285714,
+								"y": 0
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 28,
+						"height": 51,
+						"originX": 0.5357142857142857,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\Coffe\\shaw_port-coffee-022.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9751580,
+						"collisionPoly": {
+							"points": [
+								0.39285714285714285,
+								0.21568627450980393,
+								0.5,
+								0.0196078431372549,
+								0.6071428571428571,
+								0.19607843137254902,
+								0.7857142857142857,
+								0.5,
+								0.6428571428571429,
+								0.803921568627451,
+								0.5,
+								0.7843137254901961,
+								0.32142857142857145,
+								0.803921568627451,
+								0.32142857142857145,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.8214285714285714,
+								"y": 0
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 28,
+						"height": 51,
+						"originX": 0.5357142857142857,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\Coffe\\shaw_port-coffee-023.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4841558,
+						"collisionPoly": {
+							"points": [
+								0.39285714285714285,
+								0.21568627450980393,
+								0.5,
+								0.0196078431372549,
+								0.6071428571428571,
+								0.19607843137254902,
+								0.7857142857142857,
+								0.5,
+								0.6428571428571429,
+								0.803921568627451,
+								0.5,
+								0.7843137254901961,
+								0.32142857142857145,
+								0.803921568627451,
+								0.32142857142857145,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.8214285714285714,
+								"y": 0
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 28,
+						"height": 51,
+						"originX": 0.5357142857142857,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\Coffe\\shaw_port-coffee-025.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5104654,
+						"collisionPoly": {
+							"points": [
+								0.39285714285714285,
+								0.21568627450980393,
+								0.5,
+								0.0196078431372549,
+								0.6071428571428571,
+								0.19607843137254902,
+								0.7857142857142857,
+								0.5,
+								0.6428571428571429,
+								0.803921568627451,
+								0.5,
+								0.7843137254901961,
+								0.32142857142857145,
+								0.803921568627451,
+								0.17857142857142858,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.8214285714285714,
+								"y": 0
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 28,
+						"height": 51,
+						"originX": 0.5357142857142857,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\Coffe\\shaw_port-coffee-025.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8259182,
+						"collisionPoly": {
+							"points": [
+								0.39285714285714285,
+								0.21568627450980393,
+								0.5,
+								0.0196078431372549,
+								0.6071428571428571,
+								0.19607843137254902,
+								0.7857142857142857,
+								0.5,
+								0.6428571428571429,
+								0.803921568627451,
+								0.5,
+								0.7843137254901961,
+								0.32142857142857145,
+								0.803921568627451,
+								0.17857142857142858,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.8214285714285714,
+								"y": 0
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 28,
+						"height": 51,
+						"originX": 0.5357142857142857,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\Coffe\\shaw_port-coffee-026.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8736707,
+						"collisionPoly": {
+							"points": [
+								0.39285714285714285,
+								0.21568627450980393,
+								0.5,
+								0.0196078431372549,
+								0.6071428571428571,
+								0.19607843137254902,
+								0.7857142857142857,
+								0.5,
+								0.6428571428571429,
+								0.803921568627451,
+								0.5,
+								0.7843137254901961,
+								0.32142857142857145,
+								0.803921568627451,
+								0.14285714285714285,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.8214285714285714,
+								"y": 0
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 28,
+						"height": 51,
+						"originX": 0.5357142857142857,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\Coffe\\shaw_port-coffee-027.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1887136,
+						"collisionPoly": {
+							"points": [
+								0.39285714285714285,
+								0.21568627450980393,
+								0.5,
+								0.0196078431372549,
+								0.6071428571428571,
+								0.19607843137254902,
+								0.7857142857142857,
+								0.5,
+								0.6428571428571429,
+								0.803921568627451,
+								0.5,
+								0.7843137254901961,
+								0.32142857142857145,
+								0.803921568627451,
+								0.14285714285714285,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.8214285714285714,
+								"y": 0
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 28,
+						"height": 51,
+						"originX": 0.5357142857142857,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\Coffe\\shaw_port-coffee-028.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5887823,
+						"collisionPoly": {
+							"points": [
+								0.39285714285714285,
+								0.21568627450980393,
+								0.5,
+								0.0196078431372549,
+								0.6071428571428571,
+								0.19607843137254902,
+								0.7857142857142857,
+								0.5,
+								0.6428571428571429,
+								0.803921568627451,
+								0.5,
+								0.7843137254901961,
+								0.32142857142857145,
+								0.803921568627451,
+								0.14285714285714285,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.8214285714285714,
+								"y": 0
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 28,
+						"height": 51,
+						"originX": 0.5357142857142857,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\Coffe\\shaw_port-coffee-029.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3714134,
+						"collisionPoly": {
+							"points": [
+								0.39285714285714285,
+								0.21568627450980393,
+								0.5,
+								0.0196078431372549,
+								0.6071428571428571,
+								0.19607843137254902,
+								0.7857142857142857,
+								0.5,
+								0.6428571428571429,
+								0.803921568627451,
+								0.5,
+								0.7843137254901961,
+								0.32142857142857145,
+								0.803921568627451,
+								0.14285714285714285,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.8214285714285714,
+								"y": 0
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 28,
+						"height": 51,
+						"originX": 0.5357142857142857,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\Coffe\\shaw_port-coffee-030.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 326460,
+						"collisionPoly": {
+							"points": [
+								0.39285714285714285,
+								0.21568627450980393,
+								0.5,
+								0.0196078431372549,
+								0.6071428571428571,
+								0.19607843137254902,
+								0.7857142857142857,
+								0.5,
+								0.6428571428571429,
+								0.803921568627451,
+								0.5,
+								0.7843137254901961,
+								0.32142857142857145,
+								0.803921568627451,
+								0.14285714285714285,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.8214285714285714,
+								"y": 0
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 28,
+						"height": 51,
+						"originX": 0.5357142857142857,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\Coffe\\shaw_port-coffee-031.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9166679,
+						"collisionPoly": {
+							"points": [
+								0.39285714285714285,
+								0.21568627450980393,
+								0.5,
+								0.0196078431372549,
+								0.6071428571428571,
+								0.19607843137254902,
+								0.7857142857142857,
+								0.5,
+								0.6428571428571429,
+								0.803921568627451,
+								0.5,
+								0.7843137254901961,
+								0.32142857142857145,
+								0.803921568627451,
+								0.14285714285714285,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.8214285714285714,
+								"y": 0
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 28,
+						"height": 51,
+						"originX": 0.5357142857142857,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\Coffe\\shaw_port-coffee-032.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9537855,
+						"collisionPoly": {
+							"points": [
+								0.39285714285714285,
+								0.21568627450980393,
+								0.5,
+								0.0196078431372549,
+								0.6071428571428571,
+								0.19607843137254902,
+								0.7857142857142857,
+								0.5,
+								0.6428571428571429,
+								0.803921568627451,
+								0.5,
+								0.7843137254901961,
+								0.32142857142857145,
+								0.803921568627451,
+								0.14285714285714285,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.8214285714285714,
+								"y": 0
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 28,
+						"height": 51,
+						"originX": 0.5357142857142857,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\Coffe\\shaw_port-coffee-033.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2675587,
+						"collisionPoly": {
+							"points": [
+								0.39285714285714285,
+								0.21568627450980393,
+								0.5,
+								0.0196078431372549,
+								0.6071428571428571,
+								0.19607843137254902,
+								0.7857142857142857,
+								0.5,
+								0.6428571428571429,
+								0.803921568627451,
+								0.5,
+								0.7843137254901961,
+								0.32142857142857145,
+								0.803921568627451,
+								0.14285714285714285,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.8214285714285714,
+								"y": 0
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 28,
+						"height": 51,
+						"originX": 0.5357142857142857,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\Coffe\\shaw_port-coffee-034.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7424801,
+						"collisionPoly": {
+							"points": [
+								0.39285714285714285,
+								0.21568627450980393,
+								0.5,
+								0.0196078431372549,
+								0.6071428571428571,
+								0.19607843137254902,
+								0.7857142857142857,
+								0.5,
+								0.6428571428571429,
+								0.803921568627451,
+								0.5,
+								0.7843137254901961,
+								0.32142857142857145,
+								0.803921568627451,
+								0.14285714285714285,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.8214285714285714,
+								"y": 0
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 28,
+						"height": 51,
+						"originX": 0.5357142857142857,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\Coffe\\shaw_port-coffee-035.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8258460,
+						"collisionPoly": {
+							"points": [
+								0.39285714285714285,
+								0.21568627450980393,
+								0.5,
+								0.0196078431372549,
+								0.6071428571428571,
+								0.19607843137254902,
+								0.7857142857142857,
+								0.5,
+								0.6428571428571429,
+								0.803921568627451,
+								0.5,
+								0.7843137254901961,
+								0.32142857142857145,
+								0.803921568627451,
+								0.14285714285714285,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.8214285714285714,
+								"y": 0
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 28,
+						"height": 51,
+						"originX": 0.5357142857142857,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\Coffe\\shaw_port-coffee-036.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 832683,
+						"collisionPoly": {
+							"points": [
+								0.39285714285714285,
+								0.21568627450980393,
+								0.5,
+								0.0196078431372549,
+								0.6071428571428571,
+								0.19607843137254902,
+								0.7857142857142857,
+								0.5,
+								0.6428571428571429,
+								0.803921568627451,
+								0.5,
+								0.7843137254901961,
+								0.32142857142857145,
+								0.803921568627451,
+								0.14285714285714285,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.8214285714285714,
+								"y": 0
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 28,
+						"height": 51,
+						"originX": 0.5357142857142857,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\Coffe\\shaw_port-coffee-037.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5084262,
+						"collisionPoly": {
+							"points": [
+								0.39285714285714285,
+								0.21568627450980393,
+								0.5,
+								0.0196078431372549,
+								0.6071428571428571,
+								0.19607843137254902,
+								0.7857142857142857,
+								0.5,
+								0.6428571428571429,
+								0.803921568627451,
+								0.5,
+								0.7843137254901961,
+								0.32142857142857145,
+								0.803921568627451,
+								0.14285714285714285,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.8214285714285714,
+								"y": 0
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 28,
+						"height": 51,
+						"originX": 0.5357142857142857,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\Coffe\\shaw_port-coffee-038.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8998125,
+						"collisionPoly": {
+							"points": [
+								0.39285714285714285,
+								0.21568627450980393,
+								0.5,
+								0.0196078431372549,
+								0.6071428571428571,
+								0.19607843137254902,
+								0.7857142857142857,
+								0.5,
+								0.6428571428571429,
+								0.803921568627451,
+								0.5,
+								0.7843137254901961,
+								0.32142857142857145,
+								0.803921568627451,
+								0.14285714285714285,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.8214285714285714,
+								"y": 0
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 28,
+						"height": 51,
+						"originX": 0.5357142857142857,
+						"originY": 0.9803921568627451,
+						"originalSource": "C:\\Users\\jdoza\\Documents\\OLD SB images\\Coffe\\shaw_port-coffee-039.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8549250,
+						"collisionPoly": {
+							"points": [
+								0.39285714285714285,
+								0.21568627450980393,
+								0.5,
+								0.0196078431372549,
+								0.6071428571428571,
+								0.19607843137254902,
+								0.7857142857142857,
+								0.5,
+								0.6428571428571429,
+								0.803921568627451,
+								0.5,
+								0.7843137254901961,
+								0.32142857142857145,
+								0.803921568627451,
+								0.14285714285714285,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.8214285714285714,
+								"y": 0
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 725159239529305,
+				"name": "sip",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"name": "DialogBubbleTemplate",
+	"plugin-id": "Text",
+	"sid": 926698281908706,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Template",
+			"type": "boolean",
+			"desc": "",
+			"sid": 145569959478467
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": []
+}
