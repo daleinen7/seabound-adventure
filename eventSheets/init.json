@@ -106,6 +106,7 @@
 							"id": "createPermutationTable",
 							"objectClass": "AdvancedRandom",
 							"sid": 162301771076018,
+							"disabled": true,
 							"parameters": {
 								"length": "14",
 								"offset": "0"

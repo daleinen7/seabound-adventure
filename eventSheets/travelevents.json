@@ -72,9 +72,59 @@
 					"parameters": {
 						"state": "disabled"
 					}
+				},
+				{
+					"id": "createPermutationTable",
+					"objectClass": "AdvancedRandom",
+					"sid": 658078189884269,
+					"parameters": {
+						"length": "5",
+						"offset": "2"
+					}
 				}
 			],
-			"sid": 796429623345126
+			"sid": 796429623345126,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Create grid map"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for",
+							"objectClass": "System",
+							"sid": 892484535567073,
+							"parameters": {
+								"name": "\"\"",
+								"start-index": "1",
+								"end-index": "OverworldArray.Width"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-at-x",
+							"objectClass": "OverworldArray",
+							"sid": 112862318851109,
+							"parameters": {
+								"x": "loopindex",
+								"value": "AdvancedRandom.Permutation(loopindex)"
+							}
+						}
+					],
+					"sid": 321958483160270,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [],
+							"sid": 325229577293616
+						}
+					]
+				}
+			]
 		},
 		{
 			"functionName": "Depart",
@@ -93,17 +143,7 @@
 			],
 			"eventType": "function-block",
 			"conditions": [],
-			"actions": [
-				{
-					"id": "set-group-active",
-					"objectClass": "System",
-					"sid": 169334731710176,
-					"parameters": {
-						"group-name": "\"TAV\"",
-						"state": "deactivated"
-					}
-				}
-			],
+			"actions": [],
 			"sid": 674295142134174,
 			"children": [
 				{
@@ -122,8 +162,13 @@
 					],
 					"actions": [
 						{
-							"callFunction": "StartTravel",
-							"sid": 874430341505463
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 406864068202834,
+							"parameters": {
+								"variable": "DestinationLoc",
+								"value": "CurrentLoc + sqrt(OverworldArray.Width)"
+							}
 						}
 					],
 					"sid": 465402842304738
@@ -135,19 +180,50 @@
 							"id": "else",
 							"objectClass": "System",
 							"sid": 291349628740651
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 479212283777878,
+							"parameters": {
+								"variable": "direction",
+								"comparison": 0,
+								"value": "\"w\""
+							}
 						}
 					],
 					"actions": [
 						{
-							"callFunction": "StartTravel",
-							"sid": 953799827156172
-						},
-						{
-							"type": "comment",
-							"text": ""
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 289750342435975,
+							"parameters": {
+								"variable": "DestinationLoc",
+								"value": "CurrentLoc + 1"
+							}
 						}
 					],
 					"sid": 366604989383511
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"callFunction": "StartTravel",
+							"sid": 350573766149007
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 249261544167752,
+							"parameters": {
+								"group-name": "\"TAV\"",
+								"state": "deactivated"
+							}
+						}
+					],
+					"sid": 617720023062346
 				}
 			]
 		},
@@ -206,6 +282,15 @@
 					"eventType": "function-block",
 					"conditions": [],
 					"actions": [
+						{
+							"id": "append-text",
+							"objectClass": "Debug",
+							"sid": 659163950117444,
+							"disabled": true,
+							"parameters": {
+								"text": "\"TAV \" & tavID & \" called \""
+							}
+						},
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
@@ -378,10 +463,37 @@
 					"functionCategory": "",
 					"functionReturnType": "none",
 					"functionIsAsync": false,
-					"functionParameters": [],
+					"functionParameters": [
+						{
+							"name": "text",
+							"type": "string",
+							"initialValue": "",
+							"comment": "",
+							"sid": 721638984683059
+						}
+					],
 					"eventType": "function-block",
 					"conditions": [],
-					"actions": [],
+					"actions": [
+						{
+							"id": "typewriter-text",
+							"objectClass": "TavText",
+							"sid": 651547571843637,
+							"parameters": {
+								"text": "text",
+								"duration": "2"
+							}
+						},
+						{
+							"id": "typewriter-text",
+							"objectClass": "TavText",
+							"sid": 686365791170235,
+							"parameters": {
+								"text": "text",
+								"duration": "2"
+							}
+						}
+					],
 					"sid": 448357411838122
 				},
 				{
@@ -395,22 +507,40 @@
 					"conditions": [],
 					"actions": [
 						{
+							"id": "append-text",
+							"objectClass": "Debug",
+							"sid": 672186641214907,
+							"disabled": true,
+							"parameters": {
+								"text": "\"Select choice \" "
+							}
+						},
+						{
 							"id": "destroy",
 							"objectClass": "ChoiceTxt",
 							"sid": 503551101241062
 						},
 						{
-							"callFunction": "CallTavResult",
+							"callFunction": "CallTavFunction",
 							"sid": 364043848185353,
 							"parameters": [
 								"TAVs.At(5, ChoicesArray.At(CurrentChoice), CurrentTAV)"
 							]
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 885180485071126,
+							"parameters": {
+								"variable": "CurrentLine",
+								"value": "100"
+							}
 						}
 					],
 					"sid": 343754990602215
 				},
 				{
-					"functionName": "CallTavResult",
+					"functionName": "CallTavFunction",
 					"functionDescription": "",
 					"functionCategory": "",
 					"functionReturnType": "none",
@@ -428,13 +558,31 @@
 					"conditions": [],
 					"actions": [
 						{
+							"id": "append-text",
+							"objectClass": "Debug",
+							"sid": 910375104765246,
+							"disabled": true,
+							"parameters": {
+								"text": "\"CallTavFunction: \" & TAVs.At(4, ChoicesArray.At(CurrentChoice), CurrentTAV)"
+							}
+						},
+						{
+							"id": "append-text",
+							"objectClass": "Debug",
+							"sid": 985408874004110,
+							"disabled": true,
+							"parameters": {
+								"text": "\"CallTavFunction: \" & TAVs.At(4, ChoicesArray.At(CurrentChoice), CurrentTAV)"
+							}
+						},
+						{
 							"id": "call-mapped-function",
 							"objectClass": "Functions",
-							"sid": 378325013713173,
+							"sid": 672526538464672,
 							"parameters": {
 								"name": "\"TAV\"",
 								"string": "TAVs.At(4, ChoicesArray.At(CurrentChoice), CurrentTAV)",
-								"forward-params": "1"
+								"forward-params": "0\n"
 							}
 						}
 					],
@@ -533,12 +681,12 @@
 								{
 									"id": "create-object",
 									"objectClass": "System",
-									"sid": 592084492255532,
+									"sid": 942827167462925,
 									"parameters": {
 										"object-to-create": "ChoiceTxt",
 										"layer": "\"TAV Layer\"",
-										"x": "270",
-										"y": "151 - ChoicesArray.Width * 20 + (loopindex * 20)",
+										"x": "250",
+										"y": "161 - ChoicesArray.Width * 20 + (loopindex * 20)",
 										"create-hierarchy": false
 									}
 								},
@@ -662,17 +810,26 @@
 									],
 									"actions": [
 										{
-											"callFunction": "BuildChoicesArray",
-											"sid": 333106308399477
+											"id": "append-text",
+											"objectClass": "Debug",
+											"sid": 705846214519037,
+											"disabled": true,
+											"parameters": {
+												"text": "\"Space pressed: build choices\""
+											}
 										},
 										{
 											"id": "set-eventvar-value",
 											"objectClass": "System",
-											"sid": 401824532596500,
+											"sid": 240145470752803,
 											"parameters": {
 												"variable": "CurrentLine",
 												"value": "99"
 											}
+										},
+										{
+											"callFunction": "BuildChoicesArray",
+											"sid": 333106308399477
 										}
 									],
 									"sid": 825592118798112
@@ -692,10 +849,10 @@
 										{
 											"id": "compare-eventvar",
 											"objectClass": "System",
-											"sid": 371448965328267,
+											"sid": 614481009043653,
 											"parameters": {
 												"variable": "CurrentLine",
-												"comparison": 1,
+												"comparison": 2,
 												"value": "99"
 											}
 										}
@@ -737,6 +894,49 @@
 										}
 									],
 									"sid": 943999898328040
+								},
+								{
+									"eventType": "comment",
+									"text": "Call depart"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 542983687874223
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 763964395544337,
+											"parameters": {
+												"variable": "CurrentLine",
+												"comparison": 0,
+												"value": "100"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 161764110986348,
+											"parameters": {
+												"variable": "CurrentLine",
+												"value": "0"
+											}
+										},
+										{
+											"callFunction": "CallTAV",
+											"sid": 229789400116869,
+											"parameters": [
+												"1"
+											]
+										}
+									],
+									"sid": 740532478468198
 								}
 							]
 						}
@@ -1156,7 +1356,7 @@
 							"sid": 759564553058971
 						},
 						{
-							"callFunction": "CallTavResult2",
+							"callFunction": "CallMiniTavFunction",
 							"sid": 943129614059340,
 							"parameters": [
 								"miniEvents.At(5, ChoicesArray.At(CurrentChoice), CurrentTAV)"
@@ -1166,7 +1366,7 @@
 					"sid": 823377503059651
 				},
 				{
-					"functionName": "CallTavResult2",
+					"functionName": "CallMiniTavFunction",
 					"functionDescription": "",
 					"functionCategory": "",
 					"functionReturnType": "none",
@@ -1289,12 +1489,12 @@
 								{
 									"id": "create-object",
 									"objectClass": "System",
-									"sid": 188968143157273,
+									"sid": 528417915235883,
 									"parameters": {
 										"object-to-create": "ChoiceTxt",
 										"layer": "\"TAV Layer\"",
-										"x": "270",
-										"y": "151 - ChoicesArray.Width * 20 + (loopindex * 20)",
+										"x": "250",
+										"y": "161 - ChoicesArray.Width * 20 + (loopindex * 20)",
 										"create-hierarchy": false
 									}
 								},
@@ -1746,6 +1946,10 @@
 					"sid": 232556911779473,
 					"children": [
 						{
+							"eventType": "comment",
+							"text": "You made it to node"
+						},
+						{
 							"eventType": "block",
 							"conditions": [
 								{
@@ -1754,7 +1958,76 @@
 									"sid": 361954072442222
 								}
 							],
-							"actions": [],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 480159576708459,
+									"parameters": {
+										"variable": "CurrentLoc",
+										"value": "DestinationLoc"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "FrontBoatWake",
+									"sid": 995578806610114,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "ParallaxMovement",
+									"sid": 114913913519722,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"state": "disabled"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "TavText",
+									"sid": 827040636022086,
+									"parameters": {
+										"text": "\"\""
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 455880388685693,
+									"parameters": {
+										"group-name": "\"TAV\"",
+										"state": "activated"
+									}
+								},
+								{
+									"callFunction": "CallTAV",
+									"sid": 995389030882228,
+									"parameters": [
+										"CurrentLoc"
+									]
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 803066062229636,
+									"parameters": {
+										"layer": "\"TAV Layer\"",
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 158320055449414,
+									"parameters": {
+										"group-name": "\"Travel\"",
+										"state": "deactivated"
+									}
+								}
+							],
 							"sid": 366982553796070
 						},
 						{
@@ -1784,14 +2057,6 @@
 									"parameters": {
 										"where": "front",
 										"axis": "x"
-									}
-								},
-								{
-									"id": "append-text",
-									"objectClass": "Debug",
-									"sid": 490303129946973,
-									"parameters": {
-										"text": "\"nothing\""
 									}
 								},
 								{

@@ -50,6 +50,166 @@
 						"string": "\"FloatMeds\"",
 						"function": "FloatMeds"
 					}
+				},
+				{
+					"id": "map-function",
+					"objectClass": "Functions",
+					"sid": 735419502377926,
+					"parameters": {
+						"name": "\"TAV\"",
+						"string": "\"Run\"",
+						"function": "Run"
+					}
+				},
+				{
+					"id": "map-function",
+					"objectClass": "Functions",
+					"sid": 649109066002553,
+					"parameters": {
+						"name": "\"TAV\"",
+						"string": "\"Fight\"",
+						"function": "Fight"
+					}
+				},
+				{
+					"id": "map-function",
+					"objectClass": "Functions",
+					"sid": 620216466814784,
+					"parameters": {
+						"name": "\"TAV\"",
+						"string": "\"Surrender\"",
+						"function": "Surrender"
+					}
+				},
+				{
+					"id": "map-function",
+					"objectClass": "Functions",
+					"sid": 650909228380528,
+					"parameters": {
+						"name": "\"TAV\"",
+						"string": "\"SCDecline\"",
+						"function": "SCDecline"
+					}
+				},
+				{
+					"id": "map-function",
+					"objectClass": "Functions",
+					"sid": 144178716713384,
+					"parameters": {
+						"name": "\"TAV\"",
+						"string": "\"SCLazy\"",
+						"function": "SCLazy"
+					}
+				},
+				{
+					"id": "map-function",
+					"objectClass": "Functions",
+					"sid": 470363373412242,
+					"parameters": {
+						"name": "\"TAV\"",
+						"string": "\"SCHurry\"",
+						"function": "SCHurry"
+					}
+				},
+				{
+					"id": "map-function",
+					"objectClass": "Functions",
+					"sid": 717932535626316,
+					"parameters": {
+						"name": "\"TAV\"",
+						"string": "\"SCFM\"",
+						"function": "SCFM"
+					}
+				},
+				{
+					"id": "map-function",
+					"objectClass": "Functions",
+					"sid": 198904943843010,
+					"parameters": {
+						"name": "\"TAV\"",
+						"string": "\"SCWatch\"",
+						"function": "SCWatch"
+					}
+				},
+				{
+					"id": "map-function",
+					"objectClass": "Functions",
+					"sid": 365101292561413,
+					"parameters": {
+						"name": "\"TAV\"",
+						"string": "\"LASBoard\"",
+						"function": "LASBoard"
+					}
+				},
+				{
+					"id": "map-function",
+					"objectClass": "Functions",
+					"sid": 665053963797312,
+					"parameters": {
+						"name": "\"TAV\"",
+						"string": "\"LASFood\"",
+						"function": "LASFood"
+					}
+				},
+				{
+					"id": "map-function",
+					"objectClass": "Functions",
+					"sid": 632004611283774,
+					"parameters": {
+						"name": "\"TAV\"",
+						"string": "\"LASLoose\"",
+						"function": "LASLoose"
+					}
+				},
+				{
+					"id": "map-function",
+					"objectClass": "Functions",
+					"sid": 368858175812439,
+					"parameters": {
+						"name": "\"TAV\"",
+						"string": "\"DistIgnore\"",
+						"function": "DistIgnore"
+					}
+				},
+				{
+					"id": "map-function",
+					"objectClass": "Functions",
+					"sid": 749024632797812,
+					"parameters": {
+						"name": "\"TAV\"",
+						"string": "\"DistIgnore\"",
+						"function": "DistRate"
+					}
+				},
+				{
+					"id": "map-function",
+					"objectClass": "Functions",
+					"sid": 722258397988305,
+					"parameters": {
+						"name": "\"TAV\"",
+						"string": "\"DistIgnore\"",
+						"function": "DistHurry"
+					}
+				},
+				{
+					"id": "map-function",
+					"objectClass": "Functions",
+					"sid": 473778451816734,
+					"parameters": {
+						"name": "\"TAV\"",
+						"string": "\"PA2Concern\"",
+						"function": "PA2Concern"
+					}
+				},
+				{
+					"id": "map-function",
+					"objectClass": "Functions",
+					"sid": 591918116988744,
+					"parameters": {
+						"name": "\"TAV\"",
+						"string": "\"PA2Rrun\"",
+						"function": "PA2Run"
+					}
 				}
 			],
 			"sid": 336784800666028
@@ -277,6 +437,589 @@
 			]
 		},
 		{
+			"functionName": "Surrender",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 586708733454609,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"callFunction": "tavResult",
+							"sid": 522660749257242,
+							"parameters": [
+								"\"Surprisingly the pirates are quite cordial. They are borderline apologetic. But ... they do take all your equipment though. That was a given. Right before leaving one of them looks legitimately guilty and leaves you with some food he had on him.\""
+							]
+						}
+					],
+					"sid": 298184622164248
+				}
+			]
+		},
+		{
+			"functionName": "Fight",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 191116470918142,
+			"children": [
+				{
+					"eventType": "variable",
+					"name": "chance",
+					"type": "number",
+					"initialValue": "20",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 783566748889402
+				},
+				{
+					"eventType": "comment",
+					"text": "Morale Bonus"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 312254454671947,
+							"parameters": {
+								"first-value": "FirstMate.Get(\"morale\") + ShawMorale",
+								"comparison": 4,
+								"second-value": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 196885867719231,
+							"parameters": {
+								"variable": "chance",
+								"value": "chance + 20"
+							}
+						}
+					],
+					"sid": 384271437068264
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 667759062416954
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 496852129769259,
+							"parameters": {
+								"variable": "chance",
+								"value": "chance - 10"
+							}
+						}
+					],
+					"sid": 127656929010051
+				},
+				{
+					"eventType": "comment",
+					"text": "Gun Bonus"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "contains-value",
+							"objectClass": "Inventory",
+							"sid": 867575779110113,
+							"parameters": {
+								"value": "7"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 435880982484095,
+							"parameters": {
+								"variable": "chance",
+								"value": "chance + 50"
+							}
+						}
+					],
+					"sid": 945708878586547
+				},
+				{
+					"eventType": "comment",
+					"text": "Viktoria Bonus"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-value",
+							"objectClass": "FirstMate",
+							"sid": 427899773554563,
+							"parameters": {
+								"key": "\"name\"",
+								"comparison": 0,
+								"value": "\"Viktoria\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 565055112556730,
+							"parameters": {
+								"variable": "chance",
+								"value": "chance + 20"
+							}
+						}
+					],
+					"sid": 234631417835062
+				},
+				{
+					"eventType": "comment",
+					"text": "Jacob Bonus"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-value",
+							"objectClass": "FirstMate",
+							"sid": 631943755563491,
+							"parameters": {
+								"key": "\"name\"",
+								"comparison": 0,
+								"value": "\"Jacob\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 382175468966965,
+							"parameters": {
+								"variable": "chance",
+								"value": "chance + 30"
+							}
+						},
+						{
+							"type": "script",
+							"script": ""
+						}
+					],
+					"sid": 407495623805932
+				},
+				{
+					"eventType": "comment",
+					"text": "Cristo Bonus"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-value",
+							"objectClass": "FirstMate",
+							"sid": 667562449584267,
+							"parameters": {
+								"key": "\"name\"",
+								"comparison": 0,
+								"value": "\"Cristo\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 609490619376336,
+							"parameters": {
+								"variable": "chance",
+								"value": "chance - 30"
+							}
+						},
+						{
+							"type": "script",
+							"script": ""
+						}
+					],
+					"sid": 313966580337748
+				},
+				{
+					"eventType": "comment",
+					"text": "Success"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 533075242449948,
+							"parameters": {
+								"first-value": "chance",
+								"comparison": 2,
+								"second-value": "random(100)"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 118951957732569,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "Viki Success"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-value",
+									"objectClass": "FirstMate",
+									"sid": 364335971531192,
+									"parameters": {
+										"key": "\"name\"",
+										"comparison": 0,
+										"value": "\"Viktoria\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "tavResult",
+									"sid": 348309095474307,
+									"parameters": [
+										"\"It's clear to you ... and eventually to the pirates that Viktoria is no stranger to using a knife. The pirates are easily fended off. Viktoria's pride is evident. You even collect a few of their dropped weapons and the ship is safe.\""
+									]
+								}
+							],
+							"sid": 881482332968015
+						},
+						{
+							"eventType": "comment",
+							"text": "Jacob Success"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-value",
+									"objectClass": "FirstMate",
+									"sid": 116627409912782,
+									"parameters": {
+										"key": "\"name\"",
+										"comparison": 0,
+										"value": "\"Jacob\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "tavResult",
+									"sid": 525373147644438,
+									"parameters": [
+										"\"Jacob is no stranger to stress or combat. He handles himself well and the pirates retreat to find easier prey. You are even able to collect a few of the weapons the pirates dropped.\""
+									]
+								}
+							],
+							"sid": 474836152218849
+						},
+						{
+							"eventType": "comment",
+							"text": "Cristo Success"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-value",
+									"objectClass": "FirstMate",
+									"sid": 814893758907269,
+									"parameters": {
+										"key": "\"name\"",
+										"comparison": 0,
+										"value": "\"Cristo\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "tavResult",
+									"sid": 988045173887589,
+									"parameters": [
+										"\"Against Shaw and more importantly, the attacking pirates expectations, a fire alights in Cristo's eyes and the boy uses a buoy half his size to beat off the attacking pirates. The first wave are stopped by sheer shock at the site. The second wave are battered into submission. The rest scatter to the winds in retreat.\""
+									]
+								}
+							],
+							"sid": 893471769108005
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "Failure"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 315728870443099
+						}
+					],
+					"actions": [],
+					"sid": 879395781679860,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-value",
+									"objectClass": "FirstMate",
+									"sid": 765875346883175,
+									"parameters": {
+										"key": "\"name\"",
+										"comparison": 0,
+										"value": "\"Cristo\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "tavResult",
+									"sid": 741813958698680,
+									"parameters": [
+										"\"Cristo doesn't put up much of a fight. In fact the pirates seem genuinely amused at his attempts. They decide to let you be but you can hear their laughter long after they get too far away to see. Cristo seems more than a little insulted.\""
+									]
+								}
+							],
+							"sid": 868005969569927
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 590484259057574
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "tavResult",
+									"sid": 519978580233974,
+									"parameters": [
+										"\"You and \" & FirstMate.Get(\"name\") & \" fight bravely but eventually the pirates overtake you. Just as one is about to spear you with a harpoon one of his companions yells there is something in the water. They run but not before one of them takes all of your money. You feel it's best to move on as well.\""
+									]
+								}
+							],
+							"sid": 799390541549029
+						}
+					]
+				}
+			]
+		},
+		{
+			"functionName": "Run",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 105577036206798,
+			"children": [
+				{
+					"eventType": "variable",
+					"name": "chance",
+					"type": "number",
+					"initialValue": "20",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 751137648032349
+				},
+				{
+					"eventType": "comment",
+					"text": "Morale Bonus"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 864612192565358,
+							"parameters": {
+								"first-value": "FirstMate.Get(\"morale\") + ShawMorale",
+								"comparison": 4,
+								"second-value": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 927394705767426,
+							"parameters": {
+								"variable": "chance",
+								"value": "chance + 20"
+							}
+						}
+					],
+					"sid": 246794733652042
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 580769865280803
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 267037298104705,
+							"parameters": {
+								"variable": "chance",
+								"value": "chance - 10"
+							}
+						}
+					],
+					"sid": 122384267136723
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 687555261654899,
+							"parameters": {
+								"variable": "chance",
+								"value": "chance + Resources.Get(\"HullIntegrity\") * 5"
+							}
+						}
+					],
+					"sid": 303525928630269
+				},
+				{
+					"eventType": "comment",
+					"text": "Motor Bonus"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "contains-value",
+							"objectClass": "Inventory",
+							"sid": 671555855458175,
+							"parameters": {
+								"value": "53"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 840592717307200,
+							"parameters": {
+								"variable": "chance",
+								"value": "chance + 50"
+							}
+						}
+					],
+					"sid": 579490420952932
+				},
+				{
+					"eventType": "comment",
+					"text": "Success"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 687207039593741,
+							"parameters": {
+								"first-value": "chance",
+								"comparison": 2,
+								"second-value": "random(100)"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "tavResult",
+							"sid": 789137934866694,
+							"parameters": [
+								"\"The pirates didn't expect your vessel to be as fast as it was and they give up for easier prey. That was close.\""
+							]
+						}
+					],
+					"sid": 346682957543570
+				},
+				{
+					"eventType": "comment",
+					"text": "Failure"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 521413391615552
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "tavResult",
+							"sid": 402454462222797,
+							"parameters": [
+								"\"You max the engine but they overtake you. They steal your {stolen} and because you ran they pistol whip you.\""
+							]
+						}
+					],
+					"sid": 791192987551849
+				}
+			]
+		},
+		{
 			"functionName": "Fishin",
 			"functionDescription": "",
 			"functionCategory": "",
@@ -307,6 +1050,676 @@
 			"conditions": [],
 			"actions": [],
 			"sid": 951209083613833
+		},
+		{
+			"functionName": "SCWatch",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 398738309383155,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"callFunction": "tavResult",
+							"sid": 567105654955989,
+							"parameters": [
+								"\"After watching one and half episodes of Shark Chasers, you determine the crew is not worth saving. But you go all the same, because it would be cruel not to.\""
+							]
+						}
+					],
+					"sid": 984383006268549
+				}
+			]
+		},
+		{
+			"functionName": "SCFM",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 626097031052135,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-value",
+							"objectClass": "FirstMate",
+							"sid": 838936465193734,
+							"parameters": {
+								"key": "\"name\"",
+								"comparison": 0,
+								"value": "\"Cristo\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "tavResult",
+							"sid": 273042476900055,
+							"parameters": [
+								"\"Cristo loves Shark Chasers! He goes on about how cool it is with the two hosts that really know their stuff about how cool and monstrous sharks are. He's ready to go shark hunting. So you figure you might as well go help out.\""
+							]
+						}
+					],
+					"sid": 895198487666049
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 710529616651772
+						},
+						{
+							"id": "compare-value",
+							"objectClass": "FirstMate",
+							"sid": 200683030686883,
+							"parameters": {
+								"key": "\"name\"",
+								"comparison": 0,
+								"value": "\"Viktoria\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "tavResult",
+							"sid": 750361977859460,
+							"parameters": [
+								"\"Viktoria doensn't think it's a good idea. The show never interested her and you have better things to do. The way she says it, you feel like you have to agree. You move on.\""
+							]
+						}
+					],
+					"sid": 207180568931009
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 946425813980765
+						},
+						{
+							"id": "compare-value",
+							"objectClass": "FirstMate",
+							"sid": 909277310337503,
+							"parameters": {
+								"key": "\"name\"",
+								"comparison": 0,
+								"value": "\"Jacob\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "tavResult",
+							"sid": 433112158926862,
+							"parameters": [
+								"\"Jacob pauses and finally says \"\"It is a tough call, but I think we have got to put a hold on our search and go help out.\"\" You agree and head to the coordinates the producer provides.\""
+							]
+						}
+					],
+					"sid": 560679423693399
+				}
+			]
+		},
+		{
+			"functionName": "SCHurry",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 356063090691202,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"callFunction": "tavResult",
+							"sid": 335653228534071,
+							"parameters": [
+								"\"You confirm you and [FM] are leaving right away.\""
+							]
+						}
+					],
+					"sid": 838405946528246
+				}
+			]
+		},
+		{
+			"functionName": "SCLazy",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 814392577639629,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"type": "comment",
+							"text": "Call SC Result"
+						},
+						{
+							"callFunction": "tavResult",
+							"sid": 768086420546304,
+							"parameters": [
+								"\"The producer checks in with you every five minutes with what seems like standard impatience rather than genuine concern for his crew. But finally you are ready to go.\""
+							]
+						}
+					],
+					"sid": 231551198267180
+				}
+			]
+		},
+		{
+			"functionName": "SCDecline",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 999776188497894,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-value",
+							"objectClass": "FirstMate",
+							"sid": 881584637707857,
+							"parameters": {
+								"key": "\"name\"",
+								"comparison": 1,
+								"value": "\"Viktoria\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "tavResult",
+							"sid": 639862743684232,
+							"parameters": [
+								"\"The producer is stunned off by your indifference to human life despite being a soulless human being himself. He signs off and you never hear from him again. [FM] looks at you differently from now on.\""
+							]
+						}
+					],
+					"sid": 464955267402267
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 337813813489298
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "tavResult",
+							"sid": 356295323152211,
+							"parameters": [
+								"\"The producer is stunned off by your indifference to human life despite being a soulless human being himself. He signs off and you never hear from him again. [FM] looks at you differently from now on.\""
+							]
+						}
+					],
+					"sid": 985555171251088
+				}
+			]
+		},
+		{
+			"functionName": "LASLoose",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 676873568122334,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Cristo bonus"
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"callFunction": "tavResult",
+							"sid": 719096746913035,
+							"parameters": [
+								"\"You see the evidence. It does not feel right. You leave without giving aid.\""
+							]
+						}
+					],
+					"sid": 806677364716397
+				}
+			]
+		},
+		{
+			"functionName": "LASFood",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 345524508573008,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "dynamic message from each first mate"
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"callFunction": "tavResult",
+							"sid": 346236736443477,
+							"parameters": [
+								"\"While towing the man into port, a large rapturous tentacle reaches up from the depths and drags him under kicking and screaming. He is gone before you can help him. You turn to [FM] and they stare off in the distance, “the sea is God’s eye and within it, you are judged so.” Was it the seabeast? More likely one of it's smaller offspring. No point in staying around. Time to move on.\""
+							]
+						}
+					],
+					"sid": 155547788901852
+				}
+			]
+		},
+		{
+			"functionName": "LASBoard",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 982103158573681,
+			"children": [
+				{
+					"eventType": "variable",
+					"name": "introText",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 381691109305159
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 541282909907246,
+							"parameters": {
+								"variable": "introText",
+								"value": "\"The man immediately takes \" & FirstMate.Get(\"name\") & \" hostage with a knife.\""
+							}
+						}
+					],
+					"sid": 508175447274014
+				},
+				{
+					"eventType": "comment",
+					"text": "if med supplies don't lose as much health"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-value",
+							"objectClass": "FirstMate",
+							"sid": 130278507376112,
+							"parameters": {
+								"key": "\"Name\"",
+								"comparison": 0,
+								"value": "\"Cristo\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "tavResult",
+							"sid": 130070801294913,
+							"parameters": [
+								"introText & \" The fear in Cristo's eyes has you moving faster than the man anticipated. You pull Cristo free, and the man esacapes overbaord. You are inured but safe. Cristo is in shock but he still manages to help you bandage your wound.\""
+							]
+						}
+					],
+					"sid": 352180296158768
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-value",
+							"objectClass": "FirstMate",
+							"sid": 596574062531342,
+							"parameters": {
+								"key": "\"Name\"",
+								"comparison": 0,
+								"value": "\"Viktoria\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "tavResult",
+							"sid": 536616027636500,
+							"parameters": [
+								"introText & \" But it's the last mistake he makes. Viktoria flips him over. In the scuffle the man hits his head on the railing. He falls overboard with the smallest of splashes. Viktoria berates you for letting him on board in the first place\""
+							]
+						}
+					],
+					"sid": 514601596161933
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-value",
+							"objectClass": "FirstMate",
+							"sid": 912823431538736,
+							"parameters": {
+								"key": "\"Name\"",
+								"comparison": 0,
+								"value": "\"Jacob\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "tavResult",
+							"sid": 860044181469453,
+							"parameters": [
+								"introText & \" You aren't sure what the man was thinking, but Jacob easily overpowers him. You tie him up to the railing of the stern. While discussing what to do with him on the bow you hear a splash. As you both make your way to the back of the boat, all that remains  is an untied rope. Hopefully he doesn't find and hurt anyone else on his search for dry land\""
+							]
+						}
+					],
+					"sid": 695060799004283
+				}
+			]
+		},
+		{
+			"functionName": "DistHurry",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 706687531641498,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"callFunction": "tavResult",
+							"sid": 130105797006256,
+							"parameters": [
+								"\"You discover a pile of bubbling wreckage when you arrive at the coordinates, but nothing else. As you sift through the wreckage, you haul out some medical supplies destined for somewhere unknown. As well as {loot}.\""
+							]
+						}
+					],
+					"sid": 262232170156636
+				}
+			]
+		},
+		{
+			"functionName": "DistRate",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 397603874750525,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"callFunction": "tavResult",
+							"sid": 485634733610005,
+							"parameters": [
+								"\"There is no response from the Nautilus. After trying to raise them on the radio for ten minutes, you decide to investigate. But when you arrive at the coordinates, there is nothing there. No sign that a ship whatsoever. A feeling of unease infects the crew.\""
+							]
+						}
+					],
+					"sid": 276861325491474
+				}
+			]
+		},
+		{
+			"functionName": "DistIgnore",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 664476868358684,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"callFunction": "tavResult",
+							"sid": 910430116209026,
+							"parameters": [
+								"\"You continue on your way. Later you hear of the Nautilus’ disappearance from a fellow captain. Apparently the ship was attempting to shuttle medical supplies out to a port in dire need. [FM] looks at you in disgust. They didn't understand your rivalry with Captain Pratt ... and now you aren't sure you did either.\""
+							]
+						}
+					],
+					"sid": 884971734965102
+				}
+			]
+		},
+		{
+			"functionName": "PA2Run",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 897723339844873,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"callFunction": "tavResult",
+							"sid": 270319551312935,
+							"parameters": [
+								"\"You throw the throttle down and speed away. The jet skis poor gas mileage does not allow them to keep up with you, and they peel off one by one over time.\""
+							]
+						}
+					],
+					"sid": 589024965181425
+				}
+			]
+		},
+		{
+			"functionName": "PA2Concern",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 271779849160033,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Explosives"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "contains-value",
+							"objectClass": "Inventory",
+							"sid": 628442455196779,
+							"parameters": {
+								"value": "18"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "tavResult",
+							"sid": 367458567373523,
+							"parameters": [
+								"\"As you voice your concern with their choice of transportation, the pirates start firing at you. [FM] starts lobbing explosives at them. One of the jet skis is obliterated, raining jet ski parts onto the deck of your ship. The pirates quickly retreat after seeing the devastation. You are shaken but safe.\""
+							]
+						}
+					],
+					"sid": 563259957161255
+				},
+				{
+					"eventType": "comment",
+					"text": "Gun"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 146791542956756
+						},
+						{
+							"id": "contains-value",
+							"objectClass": "Inventory",
+							"sid": 472208302302937,
+							"parameters": {
+								"value": "7"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "tavResult",
+							"sid": 513225754427093,
+							"parameters": [
+								"\"As you voice your concern with their choice of transportation, the pirates start firing at you. [FM] starts lobbing explosives at them. One of the jet skis is obliterated, raining jet ski parts onto the deck of your ship. The pirates quickly retreat after seeing the devastation. You are shaken but safe.\""
+							]
+						}
+					],
+					"sid": 504957474819529
+				},
+				{
+					"eventType": "comment",
+					"text": "Fish Finder and Cristo"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 969732894341432
+						},
+						{
+							"id": "contains-value",
+							"objectClass": "Inventory",
+							"sid": 773756313793207,
+							"parameters": {
+								"value": "47"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "tavResult",
+							"sid": 177870552707294,
+							"parameters": [
+								"\"They do not seem to care and open fire on you. You hide in your cabin and things are at a stalemate until [FM] throws the fish finder overboard. They seem confused and leave. You aren\\'t sure what [FM]'s plan was either, but it worked so you move on.\""
+							]
+						}
+					],
+					"sid": 518089019169284
+				},
+				{
+					"eventType": "comment",
+					"text": "Else"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 543110860063020
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "tavResult",
+							"sid": 466536839739312,
+							"parameters": [
+								"\"You voice your concerns and while most seem to only get angrier one is listening intently. He must have been the leader because he apprecaites your concern and motions for the rest to move on. They leave without incident\""
+							]
+						}
+					],
+					"sid": 146620064927657
+				}
+			]
 		}
 	],
 	"sid": 820593971509493

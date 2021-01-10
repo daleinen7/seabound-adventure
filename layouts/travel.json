@@ -2678,7 +2678,7 @@
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
-						"initial-frame": 0,
+						"initial-frame": 7,
 						"enable-collisions": true,
 						"live-preview": false
 					},
@@ -3060,10 +3060,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 272.4666763599257,
-						"y": 93.68060622902615,
-						"width": 189.21500670452158,
-						"height": 113.81432473718462,
+						"x": 249.9666763599257,
+						"y": 102.18060622902615,
+						"width": 234.21500670452158,
+						"height": 130.81432473718462,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -3102,10 +3102,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 187.28427954510596,
+						"x": 142.28427954510596,
 						"y": 38.778407969580755,
-						"width": 170.56538963323806,
-						"height": 78.30947518369624,
+						"width": 215.56538963323806,
+						"height": 107.30947518369624,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -3575,6 +3575,26 @@
 				"depth": 1
 			},
 			"uid": 99,
+			"instanceVariables": {}
+		},
+		{
+			"type": "Inventory",
+			"properties": {
+				"width": 4,
+				"height": 1,
+				"depth": 1
+			},
+			"uid": 100,
+			"instanceVariables": {}
+		},
+		{
+			"type": "OverworldArray",
+			"properties": {
+				"width": 4,
+				"height": 1,
+				"depth": 1
+			},
+			"uid": 101,
 			"instanceVariables": {}
 		}
 	],
