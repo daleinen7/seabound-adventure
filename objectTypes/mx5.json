@@ -1,20 +1,14 @@
 {
-	"name": "UIText",
+	"name": "mx5",
 	"plugin-id": "Text",
-	"sid": 375056363336200,
+	"sid": 414307175868743,
 	"isGlobal": false,
 	"instanceVariables": [
-		{
-			"name": "ChoiceID",
-			"type": "number",
-			"desc": "",
-			"sid": 378385869306841
-		},
 		{
 			"name": "Identification",
 			"type": "string",
 			"desc": "",
-			"sid": 628412245996938
+			"sid": 405433596701064
 		}
 	],
 	"behaviorTypes": [],

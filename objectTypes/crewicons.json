@@ -50,38 +50,6 @@
 						"duration": 1
 					},
 					{
-						"width": 1920,
-						"height": 1444,
-						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "C:\\Users\\dalei\\Desktop\\Dialog.png",
-						"exportFormat": "png",
-						"exportQuality": 0.8,
-						"imageSpriteId": 1878667,
-						"collisionPoly": {
-							"points": [
-								0.07916666666666666,
-								0.10526315789473684,
-								0.5,
-								0.0443213296398892,
-								0.7161458333333334,
-								0.3767313019390582,
-								0.9223958333333333,
-								0.5,
-								0.9453125,
-								0.9272853185595568,
-								0.5,
-								0.9439058171745153,
-								0.07291666666666667,
-								0.9023545706371191,
-								0.052083333333333336,
-								0.5
-							]
-						},
-						"useCollisionPoly": true,
-						"duration": 1
-					},
-					{
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -184,8 +152,8 @@
 					{
 						"width": 32,
 						"height": 32,
-						"originX": 0.60625,
-						"originY": 0.60625,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "C:\\Users\\dalei\\Desktop\\Dialog.png",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
@@ -316,6 +284,38 @@
 								1,
 								0,
 								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 1920,
+						"height": 1444,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Dialog.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1878667,
+						"collisionPoly": {
+							"points": [
+								0.07916666666666666,
+								0.10526315789473684,
+								0.5,
+								0.0443213296398892,
+								0.7161458333333334,
+								0.3767313019390582,
+								0.9223958333333333,
+								0.5,
+								0.9453125,
+								0.9272853185595568,
+								0.5,
+								0.9439058171745153,
+								0.07291666666666667,
+								0.9023545706371191,
+								0.052083333333333336,
+								0.5
 							]
 						},
 						"useCollisionPoly": true,

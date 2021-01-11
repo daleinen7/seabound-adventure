@@ -1,0 +1,102 @@
+{
+    "c2array": true,
+    "size": [
+        4,
+        7,
+        1
+    ],
+    "data": [
+        [
+            [
+                ""
+            ],
+            [
+                "Health"
+            ],
+            [
+                "Speed"
+            ],
+            [
+                "Damage"
+            ],
+            [
+                "Bonus"
+            ],
+            [
+                "Bio"
+            ],
+            [
+                "Quote"
+            ]
+        ],
+        [
+            [
+                "Cristo"
+            ],
+            [
+                3
+            ],
+            [
+                5
+            ],
+            [
+                5
+            ],
+            [
+                "Free diver. Needs no o2 tanks."
+            ],
+            [
+                "Kid looking to make it to the mainland. Won't say why but you doubt it's just to get to safety. He's looking for someone. "
+            ],
+            [
+                "I can out swim any fish in the sea!"
+            ]
+        ],
+        [
+            [
+                "Viktoria"
+            ],
+            [
+                4
+            ],
+            [
+                3
+            ],
+            [
+                3
+            ],
+            [
+                "Deadly accurate with her shots."
+            ],
+            [
+                "Won't say what she did before the sea turned to make a living. You have a feeling it wasn't legal. "
+            ],
+            [
+                "Can we just get going? I have places to be. "
+            ]
+        ],
+        [
+            [
+                "Jacob"
+            ],
+            [
+                5
+            ],
+            [
+                1
+            ],
+            [
+                1
+            ],
+            [
+                "Only uses oxygen to move"
+            ],
+            [
+                "Looking for passage to the mainland. Might know why the sea turned. "
+            ],
+            [
+                "I'm going to get to the bottom of this. I just need to get to the mainland. "
+            ]
+        ]
+    ]
+}

@@ -114,17 +114,526 @@
 							}
 						}
 					],
-					"sid": 321958483160270,
+					"sid": 321958483160270
+				}
+			]
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "StartGame",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "variable",
+					"name": "selectedHire",
+					"type": "number",
+					"initialValue": "1",
+					"comment": "",
+					"isStatic": true,
+					"isConstant": false,
+					"sid": 867935092047924
+				},
+				{
+					"functionName": "UpdateTAVText",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "text",
+							"type": "string",
+							"initialValue": "",
+							"comment": "",
+							"sid": 426582894550121
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "typewriter-text",
+							"objectClass": "TavText",
+							"sid": 105050463808957,
+							"parameters": {
+								"text": "text",
+								"duration": "2"
+							}
+						}
+					],
+					"sid": 523213117424698
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 383278485832781
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 517085801239763,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"callFunction": "UpdateTAVText",
+							"sid": 891801454140180,
+							"parameters": [
+								"\"SEABEAST ATTACK! Choose your companion for travel!\""
+							]
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 878738891493509,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "TavText",
+							"sid": 598868254978906,
+							"parameters": {
+								"text": "\"\""
+							}
+						},
+						{
+							"callFunction": "DisplayCrewForHire",
+							"sid": 127296825748217
+						}
+					],
+					"sid": 474301389410386
+				},
+				{
+					"functionName": "SelectHire",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "crew",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 615735313250016
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "LunchDS",
+							"sid": 340974403255481,
+							"parameters": {
+								"instance-variable": "ID",
+								"comparison": 0,
+								"value": "\"HireName\""
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "mx5",
+							"sid": 175003614789665,
+							"parameters": {
+								"instance-variable": "Identification",
+								"comparison": 0,
+								"value": "\"Bio\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "LunchDS",
+							"sid": 685587753846573,
+							"parameters": {
+								"text": "CrewHire.At(crew, 0)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "mx5",
+							"sid": 167419956796761,
+							"parameters": {
+								"text": "CrewHire.At(crew, 5) & \" \" & CrewHire.At(crew, 4)"
+							}
+						}
+					],
+					"sid": 131744685088425,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "UIText",
+									"sid": 812782904545710,
+									"parameters": {
+										"instance-variable": "ChoiceID",
+										"comparison": 0,
+										"value": "22"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "UIText",
+									"sid": 993082686444307,
+									"parameters": {
+										"text": "\"Health \" & CrewHire.At(crew, 1)"
+									}
+								}
+							],
+							"sid": 283519414508754
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "UIText",
+									"sid": 120120786574097,
+									"parameters": {
+										"instance-variable": "ChoiceID",
+										"comparison": 0,
+										"value": "33"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "UIText",
+									"sid": 839120984351005,
+									"parameters": {
+										"text": "\"Speed \" & CrewHire.At(crew, 2)"
+									}
+								}
+							],
+							"sid": 812564710790765
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "UIText",
+									"sid": 195125712163411,
+									"parameters": {
+										"instance-variable": "ChoiceID",
+										"comparison": 0,
+										"value": "44"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "UIText",
+									"sid": 338398498709978,
+									"parameters": {
+										"text": "\"Damage \" & CrewHire.At(crew, 3)"
+									}
+								}
+							],
+							"sid": 668292333304897
+						}
+					]
+				},
+				{
+					"functionName": "DisplayCrewForHire",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 809479270936493,
 					"children": [
 						{
 							"eventType": "block",
 							"conditions": [],
-							"actions": [],
-							"sid": 325229577293616
+							"actions": [
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 716072739413370,
+									"parameters": {
+										"layer": "\"HireCrew\"",
+										"visibility": "visible"
+									}
+								},
+								{
+									"callFunction": "SelectHire",
+									"sid": 379230380426469,
+									"parameters": [
+										"1"
+									]
+								}
+							],
+							"sid": 896293295991816
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 383433756299387,
+							"parameters": {
+								"key": 39
+							}
+						}
+					],
+					"actions": [],
+					"sid": 620159683202417,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 732259655092306,
+									"parameters": {
+										"variable": "selectedHire",
+										"comparison": 0,
+										"value": "1"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "CrewIcons",
+									"sid": 344903261628006,
+									"parameters": {
+										"instance-variable": "ListNumber",
+										"comparison": 0,
+										"value": "selectedHire + 1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 852473419686332,
+									"parameters": {
+										"variable": "selectedHire",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-position-to-another-object",
+									"objectClass": "32Selector",
+									"sid": 604957780999651,
+									"parameters": {
+										"object": "CrewIcons",
+										"image-point-optional": "0"
+									}
+								},
+								{
+									"callFunction": "SelectHire",
+									"sid": 912011632425795,
+									"parameters": [
+										"selectedHire"
+									]
+								}
+							],
+							"sid": 533256814993787
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 680659495861629,
+							"parameters": {
+								"key": 37
+							}
+						}
+					],
+					"actions": [],
+					"sid": 947157066686802,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 432902715860288,
+									"parameters": {
+										"variable": "selectedHire",
+										"comparison": 0,
+										"value": "2"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "CrewIcons",
+									"sid": 659371452184484,
+									"parameters": {
+										"instance-variable": "ListNumber",
+										"comparison": 0,
+										"value": "selectedHire - 1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "subtract-from-eventvar",
+									"objectClass": "System",
+									"sid": 732368462062489,
+									"parameters": {
+										"variable": "selectedHire",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-position-to-another-object",
+									"objectClass": "32Selector",
+									"sid": 801110440916513,
+									"parameters": {
+										"object": "CrewIcons",
+										"image-point-optional": "0"
+									}
+								},
+								{
+									"callFunction": "SelectHire",
+									"sid": 813647911537078,
+									"parameters": [
+										"selectedHire"
+									]
+								}
+							],
+							"sid": 496558689630168
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 628555280575464,
+							"parameters": {
+								"key": 32
+							}
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 675760616006745,
+							"parameters": {
+								"layer": "\"HireCrew\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 796977419535369,
+							"parameters": {
+								"group-name": "\"TAV\"",
+								"state": "activated"
+							}
+						}
+					],
+					"sid": 941241733350156,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 314217996526599,
+									"parameters": {
+										"variable": "selectedHire",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "IntroCristo",
+									"sid": 298570273039013
+								}
+							],
+							"sid": 274142213638085
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 458187873387378,
+									"parameters": {
+										"variable": "selectedHire",
+										"comparison": 0,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "IntroViktoria",
+									"sid": 143061822527726
+								}
+							],
+							"sid": 710018673294399
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 457151765766321,
+									"parameters": {
+										"layer": "\"HireCrew\"",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 975654242501902,
+									"parameters": {
+										"group-name": "\"StartGame\"",
+										"state": "deactivated"
+									}
+								}
+							],
+							"sid": 663391531969942
 						}
 					]
 				}
-			]
+			],
+			"sid": 905202175568966
 		},
 		{
 			"functionName": "Depart",
@@ -232,7 +741,7 @@
 			"disabled": false,
 			"title": "TAV",
 			"description": "",
-			"isActiveOnStart": true,
+			"isActiveOnStart": false,
 			"children": [
 				{
 					"eventType": "variable",
@@ -507,15 +1016,6 @@
 					"conditions": [],
 					"actions": [
 						{
-							"id": "append-text",
-							"objectClass": "Debug",
-							"sid": 672186641214907,
-							"disabled": true,
-							"parameters": {
-								"text": "\"Select choice \" "
-							}
-						},
-						{
 							"id": "destroy",
 							"objectClass": "ChoiceTxt",
 							"sid": 503551101241062
@@ -561,15 +1061,6 @@
 							"id": "append-text",
 							"objectClass": "Debug",
 							"sid": 910375104765246,
-							"disabled": true,
-							"parameters": {
-								"text": "\"CallTavFunction: \" & TAVs.At(4, ChoicesArray.At(CurrentChoice), CurrentTAV)"
-							}
-						},
-						{
-							"id": "append-text",
-							"objectClass": "Debug",
-							"sid": 985408874004110,
 							"disabled": true,
 							"parameters": {
 								"text": "\"CallTavFunction: \" & TAVs.At(4, ChoicesArray.At(CurrentChoice), CurrentTAV)"
@@ -809,15 +1300,6 @@
 										}
 									],
 									"actions": [
-										{
-											"id": "append-text",
-											"objectClass": "Debug",
-											"sid": 705846214519037,
-											"disabled": true,
-											"parameters": {
-												"text": "\"Space pressed: build choices\""
-											}
-										},
 										{
 											"id": "set-eventvar-value",
 											"objectClass": "System",

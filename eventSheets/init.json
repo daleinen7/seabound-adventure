@@ -97,7 +97,29 @@
 						{
 							"id": "load",
 							"objectClass": "miniEvents",
-							"sid": 667321945924410,
+							"sid": 421181919327221,
+							"parameters": {
+								"json": "AJAX.LastData"
+							}
+						},
+						{
+							"id": "request-project-file",
+							"objectClass": "AJAX",
+							"sid": 405094519087642,
+							"parameters": {
+								"tag": "\"CrewHire\"",
+								"file": "CrewHire.json"
+							}
+						},
+						{
+							"id": "wait-for-previous-actions",
+							"objectClass": "System",
+							"sid": 597881872050881
+						},
+						{
+							"id": "load",
+							"objectClass": "CrewHire",
+							"sid": 167632087863939,
 							"parameters": {
 								"json": "AJAX.LastData"
 							}

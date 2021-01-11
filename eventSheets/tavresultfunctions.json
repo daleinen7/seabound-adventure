@@ -276,11 +276,11 @@
 						{
 							"id": "compare-instance-variable",
 							"objectClass": "CrewIcons",
-							"sid": 512905943968777,
+							"sid": 411475853678490,
 							"parameters": {
 								"instance-variable": "ListNumber",
 								"comparison": 0,
-								"value": "1"
+								"value": "66"
 							}
 						}
 					],
@@ -288,9 +288,9 @@
 						{
 							"id": "set-animation-frame",
 							"objectClass": "CrewIcons",
-							"sid": 285804413253285,
+							"sid": 912084493979781,
 							"parameters": {
-								"frame-number": "2"
+								"frame-number": "1"
 							}
 						}
 					],
@@ -322,6 +322,33 @@
 						}
 					],
 					"sid": 445781566296491
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each-element",
+							"objectClass": "TAVs",
+							"sid": 558366430799979,
+							"parameters": {
+								"axes": "xyz"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-at-xyz",
+							"objectClass": "TAVs",
+							"sid": 833677078397389,
+							"parameters": {
+								"x": "TAVs.CurX",
+								"y": "TAVs.CurY",
+								"z": "TAVs.CurZ",
+								"value": "replace(TAVs.CurValue, \"[FM]\", \"Cristo\")"
+							}
+						}
+					],
+					"sid": 118165363649173
 				}
 			]
 		},
@@ -387,11 +414,11 @@
 						{
 							"id": "compare-instance-variable",
 							"objectClass": "CrewIcons",
-							"sid": 232181461722443,
+							"sid": 248807618855768,
 							"parameters": {
 								"instance-variable": "ListNumber",
 								"comparison": 0,
-								"value": "1"
+								"value": "66"
 							}
 						}
 					],
@@ -399,9 +426,9 @@
 						{
 							"id": "set-animation-frame",
 							"objectClass": "CrewIcons",
-							"sid": 721290411357499,
+							"sid": 258691035699025,
 							"parameters": {
-								"frame-number": "3"
+								"frame-number": "2"
 							}
 						}
 					],
@@ -433,6 +460,33 @@
 						}
 					],
 					"sid": 745002495921236
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each-element",
+							"objectClass": "TAVs",
+							"sid": 792605870457796,
+							"parameters": {
+								"axes": "xyz"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-at-xyz",
+							"objectClass": "TAVs",
+							"sid": 997903037655790,
+							"parameters": {
+								"x": "TAVs.CurX",
+								"y": "TAVs.CurY",
+								"z": "TAVs.CurZ",
+								"value": "replace(TAVs.CurValue, \"[FM]\", \"Viktoria\")"
+							}
+						}
+					],
+					"sid": 956082949442237
 				}
 			]
 		},

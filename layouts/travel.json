@@ -1804,7 +1804,8 @@
 					},
 					"uid": 55,
 					"instanceVariables": {
-						"ChoiceID": 0
+						"ChoiceID": 0,
+						"Identification": ""
 					},
 					"behaviors": {},
 					"world": {
@@ -1848,7 +1849,8 @@
 					},
 					"uid": 58,
 					"instanceVariables": {
-						"ChoiceID": 0
+						"ChoiceID": 0,
+						"Identification": ""
 					},
 					"behaviors": {},
 					"world": {
@@ -1892,7 +1894,8 @@
 					},
 					"uid": 59,
 					"instanceVariables": {
-						"ChoiceID": 0
+						"ChoiceID": 0,
+						"Identification": ""
 					},
 					"behaviors": {},
 					"world": {
@@ -2023,7 +2026,8 @@
 					},
 					"uid": 76,
 					"instanceVariables": {
-						"ChoiceID": 0
+						"ChoiceID": 0,
+						"Identification": ""
 					},
 					"behaviors": {},
 					"world": {
@@ -2116,7 +2120,7 @@
 					},
 					"uid": 81,
 					"instanceVariables": {
-						"ListNumber": 1
+						"ListNumber": 66
 					},
 					"behaviors": {},
 					"world": {
@@ -2255,7 +2259,8 @@
 					},
 					"uid": 87,
 					"instanceVariables": {
-						"ChoiceID": 0
+						"ChoiceID": 0,
+						"Identification": ""
 					},
 					"behaviors": {},
 					"world": {
@@ -2328,7 +2333,8 @@
 					},
 					"uid": 89,
 					"instanceVariables": {
-						"ChoiceID": 0
+						"ChoiceID": 0,
+						"Identification": ""
 					},
 					"behaviors": {},
 					"world": {
@@ -2574,7 +2580,8 @@
 					},
 					"uid": 57,
 					"instanceVariables": {
-						"ChoiceID": 0
+						"ChoiceID": 0,
+						"Identification": ""
 					},
 					"behaviors": {},
 					"world": {
@@ -2653,7 +2660,8 @@
 					},
 					"uid": 71,
 					"instanceVariables": {
-						"ChoiceID": 0
+						"ChoiceID": 0,
+						"Identification": ""
 					},
 					"behaviors": {},
 					"world": {
@@ -2794,7 +2802,7 @@
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
-						"initial-frame": 7,
+						"initial-frame": 6,
 						"enable-collisions": true,
 						"live-preview": false
 					},
@@ -2804,12 +2812,12 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 260.3302364693751,
-						"y": 200.17456157059013,
+						"x": 256.7512211211081,
+						"y": 196.59554622232304,
 						"width": 32,
 						"height": 32,
-						"originX": 0.60625,
-						"originY": 0.60625,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -3144,6 +3152,350 @@
 			"global": false
 		},
 		{
+			"name": "HireCrew",
+			"overriden": 0,
+			"instances": [
+				{
+					"type": "32Selector",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 109,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 159.02873824976731,
+						"y": 141.6055177582157,
+						"width": 36,
+						"height": 36,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CrewIcons",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 103,
+					"instanceVariables": {
+						"ListNumber": 1
+					},
+					"behaviors": {},
+					"world": {
+						"x": 158.60971644341498,
+						"y": 141.60939353914648,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "LunchDS",
+					"properties": {
+						"text": "Cristo",
+						"enable-bbcode": true,
+						"font": "lunchds",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 104,
+					"instanceVariables": {
+						"ID": "HireName",
+						"numID": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 141.77482979547892,
+						"y": 44.97597913593597,
+						"width": 200,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "UIText",
+					"properties": {
+						"text": "Speed - 5",
+						"enable-bbcode": true,
+						"font": "Defeated",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.996078431372549,
+							0.9607843137254902,
+							0.9803921568627451,
+							1
+						],
+						"horizontal-alignment": "right",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "left"
+					},
+					"uid": 105,
+					"instanceVariables": {
+						"ChoiceID": 44,
+						"Identification": "Damage"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 147.7515058165111,
+						"y": 111,
+						"width": 80.01877882685153,
+						"height": 21.403497441955494,
+						"originX": 0,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "UIText",
+					"properties": {
+						"text": "Speed - 5",
+						"enable-bbcode": true,
+						"font": "Defeated",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.996078431372549,
+							0.9607843137254902,
+							0.9803921568627451,
+							1
+						],
+						"horizontal-alignment": "right",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "left"
+					},
+					"uid": 106,
+					"instanceVariables": {
+						"ChoiceID": 33,
+						"Identification": "Speed"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 147.7515058165111,
+						"y": 95,
+						"width": 80.01877882685153,
+						"height": 21.403497441955494,
+						"originX": 0,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "UIText",
+					"properties": {
+						"text": "Speed - 5",
+						"enable-bbcode": true,
+						"font": "Defeated",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.996078431372549,
+							0.9607843137254902,
+							0.9803921568627451,
+							1
+						],
+						"horizontal-alignment": "right",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "left"
+					},
+					"uid": 107,
+					"instanceVariables": {
+						"ChoiceID": 22,
+						"Identification": "Health"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 147.7515058165111,
+						"y": 78,
+						"width": 80.01877882685153,
+						"height": 21.403497441955494,
+						"originX": 0,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "mx5",
+					"properties": {
+						"text": "And I guess that is that. ",
+						"enable-bbcode": true,
+						"font": "m3x6",
+						"size": 11,
+						"line-height": -9.399999999999983,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 108,
+					"instanceVariables": {
+						"Identification": "Bio"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 236.65601793443375,
+						"y": 66.59919686504946,
+						"width": 120.72148290416112,
+						"height": 56.01025519186845,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CrewIcons",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 2,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 110,
+					"instanceVariables": {
+						"ListNumber": 2
+					},
+					"behaviors": {},
+					"world": {
+						"x": 194.39986992608556,
+						"y": 142.205896097191,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 841703381019365,
+			"effectTypes": [],
+			"isInitiallyVisible": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
+		},
+		{
 			"name": "Layer 0",
 			"overriden": 0,
 			"instances": [
@@ -3249,7 +3601,8 @@
 					},
 					"uid": 78,
 					"instanceVariables": {
-						"ChoiceID": 0
+						"ChoiceID": 0,
+						"Identification": ""
 					},
 					"behaviors": {},
 					"world": {
@@ -3595,6 +3948,16 @@
 				"depth": 1
 			},
 			"uid": 101,
+			"instanceVariables": {}
+		},
+		{
+			"type": "CrewHire",
+			"properties": {
+				"width": 10,
+				"height": 1,
+				"depth": 1
+			},
+			"uid": 102,
 			"instanceVariables": {}
 		}
 	],

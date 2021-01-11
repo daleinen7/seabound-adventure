@@ -157,7 +157,9 @@
 			"AdvancedRandom",
 			"route",
 			"Inventory",
-			"OverworldArray"
+			"OverworldArray",
+			"CrewHire",
+			"32Selector"
 		],
 		"subfolders": [
 			{
@@ -166,7 +168,8 @@
 					"DialogBubbleTemplate",
 					"LunchDS",
 					"TavText",
-					"UIText"
+					"UIText",
+					"mx5"
 				],
 				"subfolders": [],
 				"name": "Text"
@@ -402,6 +405,11 @@
 					"name": "miniEvents.json",
 					"type": "application/json",
 					"sid": 650776078747403
+				},
+				{
+					"name": "CrewHire.json",
+					"type": "application/json",
+					"sid": 417249153350142
 				}
 			],
 			"subfolders": []
