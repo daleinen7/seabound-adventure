@@ -1400,25 +1400,95 @@
 											}
 										}
 									],
-									"actions": [
+									"actions": [],
+									"sid": 740532478468198,
+									"children": [
 										{
-											"id": "set-eventvar-value",
-											"objectClass": "System",
-											"sid": 161764110986348,
-											"parameters": {
-												"variable": "CurrentLine",
-												"value": "0"
-											}
+											"eventType": "comment",
+											"text": "If far East only allow for South"
 										},
 										{
-											"callFunction": "CallTAV",
-											"sid": 229789400116869,
-											"parameters": [
-												"1"
-											]
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 245155052896783,
+													"parameters": {
+														"first-value": "0",
+														"comparison": 0,
+														"second-value": "OverworldArray.Width % DestinationLoc"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-at-xyz",
+													"objectClass": "TAVs",
+													"sid": 430999143535869,
+													"parameters": {
+														"x": "3",
+														"y": "2",
+														"z": "1",
+														"value": "\"\""
+													}
+												}
+											],
+											"sid": 372587036643352
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 160997397321699,
+													"parameters": {
+														"first-value": "DestinationLoc",
+														"comparison": 5,
+														"second-value": "OverworldArray.Width - sqrt(OverworldArray.Width)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-at-xyz",
+													"objectClass": "TAVs",
+													"sid": 430273078012079,
+													"parameters": {
+														"x": "3",
+														"y": "3",
+														"z": "1",
+														"value": "\"\""
+													}
+												}
+											],
+											"sid": 173327794673862
+										},
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 976365148940954,
+													"parameters": {
+														"variable": "CurrentLine",
+														"value": "1"
+													}
+												},
+												{
+													"callFunction": "CallTAV",
+													"sid": 400855316123090,
+													"parameters": [
+														"1"
+													]
+												}
+											],
+											"sid": 998225009149892
 										}
-									],
-									"sid": 740532478468198
+									]
 								}
 							]
 						}
@@ -1598,7 +1668,7 @@
 			"children": [
 				{
 					"eventType": "variable",
-					"name": "CurrentTAV",
+					"name": "CurrentMiniTAV",
 					"type": "number",
 					"initialValue": "0",
 					"comment": "",
@@ -1608,7 +1678,7 @@
 				},
 				{
 					"eventType": "variable",
-					"name": "CurrentChoice",
+					"name": "CurrentMiniChoice",
 					"type": "number",
 					"initialValue": "0",
 					"comment": "",
@@ -1618,7 +1688,7 @@
 				},
 				{
 					"eventType": "variable",
-					"name": "CurrentLine",
+					"name": "CurrentMiniLine",
 					"type": "number",
 					"initialValue": "1",
 					"comment": "",
@@ -1649,7 +1719,7 @@
 							"objectClass": "System",
 							"sid": 141072314078221,
 							"parameters": {
-								"variable": "CurrentTAV",
+								"variable": "CurrentMiniTAV",
 								"value": "tavID"
 							}
 						},
@@ -1658,7 +1728,7 @@
 							"objectClass": "System",
 							"sid": 282672636235182,
 							"parameters": {
-								"variable": "CurrentLine",
+								"variable": "CurrentMiniLine",
 								"value": "1"
 							}
 						},
@@ -1667,7 +1737,7 @@
 							"objectClass": "System",
 							"sid": 575878541289098,
 							"parameters": {
-								"variable": "CurrentChoice",
+								"variable": "CurrentMiniChoice",
 								"value": "0"
 							}
 						},
@@ -1686,7 +1756,7 @@
 							"objectClass": "TavText",
 							"sid": 404843875394852,
 							"parameters": {
-								"text": "miniEvents.At(1, 0, CurrentTAV)",
+								"text": "miniEvents.At(1, 0, CurrentMiniTAV)",
 								"duration": "2"
 							}
 						}
@@ -1716,7 +1786,7 @@
 							"objectClass": "System",
 							"sid": 467811084541003,
 							"parameters": {
-								"variable": "CurrentLine",
+								"variable": "CurrentMiniLine",
 								"value": "lineNum"
 							}
 						},
@@ -1730,7 +1800,7 @@
 							"objectClass": "TavText",
 							"sid": 733907497100130,
 							"parameters": {
-								"text": "miniEvents.At(CurrentLine, 0, CurrentTAV)",
+								"text": "miniEvents.At(CurrentMiniLine, 0, CurrentMiniTAV)",
 								"duration": "2"
 							}
 						}
@@ -1760,7 +1830,7 @@
 							"objectClass": "System",
 							"sid": 551965819259285,
 							"parameters": {
-								"variable": "CurrentChoice",
+								"variable": "CurrentMiniChoice",
 								"value": "choice"
 							}
 						}
@@ -1841,7 +1911,7 @@
 							"callFunction": "CallMiniTavFunction",
 							"sid": 943129614059340,
 							"parameters": [
-								"miniEvents.At(5, ChoicesArray.At(CurrentChoice), CurrentTAV)"
+								"miniEvents.At(5, ChoicesArray.At(CurrentMiniChoice), CurrentMiniTAV)"
 							]
 						}
 					],
@@ -1871,7 +1941,7 @@
 							"sid": 422081761504064,
 							"parameters": {
 								"name": "\"TAV\"",
-								"string": "miniEvents.At(4, ChoicesArray.At(CurrentChoice), CurrentTAV)",
+								"string": "miniEvents.At(4, ChoicesArray.At(CurrentMiniChoice), CurrentMiniTAV)",
 								"forward-params": "1"
 							}
 						}
@@ -1893,7 +1963,7 @@
 							"objectClass": "System",
 							"sid": 914718194815720,
 							"parameters": {
-								"variable": "CurrentLine",
+								"variable": "CurrentMiniLine",
 								"value": "99"
 							}
 						}
@@ -1931,7 +2001,7 @@
 											"parameters": {
 												"x": "3",
 												"y": "loopindex",
-												"z": "CurrentTAV",
+												"z": "CurrentMiniTAV",
 												"comparison": 1,
 												"value": "\"\""
 											}
@@ -1985,7 +2055,7 @@
 									"objectClass": "ChoiceTxt",
 									"sid": 222514015222722,
 									"parameters": {
-										"text": "miniEvents.At(3, ChoicesArray.At(loopindex), CurrentTAV)"
+										"text": "miniEvents.At(3, ChoicesArray.At(loopindex), CurrentMiniTAV)"
 									}
 								},
 								{
@@ -2090,9 +2160,9 @@
 											"objectClass": "miniEvents",
 											"sid": 130824759959883,
 											"parameters": {
-												"x": "CurrentLine + 1",
+												"x": "CurrentMiniLine + 1",
 												"y": "0",
-												"z": "CurrentTAV",
+												"z": "CurrentMiniTAV",
 												"comparison": 0,
 												"value": "\"\""
 											}
@@ -2108,7 +2178,7 @@
 											"objectClass": "System",
 											"sid": 225403650849551,
 											"parameters": {
-												"variable": "CurrentLine",
+												"variable": "CurrentMiniLine",
 												"value": "99"
 											}
 										}
@@ -2132,7 +2202,7 @@
 											"objectClass": "System",
 											"sid": 285840719412807,
 											"parameters": {
-												"variable": "CurrentLine",
+												"variable": "CurrentMiniLine",
 												"comparison": 1,
 												"value": "99"
 											}
@@ -2143,7 +2213,7 @@
 											"callFunction": "NextTavLine2",
 											"sid": 964534795606141,
 											"parameters": [
-												"CurrentLine + 1"
+												"CurrentMiniLine + 1"
 											]
 										}
 									],
@@ -2162,7 +2232,7 @@
 											"objectClass": "System",
 											"sid": 175465076624045,
 											"parameters": {
-												"variable": "CurrentLine",
+												"variable": "CurrentMiniLine",
 												"comparison": 0,
 												"value": "99"
 											}
@@ -2203,7 +2273,7 @@
 									"objectClass": "System",
 									"sid": 886786257006502,
 									"parameters": {
-										"variable": "CurrentLine",
+										"variable": "CurrentMiniLine",
 										"comparison": 0,
 										"value": "99"
 									}
@@ -2220,7 +2290,7 @@
 											"objectClass": "System",
 											"sid": 571708826302187,
 											"parameters": {
-												"variable": "CurrentChoice",
+												"variable": "CurrentMiniChoice",
 												"comparison": 0,
 												"value": "0"
 											}
@@ -2251,7 +2321,7 @@
 											"callFunction": "DisplayChoice2",
 											"sid": 437269765041387,
 											"parameters": [
-												"CurrentChoice - 1"
+												"CurrentMiniChoice - 1"
 											]
 										}
 									],
@@ -2284,7 +2354,7 @@
 									"objectClass": "System",
 									"sid": 284277180682300,
 									"parameters": {
-										"variable": "CurrentLine",
+										"variable": "CurrentMiniLine",
 										"comparison": 0,
 										"value": "99"
 									}
@@ -2301,7 +2371,7 @@
 											"objectClass": "System",
 											"sid": 469823760891118,
 											"parameters": {
-												"variable": "CurrentChoice",
+												"variable": "CurrentMiniChoice",
 												"comparison": 0,
 												"value": "ChoicesArray.Width -1"
 											}
@@ -2332,7 +2402,7 @@
 											"callFunction": "DisplayChoice2",
 											"sid": 698662404586091,
 											"parameters": [
-												"CurrentChoice + 1"
+												"CurrentMiniChoice + 1"
 											]
 										}
 									],
@@ -2486,9 +2556,9 @@
 								},
 								{
 									"callFunction": "CallTAV",
-									"sid": 995389030882228,
+									"sid": 575797794514289,
 									"parameters": [
-										"CurrentLoc"
+										"AdvancedRandom.Permutation(CurrentLoc)"
 									]
 								},
 								{
