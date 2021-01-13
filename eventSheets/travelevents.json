@@ -812,19 +812,19 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 666932345441695,
+							"sid": 127204827669860,
 							"parameters": {
-								"variable": "CurrentLine",
-								"value": "1"
+								"variable": "CurrentChoice",
+								"value": "0"
 							}
 						},
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 180174456906718,
+							"sid": 666932345441695,
 							"parameters": {
-								"variable": "CurrentChoice",
-								"value": "0"
+								"variable": "CurrentLine",
+								"value": "1"
 							}
 						},
 						{
@@ -918,6 +918,14 @@
 							"parameters": {
 								"variable": "CurrentChoice",
 								"value": "choice"
+							}
+						},
+						{
+							"id": "append-text",
+							"objectClass": "Debug",
+							"sid": 163322521660828,
+							"parameters": {
+								"text": "\"Display Choice \" "
 							}
 						}
 					],
@@ -1058,15 +1066,6 @@
 					"conditions": [],
 					"actions": [
 						{
-							"id": "append-text",
-							"objectClass": "Debug",
-							"sid": 910375104765246,
-							"disabled": true,
-							"parameters": {
-								"text": "\"CallTavFunction: \" & TAVs.At(4, ChoicesArray.At(CurrentChoice), CurrentTAV)"
-							}
-						},
-						{
 							"id": "call-mapped-function",
 							"objectClass": "Functions",
 							"sid": 672526538464672,
@@ -1096,6 +1095,14 @@
 							"parameters": {
 								"variable": "CurrentLine",
 								"value": "99"
+							}
+						},
+						{
+							"id": "append-text",
+							"objectClass": "Debug",
+							"sid": 262089108362591,
+							"parameters": {
+								"text": "\"Build Choices Array \""
 							}
 						}
 					],
@@ -1169,6 +1176,14 @@
 								}
 							],
 							"actions": [
+								{
+									"id": "append-text",
+									"objectClass": "Debug",
+									"sid": 819033439050930,
+									"parameters": {
+										"text": "\"LI: \" & loopindex & \" \""
+									}
+								},
 								{
 									"id": "create-object",
 									"objectClass": "System",
@@ -1301,15 +1316,6 @@
 									],
 									"actions": [
 										{
-											"id": "set-eventvar-value",
-											"objectClass": "System",
-											"sid": 240145470752803,
-											"parameters": {
-												"variable": "CurrentLine",
-												"value": "99"
-											}
-										},
-										{
 											"callFunction": "BuildChoicesArray",
 											"sid": 333106308399477
 										}
@@ -1434,7 +1440,8 @@
 													}
 												}
 											],
-											"sid": 372587036643352
+											"sid": 372587036643352,
+											"disabled": true
 										},
 										{
 											"eventType": "block",
@@ -1454,30 +1461,22 @@
 												{
 													"id": "set-at-xyz",
 													"objectClass": "TAVs",
-													"sid": 430273078012079,
+													"sid": 634249381813117,
 													"parameters": {
 														"x": "3",
-														"y": "3",
+														"y": "1",
 														"z": "1",
 														"value": "\"\""
 													}
 												}
 											],
-											"sid": 173327794673862
+											"sid": 173327794673862,
+											"disabled": true
 										},
 										{
 											"eventType": "block",
 											"conditions": [],
 											"actions": [
-												{
-													"id": "set-eventvar-value",
-													"objectClass": "System",
-													"sid": 976365148940954,
-													"parameters": {
-														"variable": "CurrentLine",
-														"value": "1"
-													}
-												},
 												{
 													"callFunction": "CallTAV",
 													"sid": 400855316123090,
@@ -1944,6 +1943,15 @@
 								"string": "miniEvents.At(4, ChoicesArray.At(CurrentMiniChoice), CurrentMiniTAV)",
 								"forward-params": "1"
 							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 843746227948109,
+							"parameters": {
+								"group-name": "\"MiniTav\"",
+								"state": "deactivated"
+							}
 						}
 					],
 					"sid": 365527703204563
@@ -2172,15 +2180,6 @@
 										{
 											"callFunction": "BuildChoicesArray2",
 											"sid": 269545087682988
-										},
-										{
-											"id": "set-eventvar-value",
-											"objectClass": "System",
-											"sid": 225403650849551,
-											"parameters": {
-												"variable": "CurrentMiniLine",
-												"value": "99"
-											}
 										}
 									],
 									"sid": 709825025938393
@@ -2748,8 +2747,16 @@
 				{
 					"callFunction": "CreateRoute",
 					"sid": 355060743272009,
+					"disabled": true,
 					"parameters": [
 						"floor(random(3, 6))"
+					]
+				},
+				{
+					"callFunction": "CreateRoute",
+					"sid": 431103279726401,
+					"parameters": [
+						"1"
 					]
 				},
 				{
