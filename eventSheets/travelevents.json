@@ -919,14 +919,6 @@
 								"variable": "CurrentChoice",
 								"value": "choice"
 							}
-						},
-						{
-							"id": "append-text",
-							"objectClass": "Debug",
-							"sid": 163322521660828,
-							"parameters": {
-								"text": "\"Display Choice \" "
-							}
 						}
 					],
 					"sid": 414377824555824,
@@ -1096,14 +1088,6 @@
 								"variable": "CurrentLine",
 								"value": "99"
 							}
-						},
-						{
-							"id": "append-text",
-							"objectClass": "Debug",
-							"sid": 262089108362591,
-							"parameters": {
-								"text": "\"Build Choices Array \""
-							}
 						}
 					],
 					"sid": 228121687429892,
@@ -1176,14 +1160,6 @@
 								}
 							],
 							"actions": [
-								{
-									"id": "append-text",
-									"objectClass": "Debug",
-									"sid": 819033439050930,
-									"parameters": {
-										"text": "\"LI: \" & loopindex & \" \""
-									}
-								},
 								{
 									"id": "create-object",
 									"objectClass": "System",
@@ -1419,11 +1395,11 @@
 												{
 													"id": "compare-two-values",
 													"objectClass": "System",
-													"sid": 245155052896783,
+													"sid": 477154975918662,
 													"parameters": {
 														"first-value": "0",
 														"comparison": 0,
-														"second-value": "OverworldArray.Width % DestinationLoc"
+														"second-value": "OverworldArray.Width % (CurrentLoc + 1)"
 													}
 												}
 											],
@@ -1438,10 +1414,18 @@
 														"z": "1",
 														"value": "\"\""
 													}
+												},
+												{
+													"id": "append-text",
+													"objectClass": "Debug",
+													"sid": 587994661823870,
+													"disabled": true,
+													"parameters": {
+														"text": "\"delete \" & TAVs.At(3, 2, 1)"
+													}
 												}
 											],
-											"sid": 372587036643352,
-											"disabled": true
+											"sid": 372587036643352
 										},
 										{
 											"eventType": "block",
@@ -1468,10 +1452,18 @@
 														"z": "1",
 														"value": "\"\""
 													}
+												},
+												{
+													"id": "append-text",
+													"objectClass": "Debug",
+													"sid": 565222357753130,
+													"disabled": true,
+													"parameters": {
+														"text": "\"delete \" & TAVs.At(3, 1, 1)"
+													}
 												}
 											],
-											"sid": 173327794673862,
-											"disabled": true
+											"sid": 173327794673862
 										},
 										{
 											"eventType": "block",
