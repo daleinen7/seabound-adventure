@@ -1,0 +1,50 @@
+{
+	"name": "SolidHelm",
+	"plugin-id": "Sprite",
+	"sid": 958594095108251,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "solidID",
+			"type": "string",
+			"desc": "",
+			"sid": 567021805592640
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 313604710467536
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 10,
+						"height": 10,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5543917,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 159783271218324,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

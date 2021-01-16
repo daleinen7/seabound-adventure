@@ -1,0 +1,207 @@
+{
+	"name": "UniversalFunctions",
+	"events": [
+		{
+			"functionName": "AssignCrew",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "CrewID",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 393635182448366
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "add-key",
+					"objectClass": "FirstMate",
+					"sid": 693388313999477,
+					"parameters": {
+						"key": "\"name\"",
+						"value": "CrewDB.At(CrewID, 0)"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "FirstMate",
+					"sid": 174303013861870,
+					"parameters": {
+						"key": "\"health capacity\"",
+						"value": "CrewDB.At(CrewID, 3)"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "FirstMate",
+					"sid": 595056331697185,
+					"parameters": {
+						"key": "\"health\" ",
+						"value": "CrewDB.At(CrewID, 4)"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "FirstMate",
+					"sid": 700266838379704,
+					"parameters": {
+						"key": "\"energy\"",
+						"value": "4"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "FirstMate",
+					"sid": 873030634992523,
+					"parameters": {
+						"key": "\"oxygen use\"",
+						"value": "CrewDB.At(CrewID, 7)"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "FirstMate",
+					"sid": 910313493207882,
+					"parameters": {
+						"key": "\"oxygen uptake\"",
+						"value": "CrewDB.At(CrewID, 8)"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "FirstMate",
+					"sid": 382473405956512,
+					"parameters": {
+						"key": "\"top speed\"",
+						"value": "CrewDB.At(CrewID, 9)"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "FirstMate",
+					"sid": 128544586804953,
+					"parameters": {
+						"key": "\"acceleration\"",
+						"value": "CrewDB.At(CrewID, 10)"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "FirstMate",
+					"sid": 719591718902487,
+					"parameters": {
+						"key": "\"deceleration\"",
+						"value": "CrewDB.At(CrewID, 11)"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "FirstMate",
+					"sid": 427384883530055,
+					"parameters": {
+						"key": "\"aim\"",
+						"value": "CrewDB.At(CrewID, 12)"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "FirstMate",
+					"sid": 252975747019638,
+					"parameters": {
+						"key": "\"gravity\"",
+						"value": "CrewDB.At(CrewID, 13)"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "FirstMate",
+					"sid": 856961577351908,
+					"parameters": {
+						"key": "\"flash time\"",
+						"value": "CrewDB.At(CrewID, 14)"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "FirstMate",
+					"sid": 263233651408895,
+					"parameters": {
+						"key": "\"base damage\"",
+						"value": "CrewDB.At(CrewID, 15)"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "FirstMate",
+					"sid": 409567509745042,
+					"parameters": {
+						"key": "\"max damage\"",
+						"value": "CrewDB.At(CrewID, 16)"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "FirstMate",
+					"sid": 367715491994076,
+					"parameters": {
+						"key": "\"weapon stagger\"",
+						"value": "CrewDB.At(CrewID, 17)"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "FirstMate",
+					"sid": 967613097764464,
+					"parameters": {
+						"key": "\"weapon reload\"",
+						"value": "CrewDB.At(CrewID, 18)"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "FirstMate",
+					"sid": 220362501145691,
+					"parameters": {
+						"key": "\"projectile gravity\"",
+						"value": "CrewDB.At(CrewID, 19)"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "FirstMate",
+					"sid": 576944557610693,
+					"parameters": {
+						"key": "\"projectile count\"",
+						"value": "CrewDB.At(CrewID, 20)"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "FirstMate",
+					"sid": 828242236153953,
+					"parameters": {
+						"key": "\"projectile speed\"",
+						"value": "CrewDB.At(CrewID, 21)"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "FirstMate",
+					"sid": 851400460856291,
+					"parameters": {
+						"key": "\"ammo per dive\"",
+						"value": "CrewDB.At(CrewID, 22)"
+					}
+				}
+			],
+			"sid": 148329168929422
+		}
+	],
+	"sid": 409470622602782
+}

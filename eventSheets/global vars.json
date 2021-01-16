@@ -6,6 +6,10 @@
 			"includeSheet": "Init"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "UniversalFunctions"
+		},
+		{
 			"eventType": "variable",
 			"name": "ShawMorale",
 			"type": "number",

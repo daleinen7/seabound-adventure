@@ -1,0 +1,57 @@
+{
+	"name": "HarpoonDisplay",
+	"plugin-id": "Sprite",
+	"sid": 688266416794224,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 35,
+						"height": 37,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\subhud-animation 1-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2305522,
+						"collisionPoly": {
+							"points": [
+								0.17142857142857143,
+								0.16216216216216217,
+								0.5,
+								0.02702702702702703,
+								0.8,
+								0.16216216216216217,
+								0.9428571428571428,
+								0.5,
+								0.8,
+								0.8108108108108109,
+								0.5,
+								0.9459459459459459,
+								0.17142857142857143,
+								0.8108108108108109,
+								0.02857142857142857,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 200840662918826,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

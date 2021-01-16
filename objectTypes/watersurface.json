@@ -1,0 +1,117 @@
+{
+	"name": "WaterSurface",
+	"plugin-id": "Sprite",
+	"sid": 445804389080644,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 482,
+						"height": 18,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\backwavessurfacewater-animation 1-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4416219,
+						"collisionPoly": {
+							"points": [
+								0.014522821576763486,
+								0.35,
+								0.5,
+								0.45,
+								0.9875518672199171,
+								0.25,
+								0.995850622406639,
+								0.5,
+								0.9813278008298755,
+								0.55,
+								0.5,
+								0.85,
+								0.014522821576763486,
+								0.6,
+								0.002074688796680498,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 482,
+						"height": 14,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\backwavessurfacewater-animation 1-001.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2372011,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 482,
+						"height": 13,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\backwavessurfacewater-animation 1-002.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3704058,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 482,
+						"height": 14,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\backwavessurfacewater-animation 1-003.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2587123,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 482,
+						"height": 18,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\backwavessurfacewater-animation 1-004.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4332589,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 482,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\backwavessurfacewater-animation 1-005.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 919009,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 524964829797692,
+				"name": "Animation 1",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 8
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"name": "damageNotice",
+	"plugin-id": "Text",
+	"sid": 509726085081139,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 281763445706922
+		},
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 139389970744195
+		}
+	],
+	"effectTypes": []
+}

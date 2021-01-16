@@ -225,40 +225,11 @@
 			"conditions": [],
 			"actions": [
 				{
-					"id": "set-key",
-					"objectClass": "FirstMate",
-					"sid": 360322319983263,
-					"parameters": {
-						"key": "\"name\"",
-						"value": "\"Cristo\""
-					}
-				},
-				{
-					"id": "set-key",
-					"objectClass": "FirstMate",
-					"sid": 660332653104796,
-					"parameters": {
-						"key": "\"health\"",
-						"value": "3"
-					}
-				},
-				{
-					"id": "set-key",
-					"objectClass": "FirstMate",
-					"sid": 597983103227381,
-					"parameters": {
-						"key": "\"morale\"",
-						"value": "4"
-					}
-				},
-				{
-					"id": "set-key",
-					"objectClass": "FirstMate",
-					"sid": 361046999668659,
-					"parameters": {
-						"key": "\"id\"",
-						"value": "1"
-					}
+					"callFunction": "AssignCrew",
+					"sid": 527965314781521,
+					"parameters": [
+						"1"
+					]
 				},
 				{
 					"callFunction": "CallTAV",
@@ -363,31 +334,11 @@
 			"conditions": [],
 			"actions": [
 				{
-					"id": "set-key",
-					"objectClass": "FirstMate",
-					"sid": 965977210168314,
-					"parameters": {
-						"key": "\"name\"",
-						"value": "\"Viktoria\""
-					}
-				},
-				{
-					"id": "set-key",
-					"objectClass": "FirstMate",
-					"sid": 787002473830619,
-					"parameters": {
-						"key": "\"health\"",
-						"value": "5"
-					}
-				},
-				{
-					"id": "set-key",
-					"objectClass": "FirstMate",
-					"sid": 940598667820636,
-					"parameters": {
-						"key": "\"morale\"",
-						"value": "4"
-					}
+					"callFunction": "AssignCrew",
+					"sid": 945556050165505,
+					"parameters": [
+						"2"
+					]
 				},
 				{
 					"id": "set-key",

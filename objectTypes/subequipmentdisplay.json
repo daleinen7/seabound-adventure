@@ -1,0 +1,57 @@
+{
+	"name": "SubEquipmentDisplay",
+	"plugin-id": "Sprite",
+	"sid": 936833166695118,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 30,
+						"height": 31,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\weaponhud-animation 1-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9425734,
+						"collisionPoly": {
+							"points": [
+								0.1724137931034483,
+								0.16393442622950818,
+								0.5,
+								0.03278688524590164,
+								0.8103448275862069,
+								0.16393442622950818,
+								0.9655172413793104,
+								0.5,
+								0.8103448275862069,
+								0.819672131147541,
+								0.5,
+								0.9508196721311475,
+								0.1724137931034483,
+								0.819672131147541,
+								0.017241379310344827,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 318952053237285,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

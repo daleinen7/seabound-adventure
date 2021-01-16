@@ -62,6 +62,7 @@
 							"id": "request-project-file",
 							"objectClass": "AJAX",
 							"sid": 816561503282714,
+							"disabled": true,
 							"parameters": {
 								"tag": "\"firstMate\"",
 								"file": "FirstMate.json"
@@ -70,12 +71,14 @@
 						{
 							"id": "wait-for-previous-actions",
 							"objectClass": "System",
-							"sid": 332834802242112
+							"sid": 332834802242112,
+							"disabled": true
 						},
 						{
 							"id": "load",
 							"objectClass": "FirstMate",
 							"sid": 501879288834020,
+							"disabled": true,
 							"parameters": {
 								"json": "AJAX.LastData"
 							}
@@ -125,13 +128,25 @@
 							}
 						},
 						{
-							"id": "createPermutationTable",
-							"objectClass": "AdvancedRandom",
-							"sid": 162301771076018,
-							"disabled": true,
+							"id": "request-project-file",
+							"objectClass": "AJAX",
+							"sid": 756473809335387,
 							"parameters": {
-								"length": "14",
-								"offset": "0"
+								"tag": "\"CrewDB\"",
+								"file": "CrewDB.json"
+							}
+						},
+						{
+							"id": "wait-for-previous-actions",
+							"objectClass": "System",
+							"sid": 651012331666133
+						},
+						{
+							"id": "load",
+							"objectClass": "CrewDB",
+							"sid": 566198403915141,
+							"parameters": {
+								"json": "AJAX.LastData"
 							}
 						},
 						{

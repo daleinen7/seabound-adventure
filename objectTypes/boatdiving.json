@@ -1,0 +1,64 @@
+{
+	"name": "BoatDiving",
+	"plugin-id": "Sprite",
+	"sid": 238928752664682,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 310202867882582
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 731496567431877
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 279,
+						"height": 108,
+						"originX": 0.6182795698924731,
+						"originY": 0.972972972972973,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\BoatDiving.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5495394,
+						"collisionPoly": {
+							"points": [
+								0.3387096774193548,
+								0.2702702702702703,
+								0.6182795698924731,
+								0.17567567567567569,
+								0.8118279569892473,
+								0.47297297297297297,
+								0.6129032258064516,
+								0.9594594594594594,
+								0.6182795698924731,
+								0.9594594594594594,
+								0.6182795698924731,
+								0.9594594594594594
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 297286920320774,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

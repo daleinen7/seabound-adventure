@@ -1,0 +1,117 @@
+{
+	"name": "WaterSurface2",
+	"plugin-id": "Sprite",
+	"sid": 787444143189242,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 482,
+						"height": 10,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\watersurface1-animation 1-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2898036,
+						"collisionPoly": {
+							"points": [
+								0.004149377593360996,
+								0.2,
+								0.5,
+								0.4,
+								0.9937759336099585,
+								0.2,
+								0.995850622406639,
+								0.5,
+								0.9896265560165975,
+								0.5,
+								0.5,
+								0.6,
+								0.01037344398340249,
+								0.4,
+								0.002074688796680498,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 482,
+						"height": 10,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\watersurface1-animation 1-001.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3196379,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 482,
+						"height": 10,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\watersurface1-animation 1-002.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2557619,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 482,
+						"height": 10,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\watersurface1-animation 1-003.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2879902,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 482,
+						"height": 10,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\watersurface1-animation 1-004.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5583060,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 482,
+						"height": 12,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\watersurface1-animation 1-005.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9162630,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 994139248899550,
+				"name": "Animation 1",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 8
+			}
+		],
+		"subfolders": []
+	}
+}

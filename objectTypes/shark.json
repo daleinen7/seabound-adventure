@@ -1,0 +1,310 @@
+{
+	"name": "Shark",
+	"plugin-id": "Sprite",
+	"sid": 837613842756576,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Distance",
+			"type": "number",
+			"desc": "",
+			"sid": 242405419993961
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 129313696644289
+		},
+		{
+			"behaviorId": "LOS",
+			"name": "LineOfSight",
+			"sid": 147673124478534
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 151,
+						"height": 62,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\shark-cruise-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9316310,
+						"collisionPoly": {
+							"points": [
+								0.1986754966887417,
+								0.4838709677419355,
+								0.5,
+								0.27419354838709675,
+								0.8410596026490066,
+								0.3709677419354839,
+								0.9933774834437086,
+								0.5,
+								0.8609271523178808,
+								0.6612903225806451,
+								0.5,
+								0.7096774193548387,
+								0.06622516556291391,
+								0.8225806451612904,
+								0.08609271523178808,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 151,
+						"height": 62,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\shark-cruise-001.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3059628,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 151,
+						"height": 62,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\shark-cruise-002.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7924677,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 151,
+						"height": 62,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\shark-cruise-003.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 805102,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 151,
+						"height": 62,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\shark-cruise-004.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5131715,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 151,
+						"height": 62,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\shark-cruise-005.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4246151,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 151,
+						"height": 62,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\shark-cruise-006.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3150647,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 151,
+						"height": 62,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\shark-cruise-007.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1707385,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 151,
+						"height": 62,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\shark-cruise-008.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4923621,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 532526572476703,
+				"name": "Patrol",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 7
+			},
+			{
+				"frames": [
+					{
+						"width": 151,
+						"height": 62,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\shark-attack-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5190284,
+						"collisionPoly": {
+							"points": [
+								0.08609271523178808,
+								0.20967741935483872,
+								0.5,
+								0.24193548387096775,
+								0.9006622516556292,
+								0.22580645161290322,
+								0.9139072847682119,
+								0.5,
+								0.8675496688741722,
+								0.6774193548387096,
+								0.5,
+								0.6451612903225806,
+								0.2052980132450331,
+								0.4838709677419355,
+								0.08609271523178808,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 151,
+						"height": 62,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\shark-attack-001.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1002966,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 151,
+						"height": 62,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\shark-attack-002.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2142678,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 151,
+						"height": 62,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\shark-attack-003.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7357732,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 151,
+						"height": 62,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\shark-attack-004.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8125271,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 151,
+						"height": 62,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\shark-attack-005.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1235098,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 151,
+						"height": 62,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\shark-attack-006.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7364194,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 151,
+						"height": 62,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\shark-attack-007.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8454992,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 151,
+						"height": 62,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\shark-attack-008.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8445051,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 864376624160676,
+				"name": "Attack",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

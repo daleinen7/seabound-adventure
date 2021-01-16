@@ -2737,16 +2737,24 @@
 			"conditions": [],
 			"actions": [
 				{
+					"type": "comment",
+					"text": "For gameplay"
+				},
+				{
 					"callFunction": "CreateRoute",
 					"sid": 355060743272009,
-					"disabled": true,
 					"parameters": [
 						"floor(random(3, 6))"
 					]
 				},
 				{
+					"type": "comment",
+					"text": "For testing"
+				},
+				{
 					"callFunction": "CreateRoute",
 					"sid": 431103279726401,
+					"disabled": true,
 					"parameters": [
 						"1"
 					]

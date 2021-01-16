@@ -1,0 +1,998 @@
+{
+	"name": "DivingEvents",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Global Vars"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 959981664913839
+				}
+			],
+			"actions": [],
+			"sid": 786046798446733,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 943651315288848,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"callFunction": "DiverDive",
+							"sid": 147322149907545
+						}
+					],
+					"sid": 560452524269707
+				}
+			]
+		},
+		{
+			"functionName": "DiverDive",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 190485482834837,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-empty",
+							"objectClass": "FirstMate",
+							"sid": 258354282141583
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "AssignCrew",
+							"sid": 308199625284481,
+							"parameters": [
+								"2"
+							]
+						}
+					],
+					"sid": 974650496834494
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-value",
+							"objectClass": "FirstMate",
+							"sid": 244463472691107,
+							"parameters": {
+								"key": "\"name\"",
+								"comparison": 0,
+								"value": "\"Cristo\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 234103004784190,
+							"parameters": {
+								"object-to-create": "Cristo_Diving",
+								"layer": "\"Main\"",
+								"x": "50",
+								"y": "100",
+								"create-hierarchy": false
+							}
+						}
+					],
+					"sid": 695566085790867
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-value",
+							"objectClass": "FirstMate",
+							"sid": 598546926511814,
+							"parameters": {
+								"key": "\"name\"",
+								"comparison": 0,
+								"value": "\"Viktoria\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 963986222709675,
+							"parameters": {
+								"object-to-create": "Viktoria_Diving",
+								"layer": "\"Main\"",
+								"x": "50",
+								"y": "100",
+								"create-hierarchy": false
+							}
+						}
+					],
+					"sid": 116313603379753
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-value",
+							"objectClass": "FirstMate",
+							"sid": 297769643856716,
+							"parameters": {
+								"key": "\"name\"",
+								"comparison": 0,
+								"value": "\"Jacob\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 589985666544759,
+							"parameters": {
+								"object-to-create": "Jacob_Diving",
+								"layer": "\"Main\"",
+								"x": "50",
+								"y": "100",
+								"create-hierarchy": false
+							}
+						}
+					],
+					"sid": 507623188854780
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "wait-for-previous-actions",
+							"objectClass": "System",
+							"sid": 235924682263026
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "Divers",
+							"sid": 766863145201319,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "round(FirstMate.Get(\"top speed\") - 45 + (45 / 4 * FirstMate.Get(\"energy\")))"
+							}
+						},
+						{
+							"id": "set-acceleration",
+							"objectClass": "Divers",
+							"sid": 232982495675356,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"acceleration": "round(FirstMate.Get(\"acceleration\") - 25 + (25 / 4 * FirstMate.Get(\"energy\")))"
+							}
+						},
+						{
+							"id": "set-deceleration",
+							"objectClass": "Divers",
+							"sid": 306735137024952,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"deceleration": "round(FirstMate.Get(\"deceleration\") - 25 + (25 / 4 * FirstMate.Get(\"energy\")))"
+							}
+						}
+					],
+					"sid": 710703626639938
+				}
+			]
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Diver Behavior",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Diver Movement",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-animation-playing",
+									"objectClass": "Divers",
+									"sid": 129663038534056,
+									"parameters": {
+										"animation": "\"Hurt\""
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [],
+							"sid": 894734235451340,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "Keyboard",
+											"sid": 723085303359108,
+											"parameters": {
+												"key": 39
+											}
+										},
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 588616693813580
+										}
+									],
+									"actions": [],
+									"sid": 899430319432642,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "key-is-down",
+													"objectClass": "Keyboard",
+													"sid": 145115739639099,
+													"parameters": {
+														"key": 38
+													},
+													"isInverted": true
+												},
+												{
+													"id": "key-is-down",
+													"objectClass": "Keyboard",
+													"sid": 186472694989898,
+													"parameters": {
+														"key": 40
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "Divers",
+													"sid": 510979651809379,
+													"parameters": {
+														"animation": "\"Swim\"",
+														"from": "beginning"
+													}
+												},
+												{
+													"id": "set-mirrored",
+													"objectClass": "Divers",
+													"sid": 458111990821630,
+													"parameters": {
+														"state": "not-mirrored"
+													}
+												}
+											],
+											"sid": 507822223544756,
+											"isOrBlock": true
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "Keyboard",
+											"sid": 242180428804123,
+											"parameters": {
+												"key": 37
+											}
+										},
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 885414689811460
+										}
+									],
+									"actions": [],
+									"sid": 127516122157067,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "key-is-down",
+													"objectClass": "Keyboard",
+													"sid": 482883303078975,
+													"parameters": {
+														"key": 38
+													},
+													"isInverted": true
+												},
+												{
+													"id": "key-is-down",
+													"objectClass": "Keyboard",
+													"sid": 476574669991225,
+													"parameters": {
+														"key": 40
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "Divers",
+													"sid": 726296915178125,
+													"parameters": {
+														"animation": "\"Swim\"",
+														"from": "beginning"
+													}
+												},
+												{
+													"id": "set-mirrored",
+													"objectClass": "Divers",
+													"sid": 456272878609604,
+													"parameters": {
+														"state": "mirrored"
+													}
+												}
+											],
+											"sid": 602463909040185,
+											"isOrBlock": true
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "Keyboard",
+											"sid": 803766771884702,
+											"parameters": {
+												"key": 38
+											}
+										},
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 840132914823009
+										}
+									],
+									"actions": [],
+									"sid": 463452551588599,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "key-is-down",
+													"objectClass": "Keyboard",
+													"sid": 181357781462834,
+													"parameters": {
+														"key": 39
+													},
+													"isInverted": true
+												},
+												{
+													"id": "key-is-down",
+													"objectClass": "Keyboard",
+													"sid": 941231097782200,
+													"parameters": {
+														"key": 37
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "Divers",
+													"sid": 643804450877614,
+													"parameters": {
+														"animation": "\"UpUp\"",
+														"from": "beginning"
+													}
+												}
+											],
+											"sid": 771163256269753,
+											"isOrBlock": true
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "Keyboard",
+											"sid": 559193622555790,
+											"parameters": {
+												"key": 40
+											}
+										},
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 104231358823672
+										}
+									],
+									"actions": [],
+									"sid": 352000217687499,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "key-is-down",
+													"objectClass": "Keyboard",
+													"sid": 899648833179925,
+													"parameters": {
+														"key": 39
+													},
+													"isInverted": true
+												},
+												{
+													"id": "key-is-down",
+													"objectClass": "Keyboard",
+													"sid": 586164193811147,
+													"parameters": {
+														"key": 37
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "Divers",
+													"sid": 755010201080255,
+													"parameters": {
+														"animation": "\"DownDown\"",
+														"from": "beginning"
+													}
+												}
+											],
+											"sid": 613613874673618,
+											"isOrBlock": true
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "Keyboard",
+											"sid": 585871145455204,
+											"parameters": {
+												"key": 39
+											}
+										},
+										{
+											"id": "key-is-down",
+											"objectClass": "Keyboard",
+											"sid": 171405185460042,
+											"parameters": {
+												"key": 38
+											}
+										},
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 529454273773024
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Divers",
+											"sid": 561460658708573,
+											"parameters": {
+												"animation": "\"Swimming Up\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-mirrored",
+											"objectClass": "Divers",
+											"sid": 219396929148760,
+											"parameters": {
+												"state": "not-mirrored"
+											}
+										}
+									],
+									"sid": 234652635790060
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "Keyboard",
+											"sid": 292536562195243,
+											"parameters": {
+												"key": 37
+											}
+										},
+										{
+											"id": "key-is-down",
+											"objectClass": "Keyboard",
+											"sid": 684317937656926,
+											"parameters": {
+												"key": 40
+											}
+										},
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 164307346795721
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Divers",
+											"sid": 298728540783331,
+											"parameters": {
+												"animation": "\"Swimming Down\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-mirrored",
+											"objectClass": "Divers",
+											"sid": 818077424354839,
+											"parameters": {
+												"state": "mirrored"
+											}
+										}
+									],
+									"sid": 961862354159362
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "Keyboard",
+											"sid": 432382264025411,
+											"parameters": {
+												"key": 37
+											}
+										},
+										{
+											"id": "key-is-down",
+											"objectClass": "Keyboard",
+											"sid": 944280932865412,
+											"parameters": {
+												"key": 38
+											}
+										},
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 153612573278422
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Divers",
+											"sid": 624475530307197,
+											"parameters": {
+												"animation": "\"Swimming Up\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-mirrored",
+											"objectClass": "Divers",
+											"sid": 598181446180006,
+											"parameters": {
+												"state": "mirrored"
+											}
+										}
+									],
+									"sid": 454256315492525
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "Keyboard",
+											"sid": 292160569933315,
+											"parameters": {
+												"key": 39
+											}
+										},
+										{
+											"id": "key-is-down",
+											"objectClass": "Keyboard",
+											"sid": 573094377630192,
+											"parameters": {
+												"key": 40
+											}
+										},
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 401728698230885
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Divers",
+											"sid": 672849547861324,
+											"parameters": {
+												"animation": "\"Swimming Down\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-mirrored",
+											"objectClass": "Divers",
+											"sid": 860039735009826,
+											"parameters": {
+												"state": "not-mirrored"
+											}
+										}
+									],
+									"sid": 403477909156681
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-key-released",
+											"objectClass": "Keyboard",
+											"sid": 878475316072710,
+											"parameters": {
+												"key": 40
+											}
+										},
+										{
+											"id": "key-is-down",
+											"objectClass": "Keyboard",
+											"sid": 663307510869303,
+											"parameters": {
+												"key": 39
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Divers",
+											"sid": 116599346798026,
+											"parameters": {
+												"animation": "\"Swim\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 319685284639342
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-key-released",
+											"objectClass": "Keyboard",
+											"sid": 295266050981235,
+											"parameters": {
+												"key": 38
+											}
+										},
+										{
+											"id": "key-is-down",
+											"objectClass": "Keyboard",
+											"sid": 452473070648601,
+											"parameters": {
+												"key": 39
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Divers",
+											"sid": 355073654624693,
+											"parameters": {
+												"animation": "\"Swim\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 247218586268508
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-key-released",
+											"objectClass": "Keyboard",
+											"sid": 468413145635561,
+											"parameters": {
+												"key": 40
+											}
+										},
+										{
+											"id": "key-is-down",
+											"objectClass": "Keyboard",
+											"sid": 265811732687810,
+											"parameters": {
+												"key": 37
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Divers",
+											"sid": 513330450614685,
+											"parameters": {
+												"animation": "\"Swim\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 206382955981221
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-key-released",
+											"objectClass": "Keyboard",
+											"sid": 887442639912552,
+											"parameters": {
+												"key": 38
+											}
+										},
+										{
+											"id": "key-is-down",
+											"objectClass": "Keyboard",
+											"sid": 721938845024201,
+											"parameters": {
+												"key": 37
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Divers",
+											"sid": 829659376657549,
+											"parameters": {
+												"animation": "\"Swim\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 498245813881274
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-key-released",
+											"objectClass": "Keyboard",
+											"sid": 964993101886305,
+											"parameters": {
+												"key": 39
+											}
+										},
+										{
+											"id": "key-is-down",
+											"objectClass": "Keyboard",
+											"sid": 342022081297682,
+											"parameters": {
+												"key": 38
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Divers",
+											"sid": 679529515755240,
+											"parameters": {
+												"animation": "\"UpUp\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 568372269566778
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-key-released",
+											"objectClass": "Keyboard",
+											"sid": 793160628591200,
+											"parameters": {
+												"key": 37
+											}
+										},
+										{
+											"id": "key-is-down",
+											"objectClass": "Keyboard",
+											"sid": 729084872042894,
+											"parameters": {
+												"key": 38
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Divers",
+											"sid": 134024656612994,
+											"parameters": {
+												"animation": "\"UpUp\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 585003458716668
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-key-released",
+											"objectClass": "Keyboard",
+											"sid": 122638680526435,
+											"parameters": {
+												"key": 39
+											}
+										},
+										{
+											"id": "key-is-down",
+											"objectClass": "Keyboard",
+											"sid": 827076223739459,
+											"parameters": {
+												"key": 40
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Divers",
+											"sid": 721788489672206,
+											"parameters": {
+												"animation": "\"DownDown\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 937155228709472
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-key-released",
+											"objectClass": "Keyboard",
+											"sid": 849421652451494,
+											"parameters": {
+												"key": 37
+											}
+										},
+										{
+											"id": "key-is-down",
+											"objectClass": "Keyboard",
+											"sid": 173628411362135,
+											"parameters": {
+												"key": 40
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Divers",
+											"sid": 654150164939472,
+											"parameters": {
+												"animation": "\"DownDown\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 717380052671924
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "Keyboard",
+											"sid": 194376517444228,
+											"parameters": {
+												"key": 38
+											},
+											"isInverted": true
+										},
+										{
+											"id": "key-is-down",
+											"objectClass": "Keyboard",
+											"sid": 976341141804600,
+											"parameters": {
+												"key": 40
+											},
+											"isInverted": true
+										},
+										{
+											"id": "key-is-down",
+											"objectClass": "Keyboard",
+											"sid": 863609979468122,
+											"parameters": {
+												"key": 39
+											},
+											"isInverted": true
+										},
+										{
+											"id": "key-is-down",
+											"objectClass": "Keyboard",
+											"sid": 388016526036846,
+											"parameters": {
+												"key": 37
+											},
+											"isInverted": true
+										},
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 495869015731112
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Divers",
+											"sid": 912551787557327,
+											"parameters": {
+												"animation": "\"Idle\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 243839049752597
+								}
+							]
+						}
+					],
+					"sid": 522339124159067
+				}
+			],
+			"sid": 352612916073395
+		}
+	],
+	"sid": 249652242392072
+}

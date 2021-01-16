@@ -1,0 +1,20 @@
+{
+	"name": "HealthBarFull",
+	"plugin-id": "TiledBg",
+	"sid": 869637238387751,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 8,
+		"height": 9,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "C:\\Users\\dalei\\Desktop\\HealthBarFull.png",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 4085688,
+		"useCollisionPoly": true
+	}
+}

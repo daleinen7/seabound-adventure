@@ -1,0 +1,34 @@
+{
+	"name": "Divers",
+	"plugin-id": "Sprite",
+	"sid": 297356907505741,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "scrollto",
+			"name": "ScrollTo",
+			"sid": 335964306576896
+		},
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 646786353877100
+		},
+		{
+			"behaviorId": "bound",
+			"name": "BoundToLayout",
+			"sid": 613558819680066
+		},
+		{
+			"behaviorId": "EightDir",
+			"name": "8Direction",
+			"sid": 237806994696906
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"Jacob_Diving",
+		"Cristo_Diving",
+		"Viktoria_Diving"
+	]
+}

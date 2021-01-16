@@ -1,0 +1,57 @@
+{
+	"name": "FishLoot",
+	"plugin-id": "Sprite",
+	"sid": 267895510807190,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 17,
+						"height": 34,
+						"originX": 0.4117647058823529,
+						"originY": 0.5882352941176471,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\deadfish-animation 1-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9234578,
+						"collisionPoly": {
+							"points": [
+								0.23529411764705882,
+								0.11764705882352941,
+								0.5,
+								0.08823529411764706,
+								0.4117647058823529,
+								0.2647058823529412,
+								0.8823529411764706,
+								0.5,
+								0.5882352941176471,
+								0.7941176470588235,
+								0.5,
+								0.9117647058823529,
+								0.17647058823529413,
+								0.8823529411764706,
+								0.058823529411764705,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 954912873333691,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

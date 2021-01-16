@@ -1,0 +1,952 @@
+{
+	"name": "Jacob_Diving",
+	"plugin-id": "Sprite",
+	"sid": 273278484573457,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 34,
+						"height": 53,
+						"originX": 0.4411764705882353,
+						"originY": 0.4528301886792453,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\jacobdiving-idle-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5159114,
+						"collisionPoly": {
+							"points": [
+								0.09302325581395349,
+								0.2,
+								0.5,
+								0.25,
+								0.9302325581395349,
+								0.1,
+								0.813953488372093,
+								0.5,
+								0.8837209302325582,
+								0.75,
+								0.5,
+								0.8,
+								0.2558139534883721,
+								0.4,
+								0.3023255813953488,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9411764705882353,
+								"y": 0.3584905660377358
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 34,
+						"height": 52,
+						"originX": 0.4411764705882353,
+						"originY": 0.4528301886792453,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\jacobdiving-idle-001.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 936100,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9411764705882353,
+								"y": 0.3584905660377358
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 34,
+						"height": 49,
+						"originX": 0.4411764705882353,
+						"originY": 0.4528301886792453,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\jacobdiving-idle-002.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8924019,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9411764705882353,
+								"y": 0.3584905660377358
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 34,
+						"height": 49,
+						"originX": 0.4411764705882353,
+						"originY": 0.4528301886792453,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\jacobdiving-idle-003.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 572298,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9411764705882353,
+								"y": 0.3584905660377358
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 33,
+						"height": 48,
+						"originX": 0.4411764705882353,
+						"originY": 0.4528301886792453,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\jacobdiving-idle-004.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8924632,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9411764705882353,
+								"y": 0.3584905660377358
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 33,
+						"height": 51,
+						"originX": 0.4411764705882353,
+						"originY": 0.4528301886792453,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\jacobdiving-idle-005.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5164769,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9411764705882353,
+								"y": 0.3584905660377358
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 235642516487103,
+				"name": "Idle",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 7
+			},
+			{
+				"frames": [
+					{
+						"width": 34,
+						"height": 53,
+						"originX": 0.4411764705882353,
+						"originY": 0.4528301886792453,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\jacobdiving-swimming-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5040850,
+						"collisionPoly": {
+							"points": [
+								0.11764705882352941,
+								0.07547169811320754,
+								0.5,
+								0.05660377358490566,
+								0.5588235294117647,
+								0.2641509433962264,
+								0.5588235294117647,
+								0.5,
+								0.5588235294117647,
+								0.7169811320754716,
+								0.5,
+								0.9622641509433962,
+								0.20588235294117646,
+								0.8490566037735849,
+								0.029411764705882353,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9411764705882353,
+								"y": 0.3584905660377358
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 34,
+						"height": 52,
+						"originX": 0.4411764705882353,
+						"originY": 0.4528301886792453,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\jacobdiving-swimming-001.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2215318,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9411764705882353,
+								"y": 0.3584905660377358
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 34,
+						"height": 49,
+						"originX": 0.4411764705882353,
+						"originY": 0.4528301886792453,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\jacobdiving-swimming-002.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2822333,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9411764705882353,
+								"y": 0.3584905660377358
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 34,
+						"height": 49,
+						"originX": 0.4411764705882353,
+						"originY": 0.4528301886792453,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\jacobdiving-swimming-003.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1192,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9411764705882353,
+								"y": 0.3584905660377358
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 33,
+						"height": 48,
+						"originX": 0.4411764705882353,
+						"originY": 0.4528301886792453,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\jacobdiving-swimming-004.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1273797,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9411764705882353,
+								"y": 0.3584905660377358
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 33,
+						"height": 51,
+						"originX": 0.4411764705882353,
+						"originY": 0.4528301886792453,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\jacobdiving-swimming-005.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9159421,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9411764705882353,
+								"y": 0.3584905660377358
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 718783972814033,
+				"name": "Swim",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 7
+			},
+			{
+				"frames": [
+					{
+						"width": 34,
+						"height": 52,
+						"originX": 0.4411764705882353,
+						"originY": 0.4528301886792453,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\jacobdiving-swimming-001.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9214164,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9411764705882353,
+								"y": 0.3584905660377358
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 34,
+						"height": 49,
+						"originX": 0.4411764705882353,
+						"originY": 0.4528301886792453,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\jacobdiving-swimming-002.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4114034,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9411764705882353,
+								"y": 0.3584905660377358
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 34,
+						"height": 49,
+						"originX": 0.4411764705882353,
+						"originY": 0.4528301886792453,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\jacobdiving-swimming-003.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2541142,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9411764705882353,
+								"y": 0.3584905660377358
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 565575154683727,
+				"name": "Hurt",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 9
+			},
+			{
+				"frames": [
+					{
+						"width": 34,
+						"height": 53,
+						"originX": 0.4411764705882353,
+						"originY": 0.4528301886792453,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\jacobdiving-swimming-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2599931,
+						"collisionPoly": {
+							"points": [
+								0.11764705882352941,
+								0.07547169811320754,
+								0.5,
+								0.05660377358490566,
+								0.5588235294117647,
+								0.2641509433962264,
+								0.5588235294117647,
+								0.5,
+								0.5588235294117647,
+								0.7169811320754716,
+								0.5,
+								0.9622641509433962,
+								0.20588235294117646,
+								0.8490566037735849,
+								0.029411764705882353,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9411764705882353,
+								"y": 0.3584905660377358
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 34,
+						"height": 52,
+						"originX": 0.4411764705882353,
+						"originY": 0.4528301886792453,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\jacobdiving-swimming-001.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4880177,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9411764705882353,
+								"y": 0.3584905660377358
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 34,
+						"height": 49,
+						"originX": 0.4411764705882353,
+						"originY": 0.4528301886792453,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\jacobdiving-swimming-002.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7596585,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9411764705882353,
+								"y": 0.3584905660377358
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 34,
+						"height": 49,
+						"originX": 0.4411764705882353,
+						"originY": 0.4528301886792453,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\jacobdiving-swimming-003.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9952099,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9411764705882353,
+								"y": 0.3584905660377358
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 33,
+						"height": 48,
+						"originX": 0.4411764705882353,
+						"originY": 0.4528301886792453,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\jacobdiving-swimming-004.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6092681,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9411764705882353,
+								"y": 0.3584905660377358
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 33,
+						"height": 51,
+						"originX": 0.4411764705882353,
+						"originY": 0.4528301886792453,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\jacobdiving-swimming-005.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 200137,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9411764705882353,
+								"y": 0.3584905660377358
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 883664479069016,
+				"name": "Swimming Up",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 7
+			},
+			{
+				"frames": [
+					{
+						"width": 34,
+						"height": 53,
+						"originX": 0.4411764705882353,
+						"originY": 0.4528301886792453,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\jacobdiving-swimming-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3409793,
+						"collisionPoly": {
+							"points": [
+								0.11764705882352941,
+								0.07547169811320754,
+								0.5,
+								0.05660377358490566,
+								0.5588235294117647,
+								0.2641509433962264,
+								0.5588235294117647,
+								0.5,
+								0.5588235294117647,
+								0.7169811320754716,
+								0.5,
+								0.9622641509433962,
+								0.20588235294117646,
+								0.8490566037735849,
+								0.029411764705882353,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9411764705882353,
+								"y": 0.3584905660377358
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 34,
+						"height": 52,
+						"originX": 0.4411764705882353,
+						"originY": 0.4528301886792453,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\jacobdiving-swimming-001.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2098889,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9411764705882353,
+								"y": 0.3584905660377358
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 34,
+						"height": 49,
+						"originX": 0.4411764705882353,
+						"originY": 0.4528301886792453,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\jacobdiving-swimming-002.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1911449,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9411764705882353,
+								"y": 0.3584905660377358
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 34,
+						"height": 49,
+						"originX": 0.4411764705882353,
+						"originY": 0.4528301886792453,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\jacobdiving-swimming-003.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8720876,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9411764705882353,
+								"y": 0.3584905660377358
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 33,
+						"height": 48,
+						"originX": 0.4411764705882353,
+						"originY": 0.4528301886792453,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\jacobdiving-swimming-004.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3331122,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9411764705882353,
+								"y": 0.3584905660377358
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 33,
+						"height": 51,
+						"originX": 0.4411764705882353,
+						"originY": 0.4528301886792453,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\jacobdiving-swimming-005.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5264771,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9411764705882353,
+								"y": 0.3584905660377358
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 170101417306219,
+				"name": "Swimming Down",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 7
+			},
+			{
+				"frames": [
+					{
+						"width": 34,
+						"height": 53,
+						"originX": 0.4411764705882353,
+						"originY": 0.4528301886792453,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\jacobdiving-swimming-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3358789,
+						"collisionPoly": {
+							"points": [
+								0.11764705882352941,
+								0.07547169811320754,
+								0.5,
+								0.05660377358490566,
+								0.5588235294117647,
+								0.2641509433962264,
+								0.5588235294117647,
+								0.5,
+								0.5588235294117647,
+								0.7169811320754716,
+								0.5,
+								0.9622641509433962,
+								0.20588235294117646,
+								0.8490566037735849,
+								0.029411764705882353,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9411764705882353,
+								"y": 0.3584905660377358
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 34,
+						"height": 52,
+						"originX": 0.4411764705882353,
+						"originY": 0.4528301886792453,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\jacobdiving-swimming-001.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6147108,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9411764705882353,
+								"y": 0.3584905660377358
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 34,
+						"height": 49,
+						"originX": 0.4411764705882353,
+						"originY": 0.4528301886792453,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\jacobdiving-swimming-002.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 43920,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9411764705882353,
+								"y": 0.3584905660377358
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 34,
+						"height": 49,
+						"originX": 0.4411764705882353,
+						"originY": 0.4528301886792453,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\jacobdiving-swimming-003.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7059892,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9411764705882353,
+								"y": 0.3584905660377358
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 33,
+						"height": 48,
+						"originX": 0.4411764705882353,
+						"originY": 0.4528301886792453,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\jacobdiving-swimming-004.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4853433,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9411764705882353,
+								"y": 0.3584905660377358
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 33,
+						"height": 51,
+						"originX": 0.4411764705882353,
+						"originY": 0.4528301886792453,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\jacobdiving-swimming-005.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2714957,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9411764705882353,
+								"y": 0.3584905660377358
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 370864239740483,
+				"name": "UpUp",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 7
+			},
+			{
+				"frames": [
+					{
+						"width": 34,
+						"height": 53,
+						"originX": 0.4411764705882353,
+						"originY": 0.4528301886792453,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\jacobdiving-swimming-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 350954,
+						"collisionPoly": {
+							"points": [
+								0.11764705882352941,
+								0.07547169811320754,
+								0.5,
+								0.05660377358490566,
+								0.5588235294117647,
+								0.2641509433962264,
+								0.5588235294117647,
+								0.5,
+								0.5588235294117647,
+								0.7169811320754716,
+								0.5,
+								0.9622641509433962,
+								0.20588235294117646,
+								0.8490566037735849,
+								0.029411764705882353,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9411764705882353,
+								"y": 0.3584905660377358
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 34,
+						"height": 52,
+						"originX": 0.4411764705882353,
+						"originY": 0.4528301886792453,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\jacobdiving-swimming-001.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1511978,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9411764705882353,
+								"y": 0.3584905660377358
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 34,
+						"height": 49,
+						"originX": 0.4411764705882353,
+						"originY": 0.4528301886792453,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\jacobdiving-swimming-002.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 485099,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9411764705882353,
+								"y": 0.3584905660377358
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 34,
+						"height": 49,
+						"originX": 0.4411764705882353,
+						"originY": 0.4528301886792453,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\jacobdiving-swimming-003.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1955589,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9411764705882353,
+								"y": 0.3584905660377358
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 33,
+						"height": 48,
+						"originX": 0.4411764705882353,
+						"originY": 0.4528301886792453,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\jacobdiving-swimming-004.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4234873,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9411764705882353,
+								"y": 0.3584905660377358
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 33,
+						"height": 51,
+						"originX": 0.4411764705882353,
+						"originY": 0.4528301886792453,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\jacobdiving-swimming-005.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4531820,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9411764705882353,
+								"y": 0.3584905660377358
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 239596706691639,
+				"name": "DownDown",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 7
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,57 @@
+{
+	"name": "FuelLoot",
+	"plugin-id": "Sprite",
+	"sid": 773016995118774,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 25,
+						"height": 25,
+						"originX": 0.52,
+						"originY": 0.52,
+						"originalSource": "C:\\Users\\dalei\\Downloads\\DougLeinen-seabound8-0d1fd3f0b44e (1)\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\largeitem-animation 1-058.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6143217,
+						"collisionPoly": {
+							"points": [
+								0.12,
+								0.12,
+								0.52,
+								0.12,
+								0.84,
+								0.16,
+								0.92,
+								0.52,
+								0.84,
+								0.84,
+								0.52,
+								0.92,
+								0.24,
+								0.76,
+								0.24,
+								0.52
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 825861985637975,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

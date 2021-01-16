@@ -1,0 +1,1083 @@
+{
+	"name": "Cristo_Diving",
+	"plugin-id": "Sprite",
+	"sid": 440332715931270,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 39,
+						"height": 39,
+						"originX": 0.3333333333333333,
+						"originY": 0.46153846153846156,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Idle12-26-17.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4261597,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 39,
+						"height": 39,
+						"originX": 0.3333333333333333,
+						"originY": 0.48717948717948717,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Idle12-26-18.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 400613,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 39,
+						"height": 39,
+						"originX": 0.3333333333333333,
+						"originY": 0.48717948717948717,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Idle12-26-19.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4157325,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 39,
+						"height": 37,
+						"originX": 0.3333333333333333,
+						"originY": 0.5135135135135135,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Idle12-26-20.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8649803,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 39,
+						"height": 37,
+						"originX": 0.3333333333333333,
+						"originY": 0.5135135135135135,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Idle12-26-21.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7872959,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 39,
+						"height": 37,
+						"originX": 0.3333333333333333,
+						"originY": 0.5405405405405406,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Idle12-26-22.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4761310,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 39,
+						"height": 36,
+						"originX": 0.3076923076923077,
+						"originY": 0.5277777777777778,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Idle12-26-23.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4433358,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 39,
+						"height": 37,
+						"originX": 0.3333333333333333,
+						"originY": 0.5135135135135135,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Idle12-26-24.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8114697,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 394819626471096,
+				"name": "Idle",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 9
+			},
+			{
+				"frames": [
+					{
+						"width": 52,
+						"height": 18,
+						"originX": 0.36538461538461536,
+						"originY": 0.5555555555555556,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-20.gif",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9755299,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 52,
+						"height": 18,
+						"originX": 0.34615384615384615,
+						"originY": 0.5555555555555556,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-20.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 723689,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 55,
+						"height": 17,
+						"originX": 0.36363636363636365,
+						"originY": 0.5882352941176471,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-21.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2150249,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 55,
+						"height": 15,
+						"originX": 0.4,
+						"originY": 0.6666666666666666,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-22.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3076737,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 56,
+						"height": 15,
+						"originX": 0.4107142857142857,
+						"originY": 0.6666666666666666,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-23.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3200111,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 56,
+						"height": 15,
+						"originX": 0.4107142857142857,
+						"originY": 0.6666666666666666,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-24.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1258255,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 56,
+						"height": 15,
+						"originX": 0.39285714285714285,
+						"originY": 0.6666666666666666,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-25.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5092338,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 56,
+						"height": 16,
+						"originX": 0.42857142857142855,
+						"originY": 0.625,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-26.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 709466,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 54,
+						"height": 16,
+						"originX": 0.4074074074074074,
+						"originY": 0.625,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-27.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4556023,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 52,
+						"height": 17,
+						"originX": 0.36538461538461536,
+						"originY": 0.5294117647058824,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-28.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3230252,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 51,
+						"height": 16,
+						"originX": 0.35294117647058826,
+						"originY": 0.625,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-29.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1123504,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 708317854285214,
+				"name": "Swim",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 9
+			},
+			{
+				"frames": [
+					{
+						"width": 52,
+						"height": 17,
+						"originX": 0.34615384615384615,
+						"originY": 0.5294117647058824,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Injured2-24-19.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 113816,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 50,
+						"height": 17,
+						"originX": 0.34,
+						"originY": 0.4117647058823529,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Injured2-24-20.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9731428,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 48,
+						"height": 19,
+						"originX": 0.3125,
+						"originY": 0.3157894736842105,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Injured2-24-21.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 502651,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 39,
+						"height": 24,
+						"originX": 0.358974358974359,
+						"originY": 0.20833333333333334,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Injured2-24-22.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5841044,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 48,
+						"height": 19,
+						"originX": 0.3125,
+						"originY": 0.3157894736842105,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Injured2-24-21.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9579675,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 52,
+						"height": 17,
+						"originX": 0.34615384615384615,
+						"originY": 0.5294117647058824,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Injured2-24-23.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1446618,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 269494089241718,
+				"name": "Hurt",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 9
+			},
+			{
+				"frames": [
+					{
+						"width": 43,
+						"height": 20,
+						"originX": 0.5348837209302325,
+						"originY": 0.45,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-knifeattack-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8457548,
+						"collisionPoly": {
+							"points": [
+								0.09302325581395349,
+								0.2,
+								0.5,
+								0.25,
+								0.9302325581395349,
+								0.1,
+								0.813953488372093,
+								0.5,
+								0.8837209302325582,
+								0.75,
+								0.5,
+								0.8,
+								0.2558139534883721,
+								0.4,
+								0.3023255813953488,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Knife",
+								"x": 0.9069767441860465,
+								"y": 0.6
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 39,
+						"height": 24,
+						"originX": 0.48717948717948717,
+						"originY": 0.6666666666666666,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-knifeattack-001.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8954734,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Knife",
+								"x": 0.9230769230769231,
+								"y": 0.5416666666666666
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 37,
+						"height": 27,
+						"originX": 0.5135135135135135,
+						"originY": 0.6296296296296297,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-knifeattack-002.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6061015,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Knife",
+								"x": 0.972972972972973,
+								"y": 0.5185185185185185
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 38,
+						"height": 33,
+						"originX": 0.5263157894736842,
+						"originY": 0.6060606060606061,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-knifeattack-003.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3266843,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Knife",
+								"x": 0.9473684210526315,
+								"y": 0.45454545454545453
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 34,
+						"height": 34,
+						"originX": 0.5294117647058824,
+						"originY": 0.5882352941176471,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-knifeattack-004.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2464748,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Knife",
+								"x": 0.9411764705882353,
+								"y": 0.47058823529411764
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 38,
+						"height": 28,
+						"originX": 0.5,
+						"originY": 0.6071428571428571,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-knifeattack-005.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 583456,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Knife",
+								"x": 0.9210526315789473,
+								"y": 0.5714285714285714
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 43,
+						"height": 20,
+						"originX": 0.5116279069767442,
+						"originY": 0.45,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-knifeattack-006.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8969737,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Knife",
+								"x": 0.9767441860465116,
+								"y": 0.6
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 395352999399126,
+				"name": "Knife",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 8
+			},
+			{
+				"frames": [
+					{
+						"width": 52,
+						"height": 18,
+						"originX": 0.36538461538461536,
+						"originY": 0.5555555555555556,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-20.gif",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7706573,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 52,
+						"height": 18,
+						"originX": 0.34615384615384615,
+						"originY": 0.5555555555555556,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-20.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4468803,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 55,
+						"height": 17,
+						"originX": 0.36363636363636365,
+						"originY": 0.5882352941176471,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-21.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6138960,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 55,
+						"height": 15,
+						"originX": 0.4,
+						"originY": 0.6666666666666666,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-22.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8090548,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 56,
+						"height": 15,
+						"originX": 0.4107142857142857,
+						"originY": 0.6666666666666666,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-23.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7949072,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 56,
+						"height": 15,
+						"originX": 0.4107142857142857,
+						"originY": 0.6666666666666666,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-24.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6184249,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 56,
+						"height": 15,
+						"originX": 0.39285714285714285,
+						"originY": 0.6666666666666666,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-25.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4664505,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 56,
+						"height": 16,
+						"originX": 0.42857142857142855,
+						"originY": 0.625,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-26.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5398049,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 54,
+						"height": 16,
+						"originX": 0.4074074074074074,
+						"originY": 0.625,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-27.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 558731,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 52,
+						"height": 17,
+						"originX": 0.36538461538461536,
+						"originY": 0.5294117647058824,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-28.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9791417,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 51,
+						"height": 16,
+						"originX": 0.35294117647058826,
+						"originY": 0.625,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-29.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2380990,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 265905158263426,
+				"name": "Swimming Up",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 9
+			},
+			{
+				"frames": [
+					{
+						"width": 52,
+						"height": 18,
+						"originX": 0.36538461538461536,
+						"originY": 0.5555555555555556,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-20.gif",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 409837,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 52,
+						"height": 18,
+						"originX": 0.34615384615384615,
+						"originY": 0.5555555555555556,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-20.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2565966,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 55,
+						"height": 17,
+						"originX": 0.36363636363636365,
+						"originY": 0.5882352941176471,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-21.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1776518,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 55,
+						"height": 15,
+						"originX": 0.4,
+						"originY": 0.6666666666666666,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-22.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4657949,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 56,
+						"height": 15,
+						"originX": 0.4107142857142857,
+						"originY": 0.6666666666666666,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-23.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4061123,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 56,
+						"height": 15,
+						"originX": 0.4107142857142857,
+						"originY": 0.6666666666666666,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-24.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4138683,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 56,
+						"height": 15,
+						"originX": 0.39285714285714285,
+						"originY": 0.6666666666666666,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-25.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1294290,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 56,
+						"height": 16,
+						"originX": 0.42857142857142855,
+						"originY": 0.625,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-26.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 665512,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 54,
+						"height": 16,
+						"originX": 0.4074074074074074,
+						"originY": 0.625,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-27.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 912444,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 52,
+						"height": 17,
+						"originX": 0.36538461538461536,
+						"originY": 0.5294117647058824,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-28.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4709885,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 51,
+						"height": 16,
+						"originX": 0.35294117647058826,
+						"originY": 0.625,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-29.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4685424,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 994996335763865,
+				"name": "Swimming Down",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 9
+			},
+			{
+				"frames": [
+					{
+						"width": 52,
+						"height": 18,
+						"originX": 0.36538461538461536,
+						"originY": 0.5555555555555556,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-20.gif",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9794361,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 52,
+						"height": 18,
+						"originX": 0.34615384615384615,
+						"originY": 0.5555555555555556,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-20.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6279643,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 55,
+						"height": 17,
+						"originX": 0.36363636363636365,
+						"originY": 0.5882352941176471,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-21.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3318086,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 55,
+						"height": 15,
+						"originX": 0.4,
+						"originY": 0.6666666666666666,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-22.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9510048,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 56,
+						"height": 15,
+						"originX": 0.4107142857142857,
+						"originY": 0.6666666666666666,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-23.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3909554,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 56,
+						"height": 15,
+						"originX": 0.4107142857142857,
+						"originY": 0.6666666666666666,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-24.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9500631,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 56,
+						"height": 15,
+						"originX": 0.39285714285714285,
+						"originY": 0.6666666666666666,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-25.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5321357,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 56,
+						"height": 16,
+						"originX": 0.42857142857142855,
+						"originY": 0.625,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-26.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3113813,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 54,
+						"height": 16,
+						"originX": 0.4074074074074074,
+						"originY": 0.625,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-27.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6691976,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 52,
+						"height": 17,
+						"originX": 0.36538461538461536,
+						"originY": 0.5294117647058824,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-28.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 399838,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 51,
+						"height": 16,
+						"originX": 0.35294117647058826,
+						"originY": 0.625,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-29.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2842467,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 921124179031354,
+				"name": "UpUp",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 9
+			},
+			{
+				"frames": [
+					{
+						"width": 52,
+						"height": 18,
+						"originX": 0.36538461538461536,
+						"originY": 0.5555555555555556,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-20.gif",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1128620,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 52,
+						"height": 18,
+						"originX": 0.34615384615384615,
+						"originY": 0.5555555555555556,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-20.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3551859,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 55,
+						"height": 17,
+						"originX": 0.36363636363636365,
+						"originY": 0.5882352941176471,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-21.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2361953,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 55,
+						"height": 15,
+						"originX": 0.4,
+						"originY": 0.6666666666666666,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-22.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 85967,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 56,
+						"height": 15,
+						"originX": 0.4107142857142857,
+						"originY": 0.6666666666666666,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-23.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 343503,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 56,
+						"height": 15,
+						"originX": 0.4107142857142857,
+						"originY": 0.6666666666666666,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-24.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2586845,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 56,
+						"height": 15,
+						"originX": 0.39285714285714285,
+						"originY": 0.6666666666666666,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-25.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3324372,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 56,
+						"height": 16,
+						"originX": 0.42857142857142855,
+						"originY": 0.625,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-26.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4084349,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 54,
+						"height": 16,
+						"originX": 0.4074074074074074,
+						"originY": 0.625,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-27.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 456104,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 52,
+						"height": 17,
+						"originX": 0.36538461538461536,
+						"originY": 0.5294117647058824,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-28.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1688627,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 51,
+						"height": 16,
+						"originX": 0.35294117647058826,
+						"originY": 0.625,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\Cristo-Diving-Swimming-frogkick-4-21-29.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2929229,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 904206092030656,
+				"name": "DownDown",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 9
+			}
+		],
+		"subfolders": []
+	}
+}

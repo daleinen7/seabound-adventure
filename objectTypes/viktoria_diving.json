@@ -1,0 +1,2299 @@
+{
+	"name": "Viktoria_Diving",
+	"plugin-id": "Sprite",
+	"sid": 703656271331602,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 43,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-idle-001.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9185456,
+						"collisionPoly": {
+							"points": [
+								0.09302325581395349,
+								0.2,
+								0.5,
+								0.25,
+								0.9302325581395349,
+								0.1,
+								0.813953488372093,
+								0.5,
+								0.8837209302325582,
+								0.75,
+								0.5,
+								0.8,
+								0.2558139534883721,
+								0.4,
+								0.3023255813953488,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.8837209302325582,
+								"y": 0.8
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 43,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-idle-002.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5210693,
+						"collisionPoly": {
+							"points": [
+								0.09302325581395349,
+								0.2,
+								0.5,
+								0.25,
+								0.9069767441860465,
+								0.15,
+								0.813953488372093,
+								0.5,
+								0.8837209302325582,
+								0.75,
+								0.5,
+								0.8,
+								0.11627906976744186,
+								0.7,
+								0.3023255813953488,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.8837209302325582,
+								"y": 0.8
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 42,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-idle-003.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8593866,
+						"collisionPoly": {
+							"points": [
+								0.09523809523809523,
+								0.2,
+								0.5,
+								0.2,
+								0.9047619047619048,
+								0.15,
+								0.8095238095238095,
+								0.5,
+								0.8809523809523809,
+								0.75,
+								0.5,
+								0.75,
+								0.09523809523809523,
+								0.75,
+								0.30952380952380953,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.8809523809523809,
+								"y": 0.8
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 42,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-idle-004.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1960741,
+						"collisionPoly": {
+							"points": [
+								0.09523809523809523,
+								0.2,
+								0.39718614718614725,
+								0.2999999999999997,
+								0.9047619047619048,
+								0.15,
+								0.8095238095238095,
+								0.5,
+								0.8809523809523809,
+								0.75,
+								0.3809523809523813,
+								0.9272727272727272,
+								0.11904761904761904,
+								0.7,
+								0.30952380952380953,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.8809523809523809,
+								"y": 0.8
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 43,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-idle-005.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7298393,
+						"collisionPoly": {
+							"points": [
+								0.09302325581395349,
+								0.2,
+								0.456659619450317,
+								0.3204545454545453,
+								0.8720930232558141,
+								0.14318181818181824,
+								0.8372093023255814,
+								0.5,
+								0.8837209302325582,
+								0.75,
+								0.34355179704016936,
+								0.9386363636363639,
+								0.11627906976744186,
+								0.7,
+								0.3023255813953488,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.8837209302325582,
+								"y": 0.8
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 43,
+						"height": 21,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-idle-006.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4853118,
+						"collisionPoly": {
+							"points": [
+								0.11627906976744186,
+								0.23809523809523808,
+								0.41437632135306546,
+								0.39826839826839816,
+								0.900634249471459,
+								0.12987012987012977,
+								0.83615221987315,
+								0.5,
+								0.8837209302325582,
+								0.7619047619047619,
+								0.3054968287526426,
+								0.943722943722943,
+								0.11627906976744186,
+								0.7142857142857143,
+								0.27906976744186046,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.8837209302325582,
+								"y": 0.8095238095238095
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 42,
+						"height": 21,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-idle-007.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4303521,
+						"collisionPoly": {
+							"points": [
+								0.09523809523809523,
+								0.19047619047619047,
+								0.378787878787879,
+								0.3982683982683984,
+								0.9047619047619048,
+								0.13636363636363644,
+								0.841991341991342,
+								0.5043290043290043,
+								0.8809523809523809,
+								0.7619047619047619,
+								0.3041125541125541,
+								0.9372294372294369,
+								0.09523809523809523,
+								0.7619047619047619,
+								0.2619047619047619,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.8809523809523809,
+								"y": 0.8095238095238095
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 42,
+						"height": 21,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-idle-008.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3341862,
+						"collisionPoly": {
+							"points": [
+								0.09523809523809523,
+								0.19047619047619047,
+								0.3961038961038962,
+								0.393939393939394,
+								0.9047619047619048,
+								0.14285714285714285,
+								0.8517316017316017,
+								0.4696969696969697,
+								0.8571428571428571,
+								0.7142857142857143,
+								0.3246753246753248,
+								0.9134199134199135,
+								0.09523809523809523,
+								0.7619047619047619,
+								0.2619047619047619,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.8809523809523809,
+								"y": 0.7619047619047619
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 42,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-idle-009.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8995338,
+						"collisionPoly": {
+							"points": [
+								0.07142857142857142,
+								0.15,
+								0.40367965367965375,
+								0.3386363636363636,
+								0.8939393939393936,
+								0.1522727272727273,
+								0.8463203463203464,
+								0.5113636363636364,
+								0.8571428571428571,
+								0.7,
+								0.3376623376623377,
+								0.9000000000000002,
+								0.07142857142857142,
+								0.8,
+								0.2857142857142857,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.8809523809523809,
+								"y": 0.75
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 43,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-idle-010.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 978595,
+						"collisionPoly": {
+							"points": [
+								0.09302325581395349,
+								0.2,
+								0.39217758985200846,
+								0.42499999999999993,
+								0.86892177589852,
+								0.11363636363636365,
+								0.8890063424947149,
+								0.4659090909090911,
+								0.8604651162790697,
+								0.7,
+								0.31606765327695546,
+								0.9363636363636368,
+								0.06976744186046512,
+								0.8,
+								0.3023255813953488,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.8837209302325582,
+								"y": 0.75
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 43,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-idle-011.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8019154,
+						"collisionPoly": {
+							"points": [
+								0.09302325581395349,
+								0.2,
+								0.42177589852008457,
+								0.4045454545454546,
+								0.8964059196617334,
+								0.11590909090909092,
+								0.8372093023255814,
+								0.5045454545454545,
+								0.9249471458773786,
+								0.675,
+								0.36680761099365744,
+								0.9204545454545451,
+								0.06976744186046512,
+								0.8,
+								0.3023255813953488,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.8837209302325582,
+								"y": 0.75
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 419639369819133,
+				"name": "Idle",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 9
+			},
+			{
+				"frames": [
+					{
+						"width": 46,
+						"height": 21,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-swimming-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3965057,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.8913043478260869,
+								"y": 0.7142857142857143
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 45,
+						"height": 19,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-swimming-001.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7393072,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.8888888888888888,
+								"y": 0.7894736842105263
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 47,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-swimming-002.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9162788,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.8936170212765957,
+								"y": 0.8
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 45,
+						"height": 19,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-swimming-003.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 59160,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.8888888888888888,
+								"y": 0.7894736842105263
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 46,
+						"height": 19,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-swimming-004.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1746093,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.8913043478260869,
+								"y": 0.7894736842105263
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 45,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-swimming-005.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1340032,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.8888888888888888,
+								"y": 0.8
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 49,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-swimming-006.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6037625,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.8979591836734694,
+								"y": 0.8
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 46,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-swimming-007.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1989848,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.8913043478260869,
+								"y": 0.8
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 46,
+						"height": 21,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-swimming-008.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7548221,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.8913043478260869,
+								"y": 0.6666666666666666
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 46,
+						"height": 19,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-swimming-009.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8208592,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.8913043478260869,
+								"y": 0.7368421052631579
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 48,
+						"height": 19,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-swimming-010.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7597731,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.8958333333333334,
+								"y": 0.7894736842105263
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 46,
+						"height": 18,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-swimming-011.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3339181,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.8913043478260869,
+								"y": 0.7777777777777778
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 45,
+						"height": 19,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-swimming-012.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7387001,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.8888888888888888,
+								"y": 0.7368421052631579
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 44,
+						"height": 19,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-swimming-013.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1801312,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.8863636363636364,
+								"y": 0.7894736842105263
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 48,
+						"height": 19,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-swimming-014.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2266622,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.8958333333333334,
+								"y": 0.7894736842105263
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 45,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-swimming-015.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4956844,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.8888888888888888,
+								"y": 0.75
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 350188960845522,
+				"name": "Swim",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 9
+			},
+			{
+				"frames": [
+					{
+						"width": 42,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-hurt-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7826616,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.5,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 39,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-hurt-001.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9043304,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.5,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 36,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-hurt-002.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9846759,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.5,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 37,
+						"height": 19,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-hurt-003.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3462727,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.5,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 39,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-hurt-004.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 822183,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.5,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 42,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-hurt-005.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2690254,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.5,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 628795235733228,
+				"name": "Hurt",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 9
+			},
+			{
+				"frames": [
+					{
+						"width": 41,
+						"height": 40,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-45up-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6181812,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9024390243902439,
+								"y": 0.25
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 39,
+						"height": 39,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-45up-001.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4697489,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.8974358974358975,
+								"y": 0.2564102564102564
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 39,
+						"height": 35,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-45up-002.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2324594,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.8974358974358975,
+								"y": 0.2571428571428571
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 34,
+						"height": 36,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-45up-003.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2744269,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.8823529411764706,
+								"y": 0.25
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 37,
+						"height": 39,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-45up-004.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9567573,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.918918918918919,
+								"y": 0.20512820512820512
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 36,
+						"height": 36,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-45up-005.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6028244,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9166666666666666,
+								"y": 0.2222222222222222
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 36,
+						"height": 38,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-45up-006.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3766126,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9166666666666666,
+								"y": 0.21052631578947367
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 37,
+						"height": 36,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-45up-007.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3887154,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.8918918918918919,
+								"y": 0.2222222222222222
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 38,
+						"height": 39,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-45up-008.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5572565,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.8947368421052632,
+								"y": 0.20512820512820512
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 39,
+						"height": 37,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-45up-009.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2743192,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.8974358974358975,
+								"y": 0.21621621621621623
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 39,
+						"height": 37,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-45up-010.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8977319,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.8974358974358975,
+								"y": 0.21621621621621623
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 35,
+						"height": 36,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-45up-011.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1033416,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9142857142857143,
+								"y": 0.2222222222222222
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 36,
+						"height": 38,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-45up-012.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3684535,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.8888888888888888,
+								"y": 0.21052631578947367
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 36,
+						"height": 36,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-45up-013.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2503289,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.9166666666666666,
+								"y": 0.2222222222222222
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 37,
+						"height": 37,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-45up-014.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 228351,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.918918918918919,
+								"y": 0.21621621621621623
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 883568179016568,
+				"name": "Swimming Up",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 9
+			},
+			{
+				"frames": [
+					{
+						"width": 40,
+						"height": 41,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-45-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3906744,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.75,
+								"y": 0.9024390243902439
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 39,
+						"height": 39,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-45-001.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6374267,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.7435897435897436,
+								"y": 0.8974358974358975
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 35,
+						"height": 39,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-45-002.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4071743,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.7428571428571429,
+								"y": 0.8974358974358975
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 36,
+						"height": 34,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-45-003.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3542760,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.75,
+								"y": 0.8823529411764706
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 39,
+						"height": 37,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-45-004.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9849970,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.7692307692307693,
+								"y": 0.8918918918918919
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 36,
+						"height": 36,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-45-005.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6279594,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.75,
+								"y": 0.9166666666666666
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 38,
+						"height": 36,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-45-006.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9170833,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.7631578947368421,
+								"y": 0.8888888888888888
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 36,
+						"height": 37,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-45-007.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2865724,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.7777777777777778,
+								"y": 0.8918918918918919
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 39,
+						"height": 38,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-45-008.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 250486,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.8205128205128205,
+								"y": 0.8947368421052632
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 37,
+						"height": 39,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-45-009.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3105039,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.7837837837837838,
+								"y": 0.8974358974358975
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 37,
+						"height": 39,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-45-010.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4104794,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.7837837837837838,
+								"y": 0.8974358974358975
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 36,
+						"height": 35,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-45-011.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 508393,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.7777777777777778,
+								"y": 0.8857142857142857
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 38,
+						"height": 36,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-45-012.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 188676,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.7894736842105263,
+								"y": 0.8888888888888888
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 36,
+						"height": 36,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-45-013.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3157666,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.7777777777777778,
+								"y": 0.8888888888888888
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 37,
+						"height": 37,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-45-014.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9755427,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.7837837837837838,
+								"y": 0.8918918918918919
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 38,
+						"height": 35,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-45-015.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 11537,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.7894736842105263,
+								"y": 0.9142857142857143
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 468360153797416,
+				"name": "Swimming Down",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 9
+			},
+			{
+				"frames": [
+					{
+						"width": 21,
+						"height": 45,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-up-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6031477,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.7142857142857143,
+								"y": 0.1111111111111111
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 19,
+						"height": 44,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-up-001.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2282062,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.7368421052631579,
+								"y": 0.11363636363636363
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 18,
+						"height": 45,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-up-002.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9910237,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.8333333333333334,
+								"y": 0.08888888888888889
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 18,
+						"height": 44,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-up-003.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2568470,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.7777777777777778,
+								"y": 0.13636363636363635
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 18,
+						"height": 43,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-up-004.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2907132,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.7777777777777778,
+								"y": 0.13953488372093023
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 19,
+						"height": 43,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-up-005.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9382314,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.7894736842105263,
+								"y": 0.13953488372093023
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 19,
+						"height": 46,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-up-006.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7543447,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.7894736842105263,
+								"y": 0.08695652173913043
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 19,
+						"height": 45,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-up-007.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4557290,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.8421052631578947,
+								"y": 0.1111111111111111
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 20,
+						"height": 44,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-up-008.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7749552,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.7,
+								"y": 0.09090909090909091
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 18,
+						"height": 44,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-up-009.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7799909,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.7222222222222222,
+								"y": 0.09090909090909091
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 17,
+						"height": 46,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-up-010.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 801134,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.8235294117647058,
+								"y": 0.08695652173913043
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 17,
+						"height": 44,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-up-011.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7014118,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.7647058823529411,
+								"y": 0.09090909090909091
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 18,
+						"height": 44,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-up-012.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1500546,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.7777777777777778,
+								"y": 0.09090909090909091
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 18,
+						"height": 42,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-up-013.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4523434,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.7777777777777778,
+								"y": 0.09523809523809523
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 18,
+						"height": 45,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-up-014.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4316635,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.7777777777777778,
+								"y": 0.08888888888888889
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 18,
+						"height": 43,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-up-015.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2318211,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.7777777777777778,
+								"y": 0.09302325581395349
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 923789227344466,
+				"name": "UpUp",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 9
+			},
+			{
+				"frames": [
+					{
+						"width": 21,
+						"height": 45,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-down-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5228857,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.3333333333333333,
+								"y": 0.8888888888888888
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 19,
+						"height": 44,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-down-001.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 111927,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.21052631578947367,
+								"y": 0.8863636363636364
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 18,
+						"height": 45,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-down-002.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4840245,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.2222222222222222,
+								"y": 0.9111111111111111
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 18,
+						"height": 44,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-down-003.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 936377,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.2222222222222222,
+								"y": 0.8636363636363636
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 18,
+						"height": 43,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-down-004.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6499981,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.2222222222222222,
+								"y": 0.8837209302325582
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 19,
+						"height": 43,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-down-005.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8577090,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.15789473684210525,
+								"y": 0.8837209302325582
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 19,
+						"height": 46,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-down-006.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9894662,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.15789473684210525,
+								"y": 0.9130434782608695
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 19,
+						"height": 45,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-down-007.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7460760,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.21052631578947367,
+								"y": 0.8666666666666667
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 20,
+						"height": 44,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-down-008.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6699072,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.3,
+								"y": 0.8863636363636364
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 18,
+						"height": 44,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-down-009.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1292475,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.2777777777777778,
+								"y": 0.8863636363636364
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 17,
+						"height": 46,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-down-010.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6077826,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.23529411764705882,
+								"y": 0.8913043478260869
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 17,
+						"height": 44,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-down-011.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5661490,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.23529411764705882,
+								"y": 0.8863636363636364
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 18,
+						"height": 44,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-down-012.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7399434,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.2222222222222222,
+								"y": 0.8863636363636364
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 18,
+						"height": 42,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-down-013.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 225427,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.2777777777777778,
+								"y": 0.9047619047619048
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 18,
+						"height": 45,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-down-014.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4356759,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.2222222222222222,
+								"y": 0.9111111111111111
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 18,
+						"height": 43,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-down-015.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5230709,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "WeaponFire",
+								"x": 0.2777777777777778,
+								"y": 0.8837209302325582
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 343074443895286,
+				"name": "DownDown",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 9
+			},
+			{
+				"frames": [
+					{
+						"width": 43,
+						"height": 20,
+						"originX": 0.9767441860465116,
+						"originY": 0.7,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-knifeattack-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8591137,
+						"collisionPoly": {
+							"points": [
+								0.09302325581395349,
+								0.2,
+								0.5,
+								0.25,
+								0.9302325581395349,
+								0.1,
+								0.813953488372093,
+								0.5,
+								0.8837209302325582,
+								0.75,
+								0.5,
+								0.8,
+								0.2558139534883721,
+								0.4,
+								0.3023255813953488,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Knife",
+								"x": 0.9487179487179487,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 39,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-knifeattack-001.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8357155,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Knife",
+								"x": 0.9487179487179487,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 37,
+						"height": 27,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-knifeattack-002.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9924577,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Knife",
+								"x": 0.9487179487179487,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 38,
+						"height": 33,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-knifeattack-003.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9469152,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Knife",
+								"x": 0.9487179487179487,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 34,
+						"height": 34,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-knifeattack-004.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3324501,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Knife",
+								"x": 0.9487179487179487,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 38,
+						"height": 28,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-knifeattack-005.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2466769,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Knife",
+								"x": 0.9487179487179487,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 43,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\viktoria_diver-knifeattack-006.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4292756,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Knife",
+								"x": 0.9487179487179487,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 301456319347822,
+				"name": "Knife",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 9
+			}
+		],
+		"subfolders": []
+	}
+}

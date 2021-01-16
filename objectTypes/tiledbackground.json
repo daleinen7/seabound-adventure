@@ -1,0 +1,20 @@
+{
+	"name": "TiledBackground",
+	"plugin-id": "TiledBg",
+	"sid": 208156074492411,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 256,
+		"height": 192,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\tiledbackground4.png",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 5301423,
+		"useCollisionPoly": true
+	}
+}
