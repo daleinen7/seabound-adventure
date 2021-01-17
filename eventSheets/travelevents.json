@@ -992,15 +992,6 @@
 								"text": "text",
 								"duration": "2"
 							}
-						},
-						{
-							"id": "typewriter-text",
-							"objectClass": "TavText",
-							"sid": 686365791170235,
-							"parameters": {
-								"text": "text",
-								"duration": "2"
-							}
 						}
 					],
 					"sid": 448357411838122
@@ -1163,12 +1154,12 @@
 								{
 									"id": "create-object",
 									"objectClass": "System",
-									"sid": 942827167462925,
+									"sid": 549793559451229,
 									"parameters": {
 										"object-to-create": "ChoiceTxt",
 										"layer": "\"TAV Layer\"",
-										"x": "250",
-										"y": "161 - ChoicesArray.Width * 20 + (loopindex * 20)",
+										"x": "300",
+										"y": "182 - ChoicesArray.Width * 20 + (loopindex * 20)",
 										"create-hierarchy": false
 									}
 								},
@@ -1877,10 +1868,28 @@
 					"functionCategory": "",
 					"functionReturnType": "none",
 					"functionIsAsync": false,
-					"functionParameters": [],
+					"functionParameters": [
+						{
+							"name": "Text",
+							"type": "string",
+							"initialValue": "",
+							"comment": "",
+							"sid": 807681265729001
+						}
+					],
 					"eventType": "function-block",
 					"conditions": [],
-					"actions": [],
+					"actions": [
+						{
+							"id": "typewriter-text",
+							"objectClass": "TavText",
+							"sid": 415839194897765,
+							"parameters": {
+								"text": "text",
+								"duration": "2"
+							}
+						}
+					],
 					"sid": 232435183202298
 				},
 				{
@@ -2041,12 +2050,12 @@
 								{
 									"id": "create-object",
 									"objectClass": "System",
-									"sid": 528417915235883,
+									"sid": 502874537113056,
 									"parameters": {
 										"object-to-create": "ChoiceTxt",
 										"layer": "\"TAV Layer\"",
-										"x": "250",
-										"y": "161 - ChoicesArray.Width * 20 + (loopindex * 20)",
+										"x": "300",
+										"y": "182 - ChoicesArray.Width * 20 + (loopindex * 20)",
 										"create-hierarchy": false
 									}
 								},
@@ -2638,33 +2647,33 @@
 							],
 							"actions": [
 								{
+									"callFunction": "StopTravel",
+									"sid": 185374939719538
+								},
+								{
+									"callFunction": "CallTAV2",
+									"sid": 417637467731288,
+									"parameters": [
+										"4"
+									]
+								},
+								{
 									"id": "pop",
 									"objectClass": "route",
-									"sid": 193337151496853,
+									"sid": 954988692630522,
 									"parameters": {
 										"where": "front",
 										"axis": "x"
 									}
 								},
 								{
-									"id": "append-text",
-									"objectClass": "Debug",
-									"sid": 820014287327641,
-									"parameters": {
-										"text": "\"Dive mission\""
-									}
-								},
-								{
-									"id": "wait",
+									"id": "set-group-active",
 									"objectClass": "System",
-									"sid": 285028546998324,
+									"sid": 878733339591686,
 									"parameters": {
-										"seconds": "4"
+										"group-name": "\"Travel\"",
+										"state": "deactivated"
 									}
-								},
-								{
-									"callFunction": "Next Square",
-									"sid": 406703721215367
 								}
 							],
 							"sid": 835780755913480

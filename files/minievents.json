@@ -12,7 +12,7 @@
                 "Med Supplies",
                 "Scrap",
                 "RERG Spot",
-                "",
+                "SWARM!",
                 "",
                 ""
             ],
@@ -21,7 +21,7 @@
                 "choice1",
                 "choice1",
                 "choice1",
-                "",
+                "choice1",
                 "",
                 ""
             ],
@@ -30,7 +30,7 @@
                 "choice2",
                 "choice2",
                 "choice2",
-                "",
+                "choice2",
                 "",
                 ""
             ],
@@ -39,7 +39,7 @@
                 "choice3",
                 "choice3",
                 "choice3",
-                "",
+                "choice3",
                 "",
                 ""
             ],
@@ -48,25 +48,25 @@
                 "choice4",
                 "choice4",
                 "choice4",
-                "",
-                "",
-                ""
-            ],
-            [
-                "choice5",
-                "choice5",
-                "choice5",
-                "choice5",
-                "",
+                "choice4",
                 "",
                 ""
             ],
             [
-                "choice6",
-                "choice6",
-                "choice6",
-                "choice6",
+                "choice5",
+                "choice5",
+                "choice5",
+                "choice5",
+                "choice5",
                 "",
+                ""
+            ],
+            [
+                "choice6",
+                "choice6",
+                "choice6",
+                "choice6",
+                "choice6",
                 "",
                 ""
             ],
@@ -75,7 +75,7 @@
                 "choice7",
                 "choice7",
                 "choice7",
-                "",
+                "choice7",
                 "",
                 ""
             ],
@@ -84,7 +84,7 @@
                 "TYPE",
                 "TYPE",
                 "TYPE",
-                "",
+                "TYPE",
                 "",
                 ""
             ]
@@ -95,7 +95,7 @@
                 "Medical supplies are floating in the water.",
                 "There is a shipwreck below with plenty of scrap. Would it be worth investigating?",
                 "Just up ahead you notice it. The tell tale signs of a swarm of sea life. The kind that have been sinking ships. \"Should we go around?\" [FM] asks. ",
-                "",
+                "Suddenly without warning you are surrounded by the telltale signs of dark waters. If don't send [FM] overboard to distract the sea life it will tear apart your boat!",
                 "",
                 ""
             ],
@@ -167,7 +167,7 @@
                 "parameter",
                 "parameter",
                 "parameter",
-                "",
+                "parameter",
                 "",
                 ""
             ]
@@ -250,7 +250,7 @@
                 "amount",
                 "amount",
                 "amount",
-                "",
+                "amount",
                 "",
                 ""
             ]
@@ -270,7 +270,7 @@
                 "Let's grab them and try not to think about what has recently taken place here.",
                 "[FM] grab your gear!",
                 "No, we have to go through them!",
-                "",
+                "[FM], you have to defend the boat!",
                 "",
                 ""
             ],
@@ -279,7 +279,7 @@
                 "It's the ocean's now. Let's move on. ",
                 "We are moving on. Let the sea salvage it.",
                 "Maybe we can outrun it.",
-                "",
+                "Maybe we can outrun it.",
                 "",
                 ""
             ],
@@ -333,7 +333,7 @@
                 "text",
                 "text",
                 "text",
-                "",
+                "text",
                 "",
                 ""
             ]
@@ -353,7 +353,7 @@
                 "FloatMeds",
                 "FloatMeds",
                 "RE",
-                "",
+                "RE",
                 "",
                 ""
             ],
@@ -362,7 +362,7 @@
                 "Travel",
                 "Travel",
                 "OutrunRE",
-                "",
+                "OutrunRE",
                 "",
                 ""
             ],
@@ -416,7 +416,7 @@
                 "function",
                 "function",
                 "function",
-                "",
+                "function",
                 "",
                 ""
             ]
@@ -499,7 +499,7 @@
                 "next",
                 "next",
                 "next",
-                "",
+                "next",
                 "",
                 ""
             ]

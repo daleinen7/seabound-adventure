@@ -10,6 +10,27 @@
 			"includeSheet": "EnemyEvents"
 		},
 		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-outside-layout",
+					"objectClass": "BoatDiving",
+					"sid": 478253902050453
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 834395946127241,
+					"parameters": {
+						"layout": "Travel"
+					}
+				}
+			],
+			"sid": 424743399968267
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Diver Behavior",

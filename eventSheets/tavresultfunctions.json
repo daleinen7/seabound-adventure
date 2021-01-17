@@ -210,6 +210,26 @@
 						"string": "\"PA2Rrun\"",
 						"function": "PA2Run"
 					}
+				},
+				{
+					"id": "map-function",
+					"objectClass": "Functions",
+					"sid": 776627331015920,
+					"parameters": {
+						"name": "\"TAV\"",
+						"string": "\"RE\"",
+						"function": "RE"
+					}
+				},
+				{
+					"id": "map-function",
+					"objectClass": "Functions",
+					"sid": 418596868254879,
+					"parameters": {
+						"name": "\"TAV\"",
+						"string": "\"OutrunRE\"",
+						"function": "OutrunRE"
+					}
 				}
 			],
 			"sid": 336784800666028
@@ -1723,6 +1743,150 @@
 						}
 					],
 					"sid": 146620064927657
+				}
+			]
+		},
+		{
+			"functionName": "RE",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 198329796396335,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 962885796780357,
+							"parameters": {
+								"layout": "DivingLayout"
+							}
+						}
+					],
+					"sid": 289738269614282
+				}
+			]
+		},
+		{
+			"functionName": "OutrunRE",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 139575495490621,
+			"children": [
+				{
+					"eventType": "variable",
+					"name": "outcome",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 782840523137924
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 200632735951742,
+							"parameters": {
+								"variable": "outcome",
+								"value": "choose(0,1,2)"
+							}
+						}
+					],
+					"sid": 737833270065758
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 837275712197508,
+							"parameters": {
+								"variable": "outcome",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "tavResult2",
+							"sid": 444483163826630,
+							"parameters": [
+								"\"We barely escaped. That was close\""
+							]
+						}
+					],
+					"sid": 187787796385452
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 505025987039761,
+							"parameters": {
+								"variable": "outcome",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "tavResult2",
+							"sid": 154514143907099,
+							"parameters": [
+								"\"They hit us hard. Looks like our boat took damage!\""
+							]
+						}
+					],
+					"sid": 893551659565936
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 992485734709027,
+							"parameters": {
+								"variable": "outcome",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "tavResult2",
+							"sid": 159818941704721,
+							"parameters": [
+								"\"In the chaos of escape it looks like a piece of equipment fell overboard.\""
+							]
+						}
+					],
+					"sid": 963779912700105
 				}
 			]
 		}
