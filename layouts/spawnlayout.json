@@ -522,7 +522,7 @@
 					},
 					"uid": 147,
 					"instanceVariables": {
-						"Health": 0,
+						"Health": 1,
 						"Speed": 0,
 						"Damage": 0,
 						"lootChance": 0

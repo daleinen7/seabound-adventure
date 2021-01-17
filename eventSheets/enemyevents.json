@@ -69,6 +69,63 @@
 			"sid": 139719889047042
 		},
 		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Enemies",
+					"sid": 388348201736896,
+					"parameters": {
+						"object": "Explosions"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Enemies",
+					"sid": 142357073138109,
+					"parameters": {
+						"object": "damageNotice",
+						"layer": "\"Main\"",
+						"image-point": "\"Damage\"",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "damageNotice",
+					"sid": 170666290034917
+				},
+				{
+					"id": "set-text",
+					"objectClass": "damageNotice",
+					"sid": 884069051056466,
+					"parameters": {
+						"text": "\"-\" & Explosions.Damage"
+					}
+				},
+				{
+					"id": "set-angle",
+					"objectClass": "damageNotice",
+					"sid": 618706738109845,
+					"parameters": {
+						"angle": "0"
+					}
+				},
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "damageNotice",
+					"sid": 937112367954876,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"angle": "270"
+					}
+				}
+			],
+			"sid": 546475267113682
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Attack Fishy",
@@ -821,18 +878,6 @@
 						}
 					],
 					"sid": 430448996652200
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-destroyed",
-							"objectClass": "JellyFish",
-							"sid": 258157464345372
-						}
-					],
-					"actions": [],
-					"sid": 310623007412101
 				},
 				{
 					"eventType": "block",

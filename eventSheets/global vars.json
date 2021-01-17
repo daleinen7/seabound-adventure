@@ -63,7 +63,7 @@
 			"eventType": "variable",
 			"name": "Day",
 			"type": "number",
-			"initialValue": "0",
+			"initialValue": "1",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,

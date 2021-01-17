@@ -6,6 +6,10 @@
 			"includeSheet": "Global Vars"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "EnemyEvents"
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Diver Behavior",
@@ -1631,17 +1635,6 @@
 									"parameters": {
 										"interval-seconds": "random((Day * -0.5) + 14, (Day * -0.15) + 21.5)"
 									}
-								},
-								{
-									"id": "compare-two-values",
-									"objectClass": "System",
-									"sid": 522790683523526,
-									"disabled": true,
-									"parameters": {
-										"first-value": "shrimp.Count",
-										"comparison": 3,
-										"second-value": "floor(Day * 0.7)"
-									}
 								}
 							],
 							"actions": [
@@ -1680,17 +1673,6 @@
 									"parameters": {
 										"interval-seconds": "random((Day * -0.5) + 15.5, (Day * -0.45) + 20)"
 									}
-								},
-								{
-									"id": "compare-two-values",
-									"objectClass": "System",
-									"sid": 789411437606248,
-									"disabled": true,
-									"parameters": {
-										"first-value": "Shark.Count",
-										"comparison": 3,
-										"second-value": "floor(Day * 0.4)"
-									}
 								}
 							],
 							"actions": [
@@ -1714,6 +1696,42 @@
 				}
 			],
 			"sid": 352612916073395
+		},
+		{
+			"eventType": "comment",
+			"text": "Pin swarms to diver"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 949835535893685,
+					"parameters": {
+						"interval-seconds": "0.01"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "SwarmBoundryPort",
+					"sid": 875938438164045,
+					"parameters": {
+						"x": "ViewportLeft(\"Main\") - 12"
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "SwarmBoundryStarboard",
+					"sid": 707209154237284,
+					"parameters": {
+						"x": "ViewportRight(\"Main\") + 12"
+					}
+				}
+			],
+			"sid": 161230157959691
 		}
 	],
 	"sid": 249652242392072
