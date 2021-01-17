@@ -1,0 +1,338 @@
+{
+	"name": "Projectile",
+	"plugin-id": "Sprite",
+	"sid": 122951980019099,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Damage",
+			"type": "number",
+			"desc": "",
+			"sid": 871019351369359
+		},
+		{
+			"name": "Distance",
+			"type": "number",
+			"desc": "",
+			"sid": 957222672162887
+		},
+		{
+			"name": "Punch",
+			"type": "number",
+			"desc": "",
+			"sid": 565113626155966
+		},
+		{
+			"name": "Loot",
+			"type": "number",
+			"desc": "",
+			"sid": 207517664150092
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 816382708275861
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 2,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\projectile-harpoon-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4859135,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.5,
+								0,
+								0.9375,
+								0,
+								0.875,
+								0.5,
+								0.875,
+								0,
+								0.5,
+								0,
+								0.0625,
+								0,
+								0.8125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 921694798316312,
+				"name": "1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 13,
+						"height": 3,
+						"originX": 0.6153846153846154,
+						"originY": 0.3333333333333333,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\projectile-harpoon-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9917154,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.6153846153846154,
+								0,
+								1,
+								0,
+								1,
+								0.3333333333333333,
+								1,
+								0,
+								0.6153846153846154,
+								0,
+								0.07692307692307693,
+								0,
+								1,
+								0.3333333333333333
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 858375447436431,
+				"name": "2",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 17,
+						"height": 5,
+						"originX": 0.47058823529411764,
+						"originY": 0.2,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\projectile-harpoon-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6095037,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.47058823529411764,
+								0,
+								0.8823529411764706,
+								0,
+								0.8235294117647058,
+								0.2,
+								0.8235294117647058,
+								0,
+								0.47058823529411764,
+								0,
+								0.058823529411764705,
+								0,
+								0.7647058823529411,
+								0.2
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 343028456219605,
+				"name": "3",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 2,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\projectile-harpoon-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6330051,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.5,
+								0,
+								0.9375,
+								0,
+								0.875,
+								0.5,
+								0.875,
+								0,
+								0.5,
+								0,
+								0.0625,
+								0,
+								0.8125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 253205843837038,
+				"name": "4",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 17,
+						"height": 3,
+						"originX": 0.47058823529411764,
+						"originY": 0.3333333333333333,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\projectile-harpoon-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8747938,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.47058823529411764,
+								0,
+								0.8823529411764706,
+								0,
+								0.8235294117647058,
+								0.3333333333333333,
+								0.8235294117647058,
+								0,
+								0.47058823529411764,
+								0,
+								0.058823529411764705,
+								0,
+								0.7647058823529411,
+								0.3333333333333333
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 886168910355819,
+				"name": "5",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 20,
+						"height": 5,
+						"originX": 0.4,
+						"originY": 0.2,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\projectile-harpoon-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 563575,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.4,
+								0,
+								0.75,
+								0,
+								0.7,
+								0.2,
+								0.7,
+								0,
+								0.4,
+								0,
+								0.05,
+								0,
+								0.65,
+								0.2
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 250175248841285,
+				"name": "6",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 5,
+						"height": 5,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\dalei\\Desktop\\DougLeinen-seabound8-0d1fd3f0b44e\\DougLeinen-seabound8-0d1fd3f0b44e\\images\\projectile-bomb-000.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5348368,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.990625,
+								0,
+								0,
+								1,
+								0,
+								1,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 693718025736143,
+				"name": "18",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

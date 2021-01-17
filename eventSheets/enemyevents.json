@@ -1,0 +1,2132 @@
+{
+	"name": "EnemyEvents",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Enemies",
+					"sid": 236640478368461,
+					"parameters": {
+						"object": "Projectile"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Projectile",
+					"sid": 648065583789617,
+					"parameters": {
+						"instance-variable": "Damage",
+						"comparison": 4,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Enemies",
+					"sid": 943498698259568,
+					"parameters": {
+						"object": "damageNotice",
+						"layer": "\"Main\"",
+						"image-point": "\"Damage\"",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "damageNotice",
+					"sid": 591988818985014
+				},
+				{
+					"id": "set-text",
+					"objectClass": "damageNotice",
+					"sid": 895333013023305,
+					"parameters": {
+						"text": "\"-\" & Projectile.Damage"
+					}
+				},
+				{
+					"id": "set-angle",
+					"objectClass": "damageNotice",
+					"sid": 685350687159283,
+					"parameters": {
+						"angle": "0"
+					}
+				},
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "damageNotice",
+					"sid": 987947514751380,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"angle": "270"
+					}
+				}
+			],
+			"sid": 139719889047042
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Attack Fishy",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "AttackFishy",
+							"sid": 494234101868659,
+							"parameters": {
+								"object": "Projectile"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "AttackFishy",
+							"sid": 334359039924483,
+							"parameters": {
+								"instance-variable": "Health",
+								"value": "Projectile.Damage"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "AttackFishy",
+							"sid": 845561255190006,
+							"parameters": {
+								"instance-variable": "lootChance",
+								"value": "Projectile.Loot"
+							}
+						}
+					],
+					"sid": 737999787590338,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "Fish  Death Logic"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "AttackFishy",
+									"sid": 211992788169277,
+									"parameters": {
+										"instance-variable": "Health",
+										"comparison": 3,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "AttackFishy",
+									"sid": 334928213048533
+								}
+							],
+							"sid": 332875075980309,
+							"children": [
+								{
+									"eventType": "comment",
+									"text": "Loot Logic"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "AttackFishy",
+											"sid": 564147112502776,
+											"parameters": {
+												"instance-variable": "lootChance",
+												"comparison": 4,
+												"value": "random(100)"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 207989744164314,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 292796322861479,
+													"parameters": {
+														"first-value": "0",
+														"comparison": 0,
+														"second-value": "choose(0,1)"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "spawn-another-object",
+													"objectClass": "AttackFishy",
+													"sid": 359189983908256,
+													"parameters": {
+														"object": "FishLoot",
+														"layer": "\"Main\"",
+														"image-point": "0",
+														"create-hierarchy": false
+													}
+												},
+												{
+													"id": "move-to-bottom",
+													"objectClass": "FishLoot",
+													"sid": 974322565061475
+												},
+												{
+													"id": "set-angle-of-motion",
+													"objectClass": "FishLoot",
+													"sid": 896368473516365,
+													"behaviorType": "Bullet",
+													"parameters": {
+														"angle": "90"
+													}
+												}
+											],
+											"sid": 633046664176078
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "else",
+													"objectClass": "System",
+													"sid": 137941576470154
+												}
+											],
+											"actions": [
+												{
+													"id": "spawn-another-object",
+													"objectClass": "AttackFishy",
+													"sid": 614862110403920,
+													"parameters": {
+														"object": "HarpoonLoot",
+														"layer": "\"Main\"",
+														"image-point": "0",
+														"create-hierarchy": false
+													}
+												},
+												{
+													"id": "move-to-bottom",
+													"objectClass": "HarpoonLoot",
+													"sid": 947108115467064
+												},
+												{
+													"id": "set-angle-of-motion",
+													"objectClass": "HarpoonLoot",
+													"sid": 690550819260085,
+													"behaviorType": "Bullet",
+													"parameters": {
+														"angle": "90"
+													}
+												}
+											],
+											"sid": 794079082781058
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 839760723477660
+										}
+									],
+									"actions": [],
+									"sid": 799590518550601
+								},
+								{
+									"eventType": "comment",
+									"text": "Punch Logic"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Projectile",
+											"sid": 888552683536158,
+											"parameters": {
+												"instance-variable": "Punch",
+												"comparison": 3,
+												"value": "random(0,100)"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "destroy",
+											"objectClass": "Projectile",
+											"sid": 357416859020267
+										}
+									],
+									"sid": 250923688531241
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "AttackFishy",
+							"sid": 451068739260215,
+							"parameters": {
+								"object": "SwarmBoundryStarboard"
+							}
+						},
+						{
+							"id": "is-mirrored",
+							"objectClass": "AttackFishy",
+							"sid": 158811578105893,
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-mirrored",
+							"objectClass": "AttackFishy",
+							"sid": 525536361170351,
+							"parameters": {
+								"state": "mirrored"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "AttackFishy",
+							"sid": 678787926718692,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"angle": "180"
+							}
+						},
+						{
+							"id": "set-x",
+							"objectClass": "AttackFishy",
+							"sid": 948847643583488,
+							"parameters": {
+								"x": "AttackFishy.X + random(20, 40)"
+							}
+						}
+					],
+					"sid": 926810297311000,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-y",
+									"objectClass": "AttackFishy",
+									"sid": 395742722089969,
+									"parameters": {
+										"comparison": 3,
+										"y-co-ordinate": "OxygenZone.Y + 10"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "AttackFishy",
+									"sid": 142397439501991
+								}
+							],
+							"sid": 852246684178213
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "AttackFishy",
+							"sid": 167855132058315,
+							"parameters": {
+								"object": "SwarmBoundryPort"
+							}
+						},
+						{
+							"id": "is-mirrored",
+							"objectClass": "AttackFishy",
+							"sid": 698383108878757
+						}
+					],
+					"actions": [
+						{
+							"id": "set-mirrored",
+							"objectClass": "AttackFishy",
+							"sid": 184944673162477,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "AttackFishy",
+							"sid": 922462459371771,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"angle": "0"
+							}
+						},
+						{
+							"id": "set-x",
+							"objectClass": "AttackFishy",
+							"sid": 424872878358434,
+							"parameters": {
+								"x": "AttackFishy.X + random(20, 40)"
+							}
+						}
+					],
+					"sid": 378286682103831,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-y",
+									"objectClass": "AttackFishy",
+									"sid": 234335493744003,
+									"parameters": {
+										"comparison": 3,
+										"y-co-ordinate": "OxygenZone.Y + 10"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "AttackFishy",
+									"sid": 720491628167958
+								}
+							],
+							"sid": 178751157472735
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Explosivo",
+							"sid": 346089764109713,
+							"parameters": {
+								"object": "AttackFishy"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "AttackFishy",
+							"sid": 892073175516005,
+							"parameters": {
+								"instance-variable": "Health",
+								"value": "Explosivo.Damage"
+							}
+						}
+					],
+					"sid": 600802298273704,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "AttackFishy",
+									"sid": 997627845162657,
+									"parameters": {
+										"instance-variable": "Health",
+										"comparison": 3,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "AttackFishy",
+									"sid": 959681802619205
+								}
+							],
+							"sid": 216461435687908,
+							"children": [
+								{
+									"eventType": "comment",
+									"text": "Loot Logic"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "AttackFishy",
+											"sid": 309848698072588,
+											"parameters": {
+												"instance-variable": "lootChance",
+												"comparison": 2,
+												"value": "random(100)"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "AttackFishy",
+											"sid": 622097128807389,
+											"parameters": {
+												"object": "FishLoot",
+												"layer": "\"Main\"",
+												"image-point": "0",
+												"create-hierarchy": false
+											}
+										},
+										{
+											"id": "move-to-bottom",
+											"objectClass": "FishLoot",
+											"sid": 815333907815997
+										},
+										{
+											"id": "set-angle-of-motion",
+											"objectClass": "FishLoot",
+											"sid": 185178768408011,
+											"behaviorType": "Bullet",
+											"parameters": {
+												"angle": "90"
+											}
+										}
+									],
+									"sid": 944133248167500
+								},
+								{
+									"eventType": "comment",
+									"text": "Punch Logic"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Projectile",
+											"sid": 503913548933123,
+											"parameters": {
+												"instance-variable": "Punch",
+												"comparison": 3,
+												"value": "random(0,100)"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "destroy",
+											"objectClass": "Projectile",
+											"sid": 209101022285511
+										}
+									],
+									"sid": 933770510491473
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "AttackFishy",
+							"sid": 465333657726237,
+							"parameters": {
+								"object": "SwarmBoundryStarboard"
+							}
+						},
+						{
+							"id": "is-mirrored",
+							"objectClass": "AttackFishy",
+							"sid": 599580099137236,
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-mirrored",
+							"objectClass": "AttackFishy",
+							"sid": 222092584473091,
+							"parameters": {
+								"state": "mirrored"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "AttackFishy",
+							"sid": 560235745909257,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"angle": "180"
+							}
+						},
+						{
+							"id": "set-x",
+							"objectClass": "AttackFishy",
+							"sid": 342273544228937,
+							"parameters": {
+								"x": "AttackFishy.X + random(20, 40)"
+							}
+						}
+					],
+					"sid": 657483176393412,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-y",
+									"objectClass": "AttackFishy",
+									"sid": 972850884127805,
+									"parameters": {
+										"comparison": 3,
+										"y-co-ordinate": "OxygenZone.Y + 10"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "AttackFishy",
+									"sid": 508220801659957
+								}
+							],
+							"sid": 851863559921324
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "AttackFishy",
+							"sid": 559825079499311,
+							"parameters": {
+								"object": "SwarmBoundryPort"
+							}
+						},
+						{
+							"id": "is-mirrored",
+							"objectClass": "AttackFishy",
+							"sid": 434575326771635
+						}
+					],
+					"actions": [
+						{
+							"id": "set-mirrored",
+							"objectClass": "AttackFishy",
+							"sid": 754305359594608,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "AttackFishy",
+							"sid": 773151408679941,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"angle": "0"
+							}
+						},
+						{
+							"id": "set-x",
+							"objectClass": "AttackFishy",
+							"sid": 233960568076824,
+							"parameters": {
+								"x": "AttackFishy.X + random(20, 40)"
+							}
+						}
+					],
+					"sid": 669546248682945,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-y",
+									"objectClass": "AttackFishy",
+									"sid": 885146823710840,
+									"parameters": {
+										"comparison": 3,
+										"y-co-ordinate": "OxygenZone.Y + 10"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "AttackFishy",
+									"sid": 279801268383508
+								}
+							],
+							"sid": 515456530471706
+						}
+					]
+				}
+			],
+			"sid": 374258081210415
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Jelly Fish",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "JellyFish",
+							"sid": 332331076089801
+						}
+					],
+					"actions": [
+						{
+							"id": "set-angle",
+							"objectClass": "JellyFish",
+							"sid": 394677808543133,
+							"parameters": {
+								"angle": "270"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "JellyFish",
+							"sid": 570117906145298,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"angle": "random(235, 290)"
+							}
+						}
+					],
+					"sid": 344677589804589
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "JellyFish",
+							"sid": 731389752201045,
+							"parameters": {
+								"object": "OxygenZone"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "JellyFish",
+							"sid": 582777464862207,
+							"parameters": {
+								"frame-number": "17"
+							}
+						},
+						{
+							"id": "stop-animation",
+							"objectClass": "JellyFish",
+							"sid": 864581728493827
+						},
+						{
+							"id": "set-speed",
+							"objectClass": "JellyFish",
+							"sid": 385472971865799,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"speed": "random (-50, -10)"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "JellyFish",
+							"sid": 482949709613148,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "JellyFish",
+							"sid": 521901860769455,
+							"behaviorType": "Sine2",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 883928840794791,
+							"parameters": {
+								"seconds": "random(3, 18)"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "JellyFish",
+							"sid": 458564143854425,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"angle": "random(235, 290)"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "JellyFish",
+							"sid": 246118824281635,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "active"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "JellyFish",
+							"sid": 164585078014431,
+							"behaviorType": "Sine2",
+							"parameters": {
+								"state": "active"
+							}
+						}
+					],
+					"sid": 430448996652200
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-destroyed",
+							"objectClass": "JellyFish",
+							"sid": 258157464345372
+						}
+					],
+					"actions": [],
+					"sid": 310623007412101
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Projectile",
+							"sid": 677324563856528,
+							"parameters": {
+								"object": "JellyFish"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "JellyFish",
+							"sid": 503208610382376,
+							"parameters": {
+								"instance-variable": "Health",
+								"value": "Projectile.Damage"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "JellyFish",
+							"sid": 182361640052347,
+							"parameters": {
+								"instance-variable": "lootChance",
+								"value": "Projectile.Loot"
+							}
+						}
+					],
+					"sid": 256780992635077,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "JellyFish",
+									"sid": 557822625180136,
+									"parameters": {
+										"instance-variable": "Health",
+										"comparison": 3,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 569771389554791,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "JellyFish",
+											"sid": 760836082236279,
+											"parameters": {
+												"instance-variable": "lootChance",
+												"comparison": 4,
+												"value": "random(0,100)"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "JellyFish",
+											"sid": 536177384346682,
+											"parameters": {
+												"object": "JellyOil",
+												"layer": "\"Main\"",
+												"image-point": "0",
+												"create-hierarchy": false
+											}
+										},
+										{
+											"id": "set-angle-of-motion",
+											"objectClass": "JellyOil",
+											"sid": 170928986898128,
+											"behaviorType": "Bullet",
+											"parameters": {
+												"angle": "90"
+											}
+										}
+									],
+									"sid": 344014584686397
+								},
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "destroy",
+											"objectClass": "JellyFish",
+											"sid": 914496234646826
+										}
+									],
+									"sid": 944611803530604
+								}
+							]
+						},
+						{
+							"eventType": "comment",
+							"text": "Punch Logic"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Projectile",
+									"sid": 687030301396766,
+									"parameters": {
+										"instance-variable": "Punch",
+										"comparison": 3,
+										"value": "random(0,100)"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Projectile",
+									"sid": 376248630718401
+								}
+							],
+							"sid": 350918076964451
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Explosivo",
+							"sid": 224027451387954,
+							"parameters": {
+								"object": "JellyFish"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "JellyFish",
+							"sid": 604883881803827,
+							"parameters": {
+								"instance-variable": "Health",
+								"value": "Explosivo.Damage"
+							}
+						}
+					],
+					"sid": 804444070676278,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "JellyFish",
+									"sid": 228914315726159,
+									"parameters": {
+										"instance-variable": "Health",
+										"comparison": 3,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "JellyFish",
+									"sid": 292413171458069
+								}
+							],
+							"sid": 174112978826824,
+							"children": [
+								{
+									"eventType": "comment",
+									"text": "Loot Logic"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "JellyFish",
+											"sid": 335662721425586,
+											"parameters": {
+												"instance-variable": "lootChance",
+												"comparison": 2,
+												"value": "random(100)"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "JellyFish",
+											"sid": 768391279274685,
+											"parameters": {
+												"object": "JellyOil",
+												"layer": "\"Main\"",
+												"image-point": "0",
+												"create-hierarchy": false
+											}
+										},
+										{
+											"id": "move-to-bottom",
+											"objectClass": "JellyOil",
+											"sid": 867539586325343
+										},
+										{
+											"id": "set-angle-of-motion",
+											"objectClass": "JellyOil",
+											"sid": 348199105010418,
+											"behaviorType": "Bullet",
+											"parameters": {
+												"angle": "90"
+											}
+										}
+									],
+									"sid": 818648899086526
+								},
+								{
+									"eventType": "comment",
+									"text": "Punch Logic"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Projectile",
+											"sid": 720096169940223,
+											"parameters": {
+												"instance-variable": "Punch",
+												"comparison": 3,
+												"value": "random(0,100)"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "destroy",
+											"objectClass": "Projectile",
+											"sid": 900275317160418
+										}
+									],
+									"sid": 550238299706692
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "KnifeSwoop",
+							"sid": 519397173341434,
+							"parameters": {
+								"object": "JellyFish"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 497888873027561,
+					"children": [
+						{
+							"eventType": "variable",
+							"name": "DamageAmount",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 775962371136125
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "subtract-from-instvar",
+									"objectClass": "JellyFish",
+									"sid": 713354132285894,
+									"parameters": {
+										"instance-variable": "Health",
+										"value": "DamageAmount"
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "JellyFish",
+									"sid": 583986302757610,
+									"parameters": {
+										"object": "damageNotice",
+										"layer": "\"Main\"",
+										"image-point": "\"Damage\"",
+										"create-hierarchy": false
+									}
+								},
+								{
+									"id": "move-to-top",
+									"objectClass": "damageNotice",
+									"sid": 599045177346362
+								},
+								{
+									"id": "set-text",
+									"objectClass": "damageNotice",
+									"sid": 221304494624698,
+									"parameters": {
+										"text": "\"-\" & DamageAmount"
+									}
+								},
+								{
+									"id": "set-angle",
+									"objectClass": "damageNotice",
+									"sid": 119581393230085,
+									"parameters": {
+										"angle": "0"
+									}
+								},
+								{
+									"id": "set-angle-of-motion",
+									"objectClass": "damageNotice",
+									"sid": 666553946671060,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"angle": "270"
+									}
+								}
+							],
+							"sid": 484972838345888
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "JellyFish",
+									"sid": 488726693201633,
+									"parameters": {
+										"instance-variable": "Health",
+										"comparison": 3,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "JellyFish",
+									"sid": 503834224959757
+								}
+							],
+							"sid": 970113877961291
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "JellyFish",
+							"sid": 679367642956332,
+							"parameters": {
+								"instance-variable": "Health",
+								"comparison": 3,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "JellyFish",
+							"sid": 826362526525498
+						}
+					],
+					"sid": 913908489967211
+				}
+			],
+			"sid": 525230095966898
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Shrimp",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 303992409571187,
+							"parameters": {
+								"interval-seconds": "random(0.6, 1.1)"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "find-path",
+							"objectClass": "shrimp",
+							"sid": 881676839944281,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"x": "Divers.X",
+								"y": "Divers.Y"
+							}
+						},
+						{
+							"id": "move-along-path",
+							"objectClass": "shrimp",
+							"sid": 790092637344907,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"sid": 632678101013167,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-x",
+									"objectClass": "shrimp",
+									"sid": 490637503684517,
+									"parameters": {
+										"comparison": 4,
+										"x-co-ordinate": "Divers.X"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-mirrored",
+									"objectClass": "shrimp",
+									"sid": 517503877159494,
+									"parameters": {
+										"state": "mirrored"
+									}
+								},
+								{
+									"id": "set-angle-of-motion",
+									"objectClass": "shrimp",
+									"sid": 627100406530277,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"angle": "180"
+									}
+								}
+							],
+							"sid": 458367102736595
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 597400490119544
+								},
+								{
+									"id": "compare-x",
+									"objectClass": "shrimp",
+									"sid": 866207910243182,
+									"parameters": {
+										"comparison": 3,
+										"x-co-ordinate": "Divers.X"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-mirrored",
+									"objectClass": "shrimp",
+									"sid": 794544445018184,
+									"parameters": {
+										"state": "not-mirrored"
+									}
+								},
+								{
+									"id": "set-angle-of-motion",
+									"objectClass": "shrimp",
+									"sid": 329566859823144,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"angle": "0"
+									}
+								}
+							],
+							"sid": 699530015997802
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Projectile",
+							"sid": 886475207238140,
+							"parameters": {
+								"object": "shrimp"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "shrimp",
+							"sid": 916687798273426,
+							"parameters": {
+								"instance-variable": "Health",
+								"value": "Projectile.Damage"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "shrimp",
+							"sid": 902586946408109,
+							"parameters": {
+								"instance-variable": "lootChance",
+								"value": "Projectile.Loot"
+							}
+						}
+					],
+					"sid": 168990160573514,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "shrimp",
+									"sid": 763152237121535,
+									"parameters": {
+										"instance-variable": "Health",
+										"comparison": 3,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "shrimp",
+									"sid": 248281928385649
+								}
+							],
+							"sid": 763323164229292
+						},
+						{
+							"eventType": "comment",
+							"text": "Punch Logic"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Projectile",
+									"sid": 125315028209138,
+									"parameters": {
+										"instance-variable": "Punch",
+										"comparison": 3,
+										"value": "random(0,100)"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Projectile",
+									"sid": 951661997594496
+								}
+							],
+							"sid": 491828101596569
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Explosivo",
+							"sid": 308712121923816,
+							"parameters": {
+								"object": "shrimp"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "shrimp",
+							"sid": 772155967860439,
+							"parameters": {
+								"instance-variable": "Health",
+								"value": "Explosivo.Damage"
+							}
+						}
+					],
+					"sid": 776830953533473,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "shrimp",
+									"sid": 244605633372305,
+									"parameters": {
+										"instance-variable": "Health",
+										"comparison": 3,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "shrimp",
+									"sid": 699092944785861
+								}
+							],
+							"sid": 204112891689585,
+							"children": [
+								{
+									"eventType": "comment",
+									"text": "Punch Logic"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Projectile",
+											"sid": 117816718413524,
+											"parameters": {
+												"instance-variable": "Punch",
+												"comparison": 3,
+												"value": "random(0,100)"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "destroy",
+											"objectClass": "Projectile",
+											"sid": 383517567616857
+										}
+									],
+									"sid": 129826741727364
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-destroyed",
+							"objectClass": "shrimp",
+							"sid": 221631446656414
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "shrimp",
+							"sid": 131719265189252,
+							"parameters": {
+								"instance-variable": "lootChance",
+								"comparison": 4,
+								"value": "random(0,100)"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 893835507835210,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 732620415071740,
+									"parameters": {
+										"first-value": "0",
+										"comparison": 0,
+										"second-value": "choose(0,1)"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "spawn-another-object",
+									"objectClass": "shrimp",
+									"sid": 662762562008902,
+									"parameters": {
+										"object": "ShrimpEggs",
+										"layer": "\"Main\"",
+										"image-point": "0",
+										"create-hierarchy": false
+									}
+								},
+								{
+									"id": "set-angle-of-motion",
+									"objectClass": "ShrimpEggs",
+									"sid": 670937738450212,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"angle": "90"
+									}
+								}
+							],
+							"sid": 923549466691236
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 655091093966282
+								}
+							],
+							"actions": [
+								{
+									"id": "spawn-another-object",
+									"objectClass": "shrimp",
+									"sid": 103406075057755,
+									"parameters": {
+										"object": "HarpoonLoot",
+										"layer": "\"Main\"",
+										"image-point": "0",
+										"create-hierarchy": false
+									}
+								},
+								{
+									"id": "move-to-bottom",
+									"objectClass": "HarpoonLoot",
+									"sid": 560509665798692
+								},
+								{
+									"id": "set-angle-of-motion",
+									"objectClass": "HarpoonLoot",
+									"sid": 379826435581409,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"angle": "90"
+									}
+								}
+							],
+							"sid": 378917515235674
+						}
+					]
+				}
+			],
+			"sid": 989502750490605
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Shark",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "Shark",
+							"sid": 476490364829779
+						}
+					],
+					"actions": [
+						{
+							"id": "set-speed",
+							"objectClass": "Shark",
+							"sid": 163499806021162,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"speed": "Shark.Speed"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Shark",
+							"sid": 527447286756207,
+							"parameters": {
+								"instance-variable": "Distance",
+								"value": "choose(16, 26, 36)"
+							}
+						}
+					],
+					"sid": 906211861458198
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 318132049308507,
+							"parameters": {
+								"interval-seconds": "1.0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "Shark",
+							"sid": 208925172836070,
+							"parameters": {
+								"instance-variable": "Distance",
+								"value": "1"
+							}
+						},
+						{
+							"callFunction": "SharkMove",
+							"sid": 239338530476751
+						}
+					],
+					"sid": 867310596456038
+				},
+				{
+					"functionName": "SharkMove",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 882044833475716,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Shark",
+									"sid": 884725933250488,
+									"parameters": {
+										"instance-variable": "Distance",
+										"comparison": 3,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 433570820342250,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-mirrored",
+											"objectClass": "Shark",
+											"sid": 613464982330508,
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-mirrored",
+											"objectClass": "Shark",
+											"sid": 211109116175242,
+											"parameters": {
+												"state": "mirrored"
+											}
+										},
+										{
+											"id": "set-angle-of-motion",
+											"objectClass": "Shark",
+											"sid": 672113833208031,
+											"behaviorType": "Bullet",
+											"parameters": {
+												"angle": "180"
+											}
+										},
+										{
+											"id": "add-to-instvar",
+											"objectClass": "Shark",
+											"sid": 236545765171286,
+											"parameters": {
+												"instance-variable": "Distance",
+												"value": "choose(9, 19, 29, 39, 6, 16, 26, 36)"
+											}
+										}
+									],
+									"sid": 220475732943450
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 147126703756607
+										}
+									],
+									"actions": [
+										{
+											"id": "set-mirrored",
+											"objectClass": "Shark",
+											"sid": 596034640887131,
+											"parameters": {
+												"state": "not-mirrored"
+											}
+										},
+										{
+											"id": "set-angle-of-motion",
+											"objectClass": "Shark",
+											"sid": 919213357200035,
+											"behaviorType": "Bullet",
+											"parameters": {
+												"angle": "0"
+											}
+										},
+										{
+											"id": "add-to-instvar",
+											"objectClass": "Shark",
+											"sid": 867448045819337,
+											"parameters": {
+												"instance-variable": "Distance",
+												"value": "round(random(1, (LayoutWidth - Shark.x) / 130))"
+											}
+										}
+									],
+									"sid": 453134497926698
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "has-los-to-object",
+							"objectClass": "Shark",
+							"sid": 157118023025080,
+							"behaviorType": "LineOfSight",
+							"parameters": {
+								"object": "Divers",
+								"image-point": "0"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 184465432747877
+						}
+					],
+					"actions": [
+						{
+							"id": "set-speed",
+							"objectClass": "Shark",
+							"sid": 570713149161325,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"speed": "Shark.Speed * 2"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Shark",
+							"sid": 668875525175765,
+							"parameters": {
+								"animation": "\"Attack\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 615733677985116
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "has-los-to-object",
+							"objectClass": "Shark",
+							"sid": 280580179932772,
+							"behaviorType": "LineOfSight",
+							"parameters": {
+								"object": "Divers",
+								"image-point": "0"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 423174390658980
+						}
+					],
+					"actions": [
+						{
+							"id": "set-speed",
+							"objectClass": "Shark",
+							"sid": 663159862779071,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"speed": "Shark.Speed"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Shark",
+							"sid": 978080888327823,
+							"parameters": {
+								"animation": "\"Patrol\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 333707287213832
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Projectile",
+							"sid": 289875579045488,
+							"parameters": {
+								"object": "Shark"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "Shark",
+							"sid": 594811134638511,
+							"parameters": {
+								"instance-variable": "Health",
+								"value": "Projectile.Damage"
+							}
+						},
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "Shark",
+							"sid": 473128455472856,
+							"parameters": {
+								"instance-variable": "lootChance",
+								"value": "Projectile.Loot"
+							}
+						}
+					],
+					"sid": 711333526833448,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Shark",
+									"sid": 307244170526214,
+									"parameters": {
+										"instance-variable": "Health",
+										"comparison": 3,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Shark",
+									"sid": 264211175497482
+								}
+							],
+							"sid": 256411394877877
+						},
+						{
+							"eventType": "comment",
+							"text": "Punch Logic"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Projectile",
+									"sid": 582578031555918,
+									"parameters": {
+										"instance-variable": "Punch",
+										"comparison": 3,
+										"value": "random(0,100)"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Projectile",
+									"sid": 211755726538947
+								}
+							],
+							"sid": 363022944766385
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Explosivo",
+							"sid": 369625312917091,
+							"parameters": {
+								"object": "Shark"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "Shark",
+							"sid": 833937349595050,
+							"parameters": {
+								"instance-variable": "Health",
+								"value": "Explosivo.Damage"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "Shark",
+							"sid": 330313230077887,
+							"parameters": {
+								"instance-variable": "lootChance",
+								"value": "Projectile.Loot"
+							}
+						}
+					],
+					"sid": 635949534938228,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Shark",
+									"sid": 767482936971205,
+									"parameters": {
+										"instance-variable": "Health",
+										"comparison": 3,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Shark",
+									"sid": 524813291843541
+								}
+							],
+							"sid": 235999983776726,
+							"children": [
+								{
+									"eventType": "comment",
+									"text": "Loot Logic"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Shark",
+											"sid": 468145676584593,
+											"parameters": {
+												"instance-variable": "lootChance",
+												"comparison": 2,
+												"value": "random(100)"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Shark",
+											"sid": 607878951266341,
+											"parameters": {
+												"object": "FishLoot",
+												"layer": "\"Main\"",
+												"image-point": "0",
+												"create-hierarchy": false
+											}
+										},
+										{
+											"id": "move-to-bottom",
+											"objectClass": "FishLoot",
+											"sid": 580295568657204
+										},
+										{
+											"id": "set-angle-of-motion",
+											"objectClass": "FishLoot",
+											"sid": 839646715611717,
+											"behaviorType": "Bullet",
+											"parameters": {
+												"angle": "90"
+											}
+										}
+									],
+									"sid": 128751233911891
+								},
+								{
+									"eventType": "comment",
+									"text": "Punch Logic"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Projectile",
+											"sid": 223731312227866,
+											"parameters": {
+												"instance-variable": "Punch",
+												"comparison": 3,
+												"value": "random(0,100)"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "destroy",
+											"objectClass": "Projectile",
+											"sid": 129189336441427
+										}
+									],
+									"sid": 396069661738146
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-destroyed",
+							"objectClass": "Shark",
+							"sid": 842929763896191
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Shark",
+							"sid": 386524203403729,
+							"parameters": {
+								"instance-variable": "lootChance",
+								"comparison": 4,
+								"value": "random(0, 100)"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Shark",
+							"sid": 664409681762769,
+							"parameters": {
+								"object": "SharkFin",
+								"layer": "\"Main\"",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						}
+					],
+					"sid": 801035933069180
+				}
+			],
+			"sid": 837635904549504
+		}
+	],
+	"sid": 919981836484930
+}

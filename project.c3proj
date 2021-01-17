@@ -87,6 +87,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"version": "r231",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Flash",
 			"name": "Flash",
@@ -247,7 +255,12 @@
 			"Shark",
 			"SharkFin",
 			"HarpoonLoot",
-			"CrewDB"
+			"CrewDB",
+			"Projectile",
+			"ItemDB",
+			"Audio",
+			"Explosivo",
+			"KnifeSwoop"
 		],
 		"subfolders": [
 			{
@@ -350,7 +363,10 @@
 	"families": {
 		"items": [
 			"ParallaxMovement",
-			"Divers"
+			"Divers",
+			"Enemies",
+			"Loot",
+			"Explosions"
 		],
 		"subfolders": []
 	},
@@ -369,7 +385,8 @@
 			"Init",
 			"TAVresultFunctions",
 			"DivingEvents",
-			"UniversalFunctions"
+			"UniversalFunctions",
+			"EnemyEvents"
 		],
 		"subfolders": []
 	},
@@ -507,6 +524,11 @@
 					"name": "CrewDB.json",
 					"type": "application/json",
 					"sid": 436984124588395
+				},
+				{
+					"name": "ItemDB.json",
+					"type": "application/json",
+					"sid": 984135925465439
 				}
 			],
 			"subfolders": []

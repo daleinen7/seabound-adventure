@@ -3969,6 +3969,16 @@
 			},
 			"uid": 154,
 			"instanceVariables": {}
+		},
+		{
+			"type": "ItemDB",
+			"properties": {
+				"width": 10,
+				"height": 1,
+				"depth": 1
+			},
+			"uid": 156,
+			"instanceVariables": {}
 		}
 	],
 	"effectTypes": [],

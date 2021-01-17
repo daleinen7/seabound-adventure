@@ -1,0 +1,39 @@
+{
+	"name": "Enemies",
+	"plugin-id": "Sprite",
+	"sid": 839618704098003,
+	"instanceVariables": [
+		{
+			"name": "Health",
+			"type": "number",
+			"desc": "",
+			"sid": 895491434197267
+		},
+		{
+			"name": "Speed",
+			"type": "number",
+			"desc": "",
+			"sid": 202611079595034
+		},
+		{
+			"name": "Damage",
+			"type": "number",
+			"desc": "",
+			"sid": 496665005096331
+		},
+		{
+			"name": "lootChance",
+			"type": "number",
+			"desc": "",
+			"sid": 415215537220724
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"AttackFishy",
+		"JellyFish",
+		"Shark",
+		"shrimp"
+	]
+}

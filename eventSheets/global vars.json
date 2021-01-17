@@ -58,6 +58,16 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 488032040016337
+		},
+		{
+			"eventType": "variable",
+			"name": "Day",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 987643213828323
 		}
 	],
 	"sid": 309027285059479

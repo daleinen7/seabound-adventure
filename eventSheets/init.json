@@ -61,6 +61,28 @@
 						{
 							"id": "request-project-file",
 							"objectClass": "AJAX",
+							"sid": 686936939551812,
+							"parameters": {
+								"tag": "\"itemDB\"",
+								"file": "ItemDB.json"
+							}
+						},
+						{
+							"id": "wait-for-previous-actions",
+							"objectClass": "System",
+							"sid": 257910954133561
+						},
+						{
+							"id": "load",
+							"objectClass": "ItemDB",
+							"sid": 921004970842524,
+							"parameters": {
+								"json": "AJAX.LastData"
+							}
+						},
+						{
+							"id": "request-project-file",
+							"objectClass": "AJAX",
 							"sid": 816561503282714,
 							"disabled": true,
 							"parameters": {

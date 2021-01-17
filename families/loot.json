@@ -1,0 +1,37 @@
+{
+	"name": "Loot",
+	"plugin-id": "Sprite",
+	"sid": 996855453301597,
+	"instanceVariables": [
+		{
+			"name": "LootType",
+			"type": "string",
+			"desc": "",
+			"sid": 307391369494211
+		},
+		{
+			"name": "Value",
+			"type": "number",
+			"desc": "",
+			"sid": 984551060189124
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 947939801061060
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"FishLoot",
+		"JellyOil",
+		"ShrimpEggs",
+		"SharkFin",
+		"FuelLoot",
+		"ScrapLoot",
+		"ScrapLarge",
+		"HarpoonLoot"
+	]
+}

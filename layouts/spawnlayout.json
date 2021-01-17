@@ -221,8 +221,23 @@
 						"live-preview": false
 					},
 					"uid": 141,
-					"instanceVariables": {},
-					"behaviors": {},
+					"instanceVariables": {
+						"LootType": "",
+						"Value": 0
+					},
+					"behaviors": {
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 568,
 						"y": 133,
@@ -250,8 +265,23 @@
 						"live-preview": false
 					},
 					"uid": 142,
-					"instanceVariables": {},
-					"behaviors": {},
+					"instanceVariables": {
+						"LootType": "",
+						"Value": 0
+					},
+					"behaviors": {
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 621,
 						"y": 125,
@@ -279,8 +309,23 @@
 						"live-preview": false
 					},
 					"uid": 143,
-					"instanceVariables": {},
-					"behaviors": {},
+					"instanceVariables": {
+						"LootType": "",
+						"Value": 0
+					},
+					"behaviors": {
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 666,
 						"y": 133,
@@ -308,7 +353,12 @@
 						"live-preview": false
 					},
 					"uid": 144,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Health": 0,
+						"Speed": 0,
+						"Damage": 0,
+						"lootChance": 0
+					},
 					"behaviors": {
 						"Bullet": {
 							"properties": {
@@ -427,8 +477,23 @@
 						"live-preview": false
 					},
 					"uid": 146,
-					"instanceVariables": {},
-					"behaviors": {},
+					"instanceVariables": {
+						"LootType": "",
+						"Value": 0
+					},
+					"behaviors": {
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 638,
 						"y": 211,
@@ -456,7 +521,12 @@
 						"live-preview": false
 					},
 					"uid": 147,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Health": 0,
+						"Speed": 0,
+						"Damage": 0,
+						"lootChance": 0
+					},
 					"behaviors": {
 						"Bullet": {
 							"properties": {
@@ -525,8 +595,23 @@
 						"live-preview": false
 					},
 					"uid": 148,
-					"instanceVariables": {},
-					"behaviors": {},
+					"instanceVariables": {
+						"LootType": "",
+						"Value": 0
+					},
+					"behaviors": {
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 622,
 						"y": 255,
@@ -554,7 +639,12 @@
 						"live-preview": false
 					},
 					"uid": 149,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Health": 0,
+						"Speed": 0,
+						"Damage": 0,
+						"lootChance": 0
+					},
 					"behaviors": {
 						"Pathfinding": {
 							"properties": {
@@ -609,8 +699,23 @@
 						"live-preview": false
 					},
 					"uid": 150,
-					"instanceVariables": {},
-					"behaviors": {},
+					"instanceVariables": {
+						"LootType": "",
+						"Value": 0
+					},
+					"behaviors": {
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 633,
 						"y": 306,
@@ -639,6 +744,10 @@
 					},
 					"uid": 151,
 					"instanceVariables": {
+						"Health": 0,
+						"Speed": 0,
+						"Damage": 0,
+						"lootChance": 0,
 						"Distance": 6
 					},
 					"behaviors": {
@@ -689,8 +798,23 @@
 						"live-preview": false
 					},
 					"uid": 152,
-					"instanceVariables": {},
-					"behaviors": {},
+					"instanceVariables": {
+						"LootType": "",
+						"Value": 0
+					},
+					"behaviors": {
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 703,
 						"y": 379,
@@ -718,8 +842,23 @@
 						"live-preview": false
 					},
 					"uid": 153,
-					"instanceVariables": {},
-					"behaviors": {},
+					"instanceVariables": {
+						"LootType": "",
+						"Value": 0
+					},
+					"behaviors": {
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 640,
 						"y": 166,
@@ -727,6 +866,151 @@
 						"height": 11,
 						"originX": 0.5,
 						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Projectile",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 155,
+					"instanceVariables": {
+						"Damage": 0,
+						"Distance": 0,
+						"Punch": 0,
+						"Loot": 0
+					},
+					"behaviors": {
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": true,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 332,
+						"y": 277,
+						"width": 16,
+						"height": 2,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "damageNotice",
+					"properties": {
+						"text": "-2",
+						"enable-bbcode": true,
+						"font": "m3x6",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.9882352941176471,
+							0.9215686274509803,
+							0.09411764705882353,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 157,
+					"instanceVariables": {},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 0.5,
+								"fade-out-time": 0.5,
+								"destroy": true,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"Bullet": {
+							"properties": {
+								"speed": 30,
+								"acceleration": -100,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": false,
+								"step": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 352.2088078578545,
+						"y": 249.90267548745052,
+						"width": 15.742582740423359,
+						"height": 17.892028927006436,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "KnifeSwoop",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 159,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": 717,
+						"y": 174,
+						"width": 10,
+						"height": 10,
+						"originX": 0.2,
+						"originY": 1,
 						"color": [
 							1,
 							1,

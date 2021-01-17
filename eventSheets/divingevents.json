@@ -6,208 +6,286 @@
 			"includeSheet": "Global Vars"
 		},
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 959981664913839
-				}
-			],
-			"actions": [],
-			"sid": 786046798446733,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [],
-					"actions": [
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 943651315288848,
-							"parameters": {
-								"seconds": "0.1"
-							}
-						},
-						{
-							"callFunction": "DiverDive",
-							"sid": 147322149907545
-						}
-					],
-					"sid": 560452524269707
-				}
-			]
-		},
-		{
-			"functionName": "DiverDive",
-			"functionDescription": "",
-			"functionCategory": "",
-			"functionReturnType": "none",
-			"functionIsAsync": false,
-			"functionParameters": [],
-			"eventType": "function-block",
-			"conditions": [],
-			"actions": [],
-			"sid": 190485482834837,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-empty",
-							"objectClass": "FirstMate",
-							"sid": 258354282141583
-						}
-					],
-					"actions": [
-						{
-							"callFunction": "AssignCrew",
-							"sid": 308199625284481,
-							"parameters": [
-								"2"
-							]
-						}
-					],
-					"sid": 974650496834494
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-value",
-							"objectClass": "FirstMate",
-							"sid": 244463472691107,
-							"parameters": {
-								"key": "\"name\"",
-								"comparison": 0,
-								"value": "\"Cristo\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 234103004784190,
-							"parameters": {
-								"object-to-create": "Cristo_Diving",
-								"layer": "\"Main\"",
-								"x": "50",
-								"y": "100",
-								"create-hierarchy": false
-							}
-						}
-					],
-					"sid": 695566085790867
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-value",
-							"objectClass": "FirstMate",
-							"sid": 598546926511814,
-							"parameters": {
-								"key": "\"name\"",
-								"comparison": 0,
-								"value": "\"Viktoria\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 963986222709675,
-							"parameters": {
-								"object-to-create": "Viktoria_Diving",
-								"layer": "\"Main\"",
-								"x": "50",
-								"y": "100",
-								"create-hierarchy": false
-							}
-						}
-					],
-					"sid": 116313603379753
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-value",
-							"objectClass": "FirstMate",
-							"sid": 297769643856716,
-							"parameters": {
-								"key": "\"name\"",
-								"comparison": 0,
-								"value": "\"Jacob\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 589985666544759,
-							"parameters": {
-								"object-to-create": "Jacob_Diving",
-								"layer": "\"Main\"",
-								"x": "50",
-								"y": "100",
-								"create-hierarchy": false
-							}
-						}
-					],
-					"sid": 507623188854780
-				},
-				{
-					"eventType": "block",
-					"conditions": [],
-					"actions": [
-						{
-							"id": "wait-for-previous-actions",
-							"objectClass": "System",
-							"sid": 235924682263026
-						},
-						{
-							"id": "set-max-speed",
-							"objectClass": "Divers",
-							"sid": 766863145201319,
-							"behaviorType": "8Direction",
-							"parameters": {
-								"max-speed": "round(FirstMate.Get(\"top speed\") - 45 + (45 / 4 * FirstMate.Get(\"energy\")))"
-							}
-						},
-						{
-							"id": "set-acceleration",
-							"objectClass": "Divers",
-							"sid": 232982495675356,
-							"behaviorType": "8Direction",
-							"parameters": {
-								"acceleration": "round(FirstMate.Get(\"acceleration\") - 25 + (25 / 4 * FirstMate.Get(\"energy\")))"
-							}
-						},
-						{
-							"id": "set-deceleration",
-							"objectClass": "Divers",
-							"sid": 306735137024952,
-							"behaviorType": "8Direction",
-							"parameters": {
-								"deceleration": "round(FirstMate.Get(\"deceleration\") - 25 + (25 / 4 * FirstMate.Get(\"energy\")))"
-							}
-						}
-					],
-					"sid": 710703626639938
-				}
-			]
-		},
-		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Diver Behavior",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
+				{
+					"eventType": "variable",
+					"name": "Ammo",
+					"type": "number",
+					"initialValue": "1",
+					"comment": "",
+					"isStatic": true,
+					"isConstant": false,
+					"sid": 713366143077118
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 720220663515109
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 876694008030427,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"callFunction": "DiverDive",
+							"sid": 699947072278514
+						}
+					],
+					"sid": 926547930418190
+				},
+				{
+					"functionName": "DiverDive",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 158238814368958,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "If no diver in dictionary make it"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-empty",
+									"objectClass": "FirstMate",
+									"sid": 249039097801508
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "AssignCrew",
+									"sid": 936130410638108,
+									"parameters": [
+										"2"
+									]
+								}
+							],
+							"sid": 965309698585542
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-value",
+									"objectClass": "FirstMate",
+									"sid": 615533006174399,
+									"parameters": {
+										"key": "\"name\"",
+										"comparison": 0,
+										"value": "\"Cristo\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 493886825159614,
+									"parameters": {
+										"object-to-create": "Cristo_Diving",
+										"layer": "\"Main\"",
+										"x": "50",
+										"y": "100",
+										"create-hierarchy": false
+									}
+								}
+							],
+							"sid": 675862033317315
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-value",
+									"objectClass": "FirstMate",
+									"sid": 662444561553269,
+									"parameters": {
+										"key": "\"name\"",
+										"comparison": 0,
+										"value": "\"Viktoria\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 539377969555122,
+									"parameters": {
+										"object-to-create": "Viktoria_Diving",
+										"layer": "\"Main\"",
+										"x": "50",
+										"y": "100",
+										"create-hierarchy": false
+									}
+								}
+							],
+							"sid": 562742590999174
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-value",
+									"objectClass": "FirstMate",
+									"sid": 261591409238605,
+									"parameters": {
+										"key": "\"name\"",
+										"comparison": 0,
+										"value": "\"Jacob\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 102715098810003,
+									"parameters": {
+										"object-to-create": "Jacob_Diving",
+										"layer": "\"Main\"",
+										"x": "50",
+										"y": "100",
+										"create-hierarchy": false
+									}
+								}
+							],
+							"sid": 405286704183628
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "wait-for-previous-actions",
+									"objectClass": "System",
+									"sid": 148587288792322
+								},
+								{
+									"id": "set-max-speed",
+									"objectClass": "Divers",
+									"sid": 398867898207047,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"max-speed": "round(FirstMate.Get(\"top speed\") - 45 + (45 / 4 * FirstMate.Get(\"energy\")))"
+									}
+								},
+								{
+									"id": "set-acceleration",
+									"objectClass": "Divers",
+									"sid": 478979255357926,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"acceleration": "round(FirstMate.Get(\"acceleration\") - 25 + (25 / 4 * FirstMate.Get(\"energy\")))"
+									}
+								},
+								{
+									"id": "set-deceleration",
+									"objectClass": "Divers",
+									"sid": 494417596898815,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"deceleration": "round(FirstMate.Get(\"deceleration\") - 25 + (25 / 4 * FirstMate.Get(\"energy\")))"
+									}
+								}
+							],
+							"sid": 507348178164728
+						},
+						{
+							"eventType": "comment",
+							"text": "Set Ammo"
+						},
+						{
+							"eventType": "comment",
+							"text": "If value at inventory slot 4 is empty or not ammo set it ammo to 1"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-at-x",
+									"objectClass": "Inventory",
+									"sid": 779893190613408,
+									"parameters": {
+										"x": "3",
+										"comparison": 0,
+										"value": "0"
+									}
+								},
+								{
+									"id": "compare-at-x",
+									"objectClass": "Inventory",
+									"sid": 937049587463596,
+									"parameters": {
+										"x": "3",
+										"comparison": 2,
+										"value": "7"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 738886176699566,
+									"parameters": {
+										"variable": "Ammo",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 699720429212475,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "comment",
+							"text": "otherwise set it to what it is"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 466612821250468
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 254210778907426,
+									"parameters": {
+										"variable": "Ammo",
+										"value": "Inventory.At(3)"
+									}
+								}
+							],
+							"sid": 170357049976210
+						}
+					]
+				},
 				{
 					"eventType": "group",
 					"disabled": false,
@@ -989,6 +1067,650 @@
 						}
 					],
 					"sid": 522339124159067
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Diver Attack",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "variable",
+							"name": "testingAngle",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 565909170180805
+						},
+						{
+							"eventType": "variable",
+							"name": "accuracyTotal",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 220713520722507
+						},
+						{
+							"functionName": "Spawn Projectile",
+							"functionDescription": "",
+							"functionCategory": "",
+							"functionReturnType": "none",
+							"functionIsAsync": false,
+							"functionParameters": [
+								{
+									"name": "DiverAim",
+									"type": "number",
+									"initialValue": "0",
+									"comment": "",
+									"sid": 273801899796231
+								},
+								{
+									"name": "AmmoID",
+									"type": "number",
+									"initialValue": "0",
+									"comment": "",
+									"sid": 805161058401181
+								}
+							],
+							"eventType": "function-block",
+							"conditions": [],
+							"actions": [],
+							"sid": 269738157116626,
+							"children": [
+								{
+									"eventType": "comment",
+									"text": "Make Accuracy Total"
+								},
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 673948886395997,
+											"parameters": {
+												"variable": "accuracyTotal",
+												"value": "DiverAim + ItemDB.At(AmmoID, 6)"
+											}
+										}
+									],
+									"sid": 285173840916739
+								},
+								{
+									"eventType": "comment",
+									"text": "Spawn Projectile"
+								},
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Divers",
+											"sid": 749266944711446,
+											"parameters": {
+												"object": "Projectile",
+												"layer": "\"Main\"",
+												"image-point": "1",
+												"create-hierarchy": false
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "Projectile",
+											"sid": 682993732905232,
+											"parameters": {
+												"animation": "str(AmmoID)",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 412534066982139,
+									"children": [
+										{
+											"eventType": "comment",
+											"text": "Set Angle"
+										},
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 428410843589049,
+													"parameters": {
+														"variable": "testingAngle",
+														"value": "random(0 - accuracyTotal, accuracyTotal)"
+													}
+												},
+												{
+													"id": "set-angle",
+													"objectClass": "Projectile",
+													"sid": 516344547637474,
+													"parameters": {
+														"angle": "testingAngle"
+													}
+												}
+											],
+											"sid": 415879874152705
+										},
+										{
+											"eventType": "comment",
+											"text": "Set Mirrored"
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-mirrored",
+													"objectClass": "Divers",
+													"sid": 266396666265870
+												}
+											],
+											"actions": [
+												{
+													"id": "set-angle",
+													"objectClass": "Projectile",
+													"sid": 119822027677874,
+													"parameters": {
+														"angle": "Projectile.Angle + 180"
+													}
+												}
+											],
+											"sid": 854556137021124
+										},
+										{
+											"eventType": "comment",
+											"text": "Set Speed"
+										},
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "set-speed",
+													"objectClass": "Projectile",
+													"sid": 807997159352448,
+													"behaviorType": "Bullet",
+													"parameters": {
+														"speed": "ItemDB.At(AmmoID, 14) + FirstMate.Get(\"projectile speed\")"
+													}
+												},
+												{
+													"id": "set-acceleration",
+													"objectClass": "Projectile",
+													"sid": 393280526518815,
+													"behaviorType": "Bullet",
+													"parameters": {
+														"acceleration": "ItemDB.At(AmmoID, 12)"
+													}
+												}
+											],
+											"sid": 142885297495617
+										},
+										{
+											"eventType": "comment",
+											"text": "Set Gravity"
+										},
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "set-gravity",
+													"objectClass": "Projectile",
+													"sid": 276016520384195,
+													"behaviorType": "Bullet",
+													"parameters": {
+														"gravity": "FirstMate.Get(\"projectile gravity\")"
+													}
+												}
+											],
+											"sid": 815778922896407
+										},
+										{
+											"eventType": "comment",
+											"text": "Set Punch"
+										},
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "set-instvar-value",
+													"objectClass": "Projectile",
+													"sid": 359451523598643,
+													"parameters": {
+														"instance-variable": "Punch",
+														"value": "ItemDB.At(AmmoID, 8)"
+													}
+												}
+											],
+											"sid": 598831110455092
+										},
+										{
+											"eventType": "comment",
+											"text": "Set Distance"
+										},
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "set-instvar-value",
+													"objectClass": "Projectile",
+													"sid": 804687866632539,
+													"parameters": {
+														"instance-variable": "Distance",
+														"value": "210 + (FirstMate.Get(\"morale\") * 10) + ItemDB.At(AmmoID, 7)"
+													}
+												}
+											],
+											"sid": 956179055373514
+										},
+										{
+											"eventType": "comment",
+											"text": "Loot Chance"
+										},
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "set-instvar-value",
+													"objectClass": "Projectile",
+													"sid": 299221915631077,
+													"parameters": {
+														"instance-variable": "Loot",
+														"value": "ItemDB.At(AmmoID, 9)"
+													}
+												}
+											],
+											"sid": 610826307688807
+										},
+										{
+											"eventType": "comment",
+											"text": "Damage"
+										},
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "set-instvar-value",
+													"objectClass": "Projectile",
+													"sid": 611371779043878,
+													"parameters": {
+														"instance-variable": "Damage",
+														"value": "round(random(FirstMate.Get(\"base damage\"), FirstMate.Get(\"max damage\") + 1) + ItemDB.At(AmmoID, 11))"
+													}
+												}
+											],
+											"sid": 241556232228836
+										}
+									]
+								}
+							]
+						},
+						{
+							"eventType": "variable",
+							"name": "ReloadTime",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"isStatic": true,
+							"isConstant": false,
+							"sid": 607985823181255
+						},
+						{
+							"eventType": "comment",
+							"text": "Fire Main Weapon"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 787529526634724,
+									"parameters": {
+										"key": 32
+									}
+								}
+							],
+							"actions": [],
+							"sid": 952441680984101,
+							"children": [
+								{
+									"eventType": "comment",
+									"text": "Check Reload Speed"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 667918650687079,
+											"parameters": {
+												"first-value": "ReloadTime",
+												"comparison": 2,
+												"second-value": "time"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 467831664396572,
+									"children": [
+										{
+											"eventType": "comment",
+											"text": "Check if there is ammo"
+										},
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [],
+											"sid": 523262396903033,
+											"children": [
+												{
+													"eventType": "comment",
+													"text": "If Multiple Shots loop a function call."
+												},
+												{
+													"eventType": "block",
+													"conditions": [],
+													"actions": [],
+													"sid": 290671067551833
+												},
+												{
+													"eventType": "comment",
+													"text": "If Staggered Shot; loop a function call with wait"
+												},
+												{
+													"eventType": "block",
+													"conditions": [],
+													"actions": [],
+													"sid": 484012613429900
+												},
+												{
+													"eventType": "comment",
+													"text": "Call a single Shot"
+												},
+												{
+													"eventType": "block",
+													"conditions": [],
+													"actions": [
+														{
+															"callFunction": "Spawn Projectile",
+															"sid": 329240684398503,
+															"parameters": [
+																"random(0 - FirstMate.Get(\"aim\"), FirstMate.Get(\"aim\"))",
+																"Ammo"
+															]
+														}
+													],
+													"sid": 818909990243775
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					],
+					"sid": 456110756935955
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Enemy Generator",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 826683407442599,
+									"parameters": {
+										"first-value": "JellyFish.Count",
+										"comparison": 3,
+										"second-value": "floor(Day * 2 + 1)"
+									}
+								},
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 519048245288083,
+									"parameters": {
+										"interval-seconds": "random((Day * -0.25) + 0.5, (Day * -4.5) + 5.5)"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 826959862254720,
+									"parameters": {
+										"object-to-create": "JellyFish",
+										"layer": "\"Main\"",
+										"x": "random(0, LayoutWidth)",
+										"y": "LayoutHeight",
+										"create-hierarchy": false
+									}
+								}
+							],
+							"sid": 390624517517597
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 832692933480197,
+									"parameters": {
+										"interval-seconds": "random((Day * -0.15) + 2.5, (Day * -0.45) + 5.7)"
+									}
+								},
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 999895925443594,
+									"parameters": {
+										"first-value": "AttackFishy.Count",
+										"comparison": 3,
+										"second-value": "Day"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 739886887602978,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 410866015381676,
+											"parameters": {
+												"first-value": "0",
+												"comparison": 0,
+												"second-value": "choose(0,1)"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 209818402636332,
+											"parameters": {
+												"object-to-create": "AttackFishy",
+												"layer": "\"Main\"",
+												"x": "SwarmBoundryPort.X - 10",
+												"y": "random(BoatDiving.Y + 20, LayoutHeight - 4)",
+												"create-hierarchy": false
+											}
+										}
+									],
+									"sid": 290702951881540
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 665649520167166
+										}
+									],
+									"actions": [
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 524113451137726,
+											"parameters": {
+												"object-to-create": "AttackFishy",
+												"layer": "\"Main\"",
+												"x": "SwarmBoundryStarboard.X + 10",
+												"y": "random(BoatDiving.Y + 20, LayoutHeight - 4)",
+												"create-hierarchy": false
+											}
+										},
+										{
+											"id": "set-mirrored",
+											"objectClass": "AttackFishy",
+											"sid": 255619600065144,
+											"parameters": {
+												"state": "mirrored"
+											}
+										},
+										{
+											"id": "set-angle-of-motion",
+											"objectClass": "AttackFishy",
+											"sid": 414132383835591,
+											"behaviorType": "Bullet",
+											"parameters": {
+												"angle": "180"
+											}
+										}
+									],
+									"sid": 678483214419495
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 212307823626033,
+									"parameters": {
+										"first-value": "shrimp.Count",
+										"comparison": 2,
+										"second-value": "floor(Day * 0.48)"
+									}
+								},
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 934852773355533,
+									"parameters": {
+										"interval-seconds": "random((Day * -0.5) + 14, (Day * -0.15) + 21.5)"
+									}
+								},
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 522790683523526,
+									"disabled": true,
+									"parameters": {
+										"first-value": "shrimp.Count",
+										"comparison": 3,
+										"second-value": "floor(Day * 0.7)"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 364352391887568,
+									"parameters": {
+										"object-to-create": "shrimp",
+										"layer": "\"Main\"",
+										"x": "choose(-20, LayoutWidth + 20)",
+										"y": "random(BoatBackLayer.Y + 100, LayoutHeight)",
+										"create-hierarchy": false
+									}
+								}
+							],
+							"sid": 989014656489996
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 115562890608042,
+									"parameters": {
+										"first-value": "Shark.Count",
+										"comparison": 2,
+										"second-value": "floor(Day * 0.25)"
+									}
+								},
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 555889124968559,
+									"parameters": {
+										"interval-seconds": "random((Day * -0.5) + 15.5, (Day * -0.45) + 20)"
+									}
+								},
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 789411437606248,
+									"disabled": true,
+									"parameters": {
+										"first-value": "Shark.Count",
+										"comparison": 3,
+										"second-value": "floor(Day * 0.4)"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 152437600960005,
+									"parameters": {
+										"object-to-create": "Shark",
+										"layer": "\"Main\"",
+										"x": "choose(-100, LayoutWidth + 100)",
+										"y": "random(BoatDiving.Y + 100, LayoutHeight)",
+										"create-hierarchy": false
+									}
+								}
+							],
+							"sid": 925605083088900
+						}
+					],
+					"sid": 759139225425588
 				}
 			],
 			"sid": 352612916073395
