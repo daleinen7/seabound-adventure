@@ -678,6 +678,14 @@
 								"variable": "DestinationLoc",
 								"value": "CurrentLoc + sqrt(OverworldArray.Width)"
 							}
+						},
+						{
+							"id": "set-y",
+							"objectClass": "navLocation",
+							"sid": 266505296261049,
+							"parameters": {
+								"y": "navLocation.Y + 10"
+							}
 						}
 					],
 					"sid": 465402842304738
@@ -710,6 +718,14 @@
 								"variable": "DestinationLoc",
 								"value": "CurrentLoc + 1"
 							}
+						},
+						{
+							"id": "set-x",
+							"objectClass": "navLocation",
+							"sid": 580688204487462,
+							"parameters": {
+								"x": "navLocation.X + 10"
+							}
 						}
 					],
 					"sid": 366604989383511
@@ -729,6 +745,17 @@
 							"parameters": {
 								"group-name": "\"TAV\"",
 								"state": "deactivated"
+							}
+						},
+						{
+							"id": "flash",
+							"objectClass": "navLocation",
+							"sid": 425604683718168,
+							"behaviorType": "Flash",
+							"parameters": {
+								"on-time": "1",
+								"off-time": "1.5",
+								"duration": "Infinity"
 							}
 						}
 					],
@@ -845,6 +872,12 @@
 								"text": "TAVs.At(1, 0, CurrentTAV)",
 								"duration": "2"
 							}
+						},
+						{
+							"id": "stop-flashing",
+							"objectClass": "navLocation",
+							"sid": 301152467603414,
+							"behaviorType": "Flash"
 						}
 					],
 					"sid": 258066600967370
@@ -1913,6 +1946,15 @@
 							"parameters": [
 								"miniEvents.At(5, ChoicesArray.At(CurrentMiniChoice), CurrentMiniTAV)"
 							]
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 523170253230993,
+							"parameters": {
+								"variable": "CurrentMiniLine",
+								"value": "100"
+							}
 						}
 					],
 					"sid": 823377503059651
@@ -1949,6 +1991,7 @@
 							"id": "set-group-active",
 							"objectClass": "System",
 							"sid": 843746227948109,
+							"disabled": true,
 							"parameters": {
 								"group-name": "\"MiniTav\"",
 								"state": "deactivated"
@@ -2200,10 +2243,10 @@
 										{
 											"id": "compare-eventvar",
 											"objectClass": "System",
-											"sid": 285840719412807,
+											"sid": 856018615579852,
 											"parameters": {
 												"variable": "CurrentMiniLine",
-												"comparison": 1,
+												"comparison": 2,
 												"value": "99"
 											}
 										}
@@ -2245,6 +2288,37 @@
 										}
 									],
 									"sid": 768484801286473
+								},
+								{
+									"eventType": "comment",
+									"text": "Continue Travel"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 914063841288299
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 452893532958650,
+											"parameters": {
+												"variable": "CurrentMiniLine",
+												"comparison": 0,
+												"value": "100"
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "Travel",
+											"sid": 712129531017462
+										}
+									],
+									"sid": 954197690367903
 								}
 							]
 						}
@@ -2612,6 +2686,22 @@
 									}
 								},
 								{
+									"id": "tween-one-property",
+									"objectClass": "FuelBarrels",
+									"sid": 333531382952222,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetWidth",
+										"end-value": "FuelBarrels.Width - fuelUseRate",
+										"time": "4",
+										"ease": "noease",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no"
+									}
+								},
+								{
 									"id": "wait",
 									"objectClass": "System",
 									"sid": 900755647224542,
@@ -2863,6 +2953,15 @@
 					}
 				},
 				{
+					"id": "set-group-active",
+					"objectClass": "System",
+					"sid": 531747742603326,
+					"parameters": {
+						"group-name": "\"MiniTav\"",
+						"state": "deactivated"
+					}
+				},
+				{
 					"id": "set-visible",
 					"objectClass": "FrontBoatWake",
 					"sid": 972067330191545,
@@ -2886,6 +2985,22 @@
 					"parameters": {
 						"layer": "\"TAV Layer\"",
 						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "FuelBarrels",
+					"sid": 763767550902587,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetWidth",
+						"end-value": "FuelBarrels.Width - fuelUseRate",
+						"time": "4",
+						"ease": "noease",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
 					}
 				},
 				{

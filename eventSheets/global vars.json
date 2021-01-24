@@ -68,6 +68,16 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 987643213828323
+		},
+		{
+			"eventType": "variable",
+			"name": "fuelUseRate",
+			"type": "number",
+			"initialValue": "4",
+			"comment": "",
+			"isStatic": true,
+			"isConstant": false,
+			"sid": 384485269210836
 		}
 	],
 	"sid": 309027285059479
