@@ -68,6 +68,17 @@
 						{
 							"callFunction": "DiverDive",
 							"sid": 699947072278514
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 854467301565917,
+							"parameters": {
+								"audio-file": "Undersea_encounter#2_1",
+								"loop": "looping",
+								"volume": "0-10",
+								"tag-optional": "\"DiveTheme\""
+							}
 						}
 					],
 					"sid": 926547930418190

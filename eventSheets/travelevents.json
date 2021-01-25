@@ -81,6 +81,28 @@
 						"length": "5",
 						"offset": "2"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 986129997866371,
+					"parameters": {
+						"audio-file": "US_overworld A BCD_1",
+						"loop": "not-looping",
+						"volume": "-10",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 448438381980794,
+					"parameters": {
+						"audio-file": "ow_oceanamb1",
+						"loop": "looping",
+						"volume": "-15",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 796429623345126,
@@ -161,6 +183,42 @@
 								"text": "text",
 								"duration": "2"
 							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 868038625734840,
+							"parameters": {
+								"audio-file": "beep",
+								"loop": "looping",
+								"volume": "0",
+								"tag-optional": "\"beep\""
+							}
+						},
+						{
+							"id": "set-playback-rate",
+							"objectClass": "Audio",
+							"sid": 974959552224528,
+							"parameters": {
+								"tag": "\"beep\"",
+								"playback-rate": "10"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 598422827254950,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 690944825659937,
+							"parameters": {
+								"tag": "\"beep\""
+							}
 						}
 					],
 					"sid": 523213117424698
@@ -193,9 +251,9 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 878738891493509,
+							"sid": 155796428325274,
 							"parameters": {
-								"seconds": "3"
+								"seconds": "2"
 							}
 						},
 						{
@@ -452,6 +510,17 @@
 									"parameters": [
 										"selectedHire"
 									]
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 845119260955692,
+									"parameters": {
+										"audio-file": "US_menu nav",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"\""
+									}
 								}
 							],
 							"sid": 533256814993787
@@ -522,6 +591,17 @@
 									"parameters": [
 										"selectedHire"
 									]
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 970690894650839,
+									"parameters": {
+										"audio-file": "US_menu nav",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"\""
+									}
 								}
 							],
 							"sid": 496558689630168
@@ -556,6 +636,17 @@
 							"parameters": {
 								"group-name": "\"TAV\"",
 								"state": "activated"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 839405298320369,
+							"parameters": {
+								"audio-file": "US_menu purchase",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
 							}
 						}
 					],
@@ -1291,7 +1382,19 @@
 									"sid": 788056273899122
 								}
 							],
-							"actions": [],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 248708292913826,
+									"parameters": {
+										"audio-file": "US_menu select",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
 							"sid": 985811992117495,
 							"children": [
 								{
@@ -1538,7 +1641,19 @@
 									}
 								}
 							],
-							"actions": [],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 297244767846413,
+									"parameters": {
+										"audio-file": "US_menu nav",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
 							"sid": 649191599458888,
 							"children": [
 								{
@@ -1619,7 +1734,19 @@
 									}
 								}
 							],
-							"actions": [],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 747727034784129,
+									"parameters": {
+										"audio-file": "US_menu nav",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
 							"sid": 707585415956811,
 							"children": [
 								{
@@ -1773,6 +1900,15 @@
 							"parameters": {
 								"text": "miniEvents.At(1, 0, CurrentMiniTAV)",
 								"duration": "2"
+							}
+						},
+						{
+							"id": "set-playback-rate",
+							"objectClass": "Audio",
+							"sid": 315683753335908,
+							"parameters": {
+								"tag": "\"beep\"",
+								"playback-rate": "25"
 							}
 						}
 					],
@@ -2197,7 +2333,19 @@
 									"sid": 747859186074935
 								}
 							],
-							"actions": [],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 568893422322182,
+									"parameters": {
+										"audio-file": "US_menu select",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
 							"sid": 595499218005951,
 							"children": [
 								{
@@ -2285,6 +2433,14 @@
 										{
 											"callFunction": "SelectChoice2",
 											"sid": 325406530252103
+										},
+										{
+											"id": "stop",
+											"objectClass": "Audio",
+											"sid": 207567596171574,
+											"parameters": {
+												"tag": "\"beep\""
+											}
 										}
 									],
 									"sid": 768484801286473
@@ -2336,7 +2492,19 @@
 							}
 						}
 					],
-					"actions": [],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 353205763701582,
+							"parameters": {
+								"audio-file": "US_menu nav",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
 					"sid": 280852513139271,
 					"children": [
 						{
@@ -2417,7 +2585,19 @@
 							}
 						}
 					],
-					"actions": [],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 965464090773977,
+							"parameters": {
+								"audio-file": "US_menu nav",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
 					"sid": 749648550779280,
 					"children": [
 						{
@@ -3004,11 +3184,41 @@
 					}
 				},
 				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 422356509790842,
+					"parameters": {
+						"tag": "\"idle\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 424328918742874,
+					"parameters": {
+						"audio-file": "bt1_motorStarting",
+						"loop": "not-looping",
+						"volume": "-5",
+						"tag-optional": "\"motor\""
+					}
+				},
+				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 776951424950736,
+					"sid": 300664708858428,
 					"parameters": {
-						"seconds": "4"
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 685997436972192,
+					"parameters": {
+						"audio-file": "bt1_motorGoing",
+						"loop": "looping",
+						"volume": "-5",
+						"tag-optional": "\"motor\""
 					}
 				},
 				{
@@ -3069,6 +3279,44 @@
 					"parameters": {
 						"layer": "\"TAV Layer\"",
 						"visibility": "visible"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 270010728558156,
+					"parameters": {
+						"tag": "\"motor\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 970772978208102,
+					"parameters": {
+						"audio-file": "bt1_motorSlowing",
+						"loop": "not-looping",
+						"volume": "-10",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 933530324442790,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 145979874922231,
+					"parameters": {
+						"audio-file": "bt1_motorIdle",
+						"loop": "looping",
+						"volume": "-5",
+						"tag-optional": "\"idle\""
 					}
 				}
 			],

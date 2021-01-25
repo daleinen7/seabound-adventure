@@ -396,11 +396,188 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "boat motor.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 489248490637850
+				},
+				{
+					"name": "boat motor_hit by kelp.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 904433351280782
+				},
+				{
+					"name": "diver hit OOF.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 509164375495157
+				},
+				{
+					"name": "diver turn.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 338396414734193
+				},
+				{
+					"name": "underwater bubble ambience.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 289287066881298
+				},
+				{
+					"name": "US_encounter_SFX_menu click.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 154750496595317
+				},
+				{
+					"name": "US_encounter_SFX_menu selection.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 599720137550791
+				},
+				{
+					"name": "US_encounter_SFX_OutOfAmmo1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 577107800525731
+				},
+				{
+					"name": "fast-arrow-swoosh_GJr8hHN_.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 884894993261523
+				},
+				{
+					"name": "bt1_motorGoingb.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 186959943236197
+				},
+				{
+					"name": "bt1_motor1idle.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 903985166562900
+				},
+				{
+					"name": "bt1_motorIdle.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 707452037692397
+				},
+				{
+					"name": "bt1_motorSlowingb.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 456613805980871
+				},
+				{
+					"name": "bt1_motorIdleb.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 886393718223737
+				},
+				{
+					"name": "ow_oceanamb1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 874310366729557
+				},
+				{
+					"name": "swarm1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 641377181786506
+				},
+				{
+					"name": "Undersea_menu click B.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 726440636950830
+				},
+				{
+					"name": "US_menu DENY.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 703710442399263
+				},
+				{
+					"name": "US_menu DEselect_1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 609843976296106
+				},
+				{
+					"name": "US_menu select.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 639247995286118
+				},
+				{
+					"name": "US_Loot.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 945352182677812
+				},
+				{
+					"name": "US_menu purchase.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 236772039976127
+				},
+				{
+					"name": "US_menu nav.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 821421511657336
+				},
+				{
+					"name": "enhit1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 757125143317176
+				},
+				{
+					"name": "enhit2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 262264553644163
+				},
+				{
+					"name": "enhit3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 190861998511445
+				},
+				{
+					"name": "US_surfacesplash.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 332058952846098
+				},
+				{
+					"name": "beep.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 597714151389529
+				},
+				{
+					"name": "bt1_motorGoing.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 525130940621116
+				},
+				{
+					"name": "bt1_motorSlowing.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 930338893016855
+				},
+				{
+					"name": "bt1_motorStarting.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 538108651909205
+				}
+			],
 			"subfolders": []
 		},
 		"music": {
-			"items": [],
+			"items": [
+				{
+					"name": "Undersea_Encounter 3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 826536056873924
+				},
+				{
+					"name": "Undersea_encounter#2_1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 488356611813924
+				},
+				{
+					"name": "SeaboundTheme_mix.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 588350974732735
+				},
+				{
+					"name": "US_overworld A BCD_1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 374244400181975
+				}
+			],
 			"subfolders": []
 		},
 		"video": {
