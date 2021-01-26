@@ -26,6 +26,17 @@
 					"parameters": {
 						"layout": "Travel"
 					}
+				},
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 294450548139007,
+					"parameters": {
+						"tag": "\"DiveTheme\"",
+						"db": "-100",
+						"duration": "1",
+						"ending": "stop"
+					}
 				}
 			],
 			"sid": 424743399968267
@@ -58,6 +69,17 @@
 					],
 					"actions": [
 						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 112209960772215,
+							"parameters": {
+								"audio-file": "Undersea_encounter#2_1",
+								"loop": "looping",
+								"volume": "-1",
+								"tag-optional": "\"DiveTheme\""
+							}
+						},
+						{
 							"id": "wait",
 							"objectClass": "System",
 							"sid": 876694008030427,
@@ -70,14 +92,25 @@
 							"sid": 699947072278514
 						},
 						{
-							"id": "play",
+							"id": "fade-volume",
 							"objectClass": "Audio",
-							"sid": 854467301565917,
+							"sid": 413675683256484,
 							"parameters": {
-								"audio-file": "Undersea_encounter#2_1",
-								"loop": "looping",
-								"volume": "0-10",
-								"tag-optional": "\"DiveTheme\""
+								"tag": "\"OWTheme\"",
+								"db": "-100",
+								"duration": "1",
+								"ending": "keep-playing"
+							}
+						},
+						{
+							"id": "fade-volume",
+							"objectClass": "Audio",
+							"sid": 283751399129560,
+							"parameters": {
+								"tag": "\"TravelAmb\"",
+								"db": "-100",
+								"duration": "1",
+								"ending": "stop"
 							}
 						}
 					],
@@ -404,6 +437,17 @@
 													"parameters": {
 														"state": "not-mirrored"
 													}
+												},
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 412595403201949,
+													"parameters": {
+														"audio-file": "diver turn",
+														"loop": "not-looping",
+														"volume": "-3",
+														"tag-optional": "\"\""
+													}
 												}
 											],
 											"sid": 507822223544756,
@@ -470,6 +514,17 @@
 													"parameters": {
 														"state": "mirrored"
 													}
+												},
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 925242909586322,
+													"parameters": {
+														"audio-file": "diver turn",
+														"loop": "not-looping",
+														"volume": "-3",
+														"tag-optional": "\"\""
+													}
 												}
 											],
 											"sid": 602463909040185,
@@ -527,6 +582,17 @@
 													"parameters": {
 														"animation": "\"UpUp\"",
 														"from": "beginning"
+													}
+												},
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 557029224067155,
+													"parameters": {
+														"audio-file": "diver turn",
+														"loop": "not-looping",
+														"volume": "-3",
+														"tag-optional": "\"\""
 													}
 												}
 											],
@@ -586,6 +652,17 @@
 														"animation": "\"DownDown\"",
 														"from": "beginning"
 													}
+												},
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 458285161081350,
+													"parameters": {
+														"audio-file": "diver turn",
+														"loop": "not-looping",
+														"volume": "-3",
+														"tag-optional": "\"\""
+													}
 												}
 											],
 											"sid": 613613874673618,
@@ -626,6 +703,17 @@
 											"parameters": {
 												"animation": "\"Swimming Up\"",
 												"from": "beginning"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 576588674730619,
+											"parameters": {
+												"audio-file": "diver turn",
+												"loop": "not-looping",
+												"volume": "-3",
+												"tag-optional": "\"\""
 											}
 										},
 										{
@@ -675,6 +763,17 @@
 											}
 										},
 										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 376592693914496,
+											"parameters": {
+												"audio-file": "diver turn",
+												"loop": "not-looping",
+												"volume": "-3",
+												"tag-optional": "\"\""
+											}
+										},
+										{
 											"id": "set-mirrored",
 											"objectClass": "Divers",
 											"sid": 818077424354839,
@@ -721,6 +820,17 @@
 											}
 										},
 										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 373874278252866,
+											"parameters": {
+												"audio-file": "diver turn",
+												"loop": "not-looping",
+												"volume": "-3",
+												"tag-optional": "\"\""
+											}
+										},
+										{
 											"id": "set-mirrored",
 											"objectClass": "Divers",
 											"sid": 598181446180006,
@@ -764,6 +874,17 @@
 											"parameters": {
 												"animation": "\"Swimming Down\"",
 												"from": "beginning"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 771514575424446,
+											"parameters": {
+												"audio-file": "diver turn",
+												"loop": "not-looping",
+												"volume": "-3",
+												"tag-optional": "\"\""
 											}
 										},
 										{
@@ -1490,6 +1611,17 @@
 																"random(0 - FirstMate.Get(\"aim\"), FirstMate.Get(\"aim\"))",
 																"Ammo"
 															]
+														},
+														{
+															"id": "play",
+															"objectClass": "Audio",
+															"sid": 825364400725767,
+															"parameters": {
+																"audio-file": "US_Gun_medium",
+																"loop": "not-looping",
+																"volume": "-7",
+																"tag-optional": "\"\""
+															}
 														}
 													],
 													"sid": 818909990243775

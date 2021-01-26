@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 23200,
+	"savedWithRelease": 23300,
 	"name": "Seabound Adventure",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -11,7 +11,7 @@
 			"id": "Text",
 			"name": "Text",
 			"author": "Scirra",
-			"version": "r232",
+			"version": "r233",
 			"bundled": false
 		},
 		{
@@ -19,7 +19,7 @@
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
-			"version": "r232",
+			"version": "r233",
 			"bundled": false
 		},
 		{
@@ -27,7 +27,7 @@
 			"id": "TiledBg",
 			"name": "Tiled Background",
 			"author": "Scirra",
-			"version": "r232",
+			"version": "r233",
 			"bundled": false
 		},
 		{
@@ -35,7 +35,7 @@
 			"id": "NinePatch",
 			"name": "9-patch",
 			"author": "Scirra",
-			"version": "r232",
+			"version": "r233",
 			"bundled": false
 		},
 		{
@@ -43,7 +43,7 @@
 			"id": "Dictionary",
 			"name": "Dictionary",
 			"author": "Scirra",
-			"version": "r232",
+			"version": "r233",
 			"bundled": false
 		},
 		{
@@ -51,7 +51,7 @@
 			"id": "Arr",
 			"name": "Array",
 			"author": "Scirra",
-			"version": "r232",
+			"version": "r233",
 			"bundled": false
 		},
 		{
@@ -59,7 +59,7 @@
 			"id": "AJAX",
 			"name": "AJAX",
 			"author": "Scirra",
-			"version": "r232",
+			"version": "r233",
 			"bundled": false
 		},
 		{
@@ -67,7 +67,7 @@
 			"id": "Keyboard",
 			"name": "Keyboard",
 			"author": "Scirra",
-			"version": "r232",
+			"version": "r233",
 			"bundled": false
 		},
 		{
@@ -75,7 +75,7 @@
 			"id": "gamepad",
 			"name": "Gamepad",
 			"author": "Scirra",
-			"version": "r232",
+			"version": "r233",
 			"bundled": false
 		},
 		{
@@ -83,7 +83,7 @@
 			"id": "AdvancedRandom",
 			"name": "Advanced Random",
 			"author": "Scirra",
-			"version": "r232",
+			"version": "r233",
 			"bundled": false
 		},
 		{
@@ -91,7 +91,7 @@
 			"id": "Audio",
 			"name": "Audio",
 			"author": "Scirra",
-			"version": "r232",
+			"version": "r233",
 			"bundled": false
 		},
 		{
@@ -99,7 +99,7 @@
 			"id": "Flash",
 			"name": "Flash",
 			"author": "Scirra",
-			"version": "r232",
+			"version": "r233",
 			"bundled": false
 		},
 		{
@@ -107,7 +107,7 @@
 			"id": "Pin",
 			"name": "Pin",
 			"author": "Scirra",
-			"version": "r232",
+			"version": "r233",
 			"bundled": false
 		},
 		{
@@ -115,7 +115,7 @@
 			"id": "Tween",
 			"name": "Tween",
 			"author": "Scirra",
-			"version": "r232",
+			"version": "r233",
 			"bundled": false
 		},
 		{
@@ -123,7 +123,7 @@
 			"id": "Platform",
 			"name": "Platform",
 			"author": "Scirra",
-			"version": "r232",
+			"version": "r233",
 			"bundled": false
 		},
 		{
@@ -131,7 +131,7 @@
 			"id": "scrollto",
 			"name": "Scroll To",
 			"author": "Scirra",
-			"version": "r232",
+			"version": "r233",
 			"bundled": false
 		},
 		{
@@ -139,7 +139,7 @@
 			"id": "Sin",
 			"name": "Sine",
 			"author": "Scirra",
-			"version": "r232",
+			"version": "r233",
 			"bundled": false
 		},
 		{
@@ -147,7 +147,7 @@
 			"id": "Bullet",
 			"name": "Bullet",
 			"author": "Scirra",
-			"version": "r232",
+			"version": "r233",
 			"bundled": false
 		},
 		{
@@ -155,7 +155,7 @@
 			"id": "solid",
 			"name": "Solid",
 			"author": "Scirra",
-			"version": "r232",
+			"version": "r233",
 			"bundled": false
 		},
 		{
@@ -163,7 +163,7 @@
 			"id": "Fade",
 			"name": "Fade",
 			"author": "Scirra",
-			"version": "r232",
+			"version": "r233",
 			"bundled": false
 		},
 		{
@@ -171,7 +171,7 @@
 			"id": "Pathfinding",
 			"name": "Pathfinding",
 			"author": "Scirra",
-			"version": "r232",
+			"version": "r233",
 			"bundled": false
 		},
 		{
@@ -179,7 +179,7 @@
 			"id": "LOS",
 			"name": "Line of sight",
 			"author": "Scirra",
-			"version": "r232",
+			"version": "r233",
 			"bundled": false
 		},
 		{
@@ -187,7 +187,7 @@
 			"id": "bound",
 			"name": "Bound to layout",
 			"author": "Scirra",
-			"version": "r232",
+			"version": "r233",
 			"bundled": false
 		},
 		{
@@ -195,7 +195,7 @@
 			"id": "EightDir",
 			"name": "8 Direction",
 			"author": "Scirra",
-			"version": "r232",
+			"version": "r233",
 			"bundled": false
 		}
 	],
@@ -551,6 +551,86 @@
 					"name": "bt1_motorStarting.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 538108651909205
+				},
+				{
+					"name": "kelp monster appear.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 332432320771937
+				},
+				{
+					"name": "knife.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 846966408658180
+				},
+				{
+					"name": "US_BuhBomb1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 350845625283671
+				},
+				{
+					"name": "US_encounter_SFX_sell item_coins.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 371071260295936
+				},
+				{
+					"name": "US_Gun_medium.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 999293214025754
+				},
+				{
+					"name": "Ekill.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 354686346642166
+				},
+				{
+					"name": "boatdmg_1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 716885971881008
+				},
+				{
+					"name": "boatdmg_2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 571109191610199
+				},
+				{
+					"name": "boatdmg_3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 358451270827041
+				},
+				{
+					"name": "boatdmg_4.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 678495405554076
+				},
+				{
+					"name": "boatdmg_5.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 743108884197071
+				},
+				{
+					"name": "donate1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 971645359293372
+				},
+				{
+					"name": "Tav_Nav.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 870664365974845
+				},
+				{
+					"name": "Tav_Sel.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 827505866957877
+				},
+				{
+					"name": "UNdonate1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 258552831756320
+				},
+				{
+					"name": "UNdonate2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 283685796919262
 				}
 			],
 			"subfolders": []

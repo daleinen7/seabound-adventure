@@ -83,25 +83,39 @@
 					}
 				},
 				{
-					"id": "play",
+					"id": "fade-volume",
 					"objectClass": "Audio",
-					"sid": 986129997866371,
+					"sid": 715980967450195,
 					"parameters": {
-						"audio-file": "US_overworld A BCD_1",
-						"loop": "not-looping",
-						"volume": "-10",
-						"tag-optional": "\"\""
+						"tag": "\"TravelTheme\"",
+						"db": "-8",
+						"duration": "1.6",
+						"ending": "keep-playing"
 					}
 				},
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 448438381980794,
+					"sid": 708130649895585,
 					"parameters": {
 						"audio-file": "ow_oceanamb1",
 						"loop": "looping",
 						"volume": "-15",
-						"tag-optional": "\"\""
+						"tag-optional": "\"TravelAmb\""
+					}
+				},
+				{
+					"id": "add-filter-effect",
+					"objectClass": "Audio",
+					"sid": 573774591237616,
+					"parameters": {
+						"tag": "\"TravelTheme\"",
+						"type": "low-pass",
+						"frequency": "750",
+						"detune": "0",
+						"q": "1",
+						"gain": "0",
+						"mix": "100"
 					}
 				}
 			],
@@ -202,6 +216,17 @@
 							"parameters": {
 								"tag": "\"beep\"",
 								"playback-rate": "10"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 636632129519353,
+							"parameters": {
+								"audio-file": "US_overworld A BCD_1",
+								"loop": "not-looping",
+								"volume": "-10",
+								"tag-optional": "\"OWTheme\""
 							}
 						},
 						{
@@ -743,7 +768,20 @@
 			],
 			"eventType": "function-block",
 			"conditions": [],
-			"actions": [],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 220471535589002,
+					"disabled": true,
+					"parameters": {
+						"audio-file": "US_overworld A BCD_1",
+						"loop": "not-looping",
+						"volume": "-8",
+						"tag-optional": "\"TravelTheme\""
+					}
+				}
+			],
 			"sid": 674295142134174,
 			"children": [
 				{
@@ -969,6 +1007,26 @@
 							"objectClass": "navLocation",
 							"sid": 301152467603414,
 							"behaviorType": "Flash"
+						},
+						{
+							"id": "set-playback-rate",
+							"objectClass": "Audio",
+							"sid": 582262149780042,
+							"parameters": {
+								"tag": "\"beep\"",
+								"playback-rate": "25"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 442233666198427,
+							"parameters": {
+								"audio-file": "UNdonate2",
+								"loop": "not-looping",
+								"volume": "-5",
+								"tag-optional": "\"\""
+							}
 						}
 					],
 					"sid": 258066600967370
@@ -1602,6 +1660,17 @@
 													"parameters": [
 														"1"
 													]
+												},
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 929552162880819,
+													"parameters": {
+														"audio-file": "UNdonate2",
+														"loop": "not-looping",
+														"volume": "0",
+														"tag-optional": "\"\""
+													}
 												}
 											],
 											"sid": 998225009149892
@@ -1905,10 +1974,21 @@
 						{
 							"id": "set-playback-rate",
 							"objectClass": "Audio",
-							"sid": 315683753335908,
+							"sid": 771767995949442,
 							"parameters": {
 								"tag": "\"beep\"",
 								"playback-rate": "25"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 632704215900409,
+							"parameters": {
+								"audio-file": "UNdonate1",
+								"loop": "not-looping",
+								"volume": "-5",
+								"tag-optional": "\"\""
 							}
 						}
 					],
@@ -3205,19 +3285,19 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 300664708858428,
+					"sid": 919864205652248,
 					"parameters": {
-						"seconds": "3"
+						"seconds": "1.5"
 					}
 				},
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 685997436972192,
+					"sid": 154953876380347,
 					"parameters": {
 						"audio-file": "bt1_motorGoing",
 						"loop": "looping",
-						"volume": "-5",
+						"volume": "-8",
 						"tag-optional": "\"motor\""
 					}
 				},
@@ -3303,15 +3383,15 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 933530324442790,
+					"sid": 384178235747360,
 					"parameters": {
-						"seconds": "2"
+						"seconds": "1.5"
 					}
 				},
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 145979874922231,
+					"sid": 738634086716640,
 					"parameters": {
 						"audio-file": "bt1_motorIdle",
 						"loop": "looping",

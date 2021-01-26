@@ -64,6 +64,17 @@
 					"parameters": {
 						"angle": "270"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 999450578664812,
+					"parameters": {
+						"audio-file": "enhit1",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 139719889047042
@@ -120,6 +131,17 @@
 					"behaviorType": "Bullet",
 					"parameters": {
 						"angle": "270"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 640638020455435,
+					"parameters": {
+						"audio-file": "US_BuhBomb1",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
 					}
 				}
 			],
@@ -189,6 +211,17 @@
 									"id": "destroy",
 									"objectClass": "AttackFishy",
 									"sid": 334928213048533
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 666278736618321,
+									"parameters": {
+										"audio-file": "Ekill",
+										"loop": "not-looping",
+										"volume": "-5",
+										"tag-optional": "\"\""
+									}
 								}
 							],
 							"sid": 332875075980309,
@@ -976,6 +1009,17 @@
 											"id": "destroy",
 											"objectClass": "JellyFish",
 											"sid": 914496234646826
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 640202567810035,
+											"parameters": {
+												"audio-file": "Ekill",
+												"loop": "not-looping",
+												"volume": "-5",
+												"tag-optional": "\"\""
+											}
 										}
 									],
 									"sid": 944611803530604
@@ -1437,6 +1481,17 @@
 									"id": "destroy",
 									"objectClass": "shrimp",
 									"sid": 248281928385649
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 848807735131673,
+									"parameters": {
+										"audio-file": "Ekill",
+										"loop": "not-looping",
+										"volume": "-5",
+										"tag-optional": "\"\""
+									}
 								}
 							],
 							"sid": 763323164229292
@@ -1491,6 +1546,17 @@
 								"instance-variable": "Health",
 								"value": "Explosivo.Damage"
 							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 733815218101805,
+							"parameters": {
+								"audio-file": "US_BuhBomb1",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
 						}
 					],
 					"sid": 776830953533473,
@@ -1514,6 +1580,17 @@
 									"id": "destroy",
 									"objectClass": "shrimp",
 									"sid": 699092944785861
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 672645317968794,
+									"parameters": {
+										"audio-file": "Ekill",
+										"loop": "not-looping",
+										"volume": "-5",
+										"tag-optional": "\"\""
+									}
 								}
 							],
 							"sid": 204112891689585,
@@ -1967,6 +2044,17 @@
 									"id": "destroy",
 									"objectClass": "Shark",
 									"sid": 264211175497482
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 735218342057732,
+									"parameters": {
+										"audio-file": "Ekill",
+										"loop": "not-looping",
+										"volume": "-5",
+										"tag-optional": "\"\""
+									}
 								}
 							],
 							"sid": 256411394877877
