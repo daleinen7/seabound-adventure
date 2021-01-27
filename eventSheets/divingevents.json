@@ -1857,6 +1857,193 @@
 						}
 					],
 					"sid": 759139225425588
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Diver Health",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"functionName": "displayHealth",
+							"functionDescription": "",
+							"functionCategory": "",
+							"functionReturnType": "none",
+							"functionIsAsync": false,
+							"functionParameters": [],
+							"eventType": "function-block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-width",
+									"objectClass": "HealthBarEmpty",
+									"sid": 692196012415048,
+									"parameters": {
+										"width": "FirstMate.Get(\"health capacity\") * 8"
+									}
+								},
+								{
+									"id": "set-width",
+									"objectClass": "HealthBarFull",
+									"sid": 827544067240354,
+									"parameters": {
+										"width": "FirstMate.Get(\"health\") * 8"
+									}
+								}
+							],
+							"sid": 944471649108118
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-start-of-layout",
+									"objectClass": "System",
+									"sid": 272887507022167
+								}
+							],
+							"actions": [
+								{
+									"id": "wait-for-previous-actions",
+									"objectClass": "System",
+									"sid": 939082880070945
+								},
+								{
+									"callFunction": "displayHealth",
+									"sid": 291041447283814
+								}
+							],
+							"sid": 479048767015989
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Divers",
+									"sid": 544908209293707,
+									"parameters": {
+										"object": "Enemies"
+									}
+								},
+								{
+									"id": "is-flashing",
+									"objectClass": "Divers",
+									"sid": 287955431338171,
+									"behaviorType": "Flash",
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Divers",
+									"sid": 213971200789097,
+									"parameters": {
+										"animation": "\"Hurt\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-key",
+									"objectClass": "FirstMate",
+									"sid": 300838315567777,
+									"parameters": {
+										"key": "\"health\"",
+										"value": "FirstMate.Get(\"health\") - Enemies.Damage"
+									}
+								},
+								{
+									"callFunction": "displayHealth",
+									"sid": 988210346742531
+								}
+							],
+							"sid": 497226247749723,
+							"children": [
+								{
+									"eventType": "comment",
+									"text": "Diver has no health left"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-value",
+											"objectClass": "FirstMate",
+											"sid": 238800846340911,
+											"parameters": {
+												"key": "\"health\"",
+												"comparison": 3,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "Diver Death",
+											"sid": 959235554681215
+										}
+									],
+									"sid": 593402599545170
+								},
+								{
+									"eventType": "comment",
+									"text": "Diver flashes and is invulnerable"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 600166722526503
+										}
+									],
+									"actions": [
+										{
+											"id": "flash",
+											"objectClass": "Divers",
+											"sid": 860191627640386,
+											"behaviorType": "Flash",
+											"parameters": {
+												"on-time": "0.1",
+												"off-time": "0.1",
+												"duration": "FirstMate.Get(\"flash time\")"
+											}
+										}
+									],
+									"sid": 498187009764429
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-animation-finished",
+									"objectClass": "Divers",
+									"sid": 593120439373540,
+									"parameters": {
+										"animation": "\"Hurt\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Divers",
+									"sid": 336614634283801,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 548812810066190
+						}
+					],
+					"sid": 145019627383593
 				}
 			],
 			"sid": 352612916073395
@@ -1923,6 +2110,27 @@
 				}
 			],
 			"sid": 899866228031201
+		},
+		{
+			"functionName": "Diver Death",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "append-text",
+					"objectClass": "Debug",
+					"sid": 516979226385429,
+					"parameters": {
+						"text": "\"Game over\""
+					}
+				}
+			],
+			"sid": 985048623479764
 		}
 	],
 	"sid": 249652242392072

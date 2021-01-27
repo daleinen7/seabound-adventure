@@ -2304,6 +2304,18 @@
 				}
 			],
 			"sid": 837635904549504
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-destroyed",
+					"objectClass": "Enemies",
+					"sid": 139711321425228
+				}
+			],
+			"actions": [],
+			"sid": 283303620452776
 		}
 	],
 	"sid": 919981836484930
