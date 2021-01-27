@@ -192,30 +192,10 @@
 						{
 							"id": "typewriter-text",
 							"objectClass": "TavText",
-							"sid": 105050463808957,
+							"sid": 770082488276401,
 							"parameters": {
 								"text": "text",
-								"duration": "2"
-							}
-						},
-						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 868038625734840,
-							"parameters": {
-								"audio-file": "beep",
-								"loop": "looping",
-								"volume": "0",
-								"tag-optional": "\"beep\""
-							}
-						},
-						{
-							"id": "set-playback-rate",
-							"objectClass": "Audio",
-							"sid": 974959552224528,
-							"parameters": {
-								"tag": "\"beep\"",
-								"playback-rate": "10"
+								"duration": "len(text) * 0.1"
 							}
 						},
 						{
@@ -227,22 +207,6 @@
 								"loop": "not-looping",
 								"volume": "-10",
 								"tag-optional": "\"OWTheme\""
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 598422827254950,
-							"parameters": {
-								"seconds": "2"
-							}
-						},
-						{
-							"id": "stop",
-							"objectClass": "Audio",
-							"sid": 690944825659937,
-							"parameters": {
-								"tag": "\"beep\""
 							}
 						}
 					],
@@ -276,9 +240,9 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 155796428325274,
+							"sid": 639720287151251,
 							"parameters": {
-								"seconds": "2"
+								"seconds": "3"
 							}
 						},
 						{
@@ -948,15 +912,6 @@
 					"conditions": [],
 					"actions": [
 						{
-							"id": "append-text",
-							"objectClass": "Debug",
-							"sid": 659163950117444,
-							"disabled": true,
-							"parameters": {
-								"text": "\"TAV \" & tavID & \" called \""
-							}
-						},
-						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
 							"sid": 926093186838498,
@@ -996,10 +951,10 @@
 						{
 							"id": "typewriter-text",
 							"objectClass": "TavText",
-							"sid": 529606837889179,
+							"sid": 133938768253050,
 							"parameters": {
 								"text": "TAVs.At(1, 0, CurrentTAV)",
-								"duration": "2"
+								"duration": "len(TAVs.At(1, 0, CurrentTAV)) * 0.05"
 							}
 						},
 						{
@@ -1866,6 +1821,47 @@
 							]
 						}
 					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-running-typewriter-text",
+							"objectClass": "TavText",
+							"sid": 703280898534475
+						}
+					],
+					"actions": [],
+					"sid": 209345416976497,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 176159860911911,
+									"parameters": {
+										"interval-seconds": "0.1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 555606563477237,
+									"parameters": {
+										"audio-file": "beep",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 754751075627387
+						}
+					]
 				}
 			],
 			"sid": 372928527966865
@@ -1965,10 +1961,10 @@
 						{
 							"id": "typewriter-text",
 							"objectClass": "TavText",
-							"sid": 404843875394852,
+							"sid": 631431456299669,
 							"parameters": {
 								"text": "miniEvents.At(1, 0, CurrentMiniTAV)",
-								"duration": "2"
+								"duration": "len(miniEvents.At(1, 0, CurrentMiniTAV)) * 0.05"
 							}
 						},
 						{
@@ -2743,6 +2739,47 @@
 									"sid": 657514538149339
 								}
 							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-running-typewriter-text",
+							"objectClass": "TavText",
+							"sid": 618521567792309
+						}
+					],
+					"actions": [],
+					"sid": 727836920572487,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 821486733611716,
+									"parameters": {
+										"interval-seconds": "0.1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 655310235270378,
+									"parameters": {
+										"audio-file": "beep",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 703330110033297
 						}
 					]
 				}
