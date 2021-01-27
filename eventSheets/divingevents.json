@@ -441,12 +441,12 @@
 												{
 													"id": "play",
 													"objectClass": "Audio",
-													"sid": 412595403201949,
+													"sid": 289693957781525,
 													"parameters": {
 														"audio-file": "diver turn",
 														"loop": "not-looping",
-														"volume": "-3",
-														"tag-optional": "\"\""
+														"volume": "-15",
+														"tag-optional": "\"DivingSound\""
 													}
 												}
 											],
@@ -508,22 +508,22 @@
 													}
 												},
 												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 841591632984375,
+													"parameters": {
+														"audio-file": "diver turn",
+														"loop": "not-looping",
+														"volume": "-15",
+														"tag-optional": "\"DivingSound\""
+													}
+												},
+												{
 													"id": "set-mirrored",
 													"objectClass": "Divers",
 													"sid": 456272878609604,
 													"parameters": {
 														"state": "mirrored"
-													}
-												},
-												{
-													"id": "play",
-													"objectClass": "Audio",
-													"sid": 925242909586322,
-													"parameters": {
-														"audio-file": "diver turn",
-														"loop": "not-looping",
-														"volume": "-3",
-														"tag-optional": "\"\""
 													}
 												}
 											],
@@ -587,12 +587,12 @@
 												{
 													"id": "play",
 													"objectClass": "Audio",
-													"sid": 557029224067155,
+													"sid": 291052959575653,
 													"parameters": {
 														"audio-file": "diver turn",
 														"loop": "not-looping",
-														"volume": "-3",
-														"tag-optional": "\"\""
+														"volume": "-15",
+														"tag-optional": "\"DivingSound\""
 													}
 												}
 											],
@@ -656,12 +656,12 @@
 												{
 													"id": "play",
 													"objectClass": "Audio",
-													"sid": 458285161081350,
+													"sid": 241104164764793,
 													"parameters": {
 														"audio-file": "diver turn",
 														"loop": "not-looping",
-														"volume": "-3",
-														"tag-optional": "\"\""
+														"volume": "-15",
+														"tag-optional": "\"DivingSound\""
 													}
 												}
 											],
@@ -708,12 +708,12 @@
 										{
 											"id": "play",
 											"objectClass": "Audio",
-											"sid": 576588674730619,
+											"sid": 210492533233709,
 											"parameters": {
 												"audio-file": "diver turn",
 												"loop": "not-looping",
-												"volume": "-3",
-												"tag-optional": "\"\""
+												"volume": "-15",
+												"tag-optional": "\"DivingSound\""
 											}
 										},
 										{
@@ -765,12 +765,12 @@
 										{
 											"id": "play",
 											"objectClass": "Audio",
-											"sid": 376592693914496,
+											"sid": 662180036266634,
 											"parameters": {
 												"audio-file": "diver turn",
 												"loop": "not-looping",
-												"volume": "-3",
-												"tag-optional": "\"\""
+												"volume": "-15",
+												"tag-optional": "\"DivingSound\""
 											}
 										},
 										{
@@ -822,12 +822,12 @@
 										{
 											"id": "play",
 											"objectClass": "Audio",
-											"sid": 373874278252866,
+											"sid": 942855324452154,
 											"parameters": {
 												"audio-file": "diver turn",
 												"loop": "not-looping",
-												"volume": "-3",
-												"tag-optional": "\"\""
+												"volume": "-15",
+												"tag-optional": "\"DivingSound\""
 											}
 										},
 										{
@@ -879,12 +879,12 @@
 										{
 											"id": "play",
 											"objectClass": "Audio",
-											"sid": 771514575424446,
+											"sid": 563611114472775,
 											"parameters": {
 												"audio-file": "diver turn",
 												"loop": "not-looping",
-												"volume": "-3",
-												"tag-optional": "\"\""
+												"volume": "-15",
+												"tag-optional": "\"DivingSound\""
 											}
 										},
 										{
@@ -1615,12 +1615,12 @@
 														{
 															"id": "play",
 															"objectClass": "Audio",
-															"sid": 825364400725767,
+															"sid": 902160172936097,
 															"parameters": {
 																"audio-file": "US_Gun_medium",
 																"loop": "not-looping",
-																"volume": "-7",
-																"tag-optional": "\"\""
+																"volume": "-3",
+																"tag-optional": "\"DivingSound\""
 															}
 														}
 													],
@@ -1896,6 +1896,33 @@
 				}
 			],
 			"sid": 161230157959691
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 277393605976382
+				}
+			],
+			"actions": [
+				{
+					"id": "add-filter-effect",
+					"objectClass": "Audio",
+					"sid": 764092310435705,
+					"parameters": {
+						"tag": "\"DivingSound\"",
+						"type": "low-pass",
+						"frequency": "1000",
+						"detune": "0",
+						"q": "1",
+						"gain": "-20",
+						"mix": "100"
+					}
+				}
+			],
+			"sid": 899866228031201
 		}
 	],
 	"sid": 249652242392072

@@ -68,12 +68,12 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 999450578664812,
+					"sid": 728244216395568,
 					"parameters": {
 						"audio-file": "enhit1",
 						"loop": "not-looping",
-						"volume": "0",
-						"tag-optional": "\"\""
+						"volume": "-10",
+						"tag-optional": "\"DivingSound\""
 					}
 				}
 			],
@@ -136,12 +136,12 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 640638020455435,
+					"sid": 193868220997241,
 					"parameters": {
 						"audio-file": "US_BuhBomb1",
 						"loop": "not-looping",
 						"volume": "0",
-						"tag-optional": "\"\""
+						"tag-optional": "\"\"\"DivingSound\""
 					}
 				}
 			],
@@ -215,12 +215,12 @@
 								{
 									"id": "play",
 									"objectClass": "Audio",
-									"sid": 666278736618321,
+									"sid": 314996816308105,
 									"parameters": {
 										"audio-file": "Ekill",
 										"loop": "not-looping",
-										"volume": "-5",
-										"tag-optional": "\"\""
+										"volume": "0",
+										"tag-optional": "\"DivingSound\""
 									}
 								}
 							],
@@ -1013,12 +1013,12 @@
 										{
 											"id": "play",
 											"objectClass": "Audio",
-											"sid": 640202567810035,
+											"sid": 450747532312633,
 											"parameters": {
 												"audio-file": "Ekill",
 												"loop": "not-looping",
-												"volume": "-5",
-												"tag-optional": "\"\""
+												"volume": "0",
+												"tag-optional": "\"DivingSound\""
 											}
 										}
 									],
@@ -1099,6 +1099,17 @@
 									"id": "destroy",
 									"objectClass": "JellyFish",
 									"sid": 292413171458069
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 714722193975006,
+									"parameters": {
+										"audio-file": "Ekill",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"DivingSound\""
+									}
 								}
 							],
 							"sid": 174112978826824,
@@ -1282,6 +1293,17 @@
 									"id": "destroy",
 									"objectClass": "JellyFish",
 									"sid": 503834224959757
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 270912471048818,
+									"parameters": {
+										"audio-file": "Ekill",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"DivingSound\""
+									}
 								}
 							],
 							"sid": 970113877961291
@@ -1307,6 +1329,17 @@
 							"id": "destroy",
 							"objectClass": "JellyFish",
 							"sid": 826362526525498
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 586755203974049,
+							"parameters": {
+								"audio-file": "Ekill",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"DivingSound\""
+							}
 						}
 					],
 					"sid": 913908489967211
@@ -1485,12 +1518,12 @@
 								{
 									"id": "play",
 									"objectClass": "Audio",
-									"sid": 848807735131673,
+									"sid": 507254782097408,
 									"parameters": {
 										"audio-file": "Ekill",
 										"loop": "not-looping",
-										"volume": "-5",
-										"tag-optional": "\"\""
+										"volume": "0",
+										"tag-optional": "\"DivingSound\""
 									}
 								}
 							],
@@ -1551,6 +1584,7 @@
 							"id": "play",
 							"objectClass": "Audio",
 							"sid": 733815218101805,
+							"disabled": true,
 							"parameters": {
 								"audio-file": "US_BuhBomb1",
 								"loop": "not-looping",
@@ -1584,12 +1618,12 @@
 								{
 									"id": "play",
 									"objectClass": "Audio",
-									"sid": 672645317968794,
+									"sid": 168870214571070,
 									"parameters": {
 										"audio-file": "Ekill",
 										"loop": "not-looping",
-										"volume": "-5",
-										"tag-optional": "\"\""
+										"volume": "0",
+										"tag-optional": "\"DivingSound\""
 									}
 								}
 							],
@@ -2048,12 +2082,12 @@
 								{
 									"id": "play",
 									"objectClass": "Audio",
-									"sid": 735218342057732,
+									"sid": 503204900900928,
 									"parameters": {
 										"audio-file": "Ekill",
 										"loop": "not-looping",
-										"volume": "-5",
-										"tag-optional": "\"\""
+										"volume": "0",
+										"tag-optional": "\"DivingSound\""
 									}
 								}
 							],
@@ -2141,6 +2175,17 @@
 									"id": "destroy",
 									"objectClass": "Shark",
 									"sid": 524813291843541
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 601501714876645,
+									"parameters": {
+										"audio-file": "Ekill",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"DivingSound\""
+									}
 								}
 							],
 							"sid": 235999983776726,
