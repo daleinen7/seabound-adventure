@@ -201,12 +201,12 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 636632129519353,
+							"sid": 707678584760405,
 							"parameters": {
 								"audio-file": "US_overworld A BCD_1",
 								"loop": "not-looping",
-								"volume": "-10",
-								"tag-optional": "\"OWTheme\""
+								"volume": "-7",
+								"tag-optional": "\"TravelTheme\""
 							}
 						}
 					],
