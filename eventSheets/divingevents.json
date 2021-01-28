@@ -13,6 +13,33 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 582026496525809
+				}
+			],
+			"actions": [
+				{
+					"id": "add-filter-effect",
+					"objectClass": "Audio",
+					"sid": 791666652075521,
+					"parameters": {
+						"tag": "\"DivingSound\"",
+						"type": "low-pass",
+						"frequency": "1500",
+						"detune": "0",
+						"q": "1",
+						"gain": "-10",
+						"mix": "100"
+					}
+				}
+			],
+			"sid": 638472525380686
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "is-outside-layout",
 					"objectClass": "BoatDiving",
 					"sid": 478253902050453
@@ -1896,33 +1923,6 @@
 				}
 			],
 			"sid": 161230157959691
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 277393605976382
-				}
-			],
-			"actions": [
-				{
-					"id": "add-filter-effect",
-					"objectClass": "Audio",
-					"sid": 764092310435705,
-					"parameters": {
-						"tag": "\"DivingSound\"",
-						"type": "low-pass",
-						"frequency": "1000",
-						"detune": "0",
-						"q": "1",
-						"gain": "-20",
-						"mix": "100"
-					}
-				}
-			],
-			"sid": 899866228031201
 		}
 	],
 	"sid": 249652242392072

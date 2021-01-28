@@ -216,6 +216,7 @@
 									"id": "play",
 									"objectClass": "Audio",
 									"sid": 314996816308105,
+									"disabled": true,
 									"parameters": {
 										"audio-file": "Ekill",
 										"loop": "not-looping",
@@ -1014,6 +1015,7 @@
 											"id": "play",
 											"objectClass": "Audio",
 											"sid": 450747532312633,
+											"disabled": true,
 											"parameters": {
 												"audio-file": "Ekill",
 												"loop": "not-looping",
@@ -1104,6 +1106,7 @@
 									"id": "play",
 									"objectClass": "Audio",
 									"sid": 714722193975006,
+									"disabled": true,
 									"parameters": {
 										"audio-file": "Ekill",
 										"loop": "not-looping",
@@ -1298,6 +1301,7 @@
 									"id": "play",
 									"objectClass": "Audio",
 									"sid": 270912471048818,
+									"disabled": true,
 									"parameters": {
 										"audio-file": "Ekill",
 										"loop": "not-looping",
@@ -1334,6 +1338,7 @@
 							"id": "play",
 							"objectClass": "Audio",
 							"sid": 586755203974049,
+							"disabled": true,
 							"parameters": {
 								"audio-file": "Ekill",
 								"loop": "not-looping",
@@ -1519,6 +1524,7 @@
 									"id": "play",
 									"objectClass": "Audio",
 									"sid": 507254782097408,
+									"disabled": true,
 									"parameters": {
 										"audio-file": "Ekill",
 										"loop": "not-looping",
@@ -1619,6 +1625,7 @@
 									"id": "play",
 									"objectClass": "Audio",
 									"sid": 168870214571070,
+									"disabled": true,
 									"parameters": {
 										"audio-file": "Ekill",
 										"loop": "not-looping",
@@ -2083,6 +2090,7 @@
 									"id": "play",
 									"objectClass": "Audio",
 									"sid": 503204900900928,
+									"disabled": true,
 									"parameters": {
 										"audio-file": "Ekill",
 										"loop": "not-looping",
@@ -2180,6 +2188,7 @@
 									"id": "play",
 									"objectClass": "Audio",
 									"sid": 601501714876645,
+									"disabled": true,
 									"parameters": {
 										"audio-file": "Ekill",
 										"loop": "not-looping",
@@ -2314,7 +2323,19 @@
 					"sid": 139711321425228
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 619029224200370,
+					"parameters": {
+						"audio-file": "Ekill",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"DivingSound\""
+					}
+				}
+			],
 			"sid": 283303620452776
 		}
 	],
