@@ -68,11 +68,11 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 728244216395568,
+					"sid": 642120784759621,
 					"parameters": {
 						"audio-file": "enhit1",
 						"loop": "not-looping",
-						"volume": "-10",
+						"volume": "-13",
 						"tag-optional": "\"DivingSound\""
 					}
 				}
@@ -2327,11 +2327,11 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 619029224200370,
+					"sid": 289900442675940,
 					"parameters": {
 						"audio-file": "Ekill",
 						"loop": "not-looping",
-						"volume": "0",
+						"volume": "-4",
 						"tag-optional": "\"DivingSound\""
 					}
 				}

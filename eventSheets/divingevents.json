@@ -22,15 +22,56 @@
 				{
 					"id": "add-filter-effect",
 					"objectClass": "Audio",
-					"sid": 791666652075521,
+					"sid": 842667107393188,
 					"parameters": {
 						"tag": "\"DivingSound\"",
 						"type": "low-pass",
-						"frequency": "1500",
+						"frequency": "1800",
 						"detune": "0",
-						"q": "1",
+						"q": "2",
 						"gain": "-10",
 						"mix": "100"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 825860866232807,
+					"parameters": {
+						"audio-file": "Undersea_encounter#2_1",
+						"loop": "looping",
+						"volume": "-1",
+						"tag-optional": "\"DiveTheme\""
+					}
+				},
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 624476867595049,
+					"parameters": {
+						"tag": "\"TravelTheme\"",
+						"db": "-100",
+						"duration": "1",
+						"ending": "keep-playing"
+					}
+				},
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 721827710072937,
+					"parameters": {
+						"tag": "\"TravelAmb\"",
+						"db": "-100",
+						"duration": "1",
+						"ending": "stop"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 236950271963252,
+					"parameters": {
+						"tag": "\"motor\""
 					}
 				}
 			],
@@ -96,17 +137,6 @@
 					],
 					"actions": [
 						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 112209960772215,
-							"parameters": {
-								"audio-file": "Undersea_encounter#2_1",
-								"loop": "looping",
-								"volume": "-1",
-								"tag-optional": "\"DiveTheme\""
-							}
-						},
-						{
 							"id": "wait",
 							"objectClass": "System",
 							"sid": 876694008030427,
@@ -117,28 +147,6 @@
 						{
 							"callFunction": "DiverDive",
 							"sid": 699947072278514
-						},
-						{
-							"id": "fade-volume",
-							"objectClass": "Audio",
-							"sid": 221098409742493,
-							"parameters": {
-								"tag": "\"TravelTheme\"",
-								"db": "-100",
-								"duration": "1",
-								"ending": "keep-playing"
-							}
-						},
-						{
-							"id": "fade-volume",
-							"objectClass": "Audio",
-							"sid": 283751399129560,
-							"parameters": {
-								"tag": "\"TravelAmb\"",
-								"db": "-100",
-								"duration": "1",
-								"ending": "stop"
-							}
 						}
 					],
 					"sid": 926547930418190

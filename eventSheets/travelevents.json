@@ -96,11 +96,11 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 708130649895585,
+					"sid": 441652729962054,
 					"parameters": {
 						"audio-file": "ow_oceanamb1",
 						"loop": "looping",
-						"volume": "-15",
+						"volume": "-4",
 						"tag-optional": "\"TravelAmb\""
 					}
 				},
@@ -116,6 +116,17 @@
 						"q": "1",
 						"gain": "0",
 						"mix": "100"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 840998242782349,
+					"parameters": {
+						"audio-file": "NewMotorIdle",
+						"loop": "looping",
+						"volume": "-5",
+						"tag-optional": "\"motor\""
 					}
 				}
 			],
@@ -503,11 +514,11 @@
 								{
 									"id": "play",
 									"objectClass": "Audio",
-									"sid": 845119260955692,
+									"sid": 479514087448304,
 									"parameters": {
 										"audio-file": "US_menu nav",
 										"loop": "not-looping",
-										"volume": "0",
+										"volume": "-4",
 										"tag-optional": "\"\""
 									}
 								}
@@ -584,11 +595,11 @@
 								{
 									"id": "play",
 									"objectClass": "Audio",
-									"sid": 970690894650839,
+									"sid": 701136250900845,
 									"parameters": {
 										"audio-file": "US_menu nav",
 										"loop": "not-looping",
-										"volume": "0",
+										"volume": "-5",
 										"tag-optional": "\"\""
 									}
 								}
@@ -630,11 +641,11 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 839405298320369,
+							"sid": 819752966073392,
 							"parameters": {
 								"audio-file": "US_menu purchase",
 								"loop": "not-looping",
-								"volume": "0",
+								"volume": "-5",
 								"tag-optional": "\"\""
 							}
 						}
@@ -975,11 +986,11 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 442233666198427,
+							"sid": 982303387273509,
 							"parameters": {
 								"audio-file": "UNdonate2",
 								"loop": "not-looping",
-								"volume": "-5",
+								"volume": "-13",
 								"tag-optional": "\"\""
 							}
 						}
@@ -1399,11 +1410,11 @@
 								{
 									"id": "play",
 									"objectClass": "Audio",
-									"sid": 248708292913826,
+									"sid": 605995558013179,
 									"parameters": {
 										"audio-file": "US_menu select",
 										"loop": "not-looping",
-										"volume": "0",
+										"volume": "-5",
 										"tag-optional": "\"\""
 									}
 								}
@@ -1619,11 +1630,11 @@
 												{
 													"id": "play",
 													"objectClass": "Audio",
-													"sid": 929552162880819,
+													"sid": 804349442244379,
 													"parameters": {
 														"audio-file": "UNdonate2",
 														"loop": "not-looping",
-														"volume": "0",
+														"volume": "-13",
 														"tag-optional": "\"\""
 													}
 												}
@@ -1669,11 +1680,11 @@
 								{
 									"id": "play",
 									"objectClass": "Audio",
-									"sid": 297244767846413,
+									"sid": 434473659380707,
 									"parameters": {
 										"audio-file": "US_menu nav",
 										"loop": "not-looping",
-										"volume": "0",
+										"volume": "0-13",
 										"tag-optional": "\"\""
 									}
 								}
@@ -1762,11 +1773,11 @@
 								{
 									"id": "play",
 									"objectClass": "Audio",
-									"sid": 747727034784129,
+									"sid": 858531641308134,
 									"parameters": {
 										"audio-file": "US_menu nav",
 										"loop": "not-looping",
-										"volume": "0",
+										"volume": "-13",
 										"tag-optional": "\"\""
 									}
 								}
@@ -1979,11 +1990,11 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 632704215900409,
+							"sid": 821077350755304,
 							"parameters": {
 								"audio-file": "UNdonate1",
 								"loop": "not-looping",
-								"volume": "-5",
+								"volume": "-5-13",
 								"tag-optional": "\"\""
 							}
 						}
@@ -2413,11 +2424,11 @@
 								{
 									"id": "play",
 									"objectClass": "Audio",
-									"sid": 568893422322182,
+									"sid": 255186291456281,
 									"parameters": {
 										"audio-file": "US_menu select",
 										"loop": "not-looping",
-										"volume": "0",
+										"volume": "-5",
 										"tag-optional": "\"\""
 									}
 								}
@@ -2572,11 +2583,11 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 353205763701582,
+							"sid": 594368591686162,
 							"parameters": {
 								"audio-file": "US_menu nav",
 								"loop": "not-looping",
-								"volume": "0",
+								"volume": "0-5",
 								"tag-optional": "\"\""
 							}
 						}
@@ -2665,11 +2676,11 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 965464090773977,
+							"sid": 509307728502677,
 							"parameters": {
 								"audio-file": "US_menu nav",
 								"loop": "not-looping",
-								"volume": "0",
+								"volume": "-5",
 								"tag-optional": "\"\""
 							}
 						}
@@ -2948,6 +2959,44 @@
 									"parameters": {
 										"group-name": "\"Travel\"",
 										"state": "deactivated"
+									}
+								},
+								{
+									"id": "stop",
+									"objectClass": "Audio",
+									"sid": 701448384361402,
+									"parameters": {
+										"tag": "\"motor\""
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 740720620855108,
+									"parameters": {
+										"audio-file": "NewMotorDec2_5secs",
+										"loop": "not-looping",
+										"volume": "-5",
+										"tag-optional": "\"motor\""
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 538580583850443,
+									"parameters": {
+										"seconds": "2.4"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 651912262530110,
+									"parameters": {
+										"audio-file": "NewMotorIdle",
+										"loop": "looping",
+										"volume": "-5",
+										"tag-optional": "\"motor\""
 									}
 								}
 							],
@@ -3303,38 +3352,49 @@
 				{
 					"id": "stop",
 					"objectClass": "Audio",
-					"sid": 422356509790842,
+					"sid": 506360531644654,
 					"parameters": {
-						"tag": "\"idle\""
+						"tag": "\"motor\""
 					}
 				},
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 424328918742874,
+					"sid": 355701703906828,
 					"parameters": {
-						"audio-file": "bt1_motorStarting",
+						"audio-file": "NewMotorAc2secs",
 						"loop": "not-looping",
-						"volume": "-5",
+						"volume": "-7",
 						"tag-optional": "\"motor\""
+					}
+				},
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 183816243362884,
+					"parameters": {
+						"tag": "\"TravelAmb\"",
+						"db": "-14",
+						"duration": "2",
+						"ending": "keep-playing"
 					}
 				},
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 919864205652248,
+					"sid": 493134379123616,
 					"parameters": {
-						"seconds": "1.5"
+						"seconds": "2"
 					}
 				},
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 154953876380347,
+					"sid": 790786421132471,
 					"parameters": {
-						"audio-file": "bt1_motorGoing",
+						"audio-file": "NewMotorTrav",
 						"loop": "looping",
-						"volume": "-8",
+						"volume": "-7",
 						"tag-optional": "\"motor\""
 					}
 				},
@@ -3409,31 +3469,42 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 970772978208102,
+					"sid": 294330771048864,
 					"parameters": {
-						"audio-file": "bt1_motorSlowing",
+						"audio-file": "NewMotorDec2_5secs",
 						"loop": "not-looping",
-						"volume": "-10",
-						"tag-optional": "\"\""
+						"volume": "-4",
+						"tag-optional": "\"motor\""
+					}
+				},
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 954771821941909,
+					"parameters": {
+						"tag": "\"TravelAmb\"",
+						"db": "-4",
+						"duration": "2",
+						"ending": "keep-playing"
 					}
 				},
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 384178235747360,
+					"sid": 259635880131908,
 					"parameters": {
-						"seconds": "1.5"
+						"seconds": "2.4"
 					}
 				},
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 738634086716640,
+					"sid": 946970415219121,
 					"parameters": {
-						"audio-file": "bt1_motorIdle",
+						"audio-file": "NewMotorIdle",
 						"loop": "looping",
-						"volume": "-5",
-						"tag-optional": "\"idle\""
+						"volume": "-4",
+						"tag-optional": "\"motor\""
 					}
 				}
 			],
