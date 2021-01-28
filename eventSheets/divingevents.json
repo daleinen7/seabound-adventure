@@ -1892,6 +1892,374 @@
 						}
 					],
 					"sid": 759139225425588
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Diver Health",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"functionName": "DisplayDiverHealth",
+							"functionDescription": "",
+							"functionCategory": "",
+							"functionReturnType": "none",
+							"functionIsAsync": false,
+							"functionParameters": [],
+							"eventType": "function-block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-width",
+									"objectClass": "HealthBarEmpty",
+									"sid": 480071905537554,
+									"parameters": {
+										"width": "FirstMate.Get(\"health capacity\") * 8"
+									}
+								},
+								{
+									"id": "set-width",
+									"objectClass": "HealthBarFull",
+									"sid": 224260005465851,
+									"parameters": {
+										"width": "FirstMate.Get(\"health\") * 8"
+									}
+								}
+							],
+							"sid": 289014102480440
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-start-of-layout",
+									"objectClass": "System",
+									"sid": 966053834938964
+								}
+							],
+							"actions": [
+								{
+									"id": "wait-for-previous-actions",
+									"objectClass": "System",
+									"sid": 641495543366312
+								},
+								{
+									"callFunction": "DisplayDiverHealth",
+									"sid": 346885568204628
+								}
+							],
+							"sid": 426793763818518
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Divers",
+									"sid": 396765947314806,
+									"parameters": {
+										"object": "Enemies"
+									}
+								},
+								{
+									"id": "is-flashing",
+									"objectClass": "Divers",
+									"sid": 841331515882524,
+									"behaviorType": "Flash",
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Divers",
+									"sid": 261567481437761,
+									"parameters": {
+										"animation": "\"Hurt\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-key",
+									"objectClass": "FirstMate",
+									"sid": 987174146533588,
+									"parameters": {
+										"key": "\"health\"",
+										"value": "FirstMate.Get(\"health\") - Enemies.Damage"
+									}
+								},
+								{
+									"callFunction": "DisplayDiverHealth",
+									"sid": 607413993245503
+								}
+							],
+							"sid": 175735562212267,
+							"children": [
+								{
+									"eventType": "comment",
+									"text": "Diver Dies"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-value",
+											"objectClass": "FirstMate",
+											"sid": 560781599511083,
+											"parameters": {
+												"key": "\"health\"",
+												"comparison": 3,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "DiverDeath",
+											"sid": 957510205376862
+										}
+									],
+									"sid": 397328622295872
+								},
+								{
+									"eventType": "comment",
+									"text": "Diver flashes"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 687620806188395
+										}
+									],
+									"actions": [
+										{
+											"id": "flash",
+											"objectClass": "Divers",
+											"sid": 532545408949170,
+											"behaviorType": "Flash",
+											"parameters": {
+												"on-time": "0.1",
+												"off-time": "0.1",
+												"duration": "FirstMate.Get(\"flash time\")"
+											}
+										}
+									],
+									"sid": 817856709013392
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-animation-finished",
+									"objectClass": "Divers",
+									"sid": 175555149558242,
+									"parameters": {
+										"animation": "\"Hurt\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Divers",
+									"sid": 640382996721846,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 464854896435746
+						}
+					],
+					"sid": 433774057300789
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Diver Oxygen",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "Oxygen Uptake Logic"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-value",
+									"objectClass": "FirstMate",
+									"sid": 506998986016449,
+									"parameters": {
+										"key": "\"name\"",
+										"comparison": 0,
+										"value": "\"Cristo\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 542751381079500,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Divers",
+											"sid": 957655645609736,
+											"parameters": {
+												"object": "OxygenZone"
+											}
+										},
+										{
+											"id": "every-x-seconds",
+											"objectClass": "System",
+											"sid": 774756168794721,
+											"parameters": {
+												"interval-seconds": "FirstMate.Get(\"oxygen uptake\")"
+											}
+										},
+										{
+											"id": "compare-width",
+											"objectClass": "OxygenBarFull",
+											"sid": 121280235951088,
+											"parameters": {
+												"comparison": 3,
+												"width": "51"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-width",
+											"objectClass": "OxygenBarFull",
+											"sid": 307978417543043,
+											"parameters": {
+												"width": "OxygenBarFull.Width + 1"
+											}
+										}
+									],
+									"sid": 259557877188617
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-value",
+									"objectClass": "FirstMate",
+									"sid": 173001440081868,
+									"parameters": {
+										"key": "\"name\"",
+										"comparison": 0,
+										"value": "\"Cristo\""
+									}
+								},
+								{
+									"id": "compare-value",
+									"objectClass": "FirstMate",
+									"sid": 356321915263686,
+									"parameters": {
+										"key": "\"name\"",
+										"comparison": 0,
+										"value": "\"Viktoria\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 425130979848810,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-x-seconds",
+											"objectClass": "System",
+											"sid": 247142369399885,
+											"parameters": {
+												"interval-seconds": "FirstMate.Get(\"oxygen use\")"
+											}
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Divers",
+											"sid": 840562593511218,
+											"parameters": {
+												"object": "OxygenZone"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-width",
+											"objectClass": "OxygenBarFull",
+											"sid": 499462138868712,
+											"parameters": {
+												"width": "OxygenBarFull.Width - 1"
+											}
+										}
+									],
+									"sid": 351293070106089,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-width",
+													"objectClass": "OxygenBarFull",
+													"sid": 348015107172729,
+													"parameters": {
+														"comparison": 3,
+														"width": "0"
+													}
+												}
+											],
+											"actions": [
+												{
+													"callFunction": "DiverDeath",
+													"sid": 440402613473263
+												}
+											],
+											"sid": 434562962869149
+										}
+									]
+								}
+							],
+							"isOrBlock": true
+						}
+					],
+					"sid": 761384404224188
+				},
+				{
+					"functionName": "DiverDeath",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "append-text",
+							"objectClass": "Debug",
+							"sid": 961505417592016,
+							"parameters": {
+								"text": "\"Game Over\""
+							}
+						}
+					],
+					"sid": 429458554650094
 				}
 			],
 			"sid": 352612916073395
