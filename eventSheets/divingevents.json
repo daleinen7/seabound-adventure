@@ -1990,6 +1990,17 @@
 									}
 								},
 								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 757590447987579,
+									"parameters": {
+										"audio-file": "diver hit OOF",
+										"loop": "not-looping",
+										"volume": "-15",
+										"tag-optional": "\"\""
+									}
+								},
+								{
 									"callFunction": "DisplayDiverHealth",
 									"sid": 607413993245503
 								}

@@ -670,6 +670,17 @@
 								{
 									"callFunction": "IntroCristo",
 									"sid": 298570273039013
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 569699074428604,
+									"parameters": {
+										"audio-file": "cristo_intro",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"\""
+									}
 								}
 							],
 							"sid": 274142213638085
@@ -692,6 +703,17 @@
 								{
 									"callFunction": "IntroViktoria",
 									"sid": 143061822527726
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 742125804494706,
+									"parameters": {
+										"audio-file": "viktoria_hired",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"\""
+									}
 								}
 							],
 							"sid": 710018673294399
