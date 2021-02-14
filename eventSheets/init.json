@@ -21,6 +21,54 @@
 			],
 			"actions": [
 				{
+					"id": "map-function",
+					"objectClass": "Functions",
+					"sid": 187360225074301,
+					"parameters": {
+						"name": "\"TAV\"",
+						"string": "\"Depart\"",
+						"function": "Depart"
+					}
+				},
+				{
+					"id": "map-function",
+					"objectClass": "Functions",
+					"sid": 575997819398722,
+					"parameters": {
+						"name": "\"TAV\"",
+						"string": "\"StartTravel\"",
+						"function": "StartTravel"
+					}
+				},
+				{
+					"id": "map-function",
+					"objectClass": "Functions",
+					"sid": 905339644260660,
+					"parameters": {
+						"name": "\"TAV\"",
+						"string": "\"Travel\"",
+						"function": "Travel"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "ParallaxMovement",
+					"sid": 586221332941201,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "createPermutationTable",
+					"objectClass": "AdvancedRandom",
+					"sid": 236354061811495,
+					"parameters": {
+						"length": "10",
+						"offset": "2"
+					}
+				},
+				{
 					"id": "set-boolean-eventvar",
 					"objectClass": "System",
 					"sid": 741330515566829,

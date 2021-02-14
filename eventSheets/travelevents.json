@@ -10,6 +10,10 @@
 			"includeSheet": "TAVresultFunctions"
 		},
 		{
+			"eventType": "comment",
+			"text": "Gotta fix this shit before release for real"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -25,61 +29,6 @@
 					"sid": 362180677074046,
 					"parameters": {
 						"seconds": "0.1"
-					}
-				},
-				{
-					"callFunction": "CallTAV",
-					"sid": 135024158833865,
-					"parameters": [
-						"0"
-					]
-				},
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 187360225074301,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"Depart\"",
-						"function": "Depart"
-					}
-				},
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 575997819398722,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"StartTravel\"",
-						"function": "StartTravel"
-					}
-				},
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 905339644260660,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"Travel\"",
-						"function": "Travel"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "ParallaxMovement",
-					"sid": 586221332941201,
-					"behaviorType": "Bullet",
-					"parameters": {
-						"state": "disabled"
-					}
-				},
-				{
-					"id": "createPermutationTable",
-					"objectClass": "AdvancedRandom",
-					"sid": 658078189884269,
-					"parameters": {
-						"length": "5",
-						"offset": "2"
 					}
 				},
 				{
@@ -174,6 +123,16 @@
 			"children": [
 				{
 					"eventType": "variable",
+					"name": "Introed",
+					"type": "boolean",
+					"initialValue": "false",
+					"comment": "",
+					"isStatic": true,
+					"isConstant": false,
+					"sid": 962250510133982
+				},
+				{
+					"eventType": "variable",
 					"name": "selectedHire",
 					"type": "number",
 					"initialValue": "1",
@@ -247,26 +206,6 @@
 							"parameters": [
 								"\"SEABEAST ATTACK! Choose your companion for travel!\""
 							]
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 639720287151251,
-							"parameters": {
-								"seconds": "3"
-							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "TavText",
-							"sid": 598868254978906,
-							"parameters": {
-								"text": "\"\""
-							}
-						},
-						{
-							"callFunction": "DisplayCrewForHire",
-							"sid": 127296825748217
 						}
 					],
 					"sid": 474301389410386
@@ -618,130 +557,205 @@
 							"parameters": {
 								"key": 32
 							}
-						},
-						{
-							"id": "layer-is-visible",
-							"objectClass": "System",
-							"sid": 675760616006745,
-							"parameters": {
-								"layer": "\"HireCrew\""
-							}
 						}
 					],
-					"actions": [
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 796977419535369,
-							"parameters": {
-								"group-name": "\"TAV\"",
-								"state": "activated"
-							}
-						},
-						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 819752966073392,
-							"parameters": {
-								"audio-file": "US_menu purchase",
-								"loop": "not-looping",
-								"volume": "-5",
-								"tag-optional": "\"\""
-							}
-						}
-					],
+					"actions": [],
 					"sid": 941241733350156,
 					"children": [
 						{
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "compare-eventvar",
-									"objectClass": "System",
-									"sid": 314217996526599,
-									"parameters": {
-										"variable": "selectedHire",
-										"comparison": 0,
-										"value": "1"
-									}
+									"id": "is-running-typewriter-text",
+									"objectClass": "TavText",
+									"sid": 385611706517226
 								}
 							],
 							"actions": [
 								{
-									"callFunction": "IntroCristo",
-									"sid": 298570273039013
-								},
-								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 569699074428604,
-									"parameters": {
-										"audio-file": "cristo_intro",
-										"loop": "not-looping",
-										"volume": "0",
-										"tag-optional": "\"\""
-									}
+									"id": "typewriter-finish",
+									"objectClass": "TavText",
+									"sid": 630353986187816
 								}
 							],
-							"sid": 274142213638085
+							"sid": 132888792044889
 						},
 						{
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "compare-eventvar",
+									"id": "else",
 									"objectClass": "System",
-									"sid": 458187873387378,
+									"sid": 254590496622030
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 307289914525581,
 									"parameters": {
-										"variable": "selectedHire",
-										"comparison": 0,
-										"value": "2"
-									}
+										"variable": "Introed"
+									},
+									"isInverted": true
 								}
 							],
 							"actions": [
 								{
-									"callFunction": "IntroViktoria",
-									"sid": 143061822527726
+									"id": "set-text",
+									"objectClass": "TavText",
+									"sid": 424044833630907,
+									"parameters": {
+										"text": "\"\""
+									}
 								},
 								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 742125804494706,
+									"callFunction": "DisplayCrewForHire",
+									"sid": 112420166903061
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 551186526154902,
 									"parameters": {
-										"audio-file": "viktoria_hired",
-										"loop": "not-looping",
-										"volume": "0",
-										"tag-optional": "\"\""
+										"variable": "Introed",
+										"value": "true"
 									}
 								}
 							],
-							"sid": 710018673294399
+							"sid": 542025776052506
 						},
 						{
 							"eventType": "block",
-							"conditions": [],
-							"actions": [
+							"conditions": [
 								{
-									"id": "set-layer-visible",
+									"id": "else",
 									"objectClass": "System",
-									"sid": 457151765766321,
-									"parameters": {
-										"layer": "\"HireCrew\"",
-										"visibility": "invisible"
-									}
+									"sid": 791289339626718
 								},
 								{
-									"id": "set-group-active",
+									"id": "layer-is-visible",
 									"objectClass": "System",
-									"sid": 975654242501902,
+									"sid": 615651951474460,
 									"parameters": {
-										"group-name": "\"StartGame\"",
-										"state": "deactivated"
+										"layer": "\"HireCrew\""
 									}
 								}
 							],
-							"sid": 663391531969942
+							"actions": [
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 517247236500556,
+									"parameters": {
+										"group-name": "\"TAV\"",
+										"state": "activated"
+									}
+								}
+							],
+							"sid": 783164198571010,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 523410618486783,
+											"parameters": {
+												"variable": "selectedHire",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "IntroCristo",
+											"sid": 774505532122415
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 356858563965192,
+											"parameters": {
+												"audio-file": "cristo_intro",
+												"loop": "not-looping",
+												"volume": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 854431928069053
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 761142162068049,
+											"parameters": {
+												"variable": "selectedHire",
+												"comparison": 0,
+												"value": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "IntroViktoria",
+											"sid": 791554877420794
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 809303726219691,
+											"parameters": {
+												"audio-file": "viktoria_hired",
+												"loop": "not-looping",
+												"volume": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 881642706150253
+								},
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 633850765094169,
+											"parameters": {
+												"audio-file": "US_menu purchase",
+												"loop": "not-looping",
+												"volume": "-5",
+												"tag-optional": "\"\""
+											}
+										},
+										{
+											"id": "set-layer-visible",
+											"objectClass": "System",
+											"sid": 940620191745409,
+											"parameters": {
+												"layer": "\"HireCrew\"",
+												"visibility": "invisible"
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 306305966152064,
+											"parameters": {
+												"group-name": "\"StartGame\"",
+												"state": "deactivated"
+											}
+										}
+									],
+									"sid": 230323814394889
+								}
+							]
 						}
 					]
 				}
@@ -809,6 +823,7 @@
 							"id": "set-y",
 							"objectClass": "navLocation",
 							"sid": 266505296261049,
+							"disabled": true,
 							"parameters": {
 								"y": "navLocation.Y + 10"
 							}
@@ -849,6 +864,7 @@
 							"id": "set-x",
 							"objectClass": "navLocation",
 							"sid": 580688204487462,
+							"disabled": true,
 							"parameters": {
 								"x": "navLocation.X + 10"
 							}
@@ -876,11 +892,12 @@
 						{
 							"id": "flash",
 							"objectClass": "navLocation",
-							"sid": 425604683718168,
+							"sid": 255395055462070,
+							"disabled": true,
 							"behaviorType": "Flash",
 							"parameters": {
-								"on-time": "1",
-								"off-time": "1.5",
+								"on-time": "0.75",
+								"off-time": "0.3",
 								"duration": "Infinity"
 							}
 						}
@@ -900,7 +917,7 @@
 					"eventType": "variable",
 					"name": "CurrentTAV",
 					"type": "number",
-					"initialValue": "0",
+					"initialValue": "1",
 					"comment": "",
 					"isStatic": true,
 					"isConstant": false,
@@ -1014,6 +1031,24 @@
 								"loop": "not-looping",
 								"volume": "-13",
 								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "clear",
+							"objectClass": "Results",
+							"sid": 702147109335143,
+							"parameters": {
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "Results",
+							"sid": 685697198806382,
+							"parameters": {
+								"width": "0",
+								"height": "2",
+								"depth": "1"
 							}
 						}
 					],
@@ -1191,7 +1226,7 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 885180485071126,
+							"sid": 693331981812879,
 							"parameters": {
 								"variable": "CurrentLine",
 								"value": "100"
@@ -1375,6 +1410,133 @@
 					]
 				},
 				{
+					"functionName": "ShowResults",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 313338875295381,
+							"disabled": true,
+							"parameters": {
+								"variable": "CurrentLine",
+								"value": "101"
+							}
+						}
+					],
+					"sid": 495707860886104,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-empty",
+									"objectClass": "Results",
+									"sid": 511404717716777
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 756569969086413,
+									"parameters": {
+										"variable": "CurrentLine",
+										"value": "100"
+									}
+								}
+							],
+							"sid": 420357351826841
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 924881379792301
+								},
+								{
+									"id": "for",
+									"objectClass": "System",
+									"sid": 993984065871946,
+									"parameters": {
+										"name": "\"\"",
+										"start-index": "0",
+										"end-index": "Results.Width - 1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 344975922506588,
+									"parameters": {
+										"object-to-create": "ChoiceTxt",
+										"layer": "\"TAV Layer\"",
+										"x": "300",
+										"y": "182 - Results.Width * 20 + (loopindex * 20)",
+										"create-hierarchy": false
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "ChoiceTxt",
+									"sid": 922066247892701,
+									"parameters": {
+										"text": "Results.At(loopindex)"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "ChoiceTxt",
+									"sid": 536257141302551,
+									"parameters": {
+										"instance-variable": "ChoiceID",
+										"value": "loopindex"
+									}
+								}
+							],
+							"sid": 267811994804326,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "ChoiceTxt",
+											"sid": 124700281979410,
+											"parameters": {
+												"instance-variable": "ChoiceID",
+												"comparison": 0,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-font-color",
+											"objectClass": "ChoiceTxt",
+											"sid": 883787206431141,
+											"parameters": {
+												"color": "rgbEx(77, 77, 77)"
+											}
+										}
+									],
+									"sid": 285199785244857
+								}
+							]
+						}
+					]
+				},
+				{
 					"eventType": "comment",
 					"text": "Space Press"
 				},
@@ -1417,7 +1579,7 @@
 						},
 						{
 							"eventType": "comment",
-							"text": "Otherwise if text is finished"
+							"text": "Otherwise if text is finished - play confirmation sound"
 						},
 						{
 							"eventType": "block",
@@ -1445,7 +1607,7 @@
 							"children": [
 								{
 									"eventType": "comment",
-									"text": "If next line is blank display choices"
+									"text": "If next line is blank display choices and less than 99 call build choices array"
 								},
 								{
 									"eventType": "block",
@@ -1460,6 +1622,16 @@
 												"z": "CurrentTAV",
 												"comparison": 0,
 												"value": "\"\""
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 539761122496103,
+											"parameters": {
+												"variable": "CurrentLine",
+												"comparison": 2,
+												"value": "99"
 											}
 										}
 									],
@@ -1481,12 +1653,12 @@
 										{
 											"id": "else",
 											"objectClass": "System",
-											"sid": 365026891568994
+											"sid": 716252695523146
 										},
 										{
 											"id": "compare-eventvar",
 											"objectClass": "System",
-											"sid": 614481009043653,
+											"sid": 188010186509485,
 											"parameters": {
 												"variable": "CurrentLine",
 												"comparison": 2,
@@ -1497,13 +1669,17 @@
 									"actions": [
 										{
 											"callFunction": "NextTavLine",
-											"sid": 163382341583839,
+											"sid": 885342966888652,
 											"parameters": [
 												"CurrentLine + 1"
 											]
 										}
 									],
-									"sid": 605124043999097
+									"sid": 265672310141639
+								},
+								{
+									"eventType": "comment",
+									"text": "Choices have been built, then select a choice"
 								},
 								{
 									"eventType": "block",
@@ -1511,12 +1687,12 @@
 										{
 											"id": "else",
 											"objectClass": "System",
-											"sid": 863848494616059
+											"sid": 974353371829215
 										},
 										{
 											"id": "compare-eventvar",
 											"objectClass": "System",
-											"sid": 439329839843494,
+											"sid": 331981171128051,
 											"parameters": {
 												"variable": "CurrentLine",
 												"comparison": 0,
@@ -1527,10 +1703,10 @@
 									"actions": [
 										{
 											"callFunction": "SelectChoice",
-											"sid": 404751930185698
+											"sid": 440555933164312
 										}
 									],
-									"sid": 943999898328040
+									"sid": 125622608792713
 								},
 								{
 									"eventType": "comment",
@@ -1587,15 +1763,6 @@
 														"z": "1",
 														"value": "\"\""
 													}
-												},
-												{
-													"id": "append-text",
-													"objectClass": "Debug",
-													"sid": 587994661823870,
-													"disabled": true,
-													"parameters": {
-														"text": "\"delete \" & TAVs.At(3, 2, 1)"
-													}
 												}
 											],
 											"sid": 372587036643352
@@ -1624,15 +1791,6 @@
 														"y": "1",
 														"z": "1",
 														"value": "\"\""
-													}
-												},
-												{
-													"id": "append-text",
-													"objectClass": "Debug",
-													"sid": 565222357753130,
-													"disabled": true,
-													"parameters": {
-														"text": "\"delete \" & TAVs.At(3, 1, 1)"
 													}
 												}
 											],
@@ -3045,18 +3203,9 @@
 							],
 							"actions": [
 								{
-									"id": "pop",
-									"objectClass": "route",
-									"sid": 822840591544779,
-									"parameters": {
-										"where": "front",
-										"axis": "x"
-									}
-								},
-								{
 									"id": "tween-one-property",
 									"objectClass": "FuelBarrels",
-									"sid": 333531382952222,
+									"sid": 705941229802356,
 									"behaviorType": "Tween",
 									"parameters": {
 										"tags": "\"\"",
@@ -3067,6 +3216,15 @@
 										"destroy-on-complete": "no",
 										"loop": "no",
 										"ping-pong": "no"
+									}
+								},
+								{
+									"id": "pop",
+									"objectClass": "route",
+									"sid": 822840591544779,
+									"parameters": {
+										"where": "front",
+										"axis": "x"
 									}
 								},
 								{
@@ -3229,9 +3387,114 @@
 				{
 					"callFunction": "Travel",
 					"sid": 184371662520026
+				},
+				{
+					"callFunction": "moveNavGridLoc",
+					"sid": 808433662547268
 				}
 			],
 			"sid": 205995649199863
+		},
+		{
+			"functionName": "moveNavGridLoc",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 238911719294204,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "If the destination is only one off from current then you're going east-west"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 338553884206595,
+							"parameters": {
+								"first-value": "DestinationLoc",
+								"comparison": 3,
+								"second-value": "CurrentLoc + 1"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 718663994167060,
+							"disabled": true,
+							"parameters": {
+								"first-value": "DestinationLoc",
+								"comparison": 5,
+								"second-value": "CurrentLoc - 1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"type": "comment",
+							"text": "For now only go right (east)"
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "navLocation",
+							"sid": 483363851625418,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"navMove\"",
+								"property": "offsetX",
+								"end-value": "navLocation.X + 10",
+								"time": "4 * route.At(0, 1)",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						}
+					],
+					"sid": 187140889735802,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "comment",
+					"text": "Otherwise you gotta be going north-south"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 808806311904504
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-one-property",
+							"objectClass": "navLocation",
+							"sid": 152227301278144,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"navMove\"",
+								"property": "offsetY",
+								"end-value": "navLocation.X + 10",
+								"time": "4 * route.At(0, 1)",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						}
+					],
+					"sid": 648245512658102
+				}
+			]
 		},
 		{
 			"functionName": "CreateRoute",
@@ -3262,10 +3525,10 @@
 				{
 					"id": "set-size",
 					"objectClass": "route",
-					"sid": 109753820002094,
+					"sid": 292615306511823,
 					"parameters": {
 						"width": "length",
-						"height": "1",
+						"height": "2",
 						"depth": "1"
 					}
 				}
@@ -3294,6 +3557,16 @@
 							"parameters": {
 								"x": "loopindex",
 								"value": "AdvancedRandom.Weighted"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "route",
+							"sid": 803571605655900,
+							"parameters": {
+								"x": "loopindex",
+								"y": "1",
+								"value": "route.Width + 1"
 							}
 						}
 					],
@@ -3356,22 +3629,6 @@
 					}
 				},
 				{
-					"id": "tween-one-property",
-					"objectClass": "FuelBarrels",
-					"sid": 763767550902587,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "offsetWidth",
-						"end-value": "FuelBarrels.Width - fuelUseRate",
-						"time": "4",
-						"ease": "noease",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				},
-				{
 					"id": "stop",
 					"objectClass": "Audio",
 					"sid": 506360531644654,
@@ -3402,22 +3659,47 @@
 					}
 				},
 				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 493134379123616,
+					"id": "resume-tweens",
+					"objectClass": "navLocation",
+					"sid": 333681233889251,
+					"behaviorType": "Tween",
 					"parameters": {
-						"seconds": "2"
+						"tags": "\"navMove\""
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "FuelBarrels",
+					"sid": 477149416605958,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetWidth",
+						"end-value": "FuelBarrels.Width - fuelUseRate",
+						"time": "4",
+						"ease": "noease",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
 					}
 				},
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 790786421132471,
+					"sid": 456668308151676,
 					"parameters": {
 						"audio-file": "NewMotorTrav",
 						"loop": "looping",
 						"volume": "-7",
 						"tag-optional": "\"motor\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 887548668505536,
+					"parameters": {
+						"seconds": "4"
 					}
 				},
 				{
@@ -3511,9 +3793,19 @@
 					}
 				},
 				{
+					"id": "pause-tweens",
+					"objectClass": "navLocation",
+					"sid": 458240924199820,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"navMove\""
+					}
+				},
+				{
 					"id": "wait",
 					"objectClass": "System",
 					"sid": 259635880131908,
+					"disabled": true,
 					"parameters": {
 						"seconds": "2.4"
 					}

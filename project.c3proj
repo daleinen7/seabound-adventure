@@ -260,7 +260,8 @@
 			"ItemDB",
 			"Audio",
 			"Explosivo",
-			"KnifeSwoop"
+			"KnifeSwoop",
+			"Results"
 		],
 		"subfolders": [
 			{

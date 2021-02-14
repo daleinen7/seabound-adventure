@@ -9,6 +9,11 @@
 			"behaviorId": "Flash",
 			"name": "Flash",
 			"sid": 306412201274405
+		},
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 368458867379203
 		}
 	],
 	"effectTypes": [],
