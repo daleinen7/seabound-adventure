@@ -1190,6 +1190,15 @@
 					"conditions": [],
 					"actions": [
 						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 453246088227757,
+							"parameters": {
+								"variable": "CurrentLine",
+								"value": "101"
+							}
+						},
+						{
 							"id": "typewriter-text",
 							"objectClass": "TavText",
 							"sid": 651547571843637,
@@ -1197,9 +1206,327 @@
 								"text": "text",
 								"duration": "2"
 							}
+						},
+						{
+							"id": "append-text",
+							"objectClass": "Debug",
+							"sid": 470930280976342,
+							"parameters": {
+								"text": "\"This is the tav result function triggering | \""
+							}
 						}
 					],
-					"sid": 448357411838122
+					"sid": 448357411838122,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-empty",
+									"objectClass": "Results",
+									"sid": 949980097337941
+								}
+							],
+							"actions": [
+								{
+									"id": "wait-for-previous-actions",
+									"objectClass": "System",
+									"sid": 356236542894820
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 412408159549756,
+									"parameters": {
+										"variable": "CurrentLine",
+										"value": "100"
+									}
+								},
+								{
+									"id": "append-text",
+									"objectClass": "Debug",
+									"sid": 304764609591377,
+									"parameters": {
+										"text": "\"Wasn't no results because width is \" & Results.Width\n"
+									}
+								}
+							],
+							"sid": 159905599504140
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 378087890208034
+								},
+								{
+									"id": "for",
+									"objectClass": "System",
+									"sid": 389756432652064,
+									"parameters": {
+										"name": "\"\"",
+										"start-index": "0",
+										"end-index": "Results.Width - 1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "append-text",
+									"objectClass": "Debug",
+									"sid": 891547788592417,
+									"parameters": {
+										"text": "\"Build Results \" & loopindex & \" | \"\n"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 611805767725523,
+									"parameters": {
+										"object-to-create": "ChoiceTxt",
+										"layer": "\"TAV Layer\"",
+										"x": "300",
+										"y": "182 - Results.Width * 20 + (loopindex * 20)",
+										"create-hierarchy": false
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "ChoiceTxt",
+									"sid": 598814214927453,
+									"parameters": {
+										"text": "Results.At(loopindex)"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "ChoiceTxt",
+									"sid": 493178340822574,
+									"parameters": {
+										"instance-variable": "ChoiceID",
+										"value": "loopindex"
+									}
+								}
+							],
+							"sid": 336624013524861,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "ChoiceTxt",
+											"sid": 138192444812250,
+											"parameters": {
+												"instance-variable": "ChoiceID",
+												"comparison": 0,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-font-color",
+											"objectClass": "ChoiceTxt",
+											"sid": 392129360087189,
+											"parameters": {
+												"color": "rgbEx(179, 195, 228)"
+											}
+										}
+									],
+									"sid": 336210039614914
+								}
+							]
+						}
+					]
+				},
+				{
+					"functionName": "processTavResults",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "append-text",
+							"objectClass": "Debug",
+							"sid": 890589358128365,
+							"parameters": {
+								"text": "\"Tav pocessing\""
+							}
+						}
+					],
+					"sid": 437935035409989,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "ChoiceTxt",
+									"sid": 451532616972727
+								},
+								{
+									"id": "append-text",
+									"objectClass": "Debug",
+									"sid": 894185274008328,
+									"parameters": {
+										"text": "\"Rid yourself of this burdensome list and bring anew the flaming power of a new list!\"\n"
+									}
+								}
+							],
+							"sid": 550158264589895
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "delete",
+									"objectClass": "Results",
+									"sid": 109639656898635,
+									"parameters": {
+										"index": "0",
+										"axis": "x"
+									}
+								},
+								{
+									"id": "append-text",
+									"objectClass": "Debug",
+									"sid": 908001177289677,
+									"parameters": {
+										"text": "\"gotten rid of one index \" "
+									}
+								}
+							],
+							"sid": 284348095754311
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-empty",
+									"objectClass": "Results",
+									"sid": 652729884305682
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 428728437743488,
+									"parameters": {
+										"variable": "CurrentLine",
+										"value": "100"
+									}
+								},
+								{
+									"id": "append-text",
+									"objectClass": "Debug",
+									"sid": 620917287180144,
+									"parameters": {
+										"text": "\"Show Results Array Empty | \"\n"
+									}
+								}
+							],
+							"sid": 405581822531428
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 700529426066689
+								},
+								{
+									"id": "for",
+									"objectClass": "System",
+									"sid": 499246302533785,
+									"parameters": {
+										"name": "\"\"",
+										"start-index": "0",
+										"end-index": "Results.Width - 1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "append-text",
+									"objectClass": "Debug",
+									"sid": 485829338485035,
+									"parameters": {
+										"text": "\"Build Results \" & loopindex & \" | \"\n"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 273434818780746,
+									"parameters": {
+										"object-to-create": "ChoiceTxt",
+										"layer": "\"TAV Layer\"",
+										"x": "300",
+										"y": "182 - Results.Width * 20 + (loopindex * 20)",
+										"create-hierarchy": false
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "ChoiceTxt",
+									"sid": 383364748515143,
+									"parameters": {
+										"text": "Results.At(loopindex)"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "ChoiceTxt",
+									"sid": 896222508482617,
+									"parameters": {
+										"instance-variable": "ChoiceID",
+										"value": "loopindex"
+									}
+								}
+							],
+							"sid": 710310994263957,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "ChoiceTxt",
+											"sid": 224349911226749,
+											"parameters": {
+												"instance-variable": "ChoiceID",
+												"comparison": 0,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-font-color",
+											"objectClass": "ChoiceTxt",
+											"sid": 581689539507422,
+											"parameters": {
+												"color": "rgbEx(179, 195, 228)"
+											}
+										}
+									],
+									"sid": 937711767124696
+								}
+							]
+						}
+					]
 				},
 				{
 					"functionName": "SelectChoice",
@@ -1227,6 +1554,7 @@
 							"id": "set-eventvar-value",
 							"objectClass": "System",
 							"sid": 693331981812879,
+							"disabled": true,
 							"parameters": {
 								"variable": "CurrentLine",
 								"value": "100"
@@ -1410,131 +1738,32 @@
 					]
 				},
 				{
-					"functionName": "ShowResults",
-					"functionDescription": "",
-					"functionCategory": "",
-					"functionReturnType": "none",
-					"functionIsAsync": false,
-					"functionParameters": [],
-					"eventType": "function-block",
-					"conditions": [],
-					"actions": [
+					"eventType": "block",
+					"conditions": [
 						{
-							"id": "set-eventvar-value",
+							"id": "on-typewriter-text-finished",
+							"objectClass": "TavText",
+							"sid": 957062265443903
+						},
+						{
+							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 313338875295381,
-							"disabled": true,
+							"sid": 997261677774861,
 							"parameters": {
 								"variable": "CurrentLine",
+								"comparison": 0,
 								"value": "101"
 							}
 						}
 					],
-					"sid": 495707860886104,
-					"children": [
+					"actions": [
 						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-empty",
-									"objectClass": "Results",
-									"sid": 511404717716777
-								}
-							],
-							"actions": [
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 756569969086413,
-									"parameters": {
-										"variable": "CurrentLine",
-										"value": "100"
-									}
-								}
-							],
-							"sid": 420357351826841
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "else",
-									"objectClass": "System",
-									"sid": 924881379792301
-								},
-								{
-									"id": "for",
-									"objectClass": "System",
-									"sid": 993984065871946,
-									"parameters": {
-										"name": "\"\"",
-										"start-index": "0",
-										"end-index": "Results.Width - 1"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "create-object",
-									"objectClass": "System",
-									"sid": 344975922506588,
-									"parameters": {
-										"object-to-create": "ChoiceTxt",
-										"layer": "\"TAV Layer\"",
-										"x": "300",
-										"y": "182 - Results.Width * 20 + (loopindex * 20)",
-										"create-hierarchy": false
-									}
-								},
-								{
-									"id": "set-text",
-									"objectClass": "ChoiceTxt",
-									"sid": 922066247892701,
-									"parameters": {
-										"text": "Results.At(loopindex)"
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "ChoiceTxt",
-									"sid": 536257141302551,
-									"parameters": {
-										"instance-variable": "ChoiceID",
-										"value": "loopindex"
-									}
-								}
-							],
-							"sid": 267811994804326,
-							"children": [
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "compare-instance-variable",
-											"objectClass": "ChoiceTxt",
-											"sid": 124700281979410,
-											"parameters": {
-												"instance-variable": "ChoiceID",
-												"comparison": 0,
-												"value": "0"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-font-color",
-											"objectClass": "ChoiceTxt",
-											"sid": 883787206431141,
-											"parameters": {
-												"color": "rgbEx(77, 77, 77)"
-											}
-										}
-									],
-									"sid": 285199785244857
-								}
-							]
+							"callFunction": "processTavResults",
+							"sid": 445804478332954
 						}
-					]
+					],
+					"sid": 333652390814021,
+					"disabled": true
 				},
 				{
 					"eventType": "comment",
@@ -1707,6 +1936,37 @@
 										}
 									],
 									"sid": 125622608792713
+								},
+								{
+									"eventType": "comment",
+									"text": "Results from a TAV are displaying"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 198594909876040
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 170821193730080,
+											"parameters": {
+												"variable": "CurrentLine",
+												"comparison": 0,
+												"value": "101"
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "processTavResults",
+											"sid": 949468746825061
+										}
+									],
+									"sid": 353968578337631
 								},
 								{
 									"eventType": "comment",
@@ -3368,6 +3628,7 @@
 				{
 					"callFunction": "CreateRoute",
 					"sid": 355060743272009,
+					"disabled": true,
 					"parameters": [
 						"floor(random(3, 6))"
 					]
@@ -3379,7 +3640,6 @@
 				{
 					"callFunction": "CreateRoute",
 					"sid": 431103279726401,
-					"disabled": true,
 					"parameters": [
 						"1"
 					]

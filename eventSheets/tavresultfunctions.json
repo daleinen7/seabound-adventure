@@ -710,21 +710,21 @@
 							],
 							"actions": [
 								{
-									"callFunction": "tavResult",
-									"sid": 632637169345417,
-									"parameters": [
-										"\"“As the music swells ever louder and more enticing, you turn the boat towards the foggy cove. Overcome with emotion, you begin to speed up, unable to avoid the rocks hidden in fog. A horrible screeching of metal on stone shakes you from your trance and you are able to turn the boat around and head back out to sea.” (-3 hull points)\""
-									]
-								},
-								{
 									"id": "push",
 									"objectClass": "Results",
-									"sid": 916366942814807,
+									"sid": 273816372170822,
 									"parameters": {
 										"where": "back",
 										"value": "\"-3 Boat Damage\"",
 										"axis": "x"
 									}
+								},
+								{
+									"callFunction": "tavResult",
+									"sid": 632637169345417,
+									"parameters": [
+										"\"“As the music swells ever louder and more enticing, you turn the boat towards the foggy cove. Overcome with emotion, you begin to speed up, unable to avoid the rocks hidden in fog. A horrible screeching of metal on stone shakes you from your trance and you are able to turn the boat around and head back out to sea.” (-3 hull points)\""
+									]
 								}
 							],
 							"sid": 715690693801346
@@ -847,21 +847,21 @@
 							],
 							"actions": [
 								{
-									"callFunction": "tavResult",
-									"sid": 158221137272955,
-									"parameters": [
-										"\"You try to continue on, but the sound is too seductive. You find yourself heading back towards the foggy cove. By the time you see the craggy rocks in the fog it’s too late. A horrible screeching of metal on stone breaks you from your trance and you are able to turn the boat around and head back out to sea.” (-3 hull points)\n\""
-									]
-								},
-								{
 									"id": "push",
 									"objectClass": "Results",
-									"sid": 291149728349977,
+									"sid": 672542938114055,
 									"parameters": {
 										"where": "back",
 										"value": "\"-2 Boat Damage\"",
 										"axis": "x"
 									}
+								},
+								{
+									"callFunction": "tavResult",
+									"sid": 158221137272955,
+									"parameters": [
+										"\"You try to continue on, but the sound is too seductive. You find yourself heading back towards the foggy cove. By the time you see the craggy rocks in the fog it’s too late. A horrible screeching of metal on stone breaks you from your trance and you are able to turn the boat around and head back out to sea.” (-3 hull points)\n\""
+									]
 								}
 							],
 							"sid": 563934195777272
@@ -938,21 +938,21 @@
 					"conditions": [],
 					"actions": [
 						{
-							"callFunction": "tavResult",
-							"sid": 169912717088003,
-							"parameters": [
-								"\"The band’s sound is difficult to describe, but it is certainly beautiful. You and [FM] sit and listen, moved nearly to tears. It’s a much needed respite from your worries and, with the sun now hanging low in the western sky, you pull anchor feeling refreshed and renewed in purpose. (Morale raised substantially)\""
-							]
-						},
-						{
 							"id": "push",
 							"objectClass": "Results",
-							"sid": 708067282212588,
+							"sid": 420788492786585,
 							"parameters": {
 								"where": "back",
 								"value": "\"Morale + 2\"",
 								"axis": "x"
 							}
+						},
+						{
+							"callFunction": "tavResult",
+							"sid": 169912717088003,
+							"parameters": [
+								"\"The band’s sound is difficult to describe, but it is certainly beautiful. You and [FM] sit and listen, moved nearly to tears. It’s a much needed respite from your worries and, with the sun now hanging low in the western sky, you pull anchor feeling refreshed and renewed in purpose. (Morale raised substantially)\""
+							]
 						}
 					],
 					"sid": 574138405442918
@@ -968,21 +968,21 @@
 					"conditions": [],
 					"actions": [
 						{
-							"callFunction": "tavResult",
-							"sid": 438475493271861,
-							"parameters": [
-								"\"[FM] looks disappointed, but does not protest as you turn around and head back to sea. (No change)\""
-							]
-						},
-						{
 							"id": "push",
 							"objectClass": "Results",
-							"sid": 665031746479947,
+							"sid": 625036054323032,
 							"parameters": {
 								"where": "back",
 								"value": "FirstMate.Get(\"name\") & \" morale -1\"",
 								"axis": "x"
 							}
+						},
+						{
+							"callFunction": "tavResult",
+							"sid": 438475493271861,
+							"parameters": [
+								"\"[FM] looks disappointed, but does not protest as you turn around and head back to sea. (No change)\""
+							]
 						}
 					],
 					"sid": 393396000567005
@@ -1042,16 +1042,9 @@
 									],
 									"actions": [
 										{
-											"callFunction": "tavResult",
-											"sid": 961890745293997,
-											"parameters": [
-												"\"You bring the boat in closer to shore, careful not to run aground, and call the woman to your attention. She seems caught off guard but pleased at your presence. Once aboard she is most shocked at seeing Jacob. The two were apparently high school sweethearts and they spend the rest of the evening reminiscing and giggling softly, returned for a time to their youth. (gain passenger, Jacob max morale or upgraded)\""
-											]
-										},
-										{
 											"id": "push",
 											"objectClass": "Results",
-											"sid": 586136264858596,
+											"sid": 193169359411823,
 											"parameters": {
 												"where": "back",
 												"value": "\"Jacob morale +4\" ",
@@ -1061,12 +1054,19 @@
 										{
 											"id": "push",
 											"objectClass": "Results",
-											"sid": 361618158008218,
+											"sid": 106463174288120,
 											"parameters": {
 												"where": "back",
 												"value": "\"Take on Marissa as a Passenger\"",
 												"axis": "x"
 											}
+										},
+										{
+											"callFunction": "tavResult",
+											"sid": 961890745293997,
+											"parameters": [
+												"\"You bring the boat in closer to shore, careful not to run aground, and call the woman to your attention. She seems caught off guard but pleased at your presence. Once aboard she is most shocked at seeing Jacob. The two were apparently high school sweethearts and they spend the rest of the evening reminiscing and giggling softly, returned for a time to their youth. (gain passenger, Jacob max morale or upgraded)\""
+											]
 										}
 									],
 									"sid": 941854340660886
@@ -1082,16 +1082,9 @@
 									],
 									"actions": [
 										{
-											"callFunction": "tavResult",
-											"sid": 675080226962071,
-											"parameters": [
-												"\"You bring the boat in closer to shore, careful not to run aground, and call the woman to your attention. She seems caught off guard but pleased at your presence. Once aboard she explains that she was left stranded by a now ex, and she had begun to give up hope of rescue. You agree to take her to the nearest port and she agrees to keep signing. (gain passenger and morale moderately raised)\""
-											]
-										},
-										{
 											"id": "push",
 											"objectClass": "Results",
-											"sid": 678842585644489,
+											"sid": 841266530560432,
 											"parameters": {
 												"where": "back",
 												"value": "\"Morale +1\"",
@@ -1101,12 +1094,19 @@
 										{
 											"id": "push",
 											"objectClass": "Results",
-											"sid": 837492608800632,
+											"sid": 790117729222732,
 											"parameters": {
 												"where": "back",
 												"value": "\"Take on Marissa as a Passenger\"",
 												"axis": "x"
 											}
+										},
+										{
+											"callFunction": "tavResult",
+											"sid": 675080226962071,
+											"parameters": [
+												"\"You bring the boat in closer to shore, careful not to run aground, and call the woman to your attention. She seems caught off guard but pleased at your presence. Once aboard she explains that she was left stranded by a now ex, and she had begun to give up hope of rescue. You agree to take her to the nearest port and she agrees to keep signing. (gain passenger and morale moderately raised)\""
+											]
 										}
 									],
 									"sid": 427654153512756
@@ -1124,16 +1124,9 @@
 							],
 							"actions": [
 								{
-									"callFunction": "tavResult",
-									"sid": 715174267645352,
-									"parameters": [
-										"\"You bring the boat in closer to shore, careful not to run aground, and call the woman to your attention. She turns around slowly and you are horrified at her visage. Her eyes are hollow and white and her mouth is a gaping maw of sharklike teeth. She smiles savagely and heads towards you with alarming speed. Whatever she is, she isn’t human and you quickly throw the engine into reverse. You’re well out to sea before you remember to exhale. (-1 fuel, and morale moderately declined)\""
-									]
-								},
-								{
 									"id": "push",
 									"objectClass": "Results",
-									"sid": 850261519640334,
+									"sid": 792887684685447,
 									"parameters": {
 										"where": "back",
 										"value": "\"Morale -2\"",
@@ -1143,12 +1136,19 @@
 								{
 									"id": "push",
 									"objectClass": "Results",
-									"sid": 923387326196482,
+									"sid": 409268735411753,
 									"parameters": {
 										"where": "back",
 										"value": "\"Fuel -1\"",
 										"axis": "x"
 									}
+								},
+								{
+									"callFunction": "tavResult",
+									"sid": 715174267645352,
+									"parameters": [
+										"\"You bring the boat in closer to shore, careful not to run aground, and call the woman to your attention. She turns around slowly and you are horrified at her visage. Her eyes are hollow and white and her mouth is a gaping maw of sharklike teeth. She smiles savagely and heads towards you with alarming speed. Whatever she is, she isn’t human and you quickly throw the engine into reverse. You’re well out to sea before you remember to exhale. (-1 fuel, and morale moderately declined)\""
+									]
 								}
 							],
 							"sid": 824939048435796
@@ -1249,21 +1249,21 @@
 							],
 							"actions": [
 								{
-									"callFunction": "tavResult",
-									"sid": 417574631318290,
-									"parameters": [
-										"\"“It doesn’t take long to reach the Coast Guard on the radio. They send a small craft to your location, and you lead them to the mysterious package. They thank you for your assistance and offer you a small reward.” (+$50 or item)\"\n"
-									]
-								},
-								{
 									"id": "push",
 									"objectClass": "Results",
-									"sid": 695556601812591,
+									"sid": 748882591228124,
 									"parameters": {
 										"where": "back",
 										"value": "\"+$50\"",
 										"axis": "x"
 									}
+								},
+								{
+									"callFunction": "tavResult",
+									"sid": 417574631318290,
+									"parameters": [
+										"\"“It doesn’t take long to reach the Coast Guard on the radio. They send a small craft to your location, and you lead them to the mysterious package. They thank you for your assistance and offer you a small reward.” (+$50 or item)\"\n"
+									]
 								}
 							],
 							"sid": 612233221481190
@@ -1318,21 +1318,21 @@
 							],
 							"actions": [
 								{
-									"callFunction": "tavResult",
-									"sid": 256437930408746,
-									"parameters": [
-										"\"You head towards the drop point, scanning the water ahead. You see the package bobbing in the water, and pull it aboard. Viktoria exclaims, “I know what this is, I can sell it, but we have to leave now.” You don’t argue. (+$200 or a sellable item)\""
-									]
-								},
-								{
 									"id": "push",
 									"objectClass": "Results",
-									"sid": 760577418829616,
+									"sid": 956633772381205,
 									"parameters": {
 										"where": "back",
 										"value": "\"+1 Mysterious Item\"",
 										"axis": "x"
 									}
+								},
+								{
+									"callFunction": "tavResult",
+									"sid": 256437930408746,
+									"parameters": [
+										"\"You head towards the drop point, scanning the water ahead. You see the package bobbing in the water, and pull it aboard. Viktoria exclaims, “I know what this is, I can sell it, but we have to leave now.” You don’t argue. (+$200 or a sellable item)\""
+									]
 								}
 							],
 							"sid": 824194089203338
@@ -1348,21 +1348,21 @@
 							],
 							"actions": [
 								{
-									"callFunction": "tavResult",
-									"sid": 591909387071857,
-									"parameters": [
-										"\"You head towards the drop point, scanning the water ahead. You see the package bobbing in the water, and pull it aboard. . .\nIt isn’t immediately obvious what the package contains. You begin to open it up, when you notice the sound of a boat approaching. It’s a black speed boat with half a dozen men aboard, dressed smartly in black coats and black sunglasses. Their guns are also black. You might be in trouble. You throw them the package and they thank you by not shooting you.” (loss of morale?)\"\n"
-									]
-								},
-								{
 									"id": "push",
 									"objectClass": "Results",
-									"sid": 748925007227675,
+									"sid": 543809039805548,
 									"parameters": {
 										"where": "back",
 										"value": "\"-1 Morale\"",
 										"axis": "x"
 									}
+								},
+								{
+									"callFunction": "tavResult",
+									"sid": 591909387071857,
+									"parameters": [
+										"\"You head towards the drop point, scanning the water ahead. You see the package bobbing in the water, and pull it aboard. . .\nIt isn’t immediately obvious what the package contains. You begin to open it up, when you notice the sound of a boat approaching. It’s a black speed boat with half a dozen men aboard, dressed smartly in black coats and black sunglasses. Their guns are also black. You might be in trouble. You throw them the package and they thank you by not shooting you.” (loss of morale?)\"\n"
+									]
 								}
 							],
 							"sid": 945687797122634
@@ -1450,21 +1450,21 @@
 					"conditions": [],
 					"actions": [
 						{
-							"callFunction": "tavResult",
-							"sid": 611733076706169,
-							"parameters": [
-								"\"The pod circles the boat, jumping and splashing. You lean on the rail to watch. After a moment, one of the dolphins swims over to you. It lifts its head out of the water, and spits a jet of water right in your face. The pod chatters with approval and swims away.” (No change or morale loss)\"\n"
-							]
-						},
-						{
 							"id": "push",
 							"objectClass": "Results",
-							"sid": 273571356265622,
+							"sid": 585498417978023,
 							"parameters": {
 								"where": "back",
 								"value": "\"-1 Morale\"",
 								"axis": "x"
 							}
+						},
+						{
+							"callFunction": "tavResult",
+							"sid": 611733076706169,
+							"parameters": [
+								"\"The pod circles the boat, jumping and splashing. You lean on the rail to watch. After a moment, one of the dolphins swims over to you. It lifts its head out of the water, and spits a jet of water right in your face. The pod chatters with approval and swims away.” (No change or morale loss)\"\n"
+							]
 						}
 					],
 					"sid": 149185275966162
@@ -1480,16 +1480,9 @@
 					"conditions": [],
 					"actions": [
 						{
-							"callFunction": "tavResult",
-							"sid": 472672754061775,
-							"parameters": [
-								"\"The boat and the pod begin to drift apart, each on their own course. It was good to have the company for a while at least.” (-5 fish, no change or morale boost)\"\n"
-							]
-						},
-						{
 							"id": "push",
 							"objectClass": "Results",
-							"sid": 607198509965995,
+							"sid": 664096793995662,
 							"parameters": {
 								"where": "back",
 								"value": "\"-5 Fish\"",
@@ -1537,6 +1530,20 @@
 							],
 							"sid": 969043484919638,
 							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"callFunction": "tavResult",
+									"sid": 329978093111099,
+									"parameters": [
+										"\"The boat and the pod begin to drift apart, each on their own course. It was good to have the company for a while at least.” (-5 fish, no change or morale boost)\"\n"
+									]
+								}
+							],
+							"sid": 782403975222838
 						}
 					]
 				},
@@ -1568,16 +1575,9 @@
 							],
 							"actions": [
 								{
-									"callFunction": "tavResult",
-									"sid": 540627749518802,
-									"parameters": [
-										"\"The pod seems to be leading you to something floating in the water. As you get closer, it appears to be a cooler. You hook it and haul it aboard. Inside you find most of a six-pack of beer and a money clip. There’s no indication of where it came from or whom it belonged to.” (-5 fish, +$50, morale boost?)\"\n"
-									]
-								},
-								{
 									"id": "push",
 									"objectClass": "Results",
-									"sid": 546331920384606,
+									"sid": 190435922988827,
 									"parameters": {
 										"where": "back",
 										"value": "\"+1 Morale\"",
@@ -1587,7 +1587,7 @@
 								{
 									"id": "push",
 									"objectClass": "Results",
-									"sid": 428608405191963,
+									"sid": 247756276749861,
 									"parameters": {
 										"where": "back",
 										"value": "\"+$50\"",
@@ -1597,12 +1597,19 @@
 								{
 									"id": "push",
 									"objectClass": "Results",
-									"sid": 524656990715359,
+									"sid": 228253955251687,
 									"parameters": {
 										"where": "back",
 										"value": "\"-5 Fish\"",
 										"axis": "x"
 									}
+								},
+								{
+									"callFunction": "tavResult",
+									"sid": 540627749518802,
+									"parameters": [
+										"\"The pod seems to be leading you to something floating in the water. As you get closer, it appears to be a cooler. You hook it and haul it aboard. Inside you find most of a six-pack of beer and a money clip. There’s no indication of where it came from or whom it belonged to.” (-5 fish, +$50, morale boost?)\"\n"
+									]
 								}
 							],
 							"sid": 686387926470234
@@ -1618,21 +1625,21 @@
 							],
 							"actions": [
 								{
-									"callFunction": "tavResult",
-									"sid": 781055531519056,
-									"parameters": [
-										"\"The pod turns back to port, then back to starboard, then back to port. . . It appears the dolphins are messing with you.” (-5 fish, no change)\"\n"
-									]
-								},
-								{
 									"id": "push",
 									"objectClass": "Results",
-									"sid": 700311776636888,
+									"sid": 465475567929185,
 									"parameters": {
 										"where": "back",
 										"value": "\"-5 Fish\"",
 										"axis": "x"
 									}
+								},
+								{
+									"callFunction": "tavResult",
+									"sid": 781055531519056,
+									"parameters": [
+										"\"The pod turns back to port, then back to starboard, then back to port. . . It appears the dolphins are messing with you.” (-5 fish, no change)\"\n"
+									]
 								}
 							],
 							"sid": 792735683402266
@@ -1691,21 +1698,21 @@
 							],
 							"actions": [
 								{
-									"callFunction": "tavResult",
-									"sid": 570771112717727,
-									"parameters": [
-										"\"You push the throttle hard and the engine strains to comply. Suddenly there is a loud pop and the clashing of metal. They’ve managed to hook a harpoon into the stern of the boat. Looks like you’re in for a fight now.” (Go to result #3)\""
-									]
-								},
-								{
 									"id": "push",
 									"objectClass": "Results",
-									"sid": 729368840124620,
+									"sid": 625844663286241,
 									"parameters": {
 										"where": "back",
 										"value": "\"-1 Hull Damage\"",
 										"axis": "x"
 									}
+								},
+								{
+									"callFunction": "tavResult",
+									"sid": 570771112717727,
+									"parameters": [
+										"\"You push the throttle hard and the engine strains to comply. Suddenly there is a loud pop and the clashing of metal. They’ve managed to hook a harpoon into the stern of the boat. Looks like you’re in for a fight now.” (Go to result #3)\""
+									]
 								},
 								{
 									"callFunction": "GP_Fight",
@@ -1729,21 +1736,21 @@
 							],
 							"actions": [
 								{
-									"callFunction": "tavResult",
-									"sid": 970111041596190,
-									"parameters": [
-										"\"You push the throttle hard and the engine strains to comply. Suddenly there is a loud pop and the clashing of metal. They’ve shot their harpoon at you, but it bounces off the hull into the water. They follow for a time, but eventually give up their pursuit.” (-1 boat armor or hull integrity or whatever you’re calling it, otherwise no change)\""
-									]
-								},
-								{
 									"id": "push",
 									"objectClass": "Results",
-									"sid": 384887010761400,
+									"sid": 652517331693119,
 									"parameters": {
 										"where": "back",
 										"value": "\"-1 Fuel\"",
 										"axis": "x"
 									}
+								},
+								{
+									"callFunction": "tavResult",
+									"sid": 970111041596190,
+									"parameters": [
+										"\"You push the throttle hard and the engine strains to comply. Suddenly there is a loud pop and the clashing of metal. They’ve shot their harpoon at you, but it bounces off the hull into the water. They follow for a time, but eventually give up their pursuit.” (-1 boat armor or hull integrity or whatever you’re calling it, otherwise no change)\""
+									]
 								}
 							],
 							"sid": 914840517516424
@@ -1812,11 +1819,13 @@
 							],
 							"actions": [
 								{
-									"callFunction": "tavResult",
-									"sid": 632358021575960,
-									"parameters": [
-										"\"Your fists clench and your heart races as you prepare for battle. They fire a volley of (biodegradable) potatoes at you and jump on board.\""
-									]
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 726661722142341,
+									"parameters": {
+										"variable": "result",
+										"value": "\"Your fists clench and your heart races as you prepare for battle. They fire a volley of (biodegradable) potatoes at you and jump on board.\""
+									}
 								}
 							],
 							"sid": 166127839964337
@@ -1837,16 +1846,9 @@
 							],
 							"actions": [
 								{
-									"callFunction": "tavResult",
-									"sid": 874247506569879,
-									"parameters": [
-										"result & \"You find yourself dreadfully outmanned and outgunned. Potatoes rain down upon you. The Guerrillas go straight for your stores of fish, hurling them into the sea, yelling: “You’re free fishes! Swim free!” The fish, still dead and frozen, bob with confusion.” (-1 hull, -20 health, -100% of fish, +10 food---potatoes)\"\n"
-									]
-								},
-								{
 									"id": "push",
 									"objectClass": "Results",
-									"sid": 751574300224718,
+									"sid": 408303665207828,
 									"parameters": {
 										"where": "back",
 										"value": "\"-1 Hull Health\"",
@@ -1856,7 +1858,7 @@
 								{
 									"id": "push",
 									"objectClass": "Results",
-									"sid": 761993856368444,
+									"sid": 613985461662487,
 									"parameters": {
 										"where": "back",
 										"value": "\"-2 Health\"",
@@ -1866,12 +1868,19 @@
 								{
 									"id": "push",
 									"objectClass": "Results",
-									"sid": 964408425799220,
+									"sid": 168102174887473,
 									"parameters": {
 										"where": "back",
 										"value": "\"+10 Food (They are Potatos)\"",
 										"axis": "x"
 									}
+								},
+								{
+									"callFunction": "tavResult",
+									"sid": 874247506569879,
+									"parameters": [
+										"result & \"You find yourself dreadfully outmanned and outgunned. Potatoes rain down upon you. The Guerrillas go straight for your stores of fish, hurling them into the sea, yelling: “You’re free fishes! Swim free!” The fish, still dead and frozen, bob with confusion.” (-1 hull, -20 health, -100% of fish, +10 food---potatoes)\"\n"
+									]
 								}
 							],
 							"sid": 961063825551513
@@ -1897,16 +1906,9 @@
 							],
 							"actions": [
 								{
-									"callFunction": "tavResult",
-									"sid": 365055359152833,
-									"parameters": [
-										"result & \"You and Cristo find yourselves outmanned and outgunned. Potatoes rain down upon you. The Guerrillas go straight for your stores of fish, hurling them into the sea, yelling: “You’re free fishes! Swim free!” The fish, still dead and frozen, bob with confusion.” (-1 hull, -20 health, -50% of fish, +10 food---potatoes)\"\n"
-									]
-								},
-								{
 									"id": "push",
 									"objectClass": "Results",
-									"sid": 434171581247369,
+									"sid": 947684066692180,
 									"parameters": {
 										"where": "back",
 										"value": "\"-1 Hull Health\"",
@@ -1916,7 +1918,7 @@
 								{
 									"id": "push",
 									"objectClass": "Results",
-									"sid": 235331489659616,
+									"sid": 109860317586134,
 									"parameters": {
 										"where": "back",
 										"value": "\"-2 Health\"",
@@ -1926,12 +1928,19 @@
 								{
 									"id": "push",
 									"objectClass": "Results",
-									"sid": 815458985016256,
+									"sid": 851338794893329,
 									"parameters": {
 										"where": "back",
 										"value": "\"+10 Food (They are Potatos)\"",
 										"axis": "x"
 									}
+								},
+								{
+									"callFunction": "tavResult",
+									"sid": 365055359152833,
+									"parameters": [
+										"result & \"You and Cristo find yourselves outmanned and outgunned. Potatoes rain down upon you. The Guerrillas go straight for your stores of fish, hurling them into the sea, yelling: “You’re free fishes! Swim free!” The fish, still dead and frozen, bob with confusion.” (-1 hull, -20 health, -50% of fish, +10 food---potatoes)\"\n"
+									]
 								}
 							],
 							"sid": 569746828497967
@@ -1957,21 +1966,21 @@
 							],
 							"actions": [
 								{
-									"callFunction": "tavResult",
-									"sid": 317306682650196,
-									"parameters": [
-										"result & \"As you continue your futile attempt to make the Guerrillas see reason, Viktoria emerges from below deck. She moves with a speed that surprises you as much as it surprises your attackers. There’s a blur of red hair and fists and the Guerrillas are beaten back into full retreat. Several jump overboard to escape Viktoria’s fury. Many are missing their wallets.” (+$40)\"\n"
-									]
-								},
-								{
 									"id": "push",
 									"objectClass": "Results",
-									"sid": 666898698587216,
+									"sid": 852102280094346,
 									"parameters": {
 										"where": "back",
 										"value": "\"+$40\"",
 										"axis": "x"
 									}
+								},
+								{
+									"callFunction": "tavResult",
+									"sid": 317306682650196,
+									"parameters": [
+										"result & \"As you continue your futile attempt to make the Guerrillas see reason, Viktoria emerges from below deck. She moves with a speed that surprises you as much as it surprises your attackers. There’s a blur of red hair and fists and the Guerrillas are beaten back into full retreat. Several jump overboard to escape Viktoria’s fury. Many are missing their wallets.” (+$40)\"\n"
+									]
 								}
 							],
 							"sid": 449831154843923
@@ -2027,21 +2036,21 @@
 							],
 							"actions": [
 								{
-									"callFunction": "tavResult",
-									"sid": 338784514531774,
-									"parameters": [
-										"result & \"As you continue your futile attempt to make the Guerrillas see reason, Lillian emerges from below deck. She locks eyes with their bull horn wielding leader, puts her hands on her hips disapprovingly, and says: “Wrong boat, Brad.” Apparently, she and “Brad” know each other from college, where they we’re environmental activists. . . and perhaps more. Brad turns red with embarrassment, apologizes to you profusely, and offers to help you on your mission.” (+Item)\"\n"
-									]
-								},
-								{
 									"id": "push",
 									"objectClass": "Results",
-									"sid": 233676665602015,
+									"sid": 892096212611720,
 									"parameters": {
 										"where": "back",
 										"value": "\"+Random Item\"",
 										"axis": "x"
 									}
+								},
+								{
+									"callFunction": "tavResult",
+									"sid": 338784514531774,
+									"parameters": [
+										"result & \"As you continue your futile attempt to make the Guerrillas see reason, Lillian emerges from below deck. She locks eyes with their bull horn wielding leader, puts her hands on her hips disapprovingly, and says: “Wrong boat, Brad.” Apparently, she and “Brad” know each other from college, where they we’re environmental activists. . . and perhaps more. Brad turns red with embarrassment, apologizes to you profusely, and offers to help you on your mission.” (+Item)\"\n"
+									]
 								}
 							],
 							"sid": 886147068630810
