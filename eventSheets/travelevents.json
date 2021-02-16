@@ -1206,14 +1206,6 @@
 								"text": "text",
 								"duration": "2"
 							}
-						},
-						{
-							"id": "append-text",
-							"objectClass": "Debug",
-							"sid": 470930280976342,
-							"parameters": {
-								"text": "\"This is the tav result function triggering | \""
-							}
 						}
 					],
 					"sid": 448357411838122,
@@ -1241,14 +1233,6 @@
 										"variable": "CurrentLine",
 										"value": "100"
 									}
-								},
-								{
-									"id": "append-text",
-									"objectClass": "Debug",
-									"sid": 304764609591377,
-									"parameters": {
-										"text": "\"Wasn't no results because width is \" & Results.Width\n"
-									}
 								}
 							],
 							"sid": 159905599504140
@@ -1273,14 +1257,6 @@
 								}
 							],
 							"actions": [
-								{
-									"id": "append-text",
-									"objectClass": "Debug",
-									"sid": 891547788592417,
-									"parameters": {
-										"text": "\"Build Results \" & loopindex & \" | \"\n"
-									}
-								},
 								{
 									"id": "create-object",
 									"objectClass": "System",
@@ -1352,16 +1328,7 @@
 					"functionParameters": [],
 					"eventType": "function-block",
 					"conditions": [],
-					"actions": [
-						{
-							"id": "append-text",
-							"objectClass": "Debug",
-							"sid": 890589358128365,
-							"parameters": {
-								"text": "\"Tav pocessing\""
-							}
-						}
-					],
+					"actions": [],
 					"sid": 437935035409989,
 					"children": [
 						{
@@ -1372,14 +1339,6 @@
 									"id": "destroy",
 									"objectClass": "ChoiceTxt",
 									"sid": 451532616972727
-								},
-								{
-									"id": "append-text",
-									"objectClass": "Debug",
-									"sid": 894185274008328,
-									"parameters": {
-										"text": "\"Rid yourself of this burdensome list and bring anew the flaming power of a new list!\"\n"
-									}
 								}
 							],
 							"sid": 550158264589895
@@ -1395,14 +1354,6 @@
 									"parameters": {
 										"index": "0",
 										"axis": "x"
-									}
-								},
-								{
-									"id": "append-text",
-									"objectClass": "Debug",
-									"sid": 908001177289677,
-									"parameters": {
-										"text": "\"gotten rid of one index \" "
 									}
 								}
 							],
@@ -1425,14 +1376,6 @@
 									"parameters": {
 										"variable": "CurrentLine",
 										"value": "100"
-									}
-								},
-								{
-									"id": "append-text",
-									"objectClass": "Debug",
-									"sid": 620917287180144,
-									"parameters": {
-										"text": "\"Show Results Array Empty | \"\n"
 									}
 								}
 							],
@@ -1458,14 +1401,6 @@
 								}
 							],
 							"actions": [
-								{
-									"id": "append-text",
-									"objectClass": "Debug",
-									"sid": 485829338485035,
-									"parameters": {
-										"text": "\"Build Results \" & loopindex & \" | \"\n"
-									}
-								},
 								{
 									"id": "create-object",
 									"objectClass": "System",
@@ -3628,7 +3563,6 @@
 				{
 					"callFunction": "CreateRoute",
 					"sid": 355060743272009,
-					"disabled": true,
 					"parameters": [
 						"floor(random(3, 6))"
 					]
@@ -3640,6 +3574,7 @@
 				{
 					"callFunction": "CreateRoute",
 					"sid": 431103279726401,
+					"disabled": true,
 					"parameters": [
 						"1"
 					]
