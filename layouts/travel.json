@@ -2946,10 +2946,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 16.74969647351055,
-						"y": 17.72650806399609,
-						"width": 50.433316379726975,
-						"height": 53.14036433750564,
+						"x": 17.205966775553595,
+						"y": 17.465782177114352,
+						"width": 51.345856983813064,
+						"height": 52.618912563742164,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -3954,7 +3954,7 @@
 		{
 			"type": "OverworldArray",
 			"properties": {
-				"width": 4,
+				"width": 9,
 				"height": 1,
 				"depth": 1
 			},

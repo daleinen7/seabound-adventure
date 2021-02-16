@@ -62,9 +62,9 @@
 				{
 					"id": "createPermutationTable",
 					"objectClass": "AdvancedRandom",
-					"sid": 236354061811495,
+					"sid": 833170917474777,
 					"parameters": {
-						"length": "10",
+						"length": "9",
 						"offset": "2"
 					}
 				},

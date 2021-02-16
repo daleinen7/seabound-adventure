@@ -1963,6 +1963,10 @@
 											"sid": 372587036643352
 										},
 										{
+											"eventType": "comment",
+											"text": "If far South only allow for East"
+										},
+										{
 											"eventType": "block",
 											"conditions": [
 												{
@@ -3651,6 +3655,14 @@
 								"loop": "no",
 								"ping-pong": "no"
 							}
+						},
+						{
+							"id": "append-text",
+							"objectClass": "Debug",
+							"sid": 647616541515702,
+							"parameters": {
+								"text": "\"Heading East hitting \" & route.At(0,1) & \" mini squares \""
+							}
 						}
 					],
 					"sid": 187140889735802,
@@ -3684,6 +3696,14 @@
 								"destroy-on-complete": "no",
 								"loop": "no",
 								"ping-pong": "no"
+							}
+						},
+						{
+							"id": "append-text",
+							"objectClass": "Debug",
+							"sid": 625966117313757,
+							"parameters": {
+								"text": "\"Heading South hitting \" & route.At(0,1) & \" mini squares \""
 							}
 						}
 					],
