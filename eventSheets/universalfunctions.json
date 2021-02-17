@@ -201,6 +201,459 @@
 				}
 			],
 			"sid": 148329168929422
+		},
+		{
+			"functionName": "O2TankAdjust",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "Amount",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 425837517503609
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "UIText",
+					"sid": 794716298563596,
+					"parameters": {
+						"instance-variable": "Identification",
+						"comparison": 0,
+						"value": "\"o2\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-key",
+					"objectClass": "Resources",
+					"sid": 443706195679260,
+					"parameters": {
+						"key": "\"o2\"",
+						"value": "Resources.Get(\"o2\") + Amount"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "UIText",
+					"sid": 980402187267689,
+					"parameters": {
+						"text": "Resources.Get(\"o2\")"
+					}
+				}
+			],
+			"sid": 678374609693350
+		},
+		{
+			"functionName": "AmmoAdjust",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "Amount",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 881145645884416
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "UIText",
+					"sid": 786495393986858,
+					"parameters": {
+						"instance-variable": "Identification",
+						"comparison": 0,
+						"value": "\"Ammo\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-key",
+					"objectClass": "Resources",
+					"sid": 316239753066988,
+					"parameters": {
+						"key": "\"Ammo\"",
+						"value": "Resources.Get(\"Ammo\") + Amount"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "UIText",
+					"sid": 858396475359513,
+					"parameters": {
+						"text": "Resources.Get(\"Ammo\")"
+					}
+				}
+			],
+			"sid": 352005880276101
+		},
+		{
+			"functionName": "ScrapAdjust",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "Amount",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 418367735919557
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "UIText",
+					"sid": 504476002941822,
+					"parameters": {
+						"instance-variable": "Identification",
+						"comparison": 0,
+						"value": "\"Scrap\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-key",
+					"objectClass": "Resources",
+					"sid": 478108300266494,
+					"parameters": {
+						"key": "\"Scrap\"",
+						"value": "Resources.Get(\"Scrap\") + Amount"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "UIText",
+					"sid": 201927959729897,
+					"parameters": {
+						"text": "Resources.Get(\"Scrap\")"
+					}
+				}
+			],
+			"sid": 959634137692375
+		},
+		{
+			"functionName": "FoodAdjust",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "Amount",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 117350687483662
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "UIText",
+					"sid": 876258498594493,
+					"parameters": {
+						"instance-variable": "Identification",
+						"comparison": 0,
+						"value": "\"Food\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-key",
+					"objectClass": "Resources",
+					"sid": 325776047995447,
+					"parameters": {
+						"key": "\"Food\"",
+						"value": "Resources.Get(\"Food\") + Amount"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "UIText",
+					"sid": 624457714238347,
+					"parameters": {
+						"text": "Resources.Get(\"Food\")"
+					}
+				}
+			],
+			"sid": 157655083709776
+		},
+		{
+			"functionName": "MedicalSupplyAdjust",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "Amount",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 326432197192481
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "UIText",
+					"sid": 716916057521689,
+					"parameters": {
+						"instance-variable": "Identification",
+						"comparison": 0,
+						"value": "\"Meds\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-key",
+					"objectClass": "Resources",
+					"sid": 217630204109145,
+					"parameters": {
+						"key": "\"Meds\"",
+						"value": "Resources.Get(\"Meds\") + Amount"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "UIText",
+					"sid": 992905749943877,
+					"parameters": {
+						"text": "Resources.Get(\"Meds\")"
+					}
+				}
+			],
+			"sid": 806231250151334
+		},
+		{
+			"functionName": "FishAdjust",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "Amount",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 182945242036171
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "UIText",
+					"sid": 989057230186400,
+					"parameters": {
+						"instance-variable": "Identification",
+						"comparison": 0,
+						"value": "\"Fish\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-key",
+					"objectClass": "Resources",
+					"sid": 119858843837683,
+					"parameters": {
+						"key": "\"Fish\" ",
+						"value": "Resources.Get(\"Fish\") + Amount"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "UIText",
+					"sid": 928387821656482,
+					"parameters": {
+						"text": "Resources.Get(\"Fish\")"
+					}
+				}
+			],
+			"sid": 390509127935865
+		},
+		{
+			"functionName": "MoneyAdjust",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "Amount",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 153894307484092
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "UIText",
+					"sid": 994674194245559,
+					"parameters": {
+						"instance-variable": "Identification",
+						"comparison": 0,
+						"value": "\"Money\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-key",
+					"objectClass": "Resources",
+					"sid": 769671012441539,
+					"parameters": {
+						"key": "\"Money\" ",
+						"value": "Resources.Get(\"Money\") + Amount"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "UIText",
+					"sid": 564841614388313,
+					"parameters": {
+						"text": "Resources.Get(\"Money\")"
+					}
+				}
+			],
+			"sid": 243023780500962
+		},
+		{
+			"functionName": "FuelAdjust",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "Amount",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 865423653534776
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-key",
+					"objectClass": "Resources",
+					"sid": 985528098341615,
+					"parameters": {
+						"key": "\"Fuel\"",
+						"value": "Resources.Get(\"Fuel\") + Amount"
+					}
+				}
+			],
+			"sid": 280074812575407
+		},
+		{
+			"functionName": "FMHealthAdjust",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "Amount",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 595074810491752
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 982438033570510
+		},
+		{
+			"functionName": "CaptainHealthAdjust",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "Amount",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 631653893219888
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 417696767599113
+		},
+		{
+			"functionName": "FMMoraleAdjust",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "Amount",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 416804489982309
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 982585696813763
+		},
+		{
+			"functionName": "CaptainMoraleAdjust",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "Amount",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 788287255343216
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 387386076171458
 		}
 	],
 	"sid": 409470622602782

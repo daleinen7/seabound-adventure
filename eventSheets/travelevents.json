@@ -1044,10 +1044,10 @@
 						{
 							"id": "set-size",
 							"objectClass": "Results",
-							"sid": 685697198806382,
+							"sid": 239576945144199,
 							"parameters": {
 								"width": "0",
-								"height": "2",
+								"height": "4",
 								"depth": "1"
 							}
 						}
@@ -3655,14 +3655,6 @@
 								"loop": "no",
 								"ping-pong": "no"
 							}
-						},
-						{
-							"id": "append-text",
-							"objectClass": "Debug",
-							"sid": 647616541515702,
-							"parameters": {
-								"text": "\"Heading East hitting \" & route.At(0,1) & \" mini squares \""
-							}
 						}
 					],
 					"sid": 187140889735802,
@@ -3696,14 +3688,6 @@
 								"destroy-on-complete": "no",
 								"loop": "no",
 								"ping-pong": "no"
-							}
-						},
-						{
-							"id": "append-text",
-							"objectClass": "Debug",
-							"sid": 625966117313757,
-							"parameters": {
-								"text": "\"Heading South hitting \" & route.At(0,1) & \" mini squares \""
 							}
 						}
 					],
