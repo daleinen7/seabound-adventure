@@ -85,6 +85,553 @@
 					"conditions": [],
 					"actions": [
 						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 983935751119020,
+							"parameters": {
+								"name": "\"TAV\"",
+								"string": "\"IntroViktoria\"",
+								"function": "IntroViktoria"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 977683531468459,
+							"parameters": {
+								"name": "\"TAV\"",
+								"string": "\"IntroCristo\"",
+								"function": "IntroCristo"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 743818724094600,
+							"parameters": {
+								"name": "\"TAV\"",
+								"string": "\"Fishin\"",
+								"function": "Fishin"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 457243375668537,
+							"parameters": {
+								"name": "\"TAV\"",
+								"string": "\"FloatMeds\"",
+								"function": "FloatMeds"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 830603131055535,
+							"parameters": {
+								"name": "\"TAV\"",
+								"string": "\"Run\"",
+								"function": "Run"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 614607538047996,
+							"parameters": {
+								"name": "\"TAV\"",
+								"string": "\"Fight\"",
+								"function": "Fight"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 107758051669360,
+							"parameters": {
+								"name": "\"TAV\"",
+								"string": "\"Surrender\"",
+								"function": "Surrender"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 815560519142982,
+							"parameters": {
+								"name": "\"TAV\"",
+								"string": "\"SCDecline\"",
+								"function": "SCDecline"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 396307422946165,
+							"parameters": {
+								"name": "\"TAV\"",
+								"string": "\"SCLazy\"",
+								"function": "SCLazy"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 349290514529459,
+							"parameters": {
+								"name": "\"TAV\"",
+								"string": "\"SCHurry\"",
+								"function": "SCHurry"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 325938723261654,
+							"parameters": {
+								"name": "\"TAV\"",
+								"string": "\"SCFM\"",
+								"function": "SCFM"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 865986424606165,
+							"parameters": {
+								"name": "\"TAV\"",
+								"string": "\"SCWatch\"",
+								"function": "SCWatch"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 330677247795373,
+							"parameters": {
+								"name": "\"TAV\"",
+								"string": "\"LASBoard\"",
+								"function": "LASBoard"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 941017713745700,
+							"parameters": {
+								"name": "\"TAV\"",
+								"string": "\"LASFood\"",
+								"function": "LASFood"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 846654532565472,
+							"parameters": {
+								"name": "\"TAV\"",
+								"string": "\"LASLoose\"",
+								"function": "LASLoose"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 889255268708672,
+							"parameters": {
+								"name": "\"TAV\"",
+								"string": "\"DistIgnore\"",
+								"function": "DistIgnore"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 112479442982011,
+							"parameters": {
+								"name": "\"TAV\"",
+								"string": "\"DistIgnore\"",
+								"function": "DistRate"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 250358784163730,
+							"parameters": {
+								"name": "\"TAV\"",
+								"string": "\"DistIgnore\"",
+								"function": "DistHurry"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 618964067932398,
+							"parameters": {
+								"name": "\"TAV\"",
+								"string": "\"PA2Concern\"",
+								"function": "PA2Concern"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 979805277889733,
+							"parameters": {
+								"name": "\"TAV\"",
+								"string": "\"PA2Rrun\"",
+								"function": "PA2Run"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 706582299520112,
+							"parameters": {
+								"name": "\"TAV\"",
+								"string": "\"RE\"",
+								"function": "RE"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 624058774511260,
+							"parameters": {
+								"name": "\"TAV\"",
+								"string": "\"OutrunRE\"",
+								"function": "OutrunRE"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 435343709062457,
+							"parameters": {
+								"name": "\"TAV\"",
+								"string": "\"GP_Run\"",
+								"function": "GP_Run"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 351610763255152,
+							"parameters": {
+								"name": "\"TAV\"",
+								"string": "\"GP_Surrender\"",
+								"function": "GP_Surrender"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 567723918282858,
+							"parameters": {
+								"name": "\"TAV\"",
+								"string": "\"GP_Fight\"",
+								"function": "GP_Fight"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 372706379545704,
+							"parameters": {
+								"name": "\"TAV\"",
+								"string": "\"GP_Chum\"",
+								"function": "GP_Chum"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 784219565776936,
+							"parameters": {
+								"name": "\"TAV\"",
+								"string": "\"Dol_SpeedUp\"",
+								"function": "Dol_SpeedUp"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 156504087492944,
+							"parameters": {
+								"name": "\"TAV\"",
+								"string": "\"Dol_Fish\"",
+								"function": "Dol_Fish"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 547982136928303,
+							"parameters": {
+								"name": "\"TAV\"",
+								"string": "\"Dol_Stop\"",
+								"function": "Dol_Stop"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 857627753219128,
+							"parameters": {
+								"name": "\"TAV\"",
+								"string": "\"Dol_Follow\"",
+								"function": "Dol_Follow"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 704308233545224,
+							"parameters": {
+								"name": "\"TAV\"",
+								"string": "\"Dol_Unfollow\"",
+								"function": "Dol_Unfollow"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 370965836355189,
+							"parameters": {
+								"name": "\"TAV\"",
+								"string": "\"DD_Ignore\"",
+								"function": "DD_Ignore"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 210487977623044,
+							"parameters": {
+								"name": "\"TAV\"",
+								"string": "\"DD_Investigate\"",
+								"function": "DD_Investigate"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 436912430059561,
+							"parameters": {
+								"name": "\"TAV\"",
+								"string": "\"DD_Tattle\"",
+								"function": "DD_Tattle"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 525045587570698,
+							"parameters": {
+								"name": "\"TAV\"",
+								"string": "\"SRN_Follow\"",
+								"function": "SRN_Follow"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 751565889140647,
+							"parameters": {
+								"name": "\"TAV\"",
+								"string": "\"SRN_Resist\"",
+								"function": "SRN_Resist"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 867749785143535,
+							"parameters": {
+								"name": "\"TAV\"",
+								"string": "\"SRN_Smelt\"",
+								"function": "SRN_Smelt"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 106258353344495,
+							"parameters": {
+								"name": "\"TAV\"",
+								"string": "\"SRN_Show\"",
+								"function": "SRN_Show"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 911055456399411,
+							"parameters": {
+								"name": "\"TAV\"",
+								"string": "\"SRN_Leave\"",
+								"function": "SRN_Leave"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 749234711804061,
+							"parameters": {
+								"name": "\"TAV\"",
+								"string": "\"SRN_Girl\"",
+								"function": "SRN_Girl"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 697525217069654,
+							"parameters": {
+								"name": "\"TAV\"",
+								"string": "\"SRN_RunAway\"",
+								"function": "SRN_RunAway"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 841121750757452,
+							"parameters": {
+								"name": "\"Adjust\"",
+								"string": "\"Ammo\"",
+								"function": "AmmoAdjust"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 728163484780274,
+							"parameters": {
+								"name": "\"Adjust\"",
+								"string": "\"CaptainHealth\"",
+								"function": "CaptainHealthAdjust"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 370029687063269,
+							"parameters": {
+								"name": "\"Adjust\"",
+								"string": "\"CaptainMorale\"",
+								"function": "CaptainMoraleAdjust"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 529095543834083,
+							"parameters": {
+								"name": "\"Adjust\"",
+								"string": "\"Fish\"",
+								"function": "FishAdjust"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 499571120608948,
+							"parameters": {
+								"name": "\"Adjust\"",
+								"string": "\"FMHealth\"",
+								"function": "FMHealthAdjust"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 320872435194102,
+							"parameters": {
+								"name": "\"Adjust\"",
+								"string": "\"FMMorale\"",
+								"function": "FMMoraleAdjust"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 807771730421529,
+							"parameters": {
+								"name": "\"Adjust\"",
+								"string": "\"Food\"",
+								"function": "FoodAdjust"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 221119722579329,
+							"parameters": {
+								"name": "\"Adjust\"",
+								"string": "\"Fuel\"",
+								"function": "FuelAdjust"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 806556092448856,
+							"parameters": {
+								"name": "\"Adjust\"",
+								"string": "\"Meds\"",
+								"function": "MedicalSupplyAdjust"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 166490220778756,
+							"parameters": {
+								"name": "\"Adjust\"",
+								"string": "\"Money\"",
+								"function": "MoneyAdjust"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 916973323636600,
+							"parameters": {
+								"name": "\"Adjust\"",
+								"string": "\"o2\"",
+								"function": "O2TankAdjust"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 912079796907251,
+							"parameters": {
+								"name": "\"Adjust\"",
+								"string": "\"Scrap\"",
+								"function": "ScrapAdjust"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
+							"sid": 418203464491704,
+							"parameters": {
+								"name": "\"Adjust\"",
+								"string": "\"HullHealth\"",
+								"function": "HullHealth"
+							}
+						}
+					],
+					"sid": 234206462123951
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
 							"id": "request-project-file",
 							"objectClass": "AJAX",
 							"sid": 823651205672763,
@@ -215,6 +762,28 @@
 							"id": "load",
 							"objectClass": "CrewDB",
 							"sid": 566198403915141,
+							"parameters": {
+								"json": "AJAX.LastData"
+							}
+						},
+						{
+							"id": "request-project-file",
+							"objectClass": "AJAX",
+							"sid": 158830156075832,
+							"parameters": {
+								"tag": "\"resources\"",
+								"file": "Resources.json"
+							}
+						},
+						{
+							"id": "wait-for-previous-actions",
+							"objectClass": "System",
+							"sid": 763832950729740
+						},
+						{
+							"id": "load",
+							"objectClass": "Resources",
+							"sid": 285785844585308,
 							"parameters": {
 								"json": "AJAX.LastData"
 							}

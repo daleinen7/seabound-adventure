@@ -1348,6 +1348,20 @@
 							"conditions": [],
 							"actions": [
 								{
+									"callFunction": "CallAdjustFunction",
+									"sid": 276875316788034,
+									"parameters": [
+										"0"
+									]
+								}
+							],
+							"sid": 239205164889546
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
 									"id": "delete",
 									"objectClass": "Results",
 									"sid": 109639656898635,
@@ -1528,6 +1542,37 @@
 						}
 					],
 					"sid": 335703750245385
+				},
+				{
+					"functionName": "CallAdjustFunction",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "Amount",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 166738762574394
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "call-mapped-function",
+							"objectClass": "Functions",
+							"sid": 475891393570339,
+							"parameters": {
+								"name": "\"Adjust\"",
+								"string": "Results.At(0, 2)",
+								"forward-params": "0"
+							}
+						}
+					],
+					"sid": 535999303600686
 				},
 				{
 					"functionName": "BuildChoicesArray",

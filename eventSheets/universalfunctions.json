@@ -537,9 +537,17 @@
 				{
 					"id": "set-text",
 					"objectClass": "UIText",
-					"sid": 564841614388313,
+					"sid": 379136634594017,
 					"parameters": {
-						"text": "Resources.Get(\"Money\")"
+						"text": "\"$\" & Resources.Get(\"Money\")"
+					}
+				},
+				{
+					"id": "append-text",
+					"objectClass": "Debug",
+					"sid": 498814730209442,
+					"parameters": {
+						"text": "\" And calling MoneyAdjust Function\""
 					}
 				}
 			],
@@ -574,6 +582,36 @@
 				}
 			],
 			"sid": 280074812575407
+		},
+		{
+			"functionName": "HullHealth",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "Amount",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 431124697092871
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-key",
+					"objectClass": "Resources",
+					"sid": 305738666374812,
+					"parameters": {
+						"key": "\"HullIntegrity\"",
+						"value": "Resources.Get(\"HullIntegrity\") + Amount"
+					}
+				}
+			],
+			"sid": 654140047567210
 		},
 		{
 			"functionName": "FMHealthAdjust",

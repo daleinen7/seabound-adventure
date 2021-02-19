@@ -10,418 +10,7 @@
 					"sid": 537466483588651
 				}
 			],
-			"actions": [
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 245495647792724,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"IntroViktoria\"",
-						"function": "IntroViktoria"
-					}
-				},
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 650688164679192,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"IntroCristo\"",
-						"function": "IntroCristo"
-					}
-				},
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 380080238182945,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"Fishin\"",
-						"function": "Fishin"
-					}
-				},
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 966189364972928,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"FloatMeds\"",
-						"function": "FloatMeds"
-					}
-				},
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 446246959280979,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"Run\"",
-						"function": "Run"
-					}
-				},
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 842507506675685,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"Fight\"",
-						"function": "Fight"
-					}
-				},
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 141636489836628,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"Surrender\"",
-						"function": "Surrender"
-					}
-				},
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 394797135041852,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"SCDecline\"",
-						"function": "SCDecline"
-					}
-				},
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 480901456556356,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"SCLazy\"",
-						"function": "SCLazy"
-					}
-				},
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 868095528307793,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"SCHurry\"",
-						"function": "SCHurry"
-					}
-				},
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 883279123230201,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"SCFM\"",
-						"function": "SCFM"
-					}
-				},
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 147601821196300,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"SCWatch\"",
-						"function": "SCWatch"
-					}
-				},
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 312106715800968,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"LASBoard\"",
-						"function": "LASBoard"
-					}
-				},
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 820723217042573,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"LASFood\"",
-						"function": "LASFood"
-					}
-				},
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 657642093260216,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"LASLoose\"",
-						"function": "LASLoose"
-					}
-				},
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 629746295335331,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"DistIgnore\"",
-						"function": "DistIgnore"
-					}
-				},
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 580045444432251,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"DistIgnore\"",
-						"function": "DistRate"
-					}
-				},
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 747074664548219,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"DistIgnore\"",
-						"function": "DistHurry"
-					}
-				},
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 686806807937700,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"PA2Concern\"",
-						"function": "PA2Concern"
-					}
-				},
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 653327945995519,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"PA2Rrun\"",
-						"function": "PA2Run"
-					}
-				},
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 814031289764765,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"RE\"",
-						"function": "RE"
-					}
-				},
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 583336462948699,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"OutrunRE\"",
-						"function": "OutrunRE"
-					}
-				},
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 211121139575466,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"GP_Run\"",
-						"function": "GP_Run"
-					}
-				},
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 432214564385753,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"GP_Surrender\"",
-						"function": "GP_Surrender"
-					}
-				},
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 824708468220973,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"GP_Fight\"",
-						"function": "GP_Fight"
-					}
-				},
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 904014571466469,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"GP_Chum\"",
-						"function": "GP_Chum"
-					}
-				},
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 184974140740737,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"Dol_SpeedUp\"",
-						"function": "Dol_SpeedUp"
-					}
-				},
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 625843276979607,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"Dol_Fish\"",
-						"function": "Dol_Fish"
-					}
-				},
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 531297388443683,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"Dol_Stop\"",
-						"function": "Dol_Stop"
-					}
-				},
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 201308393677520,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"Dol_Follow\"",
-						"function": "Dol_Follow"
-					}
-				},
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 538235320276988,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"Dol_Unfollow\"",
-						"function": "Dol_Unfollow"
-					}
-				},
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 511728984495289,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"DD_Ignore\"",
-						"function": "DD_Ignore"
-					}
-				},
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 897002116215185,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"DD_Investigate\"",
-						"function": "DD_Investigate"
-					}
-				},
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 467746558555371,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"DD_Tattle\"",
-						"function": "DD_Tattle"
-					}
-				},
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 957143276520247,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"SRN_Follow\"",
-						"function": "SRN_Follow"
-					}
-				},
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 227782789619855,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"SRN_Resist\"",
-						"function": "SRN_Resist"
-					}
-				},
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 602370267167899,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"SRN_Smelt\"",
-						"function": "SRN_Smelt"
-					}
-				},
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 779125622071460,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"SRN_Show\"",
-						"function": "SRN_Show"
-					}
-				},
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 602597692645216,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"SRN_Leave\"",
-						"function": "SRN_Leave"
-					}
-				},
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 319288309499975,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"SRN_Girl\"",
-						"function": "SRN_Girl"
-					}
-				},
-				{
-					"id": "map-function",
-					"objectClass": "Functions",
-					"sid": 337545099440512,
-					"parameters": {
-						"name": "\"TAV\"",
-						"string": "\"SRN_RunAway\"",
-						"function": "SRN_RunAway"
-					}
-				}
-			],
+			"actions": [],
 			"sid": 317629704253604
 		},
 		{
@@ -712,11 +301,31 @@
 								{
 									"id": "push",
 									"objectClass": "Results",
-									"sid": 273816372170822,
+									"sid": 837931410065812,
 									"parameters": {
 										"where": "back",
-										"value": "\"-3 Boat Damage\"",
+										"value": "\"-1 Boat Damage\"",
 										"axis": "x"
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "Results",
+									"sid": 500450234043424,
+									"parameters": {
+										"x": "0",
+										"y": "2",
+										"value": "\"HullHealth\""
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "Results",
+									"sid": 559032041517091,
+									"parameters": {
+										"x": "0",
+										"y": "3",
+										"value": "-1"
 									}
 								},
 								{
@@ -849,11 +458,31 @@
 								{
 									"id": "push",
 									"objectClass": "Results",
-									"sid": 672542938114055,
+									"sid": 897401748844615,
 									"parameters": {
 										"where": "back",
-										"value": "\"-2 Boat Damage\"",
+										"value": "\"-1 Boat Damage\"",
 										"axis": "x"
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "Results",
+									"sid": 222956692743803,
+									"parameters": {
+										"x": "0",
+										"y": "2",
+										"value": "\"HullHealth\""
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "Results",
+									"sid": 340941200998364,
+									"parameters": {
+										"x": "0",
+										"y": "3",
+										"value": "-1"
 									}
 								},
 								{
@@ -1259,6 +888,26 @@
 									}
 								},
 								{
+									"id": "set-at-xy",
+									"objectClass": "Results",
+									"sid": 345734304286309,
+									"parameters": {
+										"x": "0",
+										"y": "2",
+										"value": "\"Money\""
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "Results",
+									"sid": 154323362817748,
+									"parameters": {
+										"x": "0",
+										"y": "3",
+										"value": "50"
+									}
+								},
+								{
 									"callFunction": "tavResult",
 									"sid": 417574631318290,
 									"parameters": [
@@ -1488,6 +1137,26 @@
 								"value": "\"-5 Fish\"",
 								"axis": "x"
 							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Results",
+							"sid": 849574475872494,
+							"parameters": {
+								"x": "0",
+								"y": "2",
+								"value": "\"Fish\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Results",
+							"sid": 205193486805539,
+							"parameters": {
+								"x": "0",
+								"y": "3",
+								"value": "-5"
+							}
 						}
 					],
 					"sid": 527703295781995,
@@ -1577,21 +1246,31 @@
 								{
 									"id": "push",
 									"objectClass": "Results",
-									"sid": 190435922988827,
-									"parameters": {
-										"where": "back",
-										"value": "\"+1 Morale\"",
-										"axis": "x"
-									}
-								},
-								{
-									"id": "push",
-									"objectClass": "Results",
 									"sid": 247756276749861,
 									"parameters": {
 										"where": "back",
 										"value": "\"+$50\"",
 										"axis": "x"
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "Results",
+									"sid": 221600421956986,
+									"parameters": {
+										"x": "0",
+										"y": "2",
+										"value": "\"Money\""
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "Results",
+									"sid": 454971397633645,
+									"parameters": {
+										"x": "0",
+										"y": "3",
+										"value": "50"
 									}
 								},
 								{
@@ -1601,6 +1280,36 @@
 									"parameters": {
 										"where": "back",
 										"value": "\"-5 Fish\"",
+										"axis": "x"
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "Results",
+									"sid": 945609076891163,
+									"parameters": {
+										"x": "1",
+										"y": "2",
+										"value": "\"Fish\""
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "Results",
+									"sid": 386482536634383,
+									"parameters": {
+										"x": "1",
+										"y": "3",
+										"value": "-5"
+									}
+								},
+								{
+									"id": "push",
+									"objectClass": "Results",
+									"sid": 197754769550468,
+									"parameters": {
+										"where": "back",
+										"value": "\"+1 Morale\"",
 										"axis": "x"
 									}
 								},
@@ -1632,6 +1341,26 @@
 										"where": "back",
 										"value": "\"-5 Fish\"",
 										"axis": "x"
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "Results",
+									"sid": 283895118943456,
+									"parameters": {
+										"x": "1",
+										"y": "2",
+										"value": "\"Fish\""
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "Results",
+									"sid": 213282186238647,
+									"parameters": {
+										"x": "1",
+										"y": "3",
+										"value": "-5"
 									}
 								},
 								{
@@ -1708,6 +1437,26 @@
 									}
 								},
 								{
+									"id": "set-at-xy",
+									"objectClass": "Results",
+									"sid": 385783795320814,
+									"parameters": {
+										"x": "0",
+										"y": "2",
+										"value": "\"HullHealth\""
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "Results",
+									"sid": 212227821793168,
+									"parameters": {
+										"x": "0",
+										"y": "3",
+										"value": "-1"
+									}
+								},
+								{
 									"callFunction": "tavResult",
 									"sid": 570771112717727,
 									"parameters": [
@@ -1743,6 +1492,26 @@
 										"where": "back",
 										"value": "\"-1 Fuel\"",
 										"axis": "x"
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "Results",
+									"sid": 358421977144854,
+									"parameters": {
+										"x": "0",
+										"y": "2",
+										"value": "\"Fuel\""
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "Results",
+									"sid": 615059274553160,
+									"parameters": {
+										"x": "0",
+										"y": "3",
+										"value": "-1"
 									}
 								},
 								{
@@ -1856,13 +1625,23 @@
 									}
 								},
 								{
-									"id": "push",
+									"id": "set-at-xy",
 									"objectClass": "Results",
-									"sid": 613985461662487,
+									"sid": 796143440460907,
 									"parameters": {
-										"where": "back",
-										"value": "\"-2 Health\"",
-										"axis": "x"
+										"x": "0",
+										"y": "2",
+										"value": "\"HullHealth\""
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "Results",
+									"sid": 248734303474037,
+									"parameters": {
+										"x": "0",
+										"y": "3",
+										"value": "-1"
 									}
 								},
 								{
@@ -1872,6 +1651,36 @@
 									"parameters": {
 										"where": "back",
 										"value": "\"+10 Food (They are Potatos)\"",
+										"axis": "x"
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "Results",
+									"sid": 570610175612180,
+									"parameters": {
+										"x": "1",
+										"y": "2",
+										"value": "\"Food\""
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "Results",
+									"sid": 165590245573584,
+									"parameters": {
+										"x": "1",
+										"y": "3",
+										"value": "10"
+									}
+								},
+								{
+									"id": "push",
+									"objectClass": "Results",
+									"sid": 152518318163019,
+									"parameters": {
+										"where": "back",
+										"value": "\"-2 Health\"",
 										"axis": "x"
 									}
 								},
@@ -1916,22 +1725,62 @@
 									}
 								},
 								{
+									"id": "set-at-xy",
+									"objectClass": "Results",
+									"sid": 166918234566596,
+									"parameters": {
+										"x": "0",
+										"y": "2",
+										"value": "\"HullHealth\""
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "Results",
+									"sid": 553515849056440,
+									"parameters": {
+										"x": "0",
+										"y": "3",
+										"value": "-1"
+									}
+								},
+								{
+									"id": "push",
+									"objectClass": "Results",
+									"sid": 128662804668971,
+									"parameters": {
+										"where": "back",
+										"value": "\"+10 Food (They are Potatos)\"",
+										"axis": "x"
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "Results",
+									"sid": 556416214975809,
+									"parameters": {
+										"x": "1",
+										"y": "2",
+										"value": "\"Food\""
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "Results",
+									"sid": 812185654773047,
+									"parameters": {
+										"x": "1",
+										"y": "3",
+										"value": "10"
+									}
+								},
+								{
 									"id": "push",
 									"objectClass": "Results",
 									"sid": 109860317586134,
 									"parameters": {
 										"where": "back",
 										"value": "\"-2 Health\"",
-										"axis": "x"
-									}
-								},
-								{
-									"id": "push",
-									"objectClass": "Results",
-									"sid": 851338794893329,
-									"parameters": {
-										"where": "back",
-										"value": "\"+10 Food (They are Potatos)\"",
 										"axis": "x"
 									}
 								},
@@ -1973,6 +1822,26 @@
 										"where": "back",
 										"value": "\"+$40\"",
 										"axis": "x"
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "Results",
+									"sid": 597587990005849,
+									"parameters": {
+										"x": "0",
+										"y": "2",
+										"value": "\"Money\""
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "Results",
+									"sid": 241966708689137,
+									"parameters": {
+										"x": "0",
+										"y": "3",
+										"value": "40"
 									}
 								},
 								{
@@ -2297,6 +2166,66 @@
 							"eventType": "block",
 							"conditions": [],
 							"actions": [
+								{
+									"id": "push",
+									"objectClass": "Results",
+									"sid": 139783937725306,
+									"parameters": {
+										"where": "back",
+										"value": "\"-$\" & Resources.Get(\"Money\")",
+										"axis": "x"
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "Results",
+									"sid": 747376673376139,
+									"parameters": {
+										"x": "0",
+										"y": "2",
+										"value": "\"Money\""
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "Results",
+									"sid": 165164302381132,
+									"parameters": {
+										"x": "0",
+										"y": "3",
+										"value": "-9999"
+									}
+								},
+								{
+									"id": "push",
+									"objectClass": "Results",
+									"sid": 262243572826874,
+									"parameters": {
+										"where": "back",
+										"value": "\"+2 Food\"",
+										"axis": "x"
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "Results",
+									"sid": 413630232113089,
+									"parameters": {
+										"x": "1",
+										"y": "2",
+										"value": "\"Food\""
+									}
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "Results",
+									"sid": 452618258423691,
+									"parameters": {
+										"x": "1",
+										"y": "3",
+										"value": "2"
+									}
+								},
 								{
 									"callFunction": "tavResult",
 									"sid": 863303521820274,
@@ -2675,6 +2604,36 @@
 										}
 									],
 									"actions": [
+										{
+											"id": "push",
+											"objectClass": "Results",
+											"sid": 123563579894700,
+											"parameters": {
+												"where": "back",
+												"value": "\"-$\" & Resources.Get(\"Money\")",
+												"axis": "x"
+											}
+										},
+										{
+											"id": "set-at-xy",
+											"objectClass": "Results",
+											"sid": 330734073568605,
+											"parameters": {
+												"x": "0",
+												"y": "2",
+												"value": "\"Money\""
+											}
+										},
+										{
+											"id": "set-at-xy",
+											"objectClass": "Results",
+											"sid": 558383227088497,
+											"parameters": {
+												"x": "0",
+												"y": "3",
+												"value": "-9999"
+											}
+										},
 										{
 											"callFunction": "tavResult",
 											"sid": 880116830680181,
