@@ -8,7 +8,7 @@
         "Meds": 1,
         "Food": 5,
         "Fuel": 8,
-        "HullIntegrity": 4,
+        "HullIntegrity": 5,
         "o2": 100,
         "Ammo": 30
     }

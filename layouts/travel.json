@@ -2154,7 +2154,9 @@
 						"image-angle": 0
 					},
 					"uid": 82,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"name": "FM"
+					},
 					"behaviors": {},
 					"world": {
 						"x": 436.004336462012,
@@ -2187,7 +2189,9 @@
 						"image-angle": 0
 					},
 					"uid": 83,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"name": ""
+					},
 					"behaviors": {},
 					"world": {
 						"x": 445.004336462012,
@@ -2408,7 +2412,7 @@
 					"world": {
 						"x": 1.3465555760692922,
 						"y": 215.94806479159806,
-						"width": 84.84231129681291,
+						"width": 85.36759753125594,
 						"height": 17.23004105859934,
 						"originX": 0,
 						"originY": 0,
@@ -2441,7 +2445,7 @@
 					"world": {
 						"x": -3.0295550564501497,
 						"y": 234.37932198472564,
-						"width": 53.36487990890083,
+						"width": 63.22391998874765,
 						"height": 18.645651019584477,
 						"originX": 0,
 						"originY": 0,
@@ -2474,7 +2478,7 @@
 					"world": {
 						"x": 3.5867461957264766,
 						"y": 234.59832305062406,
-						"width": 42.70194065518953,
+						"width": 53.54688474302104,
 						"height": 16.00501524713067,
 						"originX": 0,
 						"originY": 0,
@@ -2513,7 +2517,7 @@
 					"world": {
 						"x": 2.9468083813616595,
 						"y": 217.9833139819679,
-						"width": 81.20016809227945,
+						"width": 82,
 						"height": 13.134598465934715,
 						"originX": 0,
 						"originY": 0,
@@ -2848,7 +2852,9 @@
 						"image-angle": 0
 					},
 					"uid": 36,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"name": "Shaw"
+					},
 					"behaviors": {},
 					"world": {
 						"x": 384.4879946246311,
@@ -2881,7 +2887,9 @@
 						"image-angle": 0
 					},
 					"uid": 37,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"name": ""
+					},
 					"behaviors": {},
 					"world": {
 						"x": 393.4879946246311,
