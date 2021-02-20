@@ -203,6 +203,380 @@
 			"sid": 148329168929422
 		},
 		{
+			"functionName": "DisplayResources",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-width",
+					"objectClass": "HullHealth",
+					"sid": 416961758446387,
+					"parameters": {
+						"width": "Resources.Get(\"HullIntegrity\") * 11"
+					}
+				}
+			],
+			"sid": 679443973326937,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "UIText",
+							"sid": 990612168917077,
+							"parameters": {
+								"instance-variable": "Identification",
+								"comparison": 0,
+								"value": "\"Scrap\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "UIText",
+							"sid": 672379252973368,
+							"parameters": {
+								"text": "Resources.Get(\"Scrap\")"
+							}
+						}
+					],
+					"sid": 998056931103875
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "UIText",
+							"sid": 312482654651396,
+							"parameters": {
+								"instance-variable": "Identification",
+								"comparison": 0,
+								"value": "\"Ammo\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "UIText",
+							"sid": 314510951397238,
+							"parameters": {
+								"text": "Resources.Get(\"Ammo\")"
+							}
+						}
+					],
+					"sid": 464685479898024
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "UIText",
+							"sid": 468951019219929,
+							"parameters": {
+								"instance-variable": "Identification",
+								"comparison": 0,
+								"value": "\"o2\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "UIText",
+							"sid": 994198503687645,
+							"parameters": {
+								"text": "Resources.Get(\"o2\")"
+							}
+						}
+					],
+					"sid": 808444971187280
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "UIText",
+							"sid": 342380915332280,
+							"parameters": {
+								"instance-variable": "Identification",
+								"comparison": 0,
+								"value": "\"Fish\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "UIText",
+							"sid": 994594083591562,
+							"parameters": {
+								"text": "Resources.Get(\"Fish\")"
+							}
+						}
+					],
+					"sid": 663963686163067
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "UIText",
+							"sid": 264815677730808,
+							"parameters": {
+								"instance-variable": "Identification",
+								"comparison": 0,
+								"value": "\"Meds\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "UIText",
+							"sid": 592905472108040,
+							"parameters": {
+								"text": "Resources.Get(\"Meds\")"
+							}
+						}
+					],
+					"sid": 583633040960649
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "UIText",
+							"sid": 832710759190807,
+							"parameters": {
+								"instance-variable": "Identification",
+								"comparison": 0,
+								"value": "\"Food\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "UIText",
+							"sid": 424496996336442,
+							"parameters": {
+								"text": "Resources.Get(\"Food\")"
+							}
+						}
+					],
+					"sid": 385896597063911
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "UIText",
+							"sid": 722690363491428,
+							"parameters": {
+								"instance-variable": "Identification",
+								"comparison": 0,
+								"value": "\"Money\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "UIText",
+							"sid": 427701697531735,
+							"parameters": {
+								"text": "\"$\" & Resources.Get(\"Money\")"
+							}
+						}
+					],
+					"sid": 437232178216855
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "SmallEnergyBar",
+							"sid": 279596533773703,
+							"parameters": {
+								"instance-variable": "name",
+								"comparison": 0,
+								"value": "\"Shaw\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-height",
+							"objectClass": "SmallEnergyBar",
+							"sid": 330839722521258,
+							"parameters": {
+								"height": "ShawMorale * 8"
+							}
+						}
+					],
+					"sid": 859977052203192
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "SmallEnergyBar",
+							"sid": 116031535357420,
+							"parameters": {
+								"instance-variable": "name",
+								"comparison": 0,
+								"value": "\"FM\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-height",
+							"objectClass": "SmallEnergyBar",
+							"sid": 563714465735223,
+							"parameters": {
+								"height": "FirstMate.Get(\"energy\") * 8"
+							}
+						}
+					],
+					"sid": 429708814619814
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "SmallHealthBarFull",
+							"sid": 609018630482023,
+							"parameters": {
+								"instance-variable": "name",
+								"comparison": 0,
+								"value": "\"FM\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-height",
+							"objectClass": "SmallHealthBarFull",
+							"sid": 563637092981853,
+							"parameters": {
+								"height": "FirstMate.Get(\"health\") * 4"
+							}
+						}
+					],
+					"sid": 125665399649101
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "SmallHealthBarFull",
+							"sid": 376197042988900,
+							"parameters": {
+								"instance-variable": "name",
+								"comparison": 0,
+								"value": "\"Shaw\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-height",
+							"objectClass": "SmallHealthBarFull",
+							"sid": 922359078556957,
+							"parameters": {
+								"height": "ShawHealth * 4"
+							}
+						}
+					],
+					"sid": 155034204195315
+				}
+			]
+		},
+		{
+			"functionName": "PushResult",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "Description",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"sid": 125166590583257
+				},
+				{
+					"name": "Function",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"sid": 853723303869813
+				},
+				{
+					"name": "Amount",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 905451919511172
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "push",
+					"objectClass": "Results",
+					"sid": 121884963381514,
+					"parameters": {
+						"where": "back",
+						"value": "Description",
+						"axis": "x"
+					}
+				},
+				{
+					"id": "set-at-xy",
+					"objectClass": "Results",
+					"sid": 141052472736868,
+					"parameters": {
+						"x": "Results.Width - 1",
+						"y": "2",
+						"value": "Function"
+					}
+				},
+				{
+					"id": "set-at-xy",
+					"objectClass": "Results",
+					"sid": 254388596635020,
+					"parameters": {
+						"x": "Results.Width - 1",
+						"y": "3",
+						"value": "Amount"
+					}
+				}
+			],
+			"sid": 993216394120535
+		},
+		{
 			"functionName": "O2TankAdjust",
 			"functionDescription": "",
 			"functionCategory": "",
@@ -541,14 +915,6 @@
 					"parameters": {
 						"text": "\"$\" & Resources.Get(\"Money\")"
 					}
-				},
-				{
-					"id": "append-text",
-					"objectClass": "Debug",
-					"sid": 498814730209442,
-					"parameters": {
-						"text": "\" And calling MoneyAdjust Function\""
-					}
 				}
 			],
 			"sid": 243023780500962
@@ -659,11 +1025,11 @@
 					}
 				},
 				{
-					"id": "set-width",
+					"id": "set-height",
 					"objectClass": "SmallHealthBarFull",
-					"sid": 809963293790092,
+					"sid": 183811701105952,
 					"parameters": {
-						"width": "FirstMate.Get(\"health\") * 4"
+						"height": "FirstMate.Get(\"health\") * 4"
 					}
 				}
 			],
@@ -708,11 +1074,11 @@
 					}
 				},
 				{
-					"id": "set-width",
+					"id": "set-height",
 					"objectClass": "SmallHealthBarFull",
-					"sid": 644046801584008,
+					"sid": 175934032730216,
 					"parameters": {
-						"width": "ShawHealth * 4"
+						"height": "ShawHealth * 4"
 					}
 				}
 			],
@@ -734,7 +1100,18 @@
 				}
 			],
 			"eventType": "function-block",
-			"conditions": [],
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "SmallEnergyBar",
+					"sid": 506838404243127,
+					"parameters": {
+						"instance-variable": "name",
+						"comparison": 0,
+						"value": "\"FM\""
+					}
+				}
+			],
 			"actions": [
 				{
 					"id": "set-key",
@@ -746,11 +1123,11 @@
 					}
 				},
 				{
-					"id": "set-width",
+					"id": "set-height",
 					"objectClass": "SmallEnergyBar",
-					"sid": 833103012614492,
+					"sid": 834655269336729,
 					"parameters": {
-						"width": "ShawHealth * 8"
+						"height": "FirstMate.Get(\"energy\")"
 					}
 				}
 			],
@@ -772,7 +1149,18 @@
 				}
 			],
 			"eventType": "function-block",
-			"conditions": [],
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "SmallEnergyBar",
+					"sid": 855444087774040,
+					"parameters": {
+						"instance-variable": "name",
+						"comparison": 0,
+						"value": "\"Shaw\""
+					}
+				}
+			],
 			"actions": [
 				{
 					"id": "set-eventvar-value",
@@ -784,15 +1172,107 @@
 					}
 				},
 				{
-					"id": "set-width",
+					"id": "set-height",
 					"objectClass": "SmallEnergyBar",
-					"sid": 985284069947166,
+					"sid": 149347825815054,
 					"parameters": {
-						"width": "ShawHealth * 8"
+						"height": "ShawMorale * 8"
 					}
 				}
 			],
 			"sid": 387386076171458
+		},
+		{
+			"functionName": "MoraleAdjust",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "Amount",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 153327516288353
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 345431612429028,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "SmallEnergyBar",
+							"sid": 365060613688013,
+							"parameters": {
+								"instance-variable": "name",
+								"comparison": 0,
+								"value": "\"Shaw\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 161992269951481,
+							"parameters": {
+								"variable": "ShawMorale",
+								"value": "ShawMorale + Amount"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "SmallEnergyBar",
+							"sid": 122308495151526,
+							"parameters": {
+								"height": "ShawMorale * 8"
+							}
+						}
+					],
+					"sid": 606379022987057
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "SmallEnergyBar",
+							"sid": 589526246190706,
+							"parameters": {
+								"instance-variable": "name",
+								"comparison": 0,
+								"value": "\"FM\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-key",
+							"objectClass": "FirstMate",
+							"sid": 105866953188540,
+							"parameters": {
+								"key": "\"energy\"",
+								"value": "FirstMate.Get(\"energy\") + Amount"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "SmallEnergyBar",
+							"sid": 287605790498248,
+							"parameters": {
+								"height": "FirstMate.Get(\"energy\")"
+							}
+						}
+					],
+					"sid": 460449884921843
+				}
+			]
 		}
 	],
 	"sid": 409470622602782

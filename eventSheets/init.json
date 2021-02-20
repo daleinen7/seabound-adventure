@@ -557,6 +557,16 @@
 						{
 							"id": "map-function",
 							"objectClass": "Functions",
+							"sid": 265512105990107,
+							"parameters": {
+								"name": "\"Adjust\"",
+								"string": "\"Morale\"",
+								"function": "MoraleAdjust"
+							}
+						},
+						{
+							"id": "map-function",
+							"objectClass": "Functions",
 							"sid": 807771730421529,
 							"parameters": {
 								"name": "\"Adjust\"",
