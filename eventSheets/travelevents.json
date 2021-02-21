@@ -1349,9 +1349,9 @@
 							"actions": [
 								{
 									"callFunction": "CallAdjustFunction",
-									"sid": 276875316788034,
+									"sid": 647371530821229,
 									"parameters": [
-										"0"
+										"Results.At(0, 3)"
 									]
 								}
 							],
@@ -1478,6 +1478,37 @@
 					]
 				},
 				{
+					"functionName": "CallAdjustFunction",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "Amount",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 166738762574394
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "call-mapped-function",
+							"objectClass": "Functions",
+							"sid": 547242478622497,
+							"parameters": {
+								"name": "\"Adjust\"",
+								"string": "Results.At(0, 2)",
+								"forward-params": "0"
+							}
+						}
+					],
+					"sid": 486804919538192
+				},
+				{
 					"functionName": "SelectChoice",
 					"functionDescription": "",
 					"functionCategory": "",
@@ -1542,37 +1573,6 @@
 						}
 					],
 					"sid": 335703750245385
-				},
-				{
-					"functionName": "CallAdjustFunction",
-					"functionDescription": "",
-					"functionCategory": "",
-					"functionReturnType": "none",
-					"functionIsAsync": false,
-					"functionParameters": [
-						{
-							"name": "Amount",
-							"type": "number",
-							"initialValue": "0",
-							"comment": "",
-							"sid": 166738762574394
-						}
-					],
-					"eventType": "function-block",
-					"conditions": [],
-					"actions": [
-						{
-							"id": "call-mapped-function",
-							"objectClass": "Functions",
-							"sid": 475891393570339,
-							"parameters": {
-								"name": "\"Adjust\"",
-								"string": "Results.At(0, 2)",
-								"forward-params": "0"
-							}
-						}
-					],
-					"sid": 535999303600686
 				},
 				{
 					"functionName": "BuildChoicesArray",

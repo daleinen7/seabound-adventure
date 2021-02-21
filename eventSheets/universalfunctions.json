@@ -1264,9 +1264,9 @@
 						{
 							"id": "set-height",
 							"objectClass": "SmallEnergyBar",
-							"sid": 287605790498248,
+							"sid": 572740246121765,
 							"parameters": {
-								"height": "FirstMate.Get(\"energy\")"
+								"height": "FirstMate.Get(\"energy\") * 8"
 							}
 						}
 					],
