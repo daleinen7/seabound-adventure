@@ -3722,12 +3722,12 @@
 						{
 							"id": "tween-one-property",
 							"objectClass": "navLocation",
-							"sid": 152227301278144,
+							"sid": 991895741631020,
 							"behaviorType": "Tween",
 							"parameters": {
 								"tags": "\"navMove\"",
 								"property": "offsetY",
-								"end-value": "navLocation.X + 10",
+								"end-value": "navLocation.Y + 10",
 								"time": "4 * route.At(0, 1)",
 								"ease": "default",
 								"destroy-on-complete": "no",
