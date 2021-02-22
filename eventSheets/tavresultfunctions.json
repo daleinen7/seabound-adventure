@@ -1306,9 +1306,19 @@
 								{
 									"callFunction": "tavResult",
 									"sid": 981451349625256,
+									"disabled": true,
 									"parameters": [
 										"\"You push the throttle hard and the engine strains to comply. Suddenly there is a loud pop and the clashing of metal. They’ve managed to hook a harpoon into the stern of the boat. Looks like you’re in for a fight now.\""
 									]
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 351952575686153,
+									"parameters": {
+										"variable": "result",
+										"value": "\"You push the throttle hard and the engine strains to comply. Suddenly there is a loud pop and the clashing of metal. They’ve managed to hook a harpoon into the stern of the boat. Looks like you’re in for a fight now.\""
+									}
 								},
 								{
 									"callFunction": "GP_Fight",
@@ -1424,6 +1434,38 @@
 								}
 							],
 							"sid": 166127839964337
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 592205122984190
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 764875669955611,
+									"parameters": {
+										"variable": "result",
+										"comparison": 0,
+										"value": "\"You push the throttle hard and the engine strains to comply. Suddenly there is a loud pop and the clashing of metal. They’ve managed to hook a harpoon into the stern of the boat. Looks like you’re in for a fight now.\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 126004021773247,
+									"parameters": {
+										"variable": "result",
+										"value": "result & \"Your fists clench and your heart races as you prepare for battle. They fire a volley of (biodegradable) potatoes at you and jump on board \""
+									}
+								}
+							],
+							"sid": 900087900582341
 						},
 						{
 							"eventType": "block",
