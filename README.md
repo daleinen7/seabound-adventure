@@ -1,6 +1,7 @@
 # seabound-adventure
 A pixelart game built with Construct 3. Part arcade game. Part text adventure game. Part resource management. 
 
+[Play Game](https://pixelisfaded.itch.io/seabound)
 Note: this project is a work-in-progress
 
 ## Story
